@@ -1,0 +1,35 @@
+{
+  "model_version": "logreg_v1",
+  "trained_on_pairs": 1500,
+  "test_set_size": 375,
+  "baseline": {
+    "precision": 0.3134,
+    "recall": 0.7241,
+    "false_positive_rate": 0.1329,
+    "accuracy": 0.856,
+    "roc_auc": 0.8776,
+    "n": 375,
+    "threshold": 0.3333
+  },
+  "model": {
+    "precision": 0.386,
+    "recall": 0.7586,
+    "false_positive_rate": 0.1012,
+    "accuracy": 0.888,
+    "roc_auc": 0.925,
+    "n": 375,
+    "threshold": 0.674
+  },
+  "lift_over_baseline_pct": 23.17,
+  "feature_coefficients": {
+    "skill_overlap_ratio": 2.272,
+    "skill_coverage_weighted": 4.6711,
+    "avg_skill_gap": 1.6533,
+    "missing_skills_ratio": -2.2855,
+    "extra_skills_count": 0.017,
+    "experience_delta": 1.69,
+    "experience_met": 1.7705,
+    "location_match": 1.1741,
+    "education_score": -0.1193
+  }
+}

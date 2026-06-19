@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PlaceMux — Matching Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <div class="wordmark">
+      <span class="wm-main">PlaceMux</span>
+      <span class="wm-sub">matching console</span>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-view="signup">01 — Sign up</button>
+      <button class="tab" data-view="post">02 — Post a role</button>
+      <button class="tab" data-view="candidates">03 — Candidates</button>
+      <button class="tab" data-view="metrics">04 — Model metrics</button>
+    </nav>
+    <div class="api-pill" id="apiStatus">
+      <span class="dot" id="apiDot"></span>
+      <span id="apiText">checking API…</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============== VIEW 1: SIGNUP ============== -->
+    <section class="view active" id="view-signup">
+      <div class="hero">
+        <p class="eyebrow">Founder verification — Stage A</p>
+        <h1>Stand up the marketplace,<br/>one company at a time.</h1>
+        <p class="lede">A company signs up here, posts a role, and the matching engine ranks every
+          verified student against it — with a number it can defend, not a vibe.</p>
+      </div>
+
+      <div class="panel-row">
+        <div class="card form-card">
+          <h2>Company sign-up</h2>
+          <form id="signupForm">
+            <label>Company name
+              <input type="text" id="companyName" placeholder="e.g. Orbital Stack" required />
+            </label>
+            <label>Work email
+              <input type="email" id="companyEmail" placeholder="hr@orbitalstack.com" required />
+            </label>
+            <label>HQ / hiring location
+              <input type="text" id="companyLocation" placeholder="Pune" value="Remote" />
+            </label>
+            <button type="submit" class="btn-primary">Sign up company</button>
+          </form>
+          <p class="hint" id="signupHint"></p>
+        </div>
+
+        <div class="card list-card">
+          <h2>Companies on the marketplace</h2>
+          <div id="companyList" class="thin-list">Loading…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== VIEW 2: POST JOB ============== -->
+    <section class="view" id="view-post">
+      <div class="hero hero-compact">
+        <p class="eyebrow">Founder verification — Stage A</p>
+        <h1>Specify the role.<br/>The contract does the rest.</h1>
+        <p class="lede">Required skills here become the feature-space bar every candidate is scored against —
+          this is the live matching API contract, not a mockup.</p>
+      </div>
+
+      <div class="card form-card wide">
+        <h2>Post a job</h2>
+        <form id="jobForm">
+          <label>Company
+            <select id="jobCompany" required></select>
+          </label>
+          <label>Role title
+            <input type="text" id="jobTitle" placeholder="Backend Engineer" required />
+          </label>
+          <div class="two-col">
+            <label>Location
+              <input type="text" id="jobLocation" value="Pune" />
+            </label>
+            <label>Minimum experience (years)
+              <input type="number" id="jobExp" value="1" min="0" step="0.5" />
+            </label>
+          </div>
+          <label class="full">Required skills — <span class="muted">skill: minimum verified score (0–100)</span>
+            <textarea id="jobSkills" rows="3">python:60, sql:50, fastapi:40</textarea>
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" id="jobRemote" checked /> Remote candidates eligible
+          </label>
+          <button type="submit" class="btn-primary">Post role &amp; open matching</button>
+        </form>
+        <p class="hint" id="jobHint"></p>
+      </div>
+    </section>
+
+    <!-- ============== VIEW 3: CANDIDATES ============== -->
+    <section class="view" id="view-candidates">
+      <div class="hero hero-compact">
+        <p class="eyebrow">Founder verification — Stage D</p>
+        <h1>This student, this job,<br/>and why it's a match.</h1>
+        <p class="lede">Ranked by the trained model, shown next to the dumb baseline it has to beat —
+          every score ships with a plain-English reason.</p>
+      </div>
+
+      <div class="card form-card wide">
+        <div class="two-col align-end">
+          <label>Job
+            <select id="candidateJob"></select>
+          </label>
+          <label>Show top
+            <select id="candidateTopK">
+              <option>5</option>
+              <option selected>10</option>
+              <option>20</option>
+            </select>
+          </label>
+        </div>
+        <button id="loadCandidates" class="btn-primary">Rank candidates</button>
+      </div>
+
+      <div id="candidateResults" class="results-grid"></div>
+    </section>
+
+    <!-- ============== VIEW 4: METRICS ============== -->
+    <section class="view" id="view-metrics">
+      <div class="hero hero-compact">
+        <p class="eyebrow">Section 8 — Scored out of 100</p>
+        <h1>Real numbers,<br/>not "it works".</h1>
+        <p class="lede">Held-out test-set precision, recall, and false-positive rate — model vs. the
+          skill-overlap baseline it's measured against.</p>
+      </div>
+
+      <div class="card wide" id="metricsCard">Loading metrics…</div>
+
+      <div class="card wide" id="coefCard"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>PlaceMux · Phase 2 Industry Immersion · matching engine demo</span>
+    <span id="apiBaseLabel"></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
