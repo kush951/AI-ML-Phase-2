@@ -1,0 +1,3 @@
+timestamp,n_train,n_test,baseline_precision,baseline_recall,baseline_fpr,model_precision,model_recall,model_fpr
+2026-06-20T04:37:06.079174,752,323,0.8947,0.0859,0.016,0.7107,0.8687,0.56
+2026-06-20T04:57:01.601661,752,323,0.8947,0.0859,0.016,0.7107,0.8687,0.56

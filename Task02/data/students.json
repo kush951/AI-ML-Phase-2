@@ -1,0 +1,452 @@
+[
+  {
+    "id": "S001",
+    "name": "Asha A.",
+    "verified_skill_scores": {
+      "Python": 91,
+      "SQL": 32,
+      "Data Structures": 32,
+      "Machine Learning": 6,
+      "Statistics": 34,
+      "REST APIs": 40,
+      "Git": 55,
+      "Communication": 48,
+      "System Design": 48,
+      "Cloud (AWS/GCP)": 42,
+      "Testing": 1,
+      "Deep Learning": 19
+    }
+  },
+  {
+    "id": "S002",
+    "name": "Rohit B.",
+    "verified_skill_scores": {
+      "Python": 20,
+      "SQL": 32,
+      "Data Structures": 37,
+      "Machine Learning": 60,
+      "Statistics": 1,
+      "REST APIs": 23,
+      "Git": 14,
+      "Communication": 15,
+      "System Design": 87,
+      "Cloud (AWS/GCP)": 71,
+      "Testing": 1,
+      "Deep Learning": 47
+    }
+  },
+  {
+    "id": "S003",
+    "name": "Meera C.",
+    "verified_skill_scores": {
+      "Python": 60,
+      "SQL": 25,
+      "Data Structures": 57,
+      "Machine Learning": 74,
+      "Statistics": 26,
+      "REST APIs": 42,
+      "Git": 50,
+      "Communication": 61,
+      "System Design": 69,
+      "Cloud (AWS/GCP)": 57,
+      "Testing": 59,
+      "Deep Learning": 1
+    }
+  },
+  {
+    "id": "S004",
+    "name": "Karan D.",
+    "verified_skill_scores": {
+      "Python": 54,
+      "SQL": 12,
+      "Data Structures": 2,
+      "Machine Learning": 22,
+      "Statistics": 49,
+      "REST APIs": 100,
+      "Git": 38,
+      "Communication": 100,
+      "System Design": 59,
+      "Cloud (AWS/GCP)": 68,
+      "Testing": 59,
+      "Deep Learning": 37
+    }
+  },
+  {
+    "id": "S005",
+    "name": "Divya E.",
+    "verified_skill_scores": {
+      "Python": 1,
+      "SQL": 72,
+      "Data Structures": 30,
+      "Machine Learning": 49,
+      "Statistics": 39,
+      "REST APIs": 1,
+      "Git": 43,
+      "Communication": 48,
+      "System Design": 36,
+      "Cloud (AWS/GCP)": 39,
+      "Testing": 59,
+      "Deep Learning": 100
+    }
+  },
+  {
+    "id": "S006",
+    "name": "Aditya F.",
+    "verified_skill_scores": {
+      "Python": 53,
+      "SQL": 38,
+      "Data Structures": 8,
+      "Machine Learning": 38,
+      "Statistics": 59,
+      "REST APIs": 55,
+      "Git": 1,
+      "Communication": 68,
+      "System Design": 34,
+      "Cloud (AWS/GCP)": 33,
+      "Testing": 40,
+      "Deep Learning": 13
+    }
+  },
+  {
+    "id": "S007",
+    "name": "Priya G.",
+    "verified_skill_scores": {
+      "Python": 45,
+      "SQL": 38,
+      "Data Structures": 1,
+      "Machine Learning": 27,
+      "Statistics": 94,
+      "REST APIs": 60,
+      "Git": 48,
+      "Communication": 83,
+      "System Design": 46,
+      "Cloud (AWS/GCP)": 53,
+      "Testing": 26,
+      "Deep Learning": 26
+    }
+  },
+  {
+    "id": "S008",
+    "name": "Vikram H.",
+    "verified_skill_scores": {
+      "Python": 34,
+      "SQL": 36,
+      "Data Structures": 11,
+      "Machine Learning": 46,
+      "Statistics": 53,
+      "REST APIs": 35,
+      "Git": 39,
+      "Communication": 47,
+      "System Design": 72,
+      "Cloud (AWS/GCP)": 5,
+      "Testing": 40,
+      "Deep Learning": 59
+    }
+  },
+  {
+    "id": "S009",
+    "name": "Sneha I.",
+    "verified_skill_scores": {
+      "Python": 75,
+      "SQL": 1,
+      "Data Structures": 43,
+      "Machine Learning": 37,
+      "Statistics": 8,
+      "REST APIs": 57,
+      "Git": 21,
+      "Communication": 5,
+      "System Design": 44,
+      "Cloud (AWS/GCP)": 25,
+      "Testing": 98,
+      "Deep Learning": 19
+    }
+  },
+  {
+    "id": "S010",
+    "name": "Arjun J.",
+    "verified_skill_scores": {
+      "Python": 14,
+      "SQL": 73,
+      "Data Structures": 1,
+      "Machine Learning": 59,
+      "Statistics": 25,
+      "REST APIs": 30,
+      "Git": 60,
+      "Communication": 42,
+      "System Design": 46,
+      "Cloud (AWS/GCP)": 22,
+      "Testing": 4,
+      "Deep Learning": 53
+    }
+  },
+  {
+    "id": "S011",
+    "name": "Neha K.",
+    "verified_skill_scores": {
+      "Python": 41,
+      "SQL": 91,
+      "Data Structures": 43,
+      "Machine Learning": 27,
+      "Statistics": 67,
+      "REST APIs": 45,
+      "Git": 58,
+      "Communication": 60,
+      "System Design": 1,
+      "Cloud (AWS/GCP)": 34,
+      "Testing": 33,
+      "Deep Learning": 18
+    }
+  },
+  {
+    "id": "S012",
+    "name": "Rahul L.",
+    "verified_skill_scores": {
+      "Python": 48,
+      "SQL": 57,
+      "Data Structures": 39,
+      "Machine Learning": 42,
+      "Statistics": 62,
+      "REST APIs": 54,
+      "Git": 60,
+      "Communication": 1,
+      "System Design": 62,
+      "Cloud (AWS/GCP)": 62,
+      "Testing": 1,
+      "Deep Learning": 2
+    }
+  },
+  {
+    "id": "S013",
+    "name": "Pooja M.",
+    "verified_skill_scores": {
+      "Python": 37,
+      "SQL": 11,
+      "Data Structures": 59,
+      "Machine Learning": 22,
+      "Statistics": 26,
+      "REST APIs": 22,
+      "Git": 40,
+      "Communication": 45,
+      "System Design": 91,
+      "Cloud (AWS/GCP)": 26,
+      "Testing": 18,
+      "Deep Learning": 100
+    }
+  },
+  {
+    "id": "S014",
+    "name": "Sahil N.",
+    "verified_skill_scores": {
+      "Python": 24,
+      "SQL": 25,
+      "Data Structures": 18,
+      "Machine Learning": 83,
+      "Statistics": 100,
+      "REST APIs": 7,
+      "Git": 49,
+      "Communication": 81,
+      "System Design": 48,
+      "Cloud (AWS/GCP)": 25,
+      "Testing": 11,
+      "Deep Learning": 1
+    }
+  },
+  {
+    "id": "S015",
+    "name": "Anjali O.",
+    "verified_skill_scores": {
+      "Python": 23,
+      "SQL": 54,
+      "Data Structures": 28,
+      "Machine Learning": 37,
+      "Statistics": 62,
+      "REST APIs": 62,
+      "Git": 38,
+      "Communication": 46,
+      "System Design": 46,
+      "Cloud (AWS/GCP)": 54,
+      "Testing": 48,
+      "Deep Learning": 100
+    }
+  },
+  {
+    "id": "S016",
+    "name": "Manish P.",
+    "verified_skill_scores": {
+      "Python": 19,
+      "SQL": 17,
+      "Data Structures": 57,
+      "Machine Learning": 17,
+      "Statistics": 19,
+      "REST APIs": 31,
+      "Git": 69,
+      "Communication": 20,
+      "System Design": 10,
+      "Cloud (AWS/GCP)": 60,
+      "Testing": 33,
+      "Deep Learning": 32
+    }
+  },
+  {
+    "id": "S017",
+    "name": "Riya Q.",
+    "verified_skill_scores": {
+      "Python": 19,
+      "SQL": 19,
+      "Data Structures": 68,
+      "Machine Learning": 61,
+      "Statistics": 65,
+      "REST APIs": 60,
+      "Git": 1,
+      "Communication": 53,
+      "System Design": 70,
+      "Cloud (AWS/GCP)": 47,
+      "Testing": 37,
+      "Deep Learning": 62
+    }
+  },
+  {
+    "id": "S018",
+    "name": "Suresh R.",
+    "verified_skill_scores": {
+      "Python": 43,
+      "SQL": 64,
+      "Data Structures": 30,
+      "Machine Learning": 36,
+      "Statistics": 100,
+      "REST APIs": 16,
+      "Git": 13,
+      "Communication": 1,
+      "System Design": 1,
+      "Cloud (AWS/GCP)": 28,
+      "Testing": 65,
+      "Deep Learning": 26
+    }
+  },
+  {
+    "id": "S019",
+    "name": "Kavya S.",
+    "verified_skill_scores": {
+      "Python": 62,
+      "SQL": 41,
+      "Data Structures": 58,
+      "Machine Learning": 26,
+      "Statistics": 62,
+      "REST APIs": 52,
+      "Git": 98,
+      "Communication": 3,
+      "System Design": 52,
+      "Cloud (AWS/GCP)": 30,
+      "Testing": 83,
+      "Deep Learning": 54
+    }
+  },
+  {
+    "id": "S020",
+    "name": "Imran T.",
+    "verified_skill_scores": {
+      "Python": 76,
+      "SQL": 49,
+      "Data Structures": 90,
+      "Machine Learning": 37,
+      "Statistics": 36,
+      "REST APIs": 85,
+      "Git": 27,
+      "Communication": 72,
+      "System Design": 1,
+      "Cloud (AWS/GCP)": 30,
+      "Testing": 28,
+      "Deep Learning": 30
+    }
+  },
+  {
+    "id": "S021",
+    "name": "Tanvi U.",
+    "verified_skill_scores": {
+      "Python": 22,
+      "SQL": 23,
+      "Data Structures": 63,
+      "Machine Learning": 41,
+      "Statistics": 6,
+      "REST APIs": 26,
+      "Git": 41,
+      "Communication": 14,
+      "System Design": 18,
+      "Cloud (AWS/GCP)": 51,
+      "Testing": 31,
+      "Deep Learning": 18
+    }
+  },
+  {
+    "id": "S022",
+    "name": "Yash V.",
+    "verified_skill_scores": {
+      "Python": 48,
+      "SQL": 1,
+      "Data Structures": 72,
+      "Machine Learning": 27,
+      "Statistics": 85,
+      "REST APIs": 12,
+      "Git": 87,
+      "Communication": 28,
+      "System Design": 85,
+      "Cloud (AWS/GCP)": 33,
+      "Testing": 1,
+      "Deep Learning": 24
+    }
+  },
+  {
+    "id": "S023",
+    "name": "Nisha W.",
+    "verified_skill_scores": {
+      "Python": 100,
+      "SQL": 68,
+      "Data Structures": 16,
+      "Machine Learning": 38,
+      "Statistics": 45,
+      "REST APIs": 1,
+      "Git": 31,
+      "Communication": 100,
+      "System Design": 50,
+      "Cloud (AWS/GCP)": 51,
+      "Testing": 35,
+      "Deep Learning": 28
+    }
+  },
+  {
+    "id": "S024",
+    "name": "Varun X.",
+    "verified_skill_scores": {
+      "Python": 62,
+      "SQL": 95,
+      "Data Structures": 50,
+      "Machine Learning": 39,
+      "Statistics": 59,
+      "REST APIs": 63,
+      "Git": 10,
+      "Communication": 4,
+      "System Design": 37,
+      "Cloud (AWS/GCP)": 41,
+      "Testing": 47,
+      "Deep Learning": 32
+    }
+  },
+  {
+    "id": "S025",
+    "name": "Shreya Y.",
+    "verified_skill_scores": {
+      "Python": 14,
+      "SQL": 54,
+      "Data Structures": 62,
+      "Machine Learning": 27,
+      "Statistics": 9,
+      "REST APIs": 42,
+      "Git": 41,
+      "Communication": 82,
+      "System Design": 13,
+      "Cloud (AWS/GCP)": 57,
+      "Testing": 42,
+      "Deep Learning": 88
+    }
+  }
+]

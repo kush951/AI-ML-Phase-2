@@ -1,0 +1,38 @@
+[
+  {
+    "id": "J001",
+    "title": "Junior ML Engineer",
+    "company": "Altrodav Technologies",
+    "thresholds": {
+      "Python": 60,
+      "Machine Learning": 55,
+      "Statistics": 50,
+      "Git": 40,
+      "Communication": 30
+    }
+  },
+  {
+    "id": "J002",
+    "title": "Backend API Developer",
+    "company": "Quickloop Systems",
+    "thresholds": {
+      "Python": 50,
+      "REST APIs": 60,
+      "SQL": 55,
+      "System Design": 40,
+      "Testing": 35
+    }
+  },
+  {
+    "id": "J003",
+    "title": "Senior Data Scientist",
+    "company": "Northbridge Analytics",
+    "thresholds": {
+      "Python": 75,
+      "Machine Learning": 80,
+      "Deep Learning": 65,
+      "Statistics": 75,
+      "Cloud (AWS/GCP)": 50
+    }
+  }
+]

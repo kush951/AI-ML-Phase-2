@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PlaceMux — Match Engine</title>
+<style>
+  :root{
+    --ink:#11151c;
+    --panel:#171c25;
+    --panel-2:#1d2330;
+    --line:#2a3142;
+    --paper:#eef0f4;
+    --muted:#8d95a8;
+    --indigo:#5b6cff;
+    --amber:#f5a623;
+    --good:#39d98a;
+    --bad:#ff6b6b;
+    --mono:'JetBrains Mono','SFMono-Regular',Consolas,monospace;
+    --sans:'Inter','Segoe UI',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--ink);color:var(--paper);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:22px 32px;border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .mark{
+    width:34px;height:34px;border-radius:8px;
+    background:linear-gradient(135deg,var(--indigo),#8d6cff);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-weight:700;font-size:13px;color:#fff;
+  }
+  .brand h1{font-size:16px;margin:0;letter-spacing:.2px}
+  .brand .sub{font-size:12px;color:var(--muted);margin-top:2px}
+  nav{display:flex;gap:4px;background:var(--panel);padding:4px;border-radius:10px;border:1px solid var(--line)}
+  nav button{
+    background:transparent;border:none;color:var(--muted);padding:9px 16px;
+    border-radius:7px;font-size:13px;cursor:pointer;font-family:var(--sans);font-weight:500;
+    transition:all .15s ease;
+  }
+  nav button.active{background:var(--indigo);color:#fff}
+  main{max-width:1080px;margin:0 auto;padding:32px}
+  .view{display:none}
+  .view.active{display:block;animation:fade .25s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+
+  h2{font-size:20px;margin:0 0 4px}
+  .lead{color:var(--muted);font-size:13px;margin-bottom:24px}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+  label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px;font-weight:500}
+  input[type=text]{
+    width:100%;background:var(--panel-2);border:1px solid var(--line);border-radius:7px;
+    padding:10px 12px;color:var(--paper);font-size:13px;font-family:var(--sans);margin-bottom:14px;
+  }
+  input[type=text]:focus{outline:none;border-color:var(--indigo)}
+
+  .skill-row{
+    display:grid;grid-template-columns:170px 1fr 56px;gap:12px;align-items:center;
+    padding:9px 0;border-bottom:1px dashed var(--line);
+  }
+  .skill-row:last-child{border-bottom:none}
+  .skill-row .name{font-size:13px}
+  .skill-row input[type=range]{accent-color:var(--amber);width:100%}
+  .skill-row .lvl{font-family:var(--mono);font-size:13px;text-align:right;color:var(--amber)}
+  .skill-row input[type=checkbox]{accent-color:var(--indigo)}
+
+  .btn{
+    background:var(--indigo);color:#fff;border:none;border-radius:7px;
+    padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--sans);
+  }
+  .btn:hover{filter:brightness(1.08)}
+  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--paper)}
+
+  .jobchip{
+    display:inline-flex;align-items:center;gap:8px;background:var(--panel-2);
+    border:1px solid var(--line);border-radius:999px;padding:7px 14px;margin:0 8px 8px 0;
+    cursor:pointer;font-size:12.5px;
+  }
+  .jobchip.active{border-color:var(--indigo);background:rgba(91,108,255,.12)}
+  .jobchip .co{color:var(--muted)}
+
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{text-align:left;color:var(--muted);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.04em;
+     padding:8px 10px;border-bottom:1px solid var(--line)}
+  td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+
+  .bar-wrap{width:90px;height:6px;background:var(--panel-2);border-radius:4px;overflow:hidden;display:inline-block;vertical-align:middle}
+  .bar{height:100%;background:linear-gradient(90deg,var(--indigo),var(--amber))}
+  .pct{font-family:var(--mono);font-size:12px;margin-left:8px;color:var(--paper)}
+
+  .badge{font-size:11px;padding:3px 8px;border-radius:5px;font-weight:600}
+  .badge.good{background:rgba(57,217,138,.15);color:var(--good)}
+  .badge.bad{background:rgba(255,107,107,.15);color:var(--bad)}
+
+  details{margin-top:4px}
+  summary{cursor:pointer;color:var(--indigo);font-size:12px}
+  .reason{font-size:12px;color:var(--muted);padding:2px 0}
+  .reason.met::before{content:"✓ ";color:var(--good)}
+  .reason.miss::before{content:"✗ ";color:var(--bad)}
+
+  .metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
+  .metric{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .metric .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+  .metric .vals{display:flex;align-items:baseline;gap:10px;margin-top:8px}
+  .metric .v{font-family:var(--mono);font-size:22px;font-weight:600}
+  .metric .v.b{color:var(--muted);font-size:14px}
+  .metric .tag{font-size:10px;color:var(--muted)}
+
+  .note{font-size:12px;color:var(--muted);line-height:1.6;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+  .empty{color:var(--muted);font-size:13px;padding:30px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="mark">PM</div>
+    <div>
+      <h1>PlaceMux Match Engine</h1>
+      <div class="sub">Job Posting with Skill Thresholds · L1–L100</div>
+    </div>
+  </div>
+  <nav>
+    <button class="tab active" data-view="post">Post a Job</button>
+    <button class="tab" data-view="candidates">Candidates</button>
+    <button class="tab" data-view="metrics">Metrics</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- POST A JOB -->
+  <section id="view-post" class="view active">
+    <h2>Post a job gated by skill thresholds</h2>
+    <p class="lead">Set the minimum verified level (L1–L100) a candidate must clear for each skill this role needs. Unchecked skills aren't part of the gate.</p>
+
+    <div class="card grid2">
+      <div>
+        <label>Job title</label>
+        <input type="text" id="jobTitle" placeholder="e.g. Junior ML Engineer" />
+        <label>Company</label>
+        <input type="text" id="jobCompany" placeholder="e.g. Altrodav Technologies" />
+      </div>
+      <div>
+        <label>Required skills &amp; thresholds</label>
+        <div id="skillRows"></div>
+      </div>
+    </div>
+
+    <button class="btn" id="submitJob">Post job</button>
+    <span id="postStatus" style="margin-left:12px;font-size:12.5px;color:var(--muted)"></span>
+  </section>
+
+  <!-- CANDIDATES -->
+  <section id="view-candidates" class="view">
+    <h2>Ranked candidates</h2>
+    <p class="lead">Pick a job to see verified students ranked by match score, with a plain-English reason for every skill checked.</p>
+    <div id="jobChips" class="card"></div>
+    <div id="candidateTable" class="card"></div>
+  </section>
+
+  <!-- METRICS -->
+  <section id="view-metrics" class="view">
+    <h2>Model quality — baseline vs. trained model</h2>
+    <p class="lead">Held-out test data, never seen during training. The baseline is the dumb rule: "match" if a candidate clears ≥70% of required skills.</p>
+    <div class="card">
+      <div class="metric-grid" id="metricGrid"></div>
+      <p class="note" id="metricNote"></p>
+    </div>
+  </section>
+
+</main>
+
+<script>
+const API = '/api';
+let SKILLS = [];
+let JOBS = [];
+let activeJobId = null;
+
+const $ = sel => document.querySelector(sel);
+const $$ = sel => document.querySelectorAll(sel);
+
+// ---- tab switching ----
+$$('.tab').forEach(btn => btn.addEventListener('click', () => {
+  $$('.tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  $$('.view').forEach(v => v.classList.remove('active'));
+  $('#view-' + btn.dataset.view).classList.add('active');
+  if (btn.dataset.view === 'candidates') loadJobChips();
+  if (btn.dataset.view === 'metrics') loadMetrics();
+}));
+
+// ---- post a job ----
+async function init(){
+  const r = await fetch(`${API}/skills`);
+  const d = await r.json();
+  SKILLS = d.skills;
+  renderSkillRows();
+}
+
+function renderSkillRows(){
+  const wrap = $('#skillRows');
+  wrap.innerHTML = '';
+  SKILLS.forEach((skill, i) => {
+    const row = document.createElement('div');
+    row.className = 'skill-row';
+    row.innerHTML = `
+      <span class="name"><input type="checkbox" data-skill="${skill}" class="skill-check" ${i < 4 ? 'checked' : ''}/> ${skill}</span>
+      <input type="range" min="1" max="100" value="50" class="skill-slider" data-skill="${skill}" ${i < 4 ? '' : 'disabled'}/>
+      <span class="lvl" data-skill-lvl="${skill}">L50</span>
+    `;
+    wrap.appendChild(row);
+  });
+  wrap.addEventListener('input', e => {
+    if (e.target.classList.contains('skill-slider')){
+      $(`[data-skill-lvl="${e.target.dataset.skill}"]`).textContent = 'L' + e.target.value;
+    }
+  });
+  wrap.addEventListener('change', e => {
+    if (e.target.classList.contains('skill-check')){
+      const slider = $(`.skill-slider[data-skill="${e.target.dataset.skill}"]`);
+      slider.disabled = !e.target.checked;
+    }
+  });
+}
+
+$('#submitJob').addEventListener('click', async () => {
+  const title = $('#jobTitle').value.trim();
+  const company = $('#jobCompany').value.trim();
+  const thresholds = {};
+  $$('.skill-check:checked').forEach(cb => {
+    const slider = $(`.skill-slider[data-skill="${cb.dataset.skill}"]`);
+    thresholds[cb.dataset.skill] = parseInt(slider.value, 10);
+  });
+  const status = $('#postStatus');
+  if (!title || !company || Object.keys(thresholds).length === 0){
+    status.textContent = 'Add a title, company, and at least one skill threshold.';
+    status.style.color = 'var(--bad)';
+    return;
+  }
+  status.textContent = 'Posting…';
+  status.style.color = 'var(--muted)';
+  const r = await fetch(`${API}/jobs`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({title, company, thresholds})
+  });
+  if (!r.ok){
+    const err = await r.json();
+    status.textContent = (err.detail && err.detail.errors) ? err.detail.errors.join(' ') : 'Could not post job.';
+    status.style.color = 'var(--bad)';
+    return;
+  }
+  const job = await r.json();
+  status.textContent = `Posted "${job.title}" (${job.id}) — view it under Candidates.`;
+  status.style.color = 'var(--good)';
+  await loadJobChips(job.id);
+});
+
+// ---- candidates ----
+async function loadJobChips(selectId){
+  const r = await fetch(`${API}/jobs`);
+  const d = await r.json();
+  JOBS = d.jobs;
+  const wrap = $('#jobChips');
+  wrap.innerHTML = '';
+  JOBS.forEach(job => {
+    const chip = document.createElement('div');
+    chip.className = 'jobchip' + (job.id === (selectId || activeJobId) ? ' active' : '');
+    chip.innerHTML = `${job.title} <span class="co">· ${job.company}</span>`;
+    chip.addEventListener('click', () => { activeJobId = job.id; loadJobChips(job.id); loadCandidates(job.id); });
+    wrap.appendChild(chip);
+  });
+  if (!activeJobId && JOBS.length){ activeJobId = (selectId || JOBS[0].id); }
+  if (activeJobId) loadCandidates(activeJobId);
+}
+
+async function loadCandidates(jobId){
+  const r = await fetch(`${API}/jobs/${jobId}/candidates`);
+  const d = await r.json();
+  const wrap = $('#candidateTable');
+  const thresholdsStr = Object.entries(d.job.thresholds).map(([s,l]) => `${s} ≥ L${l}`).join(' · ');
+
+  let rows = d.candidates.map(c => `
+    <tr>
+      <td><strong>${c.name}</strong><div style="color:var(--muted);font-size:11px">${c.student_id}</div></td>
+      <td>
+        <span class="bar-wrap"><span class="bar" style="width:${c.model_score*100}%"></span></span>
+        <span class="pct">${(c.model_score*100).toFixed(0)}%</span>
+      </td>
+      <td>
+        <span class="bar-wrap"><span class="bar" style="width:${c.baseline_score*100}%;background:var(--muted)"></span></span>
+        <span class="pct">${(c.baseline_score*100).toFixed(0)}%</span>
+      </td>
+      <td>${c.meets_all_thresholds ? '<span class="badge good">Meets all</span>' : '<span class="badge bad">Gaps</span>'}</td>
+      <td>
+        <details>
+          <summary>Why</summary>
+          ${c.reasons_met.map(t => `<div class="reason met">${t}</div>`).join('')}
+          ${c.reasons_missing.map(t => `<div class="reason miss">${t}</div>`).join('')}
+        </details>
+      </td>
+    </tr>
+  `).join('');
+
+  if (!d.candidates.length) rows = `<tr><td colspan="5" class="empty">No candidates yet.</td></tr>`;
+
+  wrap.innerHTML = `
+    <div style="font-size:12px;color:var(--muted);margin-bottom:14px">Gating thresholds — ${thresholdsStr}</div>
+    <table>
+      <thead><tr><th>Candidate</th><th>Model score</th><th>Baseline score</th><th>Status</th><th>Explanation</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+}
+
+// ---- metrics ----
+async function loadMetrics(){
+  const r = await fetch(`${API}/metrics`);
+  const m = await r.json();
+  const grid = $('#metricGrid');
+  const rows = [
+    ['Precision', m.baseline.precision, m.model.precision, 'of predicted matches, how many were actually good'],
+    ['Recall', m.baseline.recall, m.model.recall, 'of actual good matches, how many were caught'],
+    ['False-positive rate', m.baseline.false_positive_rate, m.model.false_positive_rate, 'of non-matches, how many were wrongly flagged'],
+  ];
+  grid.innerHTML = rows.map(([label, base, model]) => `
+    <div class="metric">
+      <div class="label">${label}</div>
+      <div class="vals">
+        <span class="v">${(model*100).toFixed(1)}%</span>
+        <span class="v b">vs ${(base*100).toFixed(1)}% baseline</span>
+      </div>
+    </div>
+  `).join('');
+  $('#metricNote').textContent =
+    `Evaluated on ${m.n_test} held-out (student, job) pairs (trained on ${m.n_train}), never used during training. ` +
+    `Numbers refresh each time the server retrains at startup — see data/experiment_log.csv for the full run history.`;
+}
+
+init();
+</script>
+</body>
+</html>
