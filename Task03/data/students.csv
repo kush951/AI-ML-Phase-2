@@ -1,0 +1,421 @@
+student_id,name,branch,experience_years,graduation_year
+1,Student_0001,CSE,2.6,2025
+2,Student_0002,IT,0.2,2026
+3,Student_0003,Data Science,1.5,2025
+4,Student_0004,Mech,0.6,2027
+5,Student_0005,Data Science,0.4,2027
+6,Student_0006,Mech,0.4,2027
+7,Student_0007,AIML,0.4,2026
+8,Student_0008,IT,0.5,2024
+9,Student_0009,IT,0.7,2026
+10,Student_0010,Data Science,0.2,2027
+11,Student_0011,CSE,1.0,2026
+12,Student_0012,EEE,0.4,2026
+13,Student_0013,Mech,0.3,2025
+14,Student_0014,Data Science,0.0,2025
+15,Student_0015,CSE,2.4,2026
+16,Student_0016,Mech,0.1,2024
+17,Student_0017,AIML,0.2,2024
+18,Student_0018,CSE,0.1,2027
+19,Student_0019,Mech,0.5,2026
+20,Student_0020,Data Science,2.4,2024
+21,Student_0021,Mech,0.7,2025
+22,Student_0022,Mech,0.3,2025
+23,Student_0023,ECE,0.5,2026
+24,Student_0024,EEE,0.3,2024
+25,Student_0025,CSE,0.2,2024
+26,Student_0026,Data Science,2.4,2024
+27,Student_0027,Mech,0.4,2024
+28,Student_0028,EEE,0.3,2026
+29,Student_0029,Data Science,0.3,2026
+30,Student_0030,Civil,0.1,2027
+31,Student_0031,AIML,0.2,2025
+32,Student_0032,EEE,0.8,2026
+33,Student_0033,Data Science,1.6,2024
+34,Student_0034,AIML,0.9,2025
+35,Student_0035,Data Science,0.2,2025
+36,Student_0036,Mech,0.1,2026
+37,Student_0037,CSE,0.1,2026
+38,Student_0038,Mech,1.2,2025
+39,Student_0039,Mech,0.5,2025
+40,Student_0040,Mech,0.6,2027
+41,Student_0041,Civil,0.8,2027
+42,Student_0042,Mech,3.9,2024
+43,Student_0043,Mech,0.1,2024
+44,Student_0044,CSE,0.9,2024
+45,Student_0045,Mech,2.3,2024
+46,Student_0046,Data Science,0.1,2026
+47,Student_0047,Civil,0.1,2027
+48,Student_0048,EEE,0.2,2026
+49,Student_0049,IT,0.3,2027
+50,Student_0050,Mech,3.0,2025
+51,Student_0051,Data Science,0.0,2026
+52,Student_0052,Data Science,1.2,2024
+53,Student_0053,Data Science,1.0,2027
+54,Student_0054,IT,0.2,2025
+55,Student_0055,Mech,1.9,2027
+56,Student_0056,Civil,0.9,2025
+57,Student_0057,Civil,0.4,2027
+58,Student_0058,Mech,1.8,2024
+59,Student_0059,Data Science,1.0,2025
+60,Student_0060,CSE,1.6,2025
+61,Student_0061,EEE,1.0,2026
+62,Student_0062,Mech,1.7,2025
+63,Student_0063,EEE,0.1,2025
+64,Student_0064,Civil,0.3,2025
+65,Student_0065,EEE,0.8,2027
+66,Student_0066,Civil,0.9,2024
+67,Student_0067,ECE,0.5,2027
+68,Student_0068,Mech,0.5,2027
+69,Student_0069,ECE,1.4,2027
+70,Student_0070,ECE,1.9,2025
+71,Student_0071,EEE,1.5,2024
+72,Student_0072,Data Science,1.4,2025
+73,Student_0073,ECE,0.2,2025
+74,Student_0074,CSE,0.9,2025
+75,Student_0075,Mech,0.3,2024
+76,Student_0076,Mech,4.0,2024
+77,Student_0077,CSE,1.9,2027
+78,Student_0078,CSE,0.8,2025
+79,Student_0079,CSE,0.4,2027
+80,Student_0080,EEE,0.7,2025
+81,Student_0081,IT,0.6,2027
+82,Student_0082,Data Science,2.8,2025
+83,Student_0083,EEE,0.6,2025
+84,Student_0084,Data Science,0.7,2025
+85,Student_0085,CSE,2.3,2027
+86,Student_0086,IT,0.4,2027
+87,Student_0087,Civil,0.1,2026
+88,Student_0088,AIML,2.0,2025
+89,Student_0089,AIML,3.5,2025
+90,Student_0090,Civil,0.6,2025
+91,Student_0091,CSE,4.0,2025
+92,Student_0092,Data Science,0.5,2026
+93,Student_0093,EEE,1.4,2026
+94,Student_0094,IT,0.3,2025
+95,Student_0095,AIML,0.4,2027
+96,Student_0096,ECE,0.2,2026
+97,Student_0097,EEE,1.6,2024
+98,Student_0098,Data Science,0.7,2025
+99,Student_0099,AIML,1.0,2026
+100,Student_0100,EEE,1.0,2024
+101,Student_0101,Civil,0.4,2027
+102,Student_0102,IT,0.9,2025
+103,Student_0103,IT,2.0,2026
+104,Student_0104,ECE,4.0,2027
+105,Student_0105,ECE,1.3,2027
+106,Student_0106,Civil,4.0,2026
+107,Student_0107,CSE,1.1,2025
+108,Student_0108,CSE,0.1,2025
+109,Student_0109,EEE,0.3,2026
+110,Student_0110,CSE,0.5,2026
+111,Student_0111,Data Science,1.0,2025
+112,Student_0112,ECE,0.7,2025
+113,Student_0113,ECE,0.3,2026
+114,Student_0114,IT,0.2,2025
+115,Student_0115,Mech,0.9,2025
+116,Student_0116,ECE,0.2,2025
+117,Student_0117,EEE,0.2,2027
+118,Student_0118,EEE,0.2,2025
+119,Student_0119,IT,0.3,2024
+120,Student_0120,AIML,0.6,2026
+121,Student_0121,IT,0.1,2025
+122,Student_0122,Mech,1.1,2025
+123,Student_0123,CSE,0.6,2024
+124,Student_0124,EEE,0.6,2027
+125,Student_0125,EEE,0.3,2026
+126,Student_0126,Civil,0.7,2024
+127,Student_0127,Data Science,2.1,2027
+128,Student_0128,Mech,0.5,2024
+129,Student_0129,ECE,0.1,2026
+130,Student_0130,IT,1.9,2024
+131,Student_0131,Data Science,0.7,2027
+132,Student_0132,CSE,1.6,2027
+133,Student_0133,Data Science,0.1,2025
+134,Student_0134,ECE,0.3,2027
+135,Student_0135,ECE,0.6,2026
+136,Student_0136,Mech,4.0,2025
+137,Student_0137,Mech,0.3,2025
+138,Student_0138,EEE,1.4,2026
+139,Student_0139,Mech,0.3,2025
+140,Student_0140,CSE,0.1,2025
+141,Student_0141,EEE,2.5,2026
+142,Student_0142,Mech,1.8,2024
+143,Student_0143,ECE,3.5,2024
+144,Student_0144,ECE,0.3,2027
+145,Student_0145,Civil,0.2,2027
+146,Student_0146,AIML,0.6,2024
+147,Student_0147,CSE,0.8,2025
+148,Student_0148,Data Science,1.2,2026
+149,Student_0149,Civil,0.4,2025
+150,Student_0150,Mech,0.9,2024
+151,Student_0151,CSE,1.1,2027
+152,Student_0152,Data Science,4.0,2026
+153,Student_0153,IT,4.0,2026
+154,Student_0154,EEE,0.9,2024
+155,Student_0155,CSE,0.5,2027
+156,Student_0156,EEE,0.1,2025
+157,Student_0157,ECE,0.4,2026
+158,Student_0158,Data Science,3.5,2025
+159,Student_0159,Civil,0.7,2025
+160,Student_0160,Mech,0.1,2024
+161,Student_0161,ECE,1.0,2024
+162,Student_0162,AIML,2.8,2025
+163,Student_0163,ECE,3.4,2027
+164,Student_0164,AIML,1.7,2027
+165,Student_0165,CSE,1.3,2025
+166,Student_0166,EEE,0.8,2025
+167,Student_0167,EEE,0.9,2027
+168,Student_0168,Data Science,2.6,2025
+169,Student_0169,ECE,0.2,2027
+170,Student_0170,ECE,0.7,2025
+171,Student_0171,Civil,1.4,2024
+172,Student_0172,IT,0.3,2026
+173,Student_0173,Data Science,0.9,2025
+174,Student_0174,EEE,0.5,2026
+175,Student_0175,AIML,1.4,2024
+176,Student_0176,Mech,0.5,2027
+177,Student_0177,AIML,0.5,2025
+178,Student_0178,ECE,0.3,2025
+179,Student_0179,IT,0.2,2027
+180,Student_0180,Data Science,1.5,2024
+181,Student_0181,ECE,0.0,2024
+182,Student_0182,EEE,0.3,2025
+183,Student_0183,Mech,0.5,2024
+184,Student_0184,Data Science,1.8,2024
+185,Student_0185,ECE,1.4,2025
+186,Student_0186,EEE,0.1,2024
+187,Student_0187,EEE,0.0,2027
+188,Student_0188,ECE,1.7,2024
+189,Student_0189,IT,1.4,2026
+190,Student_0190,AIML,0.3,2027
+191,Student_0191,Civil,2.2,2025
+192,Student_0192,Mech,3.2,2025
+193,Student_0193,ECE,2.6,2025
+194,Student_0194,IT,0.2,2025
+195,Student_0195,CSE,0.4,2026
+196,Student_0196,IT,0.0,2024
+197,Student_0197,Mech,1.0,2026
+198,Student_0198,AIML,0.5,2024
+199,Student_0199,CSE,0.9,2024
+200,Student_0200,ECE,0.8,2024
+201,Student_0201,CSE,3.1,2026
+202,Student_0202,Civil,0.6,2024
+203,Student_0203,AIML,1.4,2026
+204,Student_0204,AIML,1.9,2024
+205,Student_0205,Data Science,1.1,2025
+206,Student_0206,IT,0.2,2027
+207,Student_0207,Data Science,1.6,2024
+208,Student_0208,IT,0.1,2025
+209,Student_0209,Mech,0.6,2024
+210,Student_0210,AIML,0.6,2025
+211,Student_0211,Civil,2.0,2025
+212,Student_0212,Data Science,0.8,2026
+213,Student_0213,ECE,1.3,2025
+214,Student_0214,ECE,0.5,2024
+215,Student_0215,Civil,1.4,2026
+216,Student_0216,Mech,1.2,2025
+217,Student_0217,ECE,0.4,2024
+218,Student_0218,AIML,0.1,2026
+219,Student_0219,AIML,0.0,2027
+220,Student_0220,Mech,0.9,2025
+221,Student_0221,ECE,0.7,2026
+222,Student_0222,EEE,1.2,2027
+223,Student_0223,AIML,1.5,2024
+224,Student_0224,Data Science,0.6,2025
+225,Student_0225,EEE,0.3,2025
+226,Student_0226,IT,0.2,2026
+227,Student_0227,IT,0.2,2025
+228,Student_0228,EEE,1.8,2025
+229,Student_0229,Data Science,2.4,2024
+230,Student_0230,CSE,1.3,2026
+231,Student_0231,ECE,1.8,2026
+232,Student_0232,EEE,0.2,2024
+233,Student_0233,Civil,0.1,2027
+234,Student_0234,IT,0.4,2025
+235,Student_0235,CSE,1.1,2025
+236,Student_0236,IT,0.1,2025
+237,Student_0237,IT,2.0,2026
+238,Student_0238,AIML,1.6,2027
+239,Student_0239,CSE,1.0,2025
+240,Student_0240,ECE,0.0,2026
+241,Student_0241,EEE,2.5,2024
+242,Student_0242,AIML,0.6,2025
+243,Student_0243,Civil,0.0,2027
+244,Student_0244,IT,1.4,2025
+245,Student_0245,Mech,0.9,2025
+246,Student_0246,Mech,0.9,2026
+247,Student_0247,Civil,0.7,2025
+248,Student_0248,CSE,0.8,2025
+249,Student_0249,EEE,0.0,2026
+250,Student_0250,Civil,1.2,2026
+251,Student_0251,Mech,1.2,2026
+252,Student_0252,IT,0.9,2026
+253,Student_0253,IT,0.9,2025
+254,Student_0254,AIML,3.0,2024
+255,Student_0255,EEE,1.2,2025
+256,Student_0256,EEE,0.1,2024
+257,Student_0257,IT,0.2,2027
+258,Student_0258,AIML,0.4,2024
+259,Student_0259,Civil,1.4,2025
+260,Student_0260,ECE,1.0,2027
+261,Student_0261,IT,0.7,2027
+262,Student_0262,EEE,1.1,2027
+263,Student_0263,IT,0.5,2025
+264,Student_0264,Data Science,0.8,2026
+265,Student_0265,CSE,2.7,2026
+266,Student_0266,Civil,4.0,2026
+267,Student_0267,ECE,0.4,2027
+268,Student_0268,CSE,0.1,2024
+269,Student_0269,CSE,1.1,2025
+270,Student_0270,CSE,0.0,2027
+271,Student_0271,IT,0.7,2025
+272,Student_0272,Mech,1.1,2024
+273,Student_0273,EEE,1.8,2026
+274,Student_0274,ECE,0.6,2026
+275,Student_0275,AIML,0.8,2024
+276,Student_0276,Civil,4.0,2026
+277,Student_0277,EEE,0.9,2024
+278,Student_0278,AIML,1.4,2026
+279,Student_0279,CSE,1.8,2027
+280,Student_0280,CSE,0.6,2024
+281,Student_0281,Mech,0.2,2025
+282,Student_0282,CSE,0.0,2026
+283,Student_0283,ECE,1.0,2024
+284,Student_0284,ECE,0.6,2027
+285,Student_0285,ECE,0.0,2026
+286,Student_0286,Data Science,1.2,2027
+287,Student_0287,IT,3.8,2026
+288,Student_0288,EEE,0.2,2024
+289,Student_0289,Data Science,0.7,2026
+290,Student_0290,AIML,0.8,2025
+291,Student_0291,Mech,1.8,2024
+292,Student_0292,Mech,0.4,2027
+293,Student_0293,AIML,0.3,2025
+294,Student_0294,CSE,0.2,2025
+295,Student_0295,Mech,0.0,2027
+296,Student_0296,Data Science,1.0,2024
+297,Student_0297,Civil,2.1,2027
+298,Student_0298,EEE,1.7,2025
+299,Student_0299,Mech,1.1,2026
+300,Student_0300,Civil,1.2,2024
+301,Student_0301,Civil,0.5,2027
+302,Student_0302,Data Science,4.0,2025
+303,Student_0303,AIML,0.8,2026
+304,Student_0304,Data Science,1.8,2025
+305,Student_0305,ECE,0.9,2024
+306,Student_0306,AIML,0.8,2026
+307,Student_0307,ECE,0.1,2024
+308,Student_0308,IT,0.7,2026
+309,Student_0309,ECE,0.0,2025
+310,Student_0310,Data Science,0.8,2024
+311,Student_0311,Data Science,1.7,2025
+312,Student_0312,Mech,0.8,2026
+313,Student_0313,Mech,0.9,2024
+314,Student_0314,IT,0.9,2025
+315,Student_0315,Civil,0.8,2024
+316,Student_0316,CSE,2.4,2025
+317,Student_0317,ECE,0.1,2026
+318,Student_0318,ECE,0.6,2024
+319,Student_0319,Mech,0.9,2027
+320,Student_0320,EEE,1.5,2025
+321,Student_0321,CSE,0.0,2027
+322,Student_0322,ECE,3.7,2024
+323,Student_0323,Civil,2.8,2024
+324,Student_0324,Data Science,0.7,2025
+325,Student_0325,AIML,0.5,2024
+326,Student_0326,EEE,0.7,2024
+327,Student_0327,Mech,0.4,2024
+328,Student_0328,ECE,2.3,2025
+329,Student_0329,CSE,0.9,2025
+330,Student_0330,Mech,1.3,2026
+331,Student_0331,CSE,0.3,2024
+332,Student_0332,AIML,2.0,2027
+333,Student_0333,Civil,1.1,2025
+334,Student_0334,AIML,1.7,2026
+335,Student_0335,ECE,1.9,2025
+336,Student_0336,EEE,0.1,2024
+337,Student_0337,AIML,0.9,2025
+338,Student_0338,Civil,0.1,2025
+339,Student_0339,CSE,2.3,2027
+340,Student_0340,AIML,0.3,2025
+341,Student_0341,Mech,3.2,2026
+342,Student_0342,ECE,1.6,2027
+343,Student_0343,ECE,0.4,2025
+344,Student_0344,AIML,1.1,2027
+345,Student_0345,ECE,1.0,2025
+346,Student_0346,IT,2.0,2027
+347,Student_0347,IT,0.3,2026
+348,Student_0348,Civil,0.3,2025
+349,Student_0349,Mech,0.8,2024
+350,Student_0350,EEE,1.2,2024
+351,Student_0351,CSE,0.8,2027
+352,Student_0352,Mech,0.2,2026
+353,Student_0353,Data Science,0.7,2024
+354,Student_0354,ECE,2.6,2027
+355,Student_0355,IT,0.2,2024
+356,Student_0356,Data Science,0.3,2026
+357,Student_0357,Mech,0.0,2026
+358,Student_0358,Data Science,0.1,2025
+359,Student_0359,EEE,0.3,2026
+360,Student_0360,CSE,0.0,2024
+361,Student_0361,Mech,0.8,2026
+362,Student_0362,IT,0.2,2024
+363,Student_0363,Mech,0.1,2026
+364,Student_0364,Data Science,0.2,2026
+365,Student_0365,Data Science,0.3,2024
+366,Student_0366,ECE,0.5,2026
+367,Student_0367,ECE,0.2,2027
+368,Student_0368,Civil,0.1,2027
+369,Student_0369,Mech,0.2,2027
+370,Student_0370,Data Science,3.1,2027
+371,Student_0371,IT,1.2,2024
+372,Student_0372,ECE,0.3,2027
+373,Student_0373,Data Science,0.7,2027
+374,Student_0374,Data Science,0.2,2026
+375,Student_0375,EEE,0.9,2024
+376,Student_0376,ECE,1.8,2026
+377,Student_0377,ECE,2.3,2025
+378,Student_0378,AIML,0.0,2024
+379,Student_0379,Civil,0.7,2024
+380,Student_0380,EEE,0.8,2024
+381,Student_0381,ECE,2.2,2027
+382,Student_0382,EEE,0.3,2025
+383,Student_0383,Civil,0.5,2026
+384,Student_0384,IT,0.7,2025
+385,Student_0385,EEE,0.5,2026
+386,Student_0386,EEE,0.1,2026
+387,Student_0387,Data Science,2.8,2027
+388,Student_0388,Mech,2.4,2024
+389,Student_0389,EEE,0.8,2027
+390,Student_0390,ECE,1.2,2024
+391,Student_0391,EEE,0.9,2024
+392,Student_0392,Data Science,1.3,2026
+393,Student_0393,Civil,0.3,2026
+394,Student_0394,EEE,0.8,2027
+395,Student_0395,Civil,0.5,2027
+396,Student_0396,IT,0.2,2026
+397,Student_0397,EEE,0.7,2024
+398,Student_0398,EEE,1.9,2025
+399,Student_0399,ECE,3.8,2027
+400,Student_0400,Data Science,3.3,2026
+401,Student_0401,Civil,0.4,2026
+402,Student_0402,CSE,0.0,2026
+403,Student_0403,Civil,0.8,2025
+404,Student_0404,AIML,0.5,2027
+405,Student_0405,IT,0.3,2025
+406,Student_0406,Mech,0.1,2026
+407,Student_0407,AIML,0.3,2027
+408,Student_0408,ECE,4.0,2026
+409,Student_0409,CSE,1.0,2026
+410,Student_0410,AIML,1.2,2025
+411,Student_0411,AIML,1.6,2025
+412,Student_0412,EEE,0.4,2026
+413,Student_0413,Civil,2.9,2024
+414,Student_0414,CSE,4.0,2027
+415,Student_0415,Civil,0.3,2026
+416,Student_0416,Data Science,1.3,2025
+417,Student_0417,AIML,0.2,2027
+418,Student_0418,ECE,1.1,2025
+419,Student_0419,Civil,0.4,2024
+420,Student_0420,Data Science,0.8,2027

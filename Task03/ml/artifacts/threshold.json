@@ -1,0 +1,6 @@
+{
+  "threshold": 0.4406,
+  "selection_method": "max precision on validation subject to recall >= baseline recall on validation",
+  "baseline_val_precision": 0.4884,
+  "baseline_val_recall": 0.0618
+}

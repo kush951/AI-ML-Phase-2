@@ -1,0 +1,5 @@
+timestamp,n_train,n_val,n_test,positive_rate_train,val_accuracy,train_seconds,coef_weighted_skill_coverage,coef_avg_required_skill_score,coef_experience_fit,coef_n_overlapping_skills,coef_skill_count_ratio
+2026-06-20 14:31:49,3528,1176,1176,0.28883219954648526,0.7117,0.17,1.9413,0.694,0.9302,1.0653,-0.2309
+2026-06-20 14:33:14,3528,1176,1176,0.28883219954648526,0.7117,0.17,1.9413,0.694,0.9302,1.0653,-0.2309
+2026-06-20 20:19:22,3528,1176,1176,0.28883219954648526,0.7117,0.34,1.9413,0.694,0.9302,1.0653,-0.2309
+2026-06-20 20:36:37,3528,1176,1176,0.28883219954648526,0.7075,0.397,"{'n_estimators': 100, 'max_depth': 2, 'learning_rate': 0.1, 'subsample': 1.0}",5.78,0.6294,0.196,0.0949,0.0445,0.0352

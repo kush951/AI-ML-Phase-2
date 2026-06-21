@@ -1,0 +1,693 @@
+job_id,skill_name,weight,min_required_score
+1,Django,0.93,70
+1,Node.js,1.0,40
+1,scikit-learn,1.11,40
+1,SQL,1.62,50
+1,DSA,0.83,70
+1,Spark,0.94,40
+1,A/B Testing,1.24,40
+2,React,0.92,40
+2,DSA,0.84,60
+2,TensorFlow,0.9,50
+3,AWS,0.8,50
+3,Docker,0.47,70
+3,Tableau,1.21,60
+3,Node.js,0.98,60
+3,React,0.88,70
+4,scikit-learn,0.58,60
+4,Linux,1.0,40
+4,TensorFlow,1.57,40
+4,Java,1.35,50
+4,Communication,0.62,60
+4,NumPy,1.22,70
+4,Airflow,1.33,60
+5,A/B Testing,1.53,70
+5,Linux,0.7,70
+5,Git,0.91,50
+5,Django,0.7,70
+5,scikit-learn,1.41,40
+5,Python,1.57,40
+6,Spark,1.45,50
+6,TensorFlow,1.29,50
+6,Airflow,1.37,70
+7,Airflow,1.06,50
+7,Python,1.27,40
+7,Git,1.24,40
+8,Go,1.52,60
+8,Tableau,1.49,60
+8,Docker,0.86,40
+9,Linux,1.04,50
+9,TensorFlow,1.08,70
+9,PyTorch,1.27,60
+9,Git,1.39,50
+10,Pandas,1.21,40
+10,AWS,1.05,50
+10,Linux,0.7,60
+10,HTML/CSS,0.74,40
+10,Git,0.99,40
+10,REST APIs,0.84,40
+11,FastAPI,0.77,60
+11,Django,1.3,50
+11,C++,0.67,50
+11,DSA,0.99,50
+11,Kubernetes,0.41,40
+11,REST APIs,0.99,60
+11,A/B Testing,1.14,60
+12,scikit-learn,1.29,60
+12,Excel,0.83,40
+12,Python,0.81,40
+13,C++,0.56,60
+13,REST APIs,0.66,50
+13,React,1.12,50
+14,Tableau,1.11,50
+14,Git,1.38,50
+14,Spring Boot,0.91,40
+14,SQL,0.91,70
+14,Pandas,1.47,40
+15,Docker,0.53,60
+15,AWS,1.19,40
+15,Airflow,1.32,40
+16,TensorFlow,0.96,50
+16,REST APIs,0.8,40
+16,PowerBI,1.19,40
+16,HTML/CSS,0.93,50
+16,Airflow,0.95,40
+16,Go,1.0,40
+17,AWS,0.79,50
+17,Pandas,1.45,50
+17,A/B Testing,0.66,50
+17,JavaScript,0.98,40
+17,Spring Boot,1.18,50
+17,Django,0.52,40
+18,Python,1.09,50
+18,Node.js,0.81,50
+18,DSA,1.11,70
+18,Tableau,1.52,70
+18,scikit-learn,1.36,40
+19,Docker,1.07,50
+19,Go,1.22,70
+19,Linux,0.96,70
+19,REST APIs,0.98,70
+19,Excel,0.81,50
+19,Python,0.3,60
+20,scikit-learn,0.82,60
+20,REST APIs,0.67,70
+20,C++,1.43,40
+20,SQL,0.79,60
+20,Git,0.97,40
+21,Node.js,0.86,50
+21,Git,1.02,50
+21,Communication,0.95,50
+22,scikit-learn,1.03,60
+22,Java,0.5,40
+22,Airflow,1.25,50
+22,React,0.75,60
+22,REST APIs,0.67,50
+22,Excel,1.41,40
+22,C++,0.88,60
+23,Spring Boot,0.97,70
+23,Kubernetes,0.92,70
+23,HTML/CSS,0.87,50
+24,Communication,1.73,40
+24,Spring Boot,1.16,50
+24,Docker,1.53,50
+24,JavaScript,0.54,70
+24,Django,0.58,50
+24,Statistics,0.92,50
+24,HTML/CSS,0.48,70
+25,Pandas,1.19,50
+25,JavaScript,0.67,60
+25,TensorFlow,0.91,60
+25,Airflow,0.9,40
+26,React,1.24,50
+26,PowerBI,1.45,70
+26,scikit-learn,0.88,40
+26,TensorFlow,1.06,40
+26,NumPy,0.7,70
+26,JavaScript,0.66,70
+27,scikit-learn,1.14,40
+27,Docker,1.33,40
+27,FastAPI,0.94,70
+27,REST APIs,0.48,60
+27,TensorFlow,1.28,70
+28,Spark,1.3,70
+28,Django,0.7,70
+28,AWS,0.59,40
+29,Linux,1.1,40
+29,Spring Boot,1.2,50
+29,A/B Testing,1.0,40
+30,Pandas,0.64,60
+30,scikit-learn,1.46,40
+30,PyTorch,1.27,50
+30,TensorFlow,0.91,60
+30,Node.js,1.41,40
+31,NumPy,0.65,70
+31,Kubernetes,0.77,60
+31,REST APIs,0.97,70
+31,Airflow,1.47,60
+31,Docker,1.35,70
+31,Statistics,0.65,60
+31,Django,1.46,50
+32,DSA,0.89,60
+32,PyTorch,0.78,40
+32,Excel,1.02,60
+32,Airflow,0.9,60
+33,PyTorch,1.2,70
+33,A/B Testing,0.86,40
+33,Linux,0.77,60
+33,REST APIs,1.23,60
+34,Node.js,0.82,50
+34,Git,0.7,60
+34,Python,1.7,70
+34,Java,1.08,60
+34,SQL,1.35,60
+34,Kubernetes,0.3,60
+34,HTML/CSS,0.88,60
+35,JavaScript,1.41,60
+35,scikit-learn,1.53,40
+35,HTML/CSS,0.76,70
+35,SQL,0.98,70
+35,A/B Testing,0.9,60
+35,PowerBI,0.91,40
+36,Kubernetes,1.0,70
+36,JavaScript,0.7,50
+36,scikit-learn,1.67,40
+36,Git,1.14,60
+36,Tableau,0.61,60
+36,Linux,1.46,50
+36,Pandas,0.91,70
+37,AWS,0.97,70
+37,NumPy,1.35,50
+37,JavaScript,0.96,60
+38,SQL,0.93,70
+38,React,1.24,50
+38,Tableau,0.93,50
+38,A/B Testing,1.05,40
+39,Linux,0.59,40
+39,Spring Boot,0.97,60
+39,Statistics,0.74,60
+40,NumPy,0.78,70
+40,Tableau,0.75,70
+40,Linux,1.23,70
+40,AWS,1.01,40
+41,Node.js,0.87,70
+41,JavaScript,0.9,60
+41,TensorFlow,1.42,50
+41,Docker,0.57,70
+41,A/B Testing,1.31,40
+41,PowerBI,0.99,70
+42,A/B Testing,1.03,70
+42,DSA,1.43,70
+42,SQL,0.87,40
+42,Django,0.84,60
+43,Spark,1.36,40
+43,PyTorch,1.59,40
+43,NumPy,1.41,50
+43,C++,1.23,70
+44,Statistics,0.3,50
+44,Tableau,0.93,60
+44,Figma,1.14,50
+44,React,1.09,60
+44,FastAPI,1.43,70
+44,Airflow,1.72,70
+44,PowerBI,1.33,50
+45,Kubernetes,1.16,40
+45,Java,0.53,60
+45,Spring Boot,1.48,50
+45,Python,0.87,40
+46,PowerBI,1.1,40
+46,A/B Testing,0.92,40
+46,Java,1.21,60
+46,Spring Boot,1.32,40
+46,Python,0.69,60
+47,A/B Testing,0.77,50
+47,FastAPI,1.21,50
+47,Communication,0.53,50
+48,REST APIs,0.8,50
+48,PyTorch,1.44,50
+48,C++,0.76,70
+48,Node.js,1.03,50
+49,Figma,1.45,70
+49,Excel,1.06,60
+49,DSA,0.92,40
+50,AWS,0.75,70
+50,Communication,0.61,60
+50,A/B Testing,1.04,40
+50,HTML/CSS,0.35,40
+50,C++,1.61,40
+51,Statistics,1.59,70
+51,Java,0.46,40
+51,Python,1.78,60
+51,TensorFlow,1.45,70
+51,NumPy,1.01,70
+51,C++,0.79,50
+52,Linux,1.12,70
+52,Django,1.07,70
+52,Docker,0.89,60
+52,Python,1.01,50
+53,PowerBI,1.26,70
+53,DSA,0.97,60
+53,Tableau,0.79,40
+53,SQL,1.25,40
+53,PyTorch,0.99,50
+53,A/B Testing,0.49,70
+54,NumPy,1.17,60
+54,HTML/CSS,1.31,60
+54,Pandas,0.96,40
+54,Figma,1.13,40
+54,C++,1.17,70
+54,Java,1.17,50
+54,Statistics,1.3,60
+55,Spring Boot,0.58,60
+55,React,1.18,50
+55,C++,0.51,60
+55,Git,1.11,40
+56,Figma,0.89,60
+56,PowerBI,0.77,60
+56,HTML/CSS,0.83,70
+56,Communication,1.13,70
+56,React,0.59,60
+56,Java,0.73,50
+56,Python,1.27,50
+57,Communication,1.36,40
+57,AWS,1.54,70
+57,PowerBI,1.26,60
+57,React,1.08,50
+57,TensorFlow,1.04,70
+58,Kubernetes,1.23,50
+58,PyTorch,1.05,50
+58,Docker,0.59,60
+59,SQL,1.42,40
+59,Node.js,0.97,50
+59,FastAPI,1.19,50
+60,Spring Boot,1.21,70
+60,Tableau,0.83,40
+60,A/B Testing,0.84,70
+60,Go,1.3,70
+60,C++,0.71,70
+61,Communication,1.02,60
+61,React,0.76,70
+61,A/B Testing,1.39,40
+61,SQL,0.79,70
+61,AWS,1.01,50
+61,Java,0.66,40
+62,NumPy,0.97,70
+62,Spring Boot,0.74,60
+62,A/B Testing,1.04,70
+63,Docker,1.16,70
+63,NumPy,0.72,60
+63,Go,0.9,40
+63,Git,1.32,60
+64,Tableau,0.91,40
+64,Linux,0.72,40
+64,Pandas,1.13,60
+64,JavaScript,0.66,50
+65,Spark,0.91,40
+65,Kubernetes,1.5,50
+65,scikit-learn,1.42,50
+65,Statistics,0.69,50
+65,Airflow,1.35,70
+65,REST APIs,1.34,60
+65,Communication,1.17,40
+66,TensorFlow,0.56,60
+66,Kubernetes,1.14,60
+66,NumPy,0.82,60
+66,Git,1.65,50
+66,Tableau,0.78,60
+66,Docker,1.35,60
+67,DSA,1.46,50
+67,C++,1.32,40
+67,Pandas,1.53,70
+67,Python,0.94,50
+68,A/B Testing,1.05,60
+68,TensorFlow,0.82,40
+68,Git,0.96,70
+68,PowerBI,0.99,50
+68,Excel,1.1,40
+69,Spark,1.0,40
+69,Java,0.64,60
+69,JavaScript,0.72,40
+69,Spring Boot,0.92,60
+69,Communication,0.66,60
+69,Django,1.44,60
+69,Python,1.4,60
+70,Django,1.59,60
+70,Go,0.95,70
+70,Linux,1.51,40
+70,FastAPI,0.69,70
+70,AWS,0.69,40
+71,Node.js,1.19,40
+71,Airflow,1.41,60
+71,Excel,0.36,60
+71,JavaScript,1.02,40
+71,Django,0.69,50
+71,Go,1.04,40
+72,PyTorch,1.14,60
+72,Docker,1.19,40
+72,JavaScript,1.21,40
+72,A/B Testing,0.59,50
+72,Tableau,0.74,50
+72,scikit-learn,0.78,70
+72,SQL,0.68,40
+73,FastAPI,1.06,40
+73,Spark,0.97,50
+73,Communication,0.63,60
+73,A/B Testing,0.78,70
+73,Spring Boot,1.11,70
+73,React,1.0,50
+73,SQL,1.17,70
+74,React,0.73,40
+74,FastAPI,0.92,50
+74,DSA,0.43,40
+75,C++,0.93,50
+75,Docker,0.91,60
+75,PowerBI,0.62,60
+75,Tableau,0.96,70
+75,scikit-learn,1.16,70
+75,Communication,1.06,70
+76,TensorFlow,0.71,70
+76,Excel,0.34,50
+76,Spark,1.03,40
+76,NumPy,0.78,50
+76,PyTorch,0.74,40
+76,Linux,0.87,70
+77,FastAPI,0.3,70
+77,Figma,1.23,70
+77,Airflow,0.53,40
+77,Django,1.1,40
+77,Statistics,1.44,60
+78,SQL,0.52,50
+78,TensorFlow,0.88,60
+78,Figma,1.25,40
+78,Excel,1.24,70
+78,DSA,1.06,40
+79,Communication,1.05,60
+79,Statistics,0.83,50
+79,C++,1.29,50
+80,A/B Testing,0.94,50
+80,Node.js,0.6,50
+80,Django,0.94,60
+80,HTML/CSS,0.45,70
+81,Go,0.83,50
+81,Spark,0.98,60
+81,HTML/CSS,0.78,50
+81,Python,0.45,50
+81,C++,0.78,60
+82,A/B Testing,0.96,60
+82,SQL,1.24,70
+82,Node.js,1.13,60
+83,Linux,0.86,40
+83,Python,1.13,40
+83,Tableau,1.52,60
+83,Excel,0.9,50
+84,Git,0.61,50
+84,SQL,0.71,50
+84,PowerBI,0.88,70
+84,Spark,0.82,60
+85,Git,1.21,40
+85,HTML/CSS,1.04,70
+85,PowerBI,1.23,50
+85,Docker,1.05,40
+86,Linux,0.8,40
+86,scikit-learn,1.38,70
+86,Statistics,1.17,50
+86,A/B Testing,1.19,50
+86,Git,0.83,60
+86,Python,1.0,70
+86,AWS,0.94,50
+87,Excel,1.2,40
+87,scikit-learn,1.33,40
+87,DSA,0.86,50
+88,FastAPI,0.99,70
+88,Pandas,1.0,40
+88,Spring Boot,0.68,50
+88,Kubernetes,1.28,60
+88,Linux,1.08,70
+89,Node.js,0.88,70
+89,Excel,0.84,40
+89,HTML/CSS,0.54,60
+89,Linux,1.4,50
+89,FastAPI,1.25,60
+89,Go,1.41,70
+89,React,1.22,70
+90,Figma,1.31,60
+90,Linux,0.89,50
+90,DSA,0.86,70
+90,NumPy,0.99,50
+90,FastAPI,1.54,60
+90,Git,0.88,40
+91,Java,0.43,50
+91,React,0.3,50
+91,Tableau,0.99,50
+91,Airflow,0.98,60
+91,Django,0.84,40
+91,PowerBI,0.67,40
+91,Excel,1.01,50
+92,Airflow,0.96,50
+92,C++,0.79,50
+92,Kubernetes,1.64,40
+92,NumPy,1.06,40
+93,Spring Boot,0.88,60
+93,Java,0.91,60
+93,HTML/CSS,1.16,70
+93,JavaScript,0.44,50
+93,Spark,0.78,70
+93,AWS,1.07,40
+94,HTML/CSS,1.35,50
+94,Python,0.85,50
+94,NumPy,0.85,60
+94,Tableau,0.93,50
+94,TensorFlow,0.91,40
+94,JavaScript,1.03,70
+94,Communication,1.53,60
+95,Communication,1.34,60
+95,Django,0.97,40
+95,PyTorch,0.61,50
+95,TensorFlow,1.05,60
+95,PowerBI,0.38,50
+95,REST APIs,0.9,70
+95,HTML/CSS,0.93,70
+96,REST APIs,0.87,40
+96,FastAPI,0.99,40
+96,Excel,0.82,60
+96,Figma,1.17,70
+96,DSA,1.13,40
+96,Docker,0.3,40
+96,Spark,1.26,50
+97,Node.js,0.39,60
+97,Excel,1.0,60
+97,Spring Boot,0.92,70
+97,A/B Testing,1.16,50
+98,Spark,1.43,50
+98,SQL,1.17,50
+98,Figma,0.57,60
+98,FastAPI,0.98,40
+99,Docker,1.1,60
+99,Django,1.08,60
+99,Airflow,0.94,40
+99,Spring Boot,0.93,70
+99,React,1.65,70
+99,REST APIs,0.93,50
+100,Linux,0.64,70
+100,Excel,0.73,60
+100,Communication,1.43,50
+100,Spark,1.17,70
+100,FastAPI,1.29,50
+101,SQL,0.72,50
+101,DSA,1.21,60
+101,Figma,0.81,40
+101,Spark,1.19,60
+101,Kubernetes,0.69,40
+101,Statistics,1.42,60
+102,Node.js,0.94,40
+102,TensorFlow,1.35,40
+102,Go,1.62,50
+102,PyTorch,1.64,60
+103,Django,0.94,40
+103,REST APIs,1.28,50
+103,Excel,1.3,60
+103,Docker,1.12,40
+103,Git,0.55,70
+103,Python,1.19,50
+103,React,1.37,60
+104,Django,0.67,40
+104,Airflow,0.69,60
+104,PowerBI,0.89,70
+104,Figma,0.99,60
+104,HTML/CSS,0.95,40
+105,SQL,1.21,40
+105,Airflow,1.16,50
+105,DSA,0.76,50
+105,Excel,0.83,50
+105,React,1.26,70
+106,Git,0.86,70
+106,TensorFlow,0.82,70
+106,FastAPI,1.5,40
+106,Pandas,0.6,40
+106,C++,1.24,40
+106,Airflow,1.61,50
+107,Tableau,1.18,60
+107,A/B Testing,0.92,70
+107,TensorFlow,0.49,50
+107,Linux,0.67,50
+107,Go,0.8,60
+107,Pandas,1.04,70
+107,AWS,1.68,70
+108,C++,0.84,40
+108,PyTorch,0.51,50
+108,TensorFlow,0.78,50
+108,Excel,1.33,70
+108,PowerBI,0.84,50
+108,Spring Boot,1.1,40
+108,Pandas,1.23,70
+109,TensorFlow,0.88,50
+109,Tableau,1.38,70
+109,HTML/CSS,1.49,60
+109,Java,0.99,70
+109,SQL,0.88,40
+110,NumPy,0.67,70
+110,FastAPI,1.43,50
+110,Kubernetes,0.95,50
+110,Git,1.19,40
+110,Statistics,1.48,40
+111,Statistics,1.15,60
+111,Docker,0.68,70
+111,Pandas,1.0,70
+111,Spark,0.74,60
+111,Node.js,1.04,60
+111,PowerBI,0.98,70
+112,Excel,0.82,40
+112,Statistics,1.61,60
+112,PowerBI,0.6,60
+112,JavaScript,1.07,70
+112,Figma,1.1,60
+113,Airflow,1.12,60
+113,Node.js,1.04,50
+113,Python,0.63,60
+113,PyTorch,1.35,50
+113,scikit-learn,1.18,70
+113,React,1.47,60
+113,Communication,0.77,60
+114,Excel,1.04,70
+114,PyTorch,1.09,60
+114,Linux,1.16,50
+114,A/B Testing,1.25,60
+114,Go,0.51,60
+114,Airflow,0.58,70
+115,PyTorch,0.84,50
+115,Kubernetes,1.11,40
+115,REST APIs,0.71,70
+116,Kubernetes,0.91,40
+116,HTML/CSS,1.03,70
+116,Java,1.38,60
+117,Linux,1.16,50
+117,C++,1.1,50
+117,NumPy,1.13,70
+117,REST APIs,0.67,60
+118,AWS,1.19,70
+118,PyTorch,0.78,60
+118,Excel,0.7,60
+118,HTML/CSS,0.64,50
+118,DSA,0.94,40
+118,React,1.31,60
+118,TensorFlow,1.18,40
+119,Communication,0.81,70
+119,JavaScript,0.84,60
+119,Statistics,1.0,40
+119,Pandas,1.37,50
+119,A/B Testing,0.95,70
+119,Go,1.4,40
+120,Django,0.97,70
+120,PowerBI,1.22,50
+120,C++,0.75,40
+121,Spark,0.84,60
+121,Linux,0.76,50
+121,Java,0.54,70
+121,PyTorch,1.38,40
+121,Spring Boot,1.26,60
+122,Spring Boot,1.19,40
+122,A/B Testing,0.69,50
+122,Java,1.14,40
+123,TensorFlow,0.96,70
+123,Communication,0.99,60
+123,C++,1.13,40
+124,Go,1.15,70
+124,C++,0.94,60
+124,DSA,1.48,70
+124,Kubernetes,0.65,50
+124,Node.js,1.66,60
+124,FastAPI,1.32,50
+124,Figma,0.66,70
+125,scikit-learn,0.8,60
+125,NumPy,0.95,50
+125,Pandas,1.55,50
+125,Airflow,1.07,50
+125,PowerBI,1.13,40
+126,AWS,1.18,60
+126,PyTorch,1.51,40
+126,REST APIs,0.83,60
+126,Figma,1.33,60
+127,C++,0.89,50
+127,PowerBI,1.02,60
+127,AWS,0.73,70
+127,Node.js,1.0,60
+127,FastAPI,0.95,60
+127,Figma,0.7,50
+127,REST APIs,0.61,60
+128,PyTorch,0.81,60
+128,NumPy,1.53,70
+128,Java,1.27,60
+129,Git,1.02,60
+129,DSA,0.91,70
+129,Node.js,0.87,50
+129,Pandas,1.12,70
+129,Python,1.06,60
+130,FastAPI,1.39,70
+130,Tableau,0.8,40
+130,Go,0.95,60
+130,JavaScript,1.39,40
+130,C++,0.94,60
+130,Spring Boot,1.17,60
+130,Python,0.78,50
+131,Kubernetes,1.08,70
+131,Python,0.65,50
+131,FastAPI,0.9,70
+131,Git,1.14,50
+132,Communication,1.21,40
+132,Tableau,1.12,70
+132,SQL,0.94,60
+132,PyTorch,0.89,60
+133,C++,1.14,40
+133,Pandas,1.47,70
+133,TensorFlow,0.87,40
+134,Statistics,1.33,50
+134,Python,1.17,60
+134,Figma,1.09,60
+134,DSA,1.16,40
+135,Figma,0.76,60
+135,Spring Boot,0.82,70
+135,Docker,1.14,60
+135,PyTorch,0.3,40
+136,Spark,1.16,60
+136,SQL,1.07,60
+136,React,0.77,70
+136,DSA,0.64,70
+137,JavaScript,0.97,40
+137,React,0.53,70
+137,Spring Boot,1.34,70
+138,Linux,1.07,60
+138,TensorFlow,0.9,50
+138,DSA,0.62,60
+138,C++,0.77,70
+138,Django,1.51,70
+138,Go,0.34,70
+139,A/B Testing,1.0,60
+139,Django,0.84,70
+139,TensorFlow,1.09,50
+139,Airflow,1.14,70
+139,Docker,0.86,60
+140,PyTorch,0.41,50
+140,Excel,1.44,40
+140,Git,0.76,70
+140,Kubernetes,1.1,60
+140,JavaScript,1.06,50

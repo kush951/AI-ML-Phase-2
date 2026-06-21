@@ -1,0 +1,441 @@
+{
+  "generated_at": "2026-06-20 20:20:50",
+  "test_set_size": 1176,
+  "note": "All metrics computed on a held-out test split never used for training or model selection.",
+  "overall": {
+    "model": {
+      "threshold": 0.5,
+      "precision": 0.6119,
+      "recall": 0.1206,
+      "f1": 0.2015,
+      "false_positive_rate": 0.0311,
+      "accuracy": 0.7236,
+      "roc_auc": 0.6784,
+      "pr_auc": 0.4844,
+      "confusion_matrix": {
+        "tp": 41,
+        "fp": 26,
+        "tn": 810,
+        "fn": 299
+      },
+      "n": 1176,
+      "positive_rate": 0.2891
+    },
+    "baseline": {
+      "threshold": 0.5,
+      "precision": 0.6222,
+      "recall": 0.0824,
+      "f1": 0.1455,
+      "false_positive_rate": 0.0203,
+      "accuracy": 0.7202,
+      "roc_auc": 0.6686,
+      "pr_auc": 0.4519,
+      "confusion_matrix": {
+        "tp": 28,
+        "fp": 17,
+        "tn": 819,
+        "fn": 312
+      },
+      "n": 1176,
+      "positive_rate": 0.2891
+    }
+  },
+  "ranking_quality_job_ranking_for_students": {
+    "model": {
+      "ndcg@5": 0.8308,
+      "ndcg@10": 0.835,
+      "precision@5": 0.2892,
+      "precision@10": 0.1472,
+      "map@10": 0.769
+    },
+    "baseline": {
+      "ndcg@5": 0.8192,
+      "ndcg@10": 0.8273,
+      "precision@5": 0.2866,
+      "precision@10": 0.1472,
+      "map@10": 0.7596
+    },
+    "n_students_evaluated": 231,
+    "definition": "Grouped by student_id: for each student, were the jobs that are true good-matches ranked near the top of the list shown to them? Students with zero positive-label jobs in the test split are excluded (ranking is undefined with no relevant item)."
+  },
+  "ranking_quality_candidate_ranking_for_companies": {
+    "model": {
+      "ndcg@5": 0.6574,
+      "ndcg@10": 0.7532,
+      "precision@5": 0.3845,
+      "precision@10": 0.2574,
+      "map@10": 0.6382
+    },
+    "baseline": {
+      "ndcg@5": 0.6588,
+      "ndcg@10": 0.7576,
+      "precision@5": 0.3783,
+      "precision@10": 0.2566,
+      "map@10": 0.6469
+    },
+    "n_jobs_evaluated": 129,
+    "definition": "Grouped by job_id: for each job, were the candidates who are true good-matches ranked near the top of the candidate list shown to the company?"
+  },
+  "ranking_quality_by_job_category": {
+    "model": {
+      "ndcg@5": 0.696,
+      "ndcg@10": 0.6002,
+      "precision@5": 0.675,
+      "precision@10": 0.55,
+      "map@10": 0.7391
+    },
+    "baseline": {
+      "ndcg@5": 0.6558,
+      "ndcg@10": 0.6361,
+      "precision@5": 0.6,
+      "precision@10": 0.6,
+      "map@10": 0.7269
+    },
+    "n_queries_evaluated": 8,
+    "definition": "Secondary cut: rows grouped by job category instead of individual student/job, as a coarser sanity check."
+  },
+  "segment_breakdown_by_job_category": {
+    "Backend Engineer": {
+      "model": {
+        "threshold": 0.5,
+        "precision": 0.3333,
+        "recall": 0.0357,
+        "f1": 0.0645,
+        "false_positive_rate": 0.0238,
+        "accuracy": 0.7411,
+        "roc_auc": 0.6212,
+        "pr_auc": 0.321,
+        "confusion_matrix": {
+          "tp": 1,
+          "fp": 2,
+          "tn": 82,
+          "fn": 27
+        },
+        "n": 112,
+        "positive_rate": 0.25
+      },
+      "baseline": {
+        "threshold": 0.5,
+        "precision": 0.3333,
+        "recall": 0.0357,
+        "f1": 0.0645,
+        "false_positive_rate": 0.0238,
+        "accuracy": 0.7411,
+        "roc_auc": 0.595,
+        "pr_auc": 0.3331,
+        "confusion_matrix": {
+          "tp": 1,
+          "fp": 2,
+          "tn": 82,
+          "fn": 27
+        },
+        "n": 112,
+        "positive_rate": 0.25
+      }
+    },
+    "Data Analyst": {
+      "model": {
+        "threshold": 0.5,
+        "precision": 0.875,
+        "recall": 0.1591,
+        "f1": 0.2692,
+        "false_positive_rate": 0.0097,
+        "accuracy": 0.7415,
+        "roc_auc": 0.7229,
+        "pr_auc": 0.6078,
+        "confusion_matrix": {
+          "tp": 7,
+          "fp": 1,
+          "tn": 102,
+          "fn": 37
+        },
+        "n": 147,
+        "positive_rate": 0.2993
+      },
+      "baseline": {
+        "threshold": 0.5,
+        "precision": 0.875,
+        "recall": 0.1591,
+        "f1": 0.2692,
+        "false_positive_rate": 0.0097,
+        "accuracy": 0.7415,
+        "roc_auc": 0.731,
+        "pr_auc": 0.5459,
+        "confusion_matrix": {
+          "tp": 7,
+          "fp": 1,
+          "tn": 102,
+          "fn": 37
+        },
+        "n": 147,
+        "positive_rate": 0.2993
+      }
+    },
+    "DevOps": {
+      "model": {
+        "threshold": 0.5,
+        "precision": 0.5625,
+        "recall": 0.1154,
+        "f1": 0.1915,
+        "false_positive_rate": 0.0361,
+        "accuracy": 0.7206,
+        "roc_auc": 0.685,
+        "pr_auc": 0.4767,
+        "confusion_matrix": {
+          "tp": 9,
+          "fp": 7,
+          "tn": 187,
+          "fn": 69
+        },
+        "n": 272,
+        "positive_rate": 0.2868
+      },
+      "baseline": {
+        "threshold": 0.5,
+        "precision": 0.6667,
+        "recall": 0.0769,
+        "f1": 0.1379,
+        "false_positive_rate": 0.0155,
+        "accuracy": 0.7243,
+        "roc_auc": 0.6702,
+        "pr_auc": 0.4335,
+        "confusion_matrix": {
+          "tp": 6,
+          "fp": 3,
+          "tn": 191,
+          "fn": 72
+        },
+        "n": 272,
+        "positive_rate": 0.2868
+      }
+    },
+    "Frontend Engineer": {
+      "model": {
+        "threshold": 0.5,
+        "precision": 0.625,
+        "recall": 0.1429,
+        "f1": 0.2326,
+        "false_positive_rate": 0.0353,
+        "accuracy": 0.725,
+        "roc_auc": 0.6968,
+        "pr_auc": 0.5574,
+        "confusion_matrix": {
+          "tp": 5,
+          "fp": 3,
+          "tn": 82,
+          "fn": 30
+        },
+        "n": 120,
+        "positive_rate": 0.2917
+      },
+      "baseline": {
+        "threshold": 0.5,
+        "precision": 0.4,
+        "recall": 0.0571,
+        "f1": 0.1,
+        "false_positive_rate": 0.0353,
+        "accuracy": 0.7,
+        "roc_auc": 0.6968,
+        "pr_auc": 0.5277,
+        "confusion_matrix": {
+          "tp": 2,
+          "fp": 3,
+          "tn": 82,
+          "fn": 33
+        },
+        "n": 120,
+        "positive_rate": 0.2917
+      }
+    },
+    "Full Stack": {
+      "model": {
+        "threshold": 0.5,
+        "precision": 0.7,
+        "recall": 0.1707,
+        "f1": 0.2745,
+        "false_positive_rate": 0.03,
+        "accuracy": 0.7376,
+        "roc_auc": 0.6833,
+        "pr_auc": 0.5374,
+        "confusion_matrix": {
+          "tp": 7,
+          "fp": 3,
+          "tn": 97,
+          "fn": 34
+        },
+        "n": 141,
+        "positive_rate": 0.2908
+      },
+      "baseline": {
+        "threshold": 0.5,
+        "precision": 0.5714,
+        "recall": 0.0976,
+        "f1": 0.1667,
+        "false_positive_rate": 0.03,
+        "accuracy": 0.7163,
+        "roc_auc": 0.6718,
+        "pr_auc": 0.4692,
+        "confusion_matrix": {
+          "tp": 4,
+          "fp": 3,
+          "tn": 97,
+          "fn": 37
+        },
+        "n": 141,
+        "positive_rate": 0.2908
+      }
+    },
+    "ML Engineer": {
+      "model": {
+        "threshold": 0.5,
+        "precision": 0.5714,
+        "recall": 0.1143,
+        "f1": 0.1905,
+        "false_positive_rate": 0.0326,
+        "accuracy": 0.7323,
+        "roc_auc": 0.7266,
+        "pr_auc": 0.5057,
+        "confusion_matrix": {
+          "tp": 4,
+          "fp": 3,
+          "tn": 89,
+          "fn": 31
+        },
+        "n": 127,
+        "positive_rate": 0.2756
+      },
+      "baseline": {
+        "threshold": 0.5,
+        "precision": 0.6667,
+        "recall": 0.0571,
+        "f1": 0.1053,
+        "false_positive_rate": 0.0109,
+        "accuracy": 0.7323,
+        "roc_auc": 0.7335,
+        "pr_auc": 0.4933,
+        "confusion_matrix": {
+          "tp": 2,
+          "fp": 1,
+          "tn": 91,
+          "fn": 33
+        },
+        "n": 127,
+        "positive_rate": 0.2756
+      }
+    },
+    "Product Analyst": {
+      "model": {
+        "threshold": 0.5,
+        "precision": 0.375,
+        "recall": 0.075,
+        "f1": 0.125,
+        "false_positive_rate": 0.0649,
+        "accuracy": 0.641,
+        "roc_auc": 0.6071,
+        "pr_auc": 0.4415,
+        "confusion_matrix": {
+          "tp": 3,
+          "fp": 5,
+          "tn": 72,
+          "fn": 37
+        },
+        "n": 117,
+        "positive_rate": 0.3419
+      },
+      "baseline": {
+        "threshold": 0.5,
+        "precision": 0.3333,
+        "recall": 0.05,
+        "f1": 0.087,
+        "false_positive_rate": 0.0519,
+        "accuracy": 0.641,
+        "roc_auc": 0.6016,
+        "pr_auc": 0.4082,
+        "confusion_matrix": {
+          "tp": 2,
+          "fp": 4,
+          "tn": 73,
+          "fn": 38
+        },
+        "n": 117,
+        "positive_rate": 0.3419
+      }
+    },
+    "QA/Test": {
+      "model": {
+        "threshold": 0.5,
+        "precision": 0.7143,
+        "recall": 0.1282,
+        "f1": 0.2174,
+        "false_positive_rate": 0.0198,
+        "accuracy": 0.7429,
+        "roc_auc": 0.6471,
+        "pr_auc": 0.4722,
+        "confusion_matrix": {
+          "tp": 5,
+          "fp": 2,
+          "tn": 99,
+          "fn": 34
+        },
+        "n": 140,
+        "positive_rate": 0.2786
+      },
+      "baseline": {
+        "threshold": 0.5,
+        "precision": 1.0,
+        "recall": 0.1026,
+        "f1": 0.186,
+        "false_positive_rate": 0.0,
+        "accuracy": 0.75,
+        "roc_auc": 0.6217,
+        "pr_auc": 0.441,
+        "confusion_matrix": {
+          "tp": 4,
+          "fp": 0,
+          "tn": 101,
+          "fn": 35
+        },
+        "n": 140,
+        "positive_rate": 0.2786
+      }
+    }
+  },
+  "calibration": [
+    {
+      "bucket": "0.0-0.2",
+      "n": 283,
+      "mean_predicted": 0.176,
+      "actual_positive_rate": 0.173
+    },
+    {
+      "bucket": "0.2-0.4",
+      "n": 709,
+      "mean_predicted": 0.278,
+      "actual_positive_rate": 0.278
+    },
+    {
+      "bucket": "0.4-0.6",
+      "n": 156,
+      "mean_predicted": 0.466,
+      "actual_positive_rate": 0.474
+    },
+    {
+      "bucket": "0.6-0.8",
+      "n": 27,
+      "mean_predicted": 0.668,
+      "actual_positive_rate": 0.704
+    },
+    {
+      "bucket": "0.8-1.0",
+      "n": 1,
+      "mean_predicted": 0.867,
+      "actual_positive_rate": 1.0
+    }
+  ],
+  "improvement_over_baseline": {
+    "precision_delta": -0.0103,
+    "recall_delta": 0.0382,
+    "false_positive_rate_delta": 0.0108,
+    "roc_auc_delta": 0.0098
+  }
+}

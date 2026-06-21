@@ -1,0 +1,141 @@
+job_id,company_id,title,category,min_experience_years,openings
+1,16,DevOps (Job 1),DevOps,0.3,3
+2,22,Data Analyst (Job 2),Data Analyst,0.7,5
+3,19,Full Stack (Job 3),Full Stack,0.0,1
+4,4,DevOps (Job 4),DevOps,2.5,3
+5,46,DevOps (Job 5),DevOps,2.2,4
+6,16,DevOps (Job 6),DevOps,2.1,5
+7,17,ML Engineer (Job 7),ML Engineer,0.6,1
+8,14,DevOps (Job 8),DevOps,0.0,1
+9,52,Product Analyst (Job 9),Product Analyst,0.1,4
+10,40,Full Stack (Job 10),Full Stack,0.0,2
+11,2,Product Analyst (Job 11),Product Analyst,0.4,5
+12,29,Data Analyst (Job 12),Data Analyst,0.3,5
+13,54,Full Stack (Job 13),Full Stack,0.2,5
+14,54,Frontend Engineer (Job 14),Frontend Engineer,0.1,3
+15,59,Data Analyst (Job 15),Data Analyst,1.7,5
+16,19,Data Analyst (Job 16),Data Analyst,1.3,3
+17,40,QA/Test (Job 17),QA/Test,0.6,1
+18,32,QA/Test (Job 18),QA/Test,1.2,3
+19,55,Product Analyst (Job 19),Product Analyst,0.2,4
+20,17,ML Engineer (Job 20),ML Engineer,0.5,3
+21,31,QA/Test (Job 21),QA/Test,0.3,4
+22,46,DevOps (Job 22),DevOps,0.2,1
+23,39,QA/Test (Job 23),QA/Test,0.8,1
+24,15,Full Stack (Job 24),Full Stack,1.1,2
+25,11,Frontend Engineer (Job 25),Frontend Engineer,0.6,4
+26,34,DevOps (Job 26),DevOps,1.6,3
+27,43,Frontend Engineer (Job 27),Frontend Engineer,2.8,3
+28,44,Full Stack (Job 28),Full Stack,0.7,4
+29,35,Full Stack (Job 29),Full Stack,1.1,4
+30,36,ML Engineer (Job 30),ML Engineer,0.6,5
+31,53,DevOps (Job 31),DevOps,0.1,2
+32,59,DevOps (Job 32),DevOps,0.5,4
+33,47,Product Analyst (Job 33),Product Analyst,0.1,2
+34,24,QA/Test (Job 34),QA/Test,0.2,3
+35,12,DevOps (Job 35),DevOps,0.8,3
+36,60,DevOps (Job 36),DevOps,0.3,1
+37,40,Data Analyst (Job 37),Data Analyst,0.6,5
+38,59,Frontend Engineer (Job 38),Frontend Engineer,0.2,2
+39,9,Data Analyst (Job 39),Data Analyst,0.8,2
+40,24,DevOps (Job 40),DevOps,3.0,4
+41,46,Backend Engineer (Job 41),Backend Engineer,0.5,3
+42,52,Data Analyst (Job 42),Data Analyst,0.3,3
+43,54,DevOps (Job 43),DevOps,0.4,3
+44,51,QA/Test (Job 44),QA/Test,0.3,4
+45,22,Full Stack (Job 45),Full Stack,1.1,5
+46,36,Frontend Engineer (Job 46),Frontend Engineer,0.4,1
+47,1,Frontend Engineer (Job 47),Frontend Engineer,1.9,1
+48,25,Product Analyst (Job 48),Product Analyst,1.6,5
+49,16,Full Stack (Job 49),Full Stack,0.4,1
+50,54,Backend Engineer (Job 50),Backend Engineer,0.6,3
+51,48,Backend Engineer (Job 51),Backend Engineer,0.6,5
+52,35,Data Analyst (Job 52),Data Analyst,0.3,5
+53,22,DevOps (Job 53),DevOps,0.5,2
+54,52,DevOps (Job 54),DevOps,0.1,1
+55,23,Backend Engineer (Job 55),Backend Engineer,1.1,5
+56,56,ML Engineer (Job 56),ML Engineer,0.6,2
+57,59,Product Analyst (Job 57),Product Analyst,0.7,3
+58,2,Backend Engineer (Job 58),Backend Engineer,2.0,3
+59,34,Frontend Engineer (Job 59),Frontend Engineer,0.1,1
+60,2,Frontend Engineer (Job 60),Frontend Engineer,1.0,3
+61,5,QA/Test (Job 61),QA/Test,0.6,5
+62,16,Backend Engineer (Job 62),Backend Engineer,0.4,5
+63,33,Frontend Engineer (Job 63),Frontend Engineer,0.4,1
+64,10,DevOps (Job 64),DevOps,1.6,3
+65,12,Full Stack (Job 65),Full Stack,0.1,4
+66,40,QA/Test (Job 66),QA/Test,0.4,1
+67,36,Product Analyst (Job 67),Product Analyst,0.4,3
+68,32,Data Analyst (Job 68),Data Analyst,0.7,1
+69,57,ML Engineer (Job 69),ML Engineer,1.8,1
+70,37,Full Stack (Job 70),Full Stack,0.1,1
+71,14,DevOps (Job 71),DevOps,0.9,4
+72,16,Product Analyst (Job 72),Product Analyst,1.4,1
+73,4,ML Engineer (Job 73),ML Engineer,0.9,4
+74,25,DevOps (Job 74),DevOps,0.1,5
+75,14,DevOps (Job 75),DevOps,0.9,1
+76,45,Data Analyst (Job 76),Data Analyst,0.2,1
+77,23,QA/Test (Job 77),QA/Test,0.3,4
+78,45,Full Stack (Job 78),Full Stack,0.5,1
+79,27,DevOps (Job 79),DevOps,1.6,4
+80,39,DevOps (Job 80),DevOps,1.3,4
+81,41,DevOps (Job 81),DevOps,0.9,4
+82,50,Backend Engineer (Job 82),Backend Engineer,2.4,4
+83,28,DevOps (Job 83),DevOps,0.1,3
+84,26,Backend Engineer (Job 84),Backend Engineer,0.8,1
+85,21,DevOps (Job 85),DevOps,1.8,4
+86,42,DevOps (Job 86),DevOps,0.3,4
+87,18,Data Analyst (Job 87),Data Analyst,0.2,4
+88,53,ML Engineer (Job 88),ML Engineer,0.1,2
+89,22,Full Stack (Job 89),Full Stack,0.3,1
+90,48,Backend Engineer (Job 90),Backend Engineer,1.3,3
+91,9,ML Engineer (Job 91),ML Engineer,0.1,5
+92,18,ML Engineer (Job 92),ML Engineer,0.2,4
+93,46,DevOps (Job 93),DevOps,0.0,1
+94,47,Data Analyst (Job 94),Data Analyst,1.1,1
+95,5,QA/Test (Job 95),QA/Test,0.2,3
+96,4,QA/Test (Job 96),QA/Test,0.6,4
+97,14,Data Analyst (Job 97),Data Analyst,0.7,5
+98,59,Full Stack (Job 98),Full Stack,2.7,2
+99,42,Product Analyst (Job 99),Product Analyst,0.5,3
+100,42,ML Engineer (Job 100),ML Engineer,1.1,1
+101,30,ML Engineer (Job 101),ML Engineer,0.8,2
+102,1,DevOps (Job 102),DevOps,0.7,2
+103,54,Full Stack (Job 103),Full Stack,0.9,4
+104,15,Product Analyst (Job 104),Product Analyst,0.3,2
+105,12,DevOps (Job 105),DevOps,0.9,1
+106,49,Backend Engineer (Job 106),Backend Engineer,0.6,3
+107,3,Data Analyst (Job 107),Data Analyst,0.1,5
+108,8,Full Stack (Job 108),Full Stack,0.7,5
+109,16,Data Analyst (Job 109),Data Analyst,1.4,5
+110,6,DevOps (Job 110),DevOps,0.8,5
+111,23,ML Engineer (Job 111),ML Engineer,0.3,4
+112,54,DevOps (Job 112),DevOps,0.1,4
+113,47,Backend Engineer (Job 113),Backend Engineer,0.7,5
+114,10,DevOps (Job 114),DevOps,1.1,5
+115,54,Data Analyst (Job 115),Data Analyst,1.7,1
+116,57,Frontend Engineer (Job 116),Frontend Engineer,0.4,1
+117,42,QA/Test (Job 117),QA/Test,1.0,5
+118,59,Backend Engineer (Job 118),Backend Engineer,1.1,3
+119,24,Product Analyst (Job 119),Product Analyst,0.1,4
+120,46,QA/Test (Job 120),QA/Test,1.0,5
+121,13,DevOps (Job 121),DevOps,1.4,4
+122,29,Frontend Engineer (Job 122),Frontend Engineer,0.8,3
+123,45,ML Engineer (Job 123),ML Engineer,0.9,1
+124,4,Full Stack (Job 124),Full Stack,1.2,2
+125,8,Frontend Engineer (Job 125),Frontend Engineer,0.7,3
+126,11,Frontend Engineer (Job 126),Frontend Engineer,1.2,3
+127,44,QA/Test (Job 127),QA/Test,1.9,5
+128,56,QA/Test (Job 128),QA/Test,1.2,4
+129,34,Backend Engineer (Job 129),Backend Engineer,1.9,2
+130,1,Frontend Engineer (Job 130),Frontend Engineer,0.1,4
+131,34,Full Stack (Job 131),Full Stack,1.1,1
+132,17,ML Engineer (Job 132),ML Engineer,0.7,5
+133,47,Data Analyst (Job 133),Data Analyst,0.3,1
+134,9,Product Analyst (Job 134),Product Analyst,0.7,3
+135,52,Frontend Engineer (Job 135),Frontend Engineer,1.1,2
+136,45,Product Analyst (Job 136),Product Analyst,0.4,4
+137,14,QA/Test (Job 137),QA/Test,0.4,3
+138,31,QA/Test (Job 138),QA/Test,1.0,5
+139,11,Backend Engineer (Job 139),Backend Engineer,2.9,2
+140,17,DevOps (Job 140),DevOps,0.2,5
