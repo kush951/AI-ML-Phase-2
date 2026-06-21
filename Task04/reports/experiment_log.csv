@@ -1,0 +1,6 @@
+accuracy,precision,recall,f1,false_positive_rate,roc_auc,model,train_seconds
+0.815,0.859,0.7139,0.7798,0.0993,0.8486,logistic_regression,0.021
+0.8163,0.8548,0.7221,0.7829,0.1039,0.8456,random_forest,0.88
+0.8187,0.8581,0.7248,0.7858,0.1016,0.8408,gradient_boosting,0.852
+0.8113,0.86,0.703,0.7736,0.097,0.8339,knn,0.041
+0.8163,0.8548,0.7221,0.7829,0.1039,0.8211,svm_rbf,1.262

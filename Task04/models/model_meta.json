@@ -1,0 +1,98 @@
+{
+  "best_model_name": "logistic_regression",
+  "needs_scaling": true,
+  "feature_cols": [
+    "domain_match",
+    "required_overlap_count",
+    "required_overlap_ratio",
+    "nice_overlap_count",
+    "nice_overlap_ratio",
+    "avg_required_skill_score",
+    "min_required_skill_score",
+    "meets_min_score_threshold",
+    "years_experience",
+    "min_years_required",
+    "years_gap",
+    "verified_skill_breadth"
+  ],
+  "validation_metrics": [
+    {
+      "accuracy": 0.815,
+      "precision": 0.859,
+      "recall": 0.7139,
+      "f1": 0.7798,
+      "false_positive_rate": 0.0993,
+      "roc_auc": 0.8486,
+      "model": "logistic_regression",
+      "train_seconds": 0.021,
+      "selection_score": 0.82108
+    },
+    {
+      "accuracy": 0.8163,
+      "precision": 0.8548,
+      "recall": 0.7221,
+      "f1": 0.7829,
+      "false_positive_rate": 0.1039,
+      "roc_auc": 0.8456,
+      "model": "random_forest",
+      "train_seconds": 0.88,
+      "selection_score": 0.8205200000000001
+    },
+    {
+      "accuracy": 0.8187,
+      "precision": 0.8581,
+      "recall": 0.7248,
+      "f1": 0.7858,
+      "false_positive_rate": 0.1016,
+      "roc_auc": 0.8408,
+      "model": "gradient_boosting",
+      "train_seconds": 0.852,
+      "selection_score": 0.8188
+    },
+    {
+      "accuracy": 0.8113,
+      "precision": 0.86,
+      "recall": 0.703,
+      "f1": 0.7736,
+      "false_positive_rate": 0.097,
+      "roc_auc": 0.8339,
+      "model": "knn",
+      "train_seconds": 0.041,
+      "selection_score": 0.8097799999999999
+    },
+    {
+      "accuracy": 0.8163,
+      "precision": 0.8548,
+      "recall": 0.7221,
+      "f1": 0.7829,
+      "false_positive_rate": 0.1039,
+      "roc_auc": 0.8211,
+      "model": "svm_rbf",
+      "train_seconds": 1.262,
+      "selection_score": 0.80582
+    }
+  ],
+  "baseline_validation_metrics": {
+    "accuracy": 0.7025,
+    "precision": 0.9329,
+    "recall": 0.3787,
+    "f1": 0.5388,
+    "false_positive_rate": 0.0231
+  },
+  "test_metrics_best_model": {
+    "accuracy": 0.805,
+    "precision": 0.8505,
+    "recall": 0.6975,
+    "f1": 0.7665,
+    "false_positive_rate": 0.1039,
+    "roc_auc": 0.8308
+  },
+  "test_metrics_baseline": {
+    "accuracy": 0.6787,
+    "precision": 0.9044,
+    "recall": 0.3351,
+    "f1": 0.4891,
+    "false_positive_rate": 0.03
+  },
+  "selection_rule": "0.6*ROC_AUC + 0.4*F1 on validation set, test set touched once at the end"
+}

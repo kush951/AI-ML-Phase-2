@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PlaceMux · Explainable Match Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F2E9;
+    --paper-dim:#EDE7D8;
+    --ink:#1C2430;
+    --ink-soft:#5B6472;
+    --rule:#D8D0BC;
+    --verified:#0F6B5C;
+    --verified-soft:#E4F0EC;
+    --weak:#9C3B3B;
+    --weak-soft:#F5E7E5;
+    --amber:#B8702A;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    background-image:
+      linear-gradient(var(--rule) 1px, transparent 1px);
+    background-size: 100% 32px;
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    min-height:100vh;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 24px 80px;}
+
+  header.masthead{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:3px double var(--ink);
+    padding-bottom:14px; margin-bottom:26px;
+  }
+  .masthead-left{display:flex; align-items:baseline; gap:14px;}
+  .wordmark{
+    font-family:'Zilla Slab', serif; font-weight:700; font-size:30px;
+    letter-spacing:-0.01em;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace; font-size:11px;
+    letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft);
+  }
+  .model-badge{
+    font-family:'IBM Plex Mono', monospace; font-size:12px;
+    border:1px solid var(--ink); padding:6px 10px; border-radius:2px;
+    display:flex; gap:10px; align-items:center;
+  }
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--verified);display:inline-block;}
+
+  .console{
+    display:grid; grid-template-columns: 260px 1fr; gap:24px;
+  }
+  @media (max-width: 860px){ .console{grid-template-columns: 1fr;} }
+
+  .rail{
+    background:var(--card); border:1px solid var(--rule); border-radius:4px;
+    padding:18px; align-self:start; position:sticky; top:20px;
+  }
+  .rail h3{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; text-transform:uppercase;
+    letter-spacing:0.1em; color:var(--ink-soft); margin:0 0 12px;
+    border-bottom:1px solid var(--rule); padding-bottom:8px;
+  }
+  .field{margin-bottom:16px;}
+  .field label{display:block; font-size:12px; color:var(--ink-soft); margin-bottom:6px;}
+  select, button.tab{
+    width:100%; font-family:'Inter', sans-serif; font-size:14px;
+    padding:9px 10px; border:1px solid var(--ink); border-radius:2px;
+    background:var(--paper); color:var(--ink);
+  }
+  .mode-tabs{display:flex; flex-direction:column; gap:6px;}
+  button.tab{cursor:pointer; text-align:left; background:var(--card);}
+  button.tab.active{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+  button.go{
+    width:100%; margin-top:6px; padding:11px; border:none; border-radius:2px;
+    background:var(--verified); color:white; font-weight:600; cursor:pointer;
+    font-family:'Inter', sans-serif; font-size:14px;
+  }
+  button.go:hover{background:#0c5547;}
+  .hint{font-size:11.5px; color:var(--ink-soft); margin-top:10px; line-height:1.5;}
+
+  .panel{min-height:420px;}
+
+  /* ---- stamp / match card (signature element) ---- */
+  .match-card{
+    background:var(--card); border:1px solid var(--rule); border-radius:4px;
+    padding:26px; display:grid; grid-template-columns: 150px 1fr; gap:24px;
+    margin-bottom:18px;
+  }
+  @media (max-width:600px){ .match-card{grid-template-columns:1fr;} }
+  .stamp{
+    width:128px; height:128px; border-radius:50%;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    border:3px solid var(--verified); color:var(--verified);
+    transform:rotate(-7deg);
+    font-family:'Zilla Slab', serif;
+    position:relative;
+  }
+  .stamp::before, .stamp::after{
+    content:""; position:absolute; inset:6px; border:1px solid currentColor; border-radius:50%; opacity:0.5;
+  }
+  .stamp.weak{border-color:var(--weak); color:var(--weak);}
+  .stamp .score{font-size:30px; font-weight:700; font-family:'IBM Plex Mono', monospace;}
+  .stamp .label{font-size:11px; letter-spacing:0.08em; text-transform:uppercase; margin-top:2px;}
+
+  .match-meta h2{font-family:'Zilla Slab', serif; margin:0 0 4px; font-size:21px;}
+  .match-meta .pair-id{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); margin-bottom:10px;}
+  .explanation-sentence{font-size:14.5px; line-height:1.6; color:var(--ink);}
+
+  /* ---- contribution ledger ---- */
+  .ledger{
+    background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:20px 22px;
+  }
+  .ledger h3{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; text-transform:uppercase;
+    letter-spacing:0.1em; color:var(--ink-soft); margin:0 0 14px;
+  }
+  .ledger-row{display:grid; grid-template-columns: 230px 1fr 56px; gap:10px; align-items:center; padding:7px 0; border-bottom:1px dashed var(--rule);}
+  .ledger-row:last-child{border-bottom:none;}
+  .ledger-label{font-size:13px;}
+  .ledger-bar-track{position:relative; height:14px; background:var(--paper-dim); border-radius:2px; overflow:hidden;}
+  .ledger-bar{position:absolute; top:0; bottom:0; }
+  .ledger-bar.pos{background:var(--verified); left:50%;}
+  .ledger-bar.neg{background:var(--weak); right:50%;}
+  .ledger-mid{position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--ink-soft); opacity:0.4;}
+  .ledger-val{font-family:'IBM Plex Mono', monospace; font-size:12px; text-align:right;}
+
+  /* ---- shortlist table ---- */
+  table.shortlist{width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--rule); border-radius:4px; overflow:hidden;}
+  table.shortlist th{
+    font-family:'IBM Plex Mono', monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.08em;
+    text-align:left; color:var(--ink-soft); padding:10px 14px; border-bottom:2px solid var(--ink); background:var(--paper-dim);
+  }
+  table.shortlist td{padding:11px 14px; border-bottom:1px solid var(--rule); font-size:13.5px; vertical-align:top;}
+  table.shortlist tr:last-child td{border-bottom:none;}
+  .rank-no{font-family:'IBM Plex Mono', monospace; color:var(--ink-soft);}
+  .score-chip{
+    font-family:'IBM Plex Mono', monospace; font-weight:600; padding:3px 8px; border-radius:2px; font-size:12.5px;
+    display:inline-block;
+  }
+  .score-chip.good{background:var(--verified-soft); color:var(--verified);}
+  .score-chip.weak{background:var(--weak-soft); color:var(--weak);}
+  .why-cell{color:var(--ink-soft); max-width:420px;}
+
+  /* ---- model bake-off ---- */
+  .bakeoff{margin-top:34px;}
+  .bakeoff h2, .segment h2{
+    font-family:'Zilla Slab', serif; font-size:19px; margin:0 0 4px;
+  }
+  .section-note{font-size:12.5px; color:var(--ink-soft); margin-bottom:14px;}
+  table.bakeoff-table{width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--rule); border-radius:4px;}
+  table.bakeoff-table th{
+    font-family:'IBM Plex Mono', monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.06em;
+    padding:10px 12px; border-bottom:2px solid var(--ink); background:var(--paper-dim); text-align:left;
+  }
+  table.bakeoff-table td{padding:9px 12px; border-bottom:1px solid var(--rule); font-family:'IBM Plex Mono', monospace; font-size:12.5px;}
+  tr.winner td{background:var(--verified-soft); font-weight:600;}
+  tr.baseline td{font-style:italic; color:var(--ink-soft);}
+  .winner-tag{background:var(--verified); color:white; font-family:'Inter'; font-size:10px; padding:2px 6px; border-radius:10px; margin-left:6px; letter-spacing:0.04em;}
+
+  .segment{margin-top:30px;}
+  .seg-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px;}
+  .seg-card{background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:14px 16px;}
+  .seg-card h4{margin:0 0 8px; font-family:'Zilla Slab', serif; font-size:15px;}
+  .seg-stat{display:flex; justify-content:space-between; font-size:12px; font-family:'IBM Plex Mono', monospace; margin-bottom:3px; color:var(--ink-soft);}
+  .seg-stat b{color:var(--ink); font-weight:600;}
+
+  .empty{color:var(--ink-soft); font-size:13.5px; padding:60px 20px; text-align:center; border:1px dashed var(--rule); border-radius:4px; background:var(--card);}
+  .api-warning{
+    background:var(--weak-soft); color:var(--weak); border:1px solid var(--weak);
+    padding:10px 14px; border-radius:4px; font-size:12.5px; margin-bottom:18px; display:none;
+  }
+  footer{margin-top:50px; padding-top:16px; border-top:1px solid var(--rule); font-size:11.5px; color:var(--ink-soft); font-family:'IBM Plex Mono', monospace;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="masthead-left">
+      <div class="wordmark">PlaceMux</div>
+      <div class="eyebrow">Explainable Match Console</div>
+    </div>
+    <div class="model-badge" id="modelBadge"><span class="dot"></span> loading model…</div>
+  </header>
+
+  <div class="api-warning" id="apiWarning">
+    Can't reach the API at <code id="apiBaseLabel"></code>. Start it with:
+    <code>uvicorn src.api:app --reload --port 8000</code> from the project root, then reload this page.
+  </div>
+
+  <div class="console">
+    <aside class="rail">
+      <h3>Verify a match</h3>
+      <div class="mode-tabs" style="margin-bottom:16px;">
+        <button class="tab active" data-mode="single">Single match</button>
+        <button class="tab" data-mode="shortlist">Job shortlist</button>
+      </div>
+
+      <div class="field" id="studentField">
+        <label for="studentSelect">Student</label>
+        <select id="studentSelect"></select>
+      </div>
+      <div class="field">
+        <label for="jobSelect">Job</label>
+        <select id="jobSelect"></select>
+      </div>
+      <button class="go" id="goBtn">Run verification</button>
+      <div class="hint">This explains a real prediction from the trained model — match score, plain-English reasons, and the numeric SHAP contribution behind each one.</div>
+    </aside>
+
+    <main class="panel" id="panel">
+      <div class="empty">Pick a student and job, then run a verification.</div>
+    </main>
+  </div>
+
+  <section class="bakeoff">
+    <h2>Model bake-off</h2>
+    <div class="section-note">Five model families trained on the same split, evaluated on a held-out validation set. Selection rule: 0.6 × ROC-AUC + 0.4 × F1 — declared before looking at the test set.</div>
+    <div id="bakeoffTable"></div>
+  </section>
+
+  <section class="segment">
+    <h2>Held-out test performance, by job domain</h2>
+    <div class="section-note">No single accuracy number — broken out so a hidden weak spot in one domain can't hide behind a good overall average.</div>
+    <div class="seg-grid" id="segmentGrid"></div>
+  </section>
+
+  <footer>PlaceMux · Phase 2 Industry Immersion · Task 4 — Applications & Shortlisting · Explainability layer</footer>
+</div>
+
+<script>
+const API_BASE = "http://localhost:8000";
+let metaCache = null;
+
+async function apiGet(path){
+  const res = await fetch(API_BASE + path);
+  if(!res.ok) throw new Error(await res.text());
+  return res.json();
+}
+
+function pct(x){ return (x*100).toFixed(1) + "%"; }
+
+async function checkApi(){
+  try{
+    const h = await apiGet("/health");
+    document.getElementById("modelBadge").innerHTML =
+      `<span class="dot"></span> model: <b>${h.model.replace(/_/g," ")}</b>`;
+    document.getElementById("apiWarning").style.display = "none";
+    return true;
+  }catch(e){
+    document.getElementById("apiBaseLabel").textContent = API_BASE;
+    document.getElementById("apiWarning").style.display = "block";
+    return false;
+  }
+}
+
+async function loadSelectors(){
+  const [students, jobs] = await Promise.all([apiGet("/students?limit=120"), apiGet("/jobs?limit=120")]);
+  const sSel = document.getElementById("studentSelect");
+  const jSel = document.getElementById("jobSelect");
+  sSel.innerHTML = students.map(s => `<option value="${s.student_id}">${s.student_id} — ${s.domain} (${s.skills.length} skills)</option>`).join("");
+  jSel.innerHTML = jobs.map(j => `<option value="${j.job_id}">${j.job_id} — ${j.domain} (${j.required_skills.length} required)</option>`).join("");
+}
+
+function ledgerRow(factor){
+  const magnitude = Math.min(Math.abs(factor.impact) * 220, 50); // visual scale
+  const barHtml = factor.impact >= 0
+    ? `<div class="ledger-bar pos" style="width:${magnitude}%"></div>`
+    : `<div class="ledger-bar neg" style="width:${magnitude}%"></div>`;
+  return `
+    <div class="ledger-row">
+      <div class="ledger-label">${factor.label}<br><span style="color:var(--ink-soft); font-size:11px;">value: ${factor.value}</span></div>
+      <div class="ledger-bar-track">${barHtml}<div class="ledger-mid"></div></div>
+      <div class="ledger-val" style="color:${factor.impact>=0?'var(--verified)':'var(--weak)'}">${factor.impact>=0?'+':''}${factor.impact}</div>
+    </div>`;
+}
+
+function renderSingleMatch(result, sid, jid){
+  const isGood = result.prediction === "GOOD MATCH";
+  const panel = document.getElementById("panel");
+  panel.innerHTML = `
+    <div class="match-card">
+      <div class="stamp ${isGood?'':'weak'}">
+        <div class="score">${result.match_score}</div>
+        <div class="label">${result.prediction}</div>
+      </div>
+      <div class="match-meta">
+        <h2>${sid} → ${jid}</h2>
+        <div class="pair-id">model: ${result.model_used.replace(/_/g," ")} &middot; SHAP-explained</div>
+        <div class="explanation-sentence">${result.explanation}</div>
+      </div>
+    </div>
+    <div class="ledger">
+      <h3>Contribution ledger — what moved the score</h3>
+      ${result.all_factors.map(ledgerRow).join("")}
+    </div>
+  `;
+}
+
+function renderShortlist(rows, jid){
+  const panel = document.getElementById("panel");
+  panel.innerHTML = `
+    <table class="shortlist">
+      <thead><tr><th>#</th><th>Student</th><th>Score</th><th>Why</th></tr></thead>
+      <tbody>
+        ${rows.map((r,i) => `
+          <tr>
+            <td class="rank-no">${i+1}</td>
+            <td><b>${r.student_id}</b></td>
+            <td><span class="score-chip ${r.prediction==='GOOD MATCH'?'good':'weak'}">${r.match_score}</span></td>
+            <td class="why-cell">${r.explanation}</td>
+          </tr>`).join("")}
+      </tbody>
+    </table>
+  `;
+}
+
+async function runVerification(){
+  const mode = document.querySelector(".tab.active").dataset.mode;
+  const jid = document.getElementById("jobSelect").value;
+  const panel = document.getElementById("panel");
+  panel.innerHTML = `<div class="empty">Running model + SHAP explanation…</div>`;
+  try{
+    if(mode === "single"){
+      const sid = document.getElementById("studentSelect").value;
+      const result = await apiGet(`/match/${sid}/${jid}`);
+      renderSingleMatch(result, sid, jid);
+    } else {
+      const rows = await apiGet(`/shortlist/${jid}?top_n=12`);
+      renderShortlist(rows, jid);
+    }
+  }catch(e){
+    panel.innerHTML = `<div class="empty">Couldn't reach the API. Check it's running on ${API_BASE}.</div>`;
+  }
+}
+
+function renderBakeoff(meta){
+  const rows = [...meta.validation_metrics].sort((a,b)=>b.selection_score - a.selection_score);
+  const best = meta.best_model_name;
+  let html = `<table class="bakeoff-table">
+    <thead><tr><th>Model</th><th>Precision</th><th>Recall</th><th>F1</th><th>FPR</th><th>ROC-AUC</th></tr></thead><tbody>`;
+  html += `<tr class="baseline"><td>Baseline (skill-overlap rule)</td>
+    <td>${meta.baseline_validation_metrics.precision}</td>
+    <td>${meta.baseline_validation_metrics.recall}</td>
+    <td>${meta.baseline_validation_metrics.f1}</td>
+    <td>${meta.baseline_validation_metrics.false_positive_rate}</td>
+    <td>—</td></tr>`;
+  rows.forEach(r => {
+    const isWinner = r.model === best;
+    html += `<tr class="${isWinner ? 'winner':''}">
+      <td>${r.model.replace(/_/g," ")} ${isWinner ? '<span class="winner-tag">SELECTED</span>' : ''}</td>
+      <td>${r.precision}</td><td>${r.recall}</td><td>${r.f1}</td><td>${r.false_positive_rate}</td><td>${r.roc_auc}</td>
+    </tr>`;
+  });
+  html += `</tbody></table>
+  <div class="section-note" style="margin-top:10px;">Held-out test (touched once): ${best.replace(/_/g," ")} — accuracy ${pct(meta.test_metrics_best_model.accuracy)}, F1 ${meta.test_metrics_best_model.f1}, ROC-AUC ${meta.test_metrics_best_model.roc_auc} vs. baseline accuracy ${pct(meta.test_metrics_baseline.accuracy)}, F1 ${meta.test_metrics_baseline.f1}.</div>`;
+  document.getElementById("bakeoffTable").innerHTML = html;
+}
+
+async function renderSegments(){
+  const seg = await apiGet("/metrics/segments");
+  const grid = document.getElementById("segmentGrid");
+  grid.innerHTML = seg.map(s => `
+    <div class="seg-card">
+      <h4>${s.domain} <span style="color:var(--ink-soft); font-weight:400; font-size:12px;">(n=${s.n})</span></h4>
+      <div class="seg-stat"><span>Accuracy</span><b>${pct(s.accuracy)}</b></div>
+      <div class="seg-stat"><span>Precision</span><b>${s.precision}</b></div>
+      <div class="seg-stat"><span>Recall</span><b>${s.recall}</b></div>
+      <div class="seg-stat"><span>False positive rate</span><b>${s.false_positive_rate}</b></div>
+    </div>`).join("");
+}
+
+document.querySelectorAll(".tab").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("studentField").style.display = btn.dataset.mode === "single" ? "block" : "none";
+  });
+});
+document.getElementById("goBtn").addEventListener("click", runVerification);
+
+(async function init(){
+  const ok = await checkApi();
+  if(!ok) return;
+  await loadSelectors();
+  metaCache = await apiGet("/metrics");
+  renderBakeoff(metaCache);
+  renderSegments();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1934 @@
+[
+  {
+    "job_id": "J0001",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Project Management",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "CRM Tools",
+      "Financial Modeling",
+      "SQL"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0002",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Negotiation",
+      "Presentation",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Excel"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0003",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Data Visualization",
+      "SQL",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "Scikit-learn"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0004",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Deep Learning",
+      "MLOps",
+      "Pandas",
+      "SQL",
+      "Scikit-learn"
+    ],
+    "nice_to_have_skills": [
+      "Data Visualization",
+      "Python"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0005",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "CRM Tools",
+      "Market Research",
+      "Negotiation",
+      "Project Management"
+    ],
+    "nice_to_have_skills": [
+      "Excel",
+      "Presentation",
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0006",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Git",
+      "JavaScript",
+      "Python",
+      "REST APIs"
+    ],
+    "nice_to_have_skills": [
+      "Linux",
+      "SQL",
+      "System Design"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0007",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Design Systems",
+      "Figma",
+      "Typography",
+      "User Testing"
+    ],
+    "nice_to_have_skills": [
+      "Prototyping",
+      "UI Design"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0008",
+    "domain": "Software",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Data Structures",
+      "Java"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0009",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Data Visualization",
+      "Python",
+      "SQL",
+      "Scikit-learn"
+    ],
+    "nice_to_have_skills": [
+      "Pandas"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0010",
+    "domain": "Data/AI",
+    "required_skills": [
+      "NLP",
+      "Pandas",
+      "Python",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Deep Learning",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0011",
+    "domain": "Software",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Linux",
+      "Python",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "JavaScript",
+      "System Design"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0012",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Market Research",
+      "Presentation",
+      "Project Management",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics",
+      "SQL"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0013",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "UI Design",
+      "UX Research"
+    ],
+    "nice_to_have_skills": [
+      "Figma",
+      "User Testing"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0014",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Data Visualization",
+      "NLP",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "MLOps",
+      "Python"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0015",
+    "domain": "Software",
+    "required_skills": [
+      "Git",
+      "Java",
+      "JavaScript",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Python"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0016",
+    "domain": "Design",
+    "required_skills": [
+      "Figma",
+      "UX Research",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "Adobe XD",
+      "Typography"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0017",
+    "domain": "Software",
+    "required_skills": [
+      "Docker",
+      "Java",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Linux"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0018",
+    "domain": "Design",
+    "required_skills": [
+      "Design Systems",
+      "Figma",
+      "Typography",
+      "UI Design",
+      "User Testing"
+    ],
+    "nice_to_have_skills": [
+      "Prototyping"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0019",
+    "domain": "Design",
+    "required_skills": [
+      "Figma",
+      "Prototyping",
+      "Typography",
+      "User Testing",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "Visual Design"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0020",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Market Research",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "CRM Tools"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0021",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "JavaScript",
+      "Linux",
+      "REST APIs",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Git"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0022",
+    "domain": "Software",
+    "required_skills": [
+      "Docker",
+      "Git",
+      "Linux",
+      "REST APIs",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Python"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0023",
+    "domain": "Software",
+    "required_skills": [
+      "Git",
+      "Linux",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Data Structures",
+      "JavaScript",
+      "System Design"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0024",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "UI Design",
+      "UX Research",
+      "User Testing"
+    ],
+    "nice_to_have_skills": [
+      "Design Systems"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0025",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Figma",
+      "Prototyping",
+      "Typography"
+    ],
+    "nice_to_have_skills": [
+      "Visual Design"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0026",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Figma",
+      "Prototyping",
+      "User Testing"
+    ],
+    "nice_to_have_skills": [
+      "UI Design",
+      "Wireframing"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0027",
+    "domain": "Software",
+    "required_skills": [
+      "Java",
+      "Linux",
+      "Python",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "System Design"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0028",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Java",
+      "JavaScript",
+      "REST APIs",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "System Design"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0029",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "JavaScript",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Docker",
+      "Python",
+      "SQL"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0030",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Docker",
+      "Java",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Python"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0031",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Data Visualization",
+      "Deep Learning",
+      "MLOps",
+      "NLP",
+      "Pandas"
+    ],
+    "nice_to_have_skills": [
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0032",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Excel",
+      "Market Research"
+    ],
+    "nice_to_have_skills": [
+      "Project Management"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0033",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "CRM Tools",
+      "Excel",
+      "Market Research",
+      "Presentation"
+    ],
+    "nice_to_have_skills": [
+      "Financial Modeling",
+      "Stakeholder Management"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0034",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Design Systems",
+      "Typography",
+      "User Testing",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "UX Research"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0035",
+    "domain": "Design",
+    "required_skills": [
+      "Prototyping",
+      "UI Design",
+      "User Testing",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "Adobe XD",
+      "UX Research"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0036",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Machine Learning",
+      "NLP",
+      "SQL",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "Pandas"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0037",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Excel",
+      "Presentation",
+      "Project Management"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0038",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Deep Learning",
+      "Pandas",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "Python"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0039",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Deep Learning",
+      "NLP",
+      "Pandas",
+      "Python",
+      "Scikit-learn"
+    ],
+    "nice_to_have_skills": [
+      "Data Visualization",
+      "MLOps",
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0040",
+    "domain": "Design",
+    "required_skills": [
+      "Figma",
+      "Prototyping",
+      "UX Research",
+      "User Testing"
+    ],
+    "nice_to_have_skills": [
+      "Visual Design"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0041",
+    "domain": "Business",
+    "required_skills": [
+      "Financial Modeling",
+      "Presentation",
+      "Project Management"
+    ],
+    "nice_to_have_skills": [
+      "SQL"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0042",
+    "domain": "Business",
+    "required_skills": [
+      "Excel",
+      "Financial Modeling",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "CRM Tools",
+      "Market Research"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0043",
+    "domain": "Business",
+    "required_skills": [
+      "Excel",
+      "Negotiation",
+      "Project Management",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics",
+      "Market Research",
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0044",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Data Visualization",
+      "SQL",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "MLOps",
+      "Python"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0045",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Market Research",
+      "Negotiation",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Excel",
+      "Financial Modeling",
+      "Presentation"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0046",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Financial Modeling",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "CRM Tools",
+      "Market Research",
+      "Negotiation"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0047",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Java",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "JavaScript",
+      "Linux",
+      "Python"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0048",
+    "domain": "Data/AI",
+    "required_skills": [
+      "MLOps",
+      "SQL",
+      "Scikit-learn"
+    ],
+    "nice_to_have_skills": [
+      "Deep Learning",
+      "Python"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0049",
+    "domain": "Business",
+    "required_skills": [
+      "Financial Modeling",
+      "Market Research",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Presentation",
+      "Project Management"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0050",
+    "domain": "Business",
+    "required_skills": [
+      "Excel",
+      "Market Research",
+      "Negotiation"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics",
+      "CRM Tools",
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0051",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "CRM Tools",
+      "Financial Modeling",
+      "Negotiation",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Excel",
+      "Project Management"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0052",
+    "domain": "Design",
+    "required_skills": [
+      "Design Systems",
+      "Figma",
+      "Typography",
+      "UI Design",
+      "User Testing"
+    ],
+    "nice_to_have_skills": [
+      "Adobe XD"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0053",
+    "domain": "Software",
+    "required_skills": [
+      "Docker",
+      "Git",
+      "Java",
+      "Linux",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "JavaScript",
+      "REST APIs",
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0054",
+    "domain": "Business",
+    "required_skills": [
+      "Excel",
+      "Negotiation",
+      "Project Management",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics",
+      "SQL"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0055",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Prototyping",
+      "User Testing",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "Figma",
+      "Typography",
+      "Visual Design"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0056",
+    "domain": "Design",
+    "required_skills": [
+      "Design Systems",
+      "Typography",
+      "User Testing",
+      "Visual Design",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "Adobe XD"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0057",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Machine Learning",
+      "Python",
+      "SQL",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "Data Visualization",
+      "Scikit-learn"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0058",
+    "domain": "Design",
+    "required_skills": [
+      "Design Systems",
+      "Figma",
+      "Prototyping",
+      "UI Design"
+    ],
+    "nice_to_have_skills": [
+      "User Testing",
+      "Visual Design",
+      "Wireframing"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0059",
+    "domain": "Business",
+    "required_skills": [
+      "Financial Modeling",
+      "Negotiation",
+      "Project Management",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "CRM Tools",
+      "Excel",
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0060",
+    "domain": "Business",
+    "required_skills": [
+      "Excel",
+      "Market Research",
+      "Negotiation",
+      "Presentation"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics",
+      "Financial Modeling",
+      "Project Management"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0061",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Market Research",
+      "Presentation",
+      "Project Management"
+    ],
+    "nice_to_have_skills": [
+      "Negotiation"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0062",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Docker",
+      "Git",
+      "Java",
+      "JavaScript"
+    ],
+    "nice_to_have_skills": [
+      "Python",
+      "System Design"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0063",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "MLOps",
+      "Machine Learning"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0064",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Design Systems",
+      "Prototyping",
+      "UX Research",
+      "Visual Design"
+    ],
+    "nice_to_have_skills": [
+      "Typography",
+      "User Testing"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0065",
+    "domain": "Software",
+    "required_skills": [
+      "Docker",
+      "JavaScript",
+      "Python",
+      "REST APIs",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Java",
+      "Linux",
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0066",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Docker",
+      "Git",
+      "Java",
+      "Python"
+    ],
+    "nice_to_have_skills": [
+      "Linux",
+      "System Design"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0067",
+    "domain": "Software",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Linux",
+      "Python"
+    ],
+    "nice_to_have_skills": [
+      "Docker",
+      "JavaScript",
+      "System Design"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0068",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "CRM Tools",
+      "Market Research",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Financial Modeling",
+      "Negotiation"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0069",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Linux",
+      "Python",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Git",
+      "Java",
+      "JavaScript"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0070",
+    "domain": "Data/AI",
+    "required_skills": [
+      "MLOps",
+      "Machine Learning",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Data Visualization",
+      "Deep Learning"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0071",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Git",
+      "JavaScript",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Java",
+      "Python"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0072",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Deep Learning",
+      "Python",
+      "Scikit-learn"
+    ],
+    "nice_to_have_skills": [
+      "Machine Learning",
+      "SQL",
+      "Statistics"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0073",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Git",
+      "Linux",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "REST APIs"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0074",
+    "domain": "Business",
+    "required_skills": [
+      "Market Research",
+      "Negotiation",
+      "Presentation",
+      "Project Management"
+    ],
+    "nice_to_have_skills": [
+      "Financial Modeling",
+      "SQL"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0075",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Deep Learning",
+      "Pandas",
+      "Python",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "Data Visualization",
+      "SQL"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0076",
+    "domain": "Data/AI",
+    "required_skills": [
+      "MLOps",
+      "NLP",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "Python",
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0077",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Excel",
+      "Market Research",
+      "Presentation",
+      "Project Management"
+    ],
+    "nice_to_have_skills": [
+      "Financial Modeling",
+      "Negotiation",
+      "Stakeholder Management"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0078",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Excel",
+      "Financial Modeling",
+      "Presentation",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Negotiation"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0079",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Excel",
+      "Presentation",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics",
+      "Financial Modeling"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0080",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Design Systems",
+      "Prototyping",
+      "Typography",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "Figma"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0081",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "CRM Tools",
+      "Excel",
+      "Presentation",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Financial Modeling",
+      "Negotiation",
+      "Project Management"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0082",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Typography",
+      "UI Design",
+      "User Testing",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "Figma",
+      "Prototyping"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0083",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Design Systems",
+      "Typography",
+      "User Testing",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "Figma",
+      "Prototyping",
+      "UX Research"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0084",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Data Visualization",
+      "Deep Learning",
+      "NLP",
+      "Pandas",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "MLOps"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0085",
+    "domain": "Software",
+    "required_skills": [
+      "Java",
+      "Linux",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Git",
+      "REST APIs",
+      "System Design"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0086",
+    "domain": "Business",
+    "required_skills": [
+      "Excel",
+      "Financial Modeling",
+      "Project Management",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics",
+      "Negotiation",
+      "Presentation"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0087",
+    "domain": "Business",
+    "required_skills": [
+      "Excel",
+      "Financial Modeling",
+      "Presentation",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "CRM Tools",
+      "Negotiation",
+      "Stakeholder Management"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0088",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "CRM Tools",
+      "Negotiation",
+      "Project Management"
+    ],
+    "nice_to_have_skills": [
+      "Stakeholder Management"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0089",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Design Systems",
+      "Prototyping",
+      "Typography",
+      "Visual Design"
+    ],
+    "nice_to_have_skills": [
+      "UX Research"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0090",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Excel",
+      "Presentation",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Financial Modeling",
+      "Negotiation",
+      "Project Management"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0091",
+    "domain": "Software",
+    "required_skills": [
+      "Docker",
+      "JavaScript",
+      "Linux",
+      "Python",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Git",
+      "REST APIs"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0092",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Deep Learning",
+      "MLOps",
+      "Scikit-learn"
+    ],
+    "nice_to_have_skills": [
+      "Machine Learning",
+      "NLP"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0093",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Excel",
+      "Market Research",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Project Management"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0094",
+    "domain": "Business",
+    "required_skills": [
+      "Presentation",
+      "Project Management",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "CRM Tools",
+      "Financial Modeling",
+      "Market Research"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0095",
+    "domain": "Data/AI",
+    "required_skills": [
+      "NLP",
+      "SQL",
+      "Scikit-learn"
+    ],
+    "nice_to_have_skills": [
+      "MLOps",
+      "Machine Learning"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0096",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "CRM Tools",
+      "Negotiation",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Project Management"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0097",
+    "domain": "Software",
+    "required_skills": [
+      "Python",
+      "REST APIs",
+      "SQL",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Docker",
+      "Git"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0098",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Deep Learning",
+      "Python",
+      "Scikit-learn"
+    ],
+    "nice_to_have_skills": [
+      "MLOps",
+      "Machine Learning",
+      "Statistics"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0099",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Data Visualization",
+      "Pandas",
+      "SQL",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "Deep Learning",
+      "MLOps",
+      "NLP"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0100",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Market Research",
+      "Project Management"
+    ],
+    "nice_to_have_skills": [
+      "Excel",
+      "Financial Modeling",
+      "SQL"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0101",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Prototyping",
+      "Typography",
+      "UI Design",
+      "UX Research"
+    ],
+    "nice_to_have_skills": [
+      "Design Systems",
+      "User Testing",
+      "Wireframing"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0102",
+    "domain": "Software",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Java",
+      "Linux"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0103",
+    "domain": "Business",
+    "required_skills": [
+      "Business Analytics",
+      "Excel",
+      "Market Research",
+      "Presentation"
+    ],
+    "nice_to_have_skills": [
+      "CRM Tools",
+      "Negotiation"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0104",
+    "domain": "Design",
+    "required_skills": [
+      "Typography",
+      "UX Research",
+      "Visual Design",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "User Testing"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0105",
+    "domain": "Software",
+    "required_skills": [
+      "Docker",
+      "Git",
+      "Linux",
+      "REST APIs",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Java",
+      "JavaScript",
+      "Python"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0106",
+    "domain": "Business",
+    "required_skills": [
+      "Financial Modeling",
+      "Project Management",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics",
+      "Excel",
+      "Presentation"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0107",
+    "domain": "Data/AI",
+    "required_skills": [
+      "MLOps",
+      "Machine Learning",
+      "NLP",
+      "Python",
+      "Scikit-learn"
+    ],
+    "nice_to_have_skills": [
+      "Data Visualization",
+      "Pandas",
+      "Statistics"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0108",
+    "domain": "Design",
+    "required_skills": [
+      "Design Systems",
+      "Prototyping",
+      "Typography",
+      "User Testing"
+    ],
+    "nice_to_have_skills": [
+      "Adobe XD",
+      "UX Research",
+      "Wireframing"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 60.0
+  },
+  {
+    "job_id": "J0109",
+    "domain": "Software",
+    "required_skills": [
+      "Docker",
+      "Java",
+      "Python",
+      "REST APIs",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Git",
+      "Linux"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0110",
+    "domain": "Data/AI",
+    "required_skills": [
+      "MLOps",
+      "NLP",
+      "Python",
+      "Statistics"
+    ],
+    "nice_to_have_skills": [
+      "Data Visualization",
+      "Pandas",
+      "SQL"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0111",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Linux",
+      "REST APIs",
+      "System Design"
+    ],
+    "nice_to_have_skills": [
+      "Java",
+      "JavaScript",
+      "SQL"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0112",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Market Research",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Negotiation",
+      "Presentation"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0113",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Data Visualization",
+      "Deep Learning",
+      "MLOps",
+      "NLP",
+      "SQL"
+    ],
+    "nice_to_have_skills": [
+      "Machine Learning"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0114",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Excel",
+      "Financial Modeling",
+      "Stakeholder Management"
+    ],
+    "nice_to_have_skills": [
+      "Market Research"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0115",
+    "domain": "Software",
+    "required_skills": [
+      "Data Structures",
+      "Docker",
+      "Python",
+      "REST APIs"
+    ],
+    "nice_to_have_skills": [
+      "JavaScript"
+    ],
+    "min_years_experience": 3.0,
+    "min_verified_score": 50.0
+  },
+  {
+    "job_id": "J0116",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Financial Modeling",
+      "Negotiation"
+    ],
+    "nice_to_have_skills": [
+      "Business Analytics",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0117",
+    "domain": "Design",
+    "required_skills": [
+      "Adobe XD",
+      "Prototyping",
+      "Wireframing"
+    ],
+    "nice_to_have_skills": [
+      "Design Systems"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 55.0
+  },
+  {
+    "job_id": "J0118",
+    "domain": "Business",
+    "required_skills": [
+      "CRM Tools",
+      "Market Research",
+      "Negotiation",
+      "Presentation"
+    ],
+    "nice_to_have_skills": [
+      "Excel"
+    ],
+    "min_years_experience": 1.0,
+    "min_verified_score": 65.0
+  },
+  {
+    "job_id": "J0119",
+    "domain": "Business",
+    "required_skills": [
+      "Financial Modeling",
+      "Market Research",
+      "Negotiation"
+    ],
+    "nice_to_have_skills": [
+      "Excel",
+      "Presentation"
+    ],
+    "min_years_experience": 0.0,
+    "min_verified_score": 40.0
+  },
+  {
+    "job_id": "J0120",
+    "domain": "Data/AI",
+    "required_skills": [
+      "Machine Learning",
+      "Pandas",
+      "Python"
+    ],
+    "nice_to_have_skills": [
+      "MLOps",
+      "SQL"
+    ],
+    "min_years_experience": 2.0,
+    "min_verified_score": 65.0
+  }
+]
