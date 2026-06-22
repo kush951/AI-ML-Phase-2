@@ -1,0 +1,705 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans);color:var(--color-text-primary);background:transparent}
+.pm-header{padding:1.5rem 0 1rem;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:1.5rem}
+.pm-logo{font-size:20px;font-weight:500;letter-spacing:-0.5px;color:var(--color-text-primary)}
+.pm-logo span{color:#3B7BF5}
+.pm-subtitle{font-size:13px;color:var(--color-text-secondary);margin-top:4px}
+.tabs{display:flex;gap:4px;margin-bottom:1.5rem;border-bottom:0.5px solid var(--color-border-tertiary);padding-bottom:0}
+.tab{padding:8px 16px;font-size:13px;border:none;background:none;cursor:pointer;color:var(--color-text-secondary);border-bottom:2px solid transparent;margin-bottom:-1px;font-family:var(--font-sans);border-radius:var(--border-radius-md) var(--border-radius-md) 0 0;transition:color .15s}
+.tab.active{color:#3B7BF5;border-bottom-color:#3B7BF5;font-weight:500}
+.tab:hover:not(.active){color:var(--color-text-primary)}
+.pane{display:none}.pane.active{display:block}
+.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.5rem}
+.metric-card{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem;text-align:center}
+.metric-val{font-size:22px;font-weight:500;color:var(--color-text-primary)}
+.metric-lbl{font-size:11px;color:var(--color-text-secondary);margin-top:4px;text-transform:uppercase;letter-spacing:.5px}
+.metric-delta{font-size:11px;color:var(--color-text-success);margin-top:2px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem}
+.card-title{font-size:13px;font-weight:500;color:var(--color-text-secondary);margin-bottom:.75rem;text-transform:uppercase;letter-spacing:.5px}
+select,input{width:100%;background:var(--color-background-primary);border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:8px 10px;font-size:13px;color:var(--color-text-primary);font-family:var(--font-sans);margin-bottom:8px}
+.btn-primary{width:100%;background:#3B7BF5;color:#fff;border:none;border-radius:var(--border-radius-md);padding:10px;font-size:14px;font-weight:500;cursor:pointer;margin-top:4px;font-family:var(--font-sans)}
+.btn-primary:hover{background:#2563EB}
+.btn-primary:disabled{background:#93C5FD;cursor:not-allowed}
+.score-ring-wrap{display:flex;flex-direction:column;align-items:center;margin:1rem 0}
+.verdict-badge{padding:6px 16px;border-radius:20px;font-size:13px;font-weight:500;display:inline-block;margin-top:8px}
+.verdict-strong{background:#DCFCE7;color:#166534}
+.verdict-moderate{background:#FEF9C3;color:#854D0E}
+.verdict-weak{background:#FEE2E2;color:#991B1B}
+.verdict-none{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.reason-list{list-style:none;padding:0}
+.reason-item{padding:6px 0;font-size:13px;border-bottom:0.5px solid var(--color-border-tertiary);display:flex;align-items:flex-start;gap:8px;line-height:1.5}
+.reason-item:last-child{border-bottom:none}
+.reason-for .icon{color:#16A34A}
+.reason-against .icon{color:#DC2626}
+.skill-grid{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.skill-chip{padding:3px 10px;border-radius:20px;font-size:12px}
+.chip-green{background:#DCFCE7;color:#166534}
+.chip-amber{background:#FEF9C3;color:#92400E}
+.chip-red{background:#FEE2E2;color:#991B1B}
+.chip-gray{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.rank-list{display:flex;flex-direction:column;gap:8px}
+.rank-item{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:.875rem 1rem;display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:12px}
+.rank-num{font-size:13px;font-weight:500;color:var(--color-text-secondary);text-align:center}
+.rank-name{font-size:14px;font-weight:500}
+.rank-domain{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.rank-score-bar-wrap{display:flex;align-items:center;gap:8px;margin-top:6px}
+.rank-bar-bg{flex:1;height:4px;background:var(--color-background-secondary);border-radius:2px;overflow:hidden}
+.rank-bar-fill{height:100%;border-radius:2px;transition:width .6s ease}
+.rank-pct{font-size:12px;font-weight:500;color:var(--color-text-secondary);min-width:32px;text-align:right}
+.shortlist-hdr{font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.5px;margin:12px 0 6px;color:var(--color-text-secondary)}
+.section-sep{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:12px 0}
+.model-table{width:100%;border-collapse:collapse;font-size:13px}
+.model-table th{text-align:left;padding:8px 10px;font-size:11px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:.5px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.model-table td{padding:10px 10px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.model-table tr:last-child td{border-bottom:none}
+.model-table tr.winner td{background:#EFF6FF}
+.winner-badge{background:#DBEAFE;color:#1D4ED8;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:500}
+.f1-bar-bg{width:100%;height:6px;background:var(--color-background-secondary);border-radius:3px;overflow:hidden;margin-top:4px}
+.f1-bar{height:100%;border-radius:3px;background:#3B7BF5}
+.feature-imp-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.fi-label{font-size:12px;color:var(--color-text-secondary);min-width:150px}
+.fi-bar-bg{flex:1;height:8px;background:var(--color-background-secondary);border-radius:4px;overflow:hidden}
+.fi-bar{height:100%;background:#3B7BF5;border-radius:4px}
+.fi-val{font-size:12px;font-weight:500;min-width:42px;text-align:right;color:var(--color-text-primary)}
+.loading-text{color:var(--color-text-secondary);font-size:13px;text-align:center;padding:2rem;animation:pulse 1.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.empty-state{text-align:center;padding:2rem 1rem;color:var(--color-text-secondary);font-size:13px}
+.summary-box{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem;font-size:13px;line-height:1.7;color:var(--color-text-secondary);margin-top:.75rem}
+.portal-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-label{font-size:12px;color:var(--color-text-secondary);margin-bottom:4px}
+.skill-tag-input-wrap{display:flex;gap:8px}
+.skill-tag-input-wrap input{flex:1;margin-bottom:0}
+.skill-tag-input-wrap button{padding:8px 12px;border:0.5px solid var(--color-border-secondary);background:none;border-radius:var(--border-radius-md);cursor:pointer;font-size:13px;color:var(--color-text-primary);white-space:nowrap}
+.added-skills{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.added-skill-chip{background:#DBEAFE;color:#1D4ED8;padding:3px 10px;border-radius:20px;font-size:12px;cursor:pointer}
+.added-skill-chip:hover{background:#BFDBFE}
+</style>
+
+<style>
+:root{
+  --pm-accent:#5B8CFF;
+  --pm-accent-2:#7C4DFF;
+  --pm-success:#22C55E;
+  --pm-danger:#EF4444;
+}
+body{
+  font-family:Inter,Segoe UI,sans-serif !important;
+  background:
+    radial-gradient(circle at top left, rgba(91,140,255,0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(124,77,255,0.14), transparent 28%),
+    linear-gradient(135deg,#07111f 0%,#0f172a 45%,#111827 100%) !important;
+  min-height:100vh;
+  padding:28px;
+  color:#F8FAFC !important;
+}
+
+.pm-header{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:24px;
+  padding:28px !important;
+  box-shadow:0 10px 40px rgba(0,0,0,0.35);
+}
+
+.pm-logo{
+  font-size:34px !important;
+  font-weight:800 !important;
+  letter-spacing:-1px !important;
+}
+
+.pm-logo span:first-child{
+  background:linear-gradient(90deg,#60A5FA,#A78BFA);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.pm-subtitle{
+  margin-top:10px !important;
+  font-size:14px !important;
+  color:#CBD5E1 !important;
+}
+
+.metric-card,.card,.rank-item{
+  background:rgba(255,255,255,0.06) !important;
+  border:1px solid rgba(255,255,255,0.08) !important;
+  backdrop-filter:blur(16px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.22);
+  transition:all .25s ease;
+}
+
+.metric-card:hover,.card:hover,.rank-item:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 40px rgba(0,0,0,0.35);
+}
+
+.metric-val{
+  font-size:30px !important;
+  font-weight:800 !important;
+  background:linear-gradient(90deg,#60A5FA,#C084FC);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.metric-lbl,.card-title,.rank-domain,.pm-subtitle,.rank-pct{
+  color:#CBD5E1 !important;
+}
+
+.tabs{
+  margin-top:18px;
+  border:none !important;
+  gap:10px !important;
+}
+
+.tab{
+  background:rgba(255,255,255,0.06) !important;
+  border:1px solid rgba(255,255,255,0.08) !important;
+  border-radius:14px !important;
+  padding:12px 18px !important;
+  color:#CBD5E1 !important;
+  transition:all .25s ease;
+}
+
+.tab.active{
+  background:linear-gradient(90deg,#3B82F6,#8B5CF6) !important;
+  color:white !important;
+  border:none !important;
+  box-shadow:0 10px 24px rgba(59,130,246,0.35);
+}
+
+.tab:hover{
+  transform:translateY(-2px);
+}
+
+.btn-primary{
+  background:linear-gradient(90deg,#3B82F6,#8B5CF6) !important;
+  border:none !important;
+  padding:14px !important;
+  border-radius:16px !important;
+  font-weight:700 !important;
+  letter-spacing:.3px;
+  box-shadow:0 10px 24px rgba(59,130,246,0.35);
+  transition:all .25s ease;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px) scale(1.01);
+  filter:brightness(1.08);
+}
+
+select,input{
+  background:rgba(15,23,42,0.7) !important;
+  border:1px solid rgba(255,255,255,0.08) !important;
+  color:#F8FAFC !important;
+  border-radius:14px !important;
+  padding:12px !important;
+}
+
+select:focus,input:focus{
+  outline:none;
+  border-color:#60A5FA !important;
+  box-shadow:0 0 0 3px rgba(96,165,250,0.18);
+}
+
+.summary-box{
+  background:rgba(255,255,255,0.05) !important;
+  border:1px solid rgba(255,255,255,0.06);
+  color:#E2E8F0 !important;
+  border-radius:16px !important;
+}
+
+.skill-chip{
+  border:1px solid rgba(255,255,255,0.08);
+  font-weight:600;
+}
+
+.rank-bar-bg,.f1-bar-bg,.fi-bar-bg{
+  background:rgba(255,255,255,0.08) !important;
+}
+
+.model-table th{
+  color:#94A3B8 !important;
+}
+
+.model-table td{
+  color:#E2E8F0 !important;
+}
+
+.model-table tr.winner td{
+  background:rgba(59,130,246,0.15) !important;
+}
+
+.verdict-badge{
+  font-weight:700 !important;
+  letter-spacing:.3px;
+}
+
+.loading-text{
+  color:#E2E8F0 !important;
+}
+
+@media(max-width:900px){
+  .metrics-grid,.two-col,.portal-form .row{
+    grid-template-columns:1fr !important;
+  }
+  
+  body{
+    padding:14px;
+  }
+}
+</style>
+
+
+<div class="pm-header">
+  <div class="pm-logo">Place<span>Mux</span> <span style="font-size:13px;font-weight:400;color:var(--color-text-secondary);margin-left:8px">Matching Intelligence Layer</span></div>
+  <div class="pm-subtitle">Gradient Boosting · F1 0.9725 · AUC 0.9996 · 9 models compared · Explainable matches</div>
+</div>
+
+<div class="metrics-grid">
+  <div class="metric-card">
+    <div class="metric-val">0.9725</div>
+    <div class="metric-lbl">F1 Score</div>
+    <div class="metric-delta">↑ +0.3958 vs baseline</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-val">0.9996</div>
+    <div class="metric-lbl">AUC-ROC</div>
+    <div class="metric-delta">↑ +0.1101 vs baseline</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-val">1.0</div>
+    <div class="metric-lbl">NDCG@5</div>
+    <div class="metric-delta">Perfect ranking</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-val">1.00%</div>
+    <div class="metric-lbl">False Positive Rate</div>
+    <div class="metric-delta">↓ 0.82% vs baseline</div>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="switchTab('match')"><i class="ti ti-bolt" aria-hidden="true"></i> Live Match</button>
+  <button class="tab" onclick="switchTab('rank')"><i class="ti ti-list-numbers" aria-hidden="true"></i> Rank Candidates</button>
+  <button class="tab" onclick="switchTab('portal')"><i class="ti ti-building" aria-hidden="true"></i> Company Portal</button>
+  <button class="tab" onclick="switchTab('models')"><i class="ti ti-chart-bar" aria-hidden="true"></i> Model Performance</button>
+</div>
+
+<div id="pane-match" class="pane active">
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">Select Student</div>
+      <select id="sel-student" onchange="clearResult()">
+        <option value="">Choose a student…</option>
+        <option value="0">Student_1 — Software Eng · Junior · Pune · 1.8y</option>
+        <option value="1">Student_2 — Design · Mid · Ahmedabad · 2.9y</option>
+        <option value="2">Student_3 — Marketing · Mid · Pune · 3.2y</option>
+        <option value="3">Student_4 — Data Science · Lead · Remote · 6.9y</option>
+        <option value="4">Student_11 — Product Mgmt · Senior · Remote · 4.8y</option>
+        <option value="5">Student_51 — Data Science · Senior · Bangalore · 3.9y</option>
+      </select>
+      <div id="student-preview" style="font-size:12px;color:var(--color-text-secondary);min-height:40px"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Select Job</div>
+      <select id="sel-job" onchange="clearResult()">
+        <option value="">Choose a job…</option>
+        <option value="0">Software Engineer — Company_3 · SWE · Mid</option>
+        <option value="1">Data Scientist — Company_7 · DS · Senior</option>
+        <option value="2">Product Manager — Company_12 · PM · Mid</option>
+        <option value="3">UX Designer — Company_5 · Design · Junior</option>
+        <option value="4">Marketing Manager — Company_9 · Marketing · Mid</option>
+        <option value="5">ML Engineer — Company_15 · DS · Lead</option>
+      </select>
+      <div id="job-preview" style="font-size:12px;color:var(--color-text-secondary);min-height:40px"></div>
+    </div>
+  </div>
+  <button class="btn-primary" id="run-match-btn" onclick="runMatch()" style="margin-top:12px">Run Match →</button>
+  <div id="match-result" style="margin-top:1.5rem"></div>
+</div>
+
+<div id="pane-rank" class="pane">
+  <div class="card" style="margin-bottom:1rem">
+    <div class="card-title">Job to rank candidates for</div>
+    <select id="rank-sel-job" onchange="runRanking()">
+      <option value="0">Software Engineer — Company_3 · SWE · Mid</option>
+      <option value="1">Data Scientist — Company_7 · DS · Senior</option>
+      <option value="2">Product Manager — Company_12 · PM · Mid</option>
+      <option value="3">UX Designer — Company_5 · Design · Junior</option>
+      <option value="4">Marketing Manager — Company_9 · Marketing · Mid</option>
+      <option value="5">ML Engineer — Company_15 · DS · Lead</option>
+    </select>
+  </div>
+  <div id="rank-result"></div>
+</div>
+
+<div id="pane-portal" class="pane">
+  <div class="two-col portal-form">
+    <div class="card">
+      <div class="card-title">Post a new job</div>
+      <div class="form-label">Job title</div>
+      <input type="text" id="portal-title" placeholder="e.g. Backend Engineer" />
+      <div class="form-label">Domain</div>
+      <select id="portal-domain">
+        <option value="software_engineering">Software Engineering</option>
+        <option value="data_science">Data Science</option>
+        <option value="product_management">Product Management</option>
+        <option value="design">Design</option>
+        <option value="marketing">Marketing</option>
+      </select>
+      <div class="form-label">Seniority required</div>
+      <select id="portal-seniority">
+        <option value="0">Intern</option>
+        <option value="1">Junior</option>
+        <option value="2" selected>Mid</option>
+        <option value="3">Senior</option>
+        <option value="4">Lead</option>
+      </select>
+      <div class="row" style="gap:8px;margin-top:0">
+        <div>
+          <div class="form-label">Min experience (y)</div>
+          <input type="number" id="portal-exp" value="2" min="0" max="15" step="0.5" />
+        </div>
+        <div>
+          <div class="form-label">Budget (LPA ₹)</div>
+          <input type="number" id="portal-budget" value="15" min="3" max="60" />
+        </div>
+      </div>
+      <div class="form-label">Required skills (click to add)</div>
+      <div class="skill-tag-input-wrap">
+        <input type="text" id="portal-skill-input" placeholder="e.g. Python" style="margin-bottom:0" />
+        <button onclick="addSkill()">+ Add</button>
+      </div>
+      <div class="added-skills" id="added-skills"></div>
+      <button class="btn-primary" onclick="runPortal()" style="margin-top:1rem">Find Candidates →</button>
+    </div>
+    <div>
+      <div id="portal-result"></div>
+    </div>
+  </div>
+</div>
+
+<div id="pane-models" class="pane">
+  <div class="two-col" style="margin-bottom:1.5rem">
+    <div class="card">
+      <div class="card-title">Feature importance — Gradient Boosting</div>
+      <div style="margin-top:.5rem">
+        <div class="feature-imp-row"><div class="fi-label">domain_match</div><div class="fi-bar-bg"><div class="fi-bar" style="width:100%"></div></div><div class="fi-val">80.3%</div></div>
+        <div class="feature-imp-row"><div class="fi-label">education_match</div><div class="fi-bar-bg"><div class="fi-bar" style="width:6.3%"></div></div><div class="fi-val">5.1%</div></div>
+        <div class="feature-imp-row"><div class="fi-label">experience_match</div><div class="fi-bar-bg"><div class="fi-bar" style="width:6.2%"></div></div><div class="fi-val">5.0%</div></div>
+        <div class="feature-imp-row"><div class="fi-label">qualified_skill_ratio</div><div class="fi-bar-bg"><div class="fi-bar" style="width:2.6%"></div></div><div class="fi-val">2.1%</div></div>
+        <div class="feature-imp-row"><div class="fi-label">text_similarity</div><div class="fi-bar-bg"><div class="fi-bar" style="width:1.9%"></div></div><div class="fi-val">1.5%</div></div>
+        <div class="feature-imp-row"><div class="fi-label">avg_verified_score</div><div class="fi-bar-bg"><div class="fi-bar" style="width:1.7%"></div></div><div class="fi-val">1.4%</div></div>
+        <div class="feature-imp-row"><div class="fi-label">skill_coverage</div><div class="fi-bar-bg"><div class="fi-bar" style="width:1.2%"></div></div><div class="fi-val">1.0%</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Dataset statistics</div>
+      <div style="font-size:13px;display:flex;flex-direction:column;gap:10px;margin-top:.5rem">
+        <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:0.5px solid var(--color-border-tertiary)"><span style="color:var(--color-text-secondary)">Total pairs</span><span style="font-weight:500">3,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:0.5px solid var(--color-border-tertiary)"><span style="color:var(--color-text-secondary)">Positive rate</span><span style="font-weight:500">17.87%</span></div>
+        <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:0.5px solid var(--color-border-tertiary)"><span style="color:var(--color-text-secondary)">Train split</span><span style="font-weight:500">2,400</span></div>
+        <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:0.5px solid var(--color-border-tertiary)"><span style="color:var(--color-text-secondary)">Test split (held-out)</span><span style="font-weight:500">600</span></div>
+        <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:0.5px solid var(--color-border-tertiary)"><span style="color:var(--color-text-secondary)">Students</span><span style="font-weight:500">300</span></div>
+        <div style="display:flex;justify-content:space-between"><span style="color:var(--color-text-secondary)">Jobs</span><span style="font-weight:500">100</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">All models compared · test set (600 samples)</div>
+    <table class="model-table">
+      <thead>
+        <tr><th>Model</th><th>F1</th><th>AUC-ROC</th><th>Precision</th><th>Recall</th><th>FPR</th><th>F1 bar</th></tr>
+      </thead>
+      <tbody>
+        <tr class="winner">
+          <td><span style="font-weight:500">Gradient Boosting</span> <span class="winner-badge">Winner</span></td>
+          <td style="font-weight:500;color:#1D4ED8">0.9725</td><td>0.9996</td><td>0.9550</td><td>0.9907</td><td>0.0101</td>
+          <td><div class="f1-bar-bg"><div class="f1-bar" style="width:97.25%"></div></div></td>
+        </tr>
+        <tr><td>XGBoost</td><td>0.9640</td><td>0.9991</td><td>0.9304</td><td>1.0000</td><td>0.0162</td><td><div class="f1-bar-bg"><div class="f1-bar" style="width:96.4%"></div></div></td></tr>
+        <tr><td>LightGBM</td><td>0.9554</td><td>0.9995</td><td>0.9145</td><td>1.0000</td><td>0.0203</td><td><div class="f1-bar-bg"><div class="f1-bar" style="width:95.54%"></div></div></td></tr>
+        <tr><td>SVM (RBF)</td><td>0.9554</td><td>0.9981</td><td>0.9145</td><td>1.0000</td><td>0.0203</td><td><div class="f1-bar-bg"><div class="f1-bar" style="width:95.54%"></div></div></td></tr>
+        <tr><td>MLP Neural Net</td><td>0.9459</td><td>0.9989</td><td>0.9130</td><td>0.9813</td><td>0.0203</td><td><div class="f1-bar-bg"><div class="f1-bar" style="width:94.59%"></div></div></td></tr>
+        <tr><td>Random Forest</td><td>0.9422</td><td>0.9987</td><td>0.8983</td><td>0.9907</td><td>0.0243</td><td><div class="f1-bar-bg"><div class="f1-bar" style="width:94.22%"></div></div></td></tr>
+        <tr><td>Logistic Regression</td><td>0.9386</td><td>0.9994</td><td>0.8843</td><td>1.0000</td><td>0.0284</td><td><div class="f1-bar-bg"><div class="f1-bar" style="width:93.86%"></div></div></td></tr>
+        <tr><td>AdaBoost</td><td>0.9068</td><td>0.9976</td><td>0.8295</td><td>1.0000</td><td>0.0446</td><td><div class="f1-bar-bg"><div class="f1-bar" style="width:90.68%;background:#F59E0B"></div></div></td></tr>
+        <tr style="opacity:.6"><td>Baseline (skill overlap)</td><td>0.5767</td><td>0.8895</td><td>0.8393</td><td>0.4393</td><td>0.0183</td><td><div class="f1-bar-bg"><div class="f1-bar" style="width:57.67%;background:#9CA3AF"></div></div></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+const STUDENTS = [
+  {id:"STU0001",name:"Student_1",domain:"software_engineering",education_level:"Bachelor",education_level_idx:2,seniority:"Junior",seniority_idx:1,experience_years:1.8,verified_skills:{PostgreSQL:94,Kubernetes:93.9,"Node.js":81,FastAPI:75.9,JIRA:48.4,"C++":47.4,Docker:63.7,Agile:77.5,GraphQL:90,"CI/CD":79.3},skill_list:["PostgreSQL","Kubernetes","Node.js","FastAPI","JIRA","C++","Docker","Agile","GraphQL","CI/CD"],city:"Pune",salary_expectation_lpa:11.4,open_to_remote:true,bio:"Junior software engineer with 1.8y experience. Skilled in PostgreSQL, Kubernetes, Node.js."},
+  {id:"STU0002",name:"Student_2",domain:"design",education_level:"Bachelor",education_level_idx:2,seniority:"Mid",seniority_idx:2,experience_years:2.9,verified_skills:{Figma:63.5,Photoshop:48.5,Illustrator:76.8,"Adobe XD":64.3,HTML:87.8,"User Testing":77.6,CSS:85.3,"Motion Design":99,"UX Research":95.1,Branding:48.6,Accessibility:66.3},skill_list:["Figma","Photoshop","Illustrator","Adobe XD","HTML","User Testing","CSS","Motion Design","UX Research","Branding","Accessibility"],city:"Ahmedabad",salary_expectation_lpa:10.5,open_to_remote:true,bio:"Mid-level designer with 2.9y experience. Expert in UX Research, Motion Design."},
+  {id:"STU0003",name:"Student_3",domain:"marketing",education_level:"Master",education_level_idx:3,seniority:"Mid",seniority_idx:2,experience_years:3.2,verified_skills:{"Email Marketing":38.2,SEM:99,"Google Analytics":35.7,"Campaign Management":67.7,"Brand Strategy":76.5,SEO:73.3,"Meta Ads":70.8,SQL:52.7,Copywriting:72.3,HubSpot:70.4,CRM:59.9},skill_list:["Email Marketing","SEM","Google Analytics","Campaign Management","Brand Strategy","SEO","Meta Ads","SQL","Copywriting","HubSpot","CRM"],city:"Pune",salary_expectation_lpa:11.3,open_to_remote:true,bio:"Mid-level marketer with 3.2y experience. Expert in SEM and brand strategy."},
+  {id:"STU0004",name:"Student_4",domain:"data_science",education_level:"PhD",education_level_idx:4,seniority:"Lead",seniority_idx:4,experience_years:6.9,verified_skills:{NLP:69.2,"A/B Testing":86.1,"Machine Learning":99,PyTorch:96.6,"Power BI":99,Hadoop:47.1,"Model Deployment":77.4,Statistics:83.4,Pandas:65.5,"scikit-learn":54.3,Spark:94.3,R:99,SQL:54.6},skill_list:["NLP","A/B Testing","Machine Learning","PyTorch","Power BI","Hadoop","Model Deployment","Statistics","Pandas","scikit-learn","Spark","R","SQL"],city:"Remote",salary_expectation_lpa:14.5,open_to_remote:true,bio:"PhD Data Scientist, 6.9y experience. Expert in ML, PyTorch, Spark, R."},
+  {id:"STU0011",name:"Student_11",domain:"product_management",education_level:"Bachelor",education_level_idx:2,seniority:"Senior",seniority_idx:3,experience_years:4.8,verified_skills:{"Stakeholder Management":51.6,GraphQL:71.9,Roadmapping:67.2,"Data Analysis":79,Wireframing:85.6,OKRs:82,JIRA:66.2,Agile:57.4},skill_list:["Stakeholder Management","GraphQL","Roadmapping","Data Analysis","Wireframing","OKRs","JIRA","Agile"],city:"Remote",salary_expectation_lpa:13.5,open_to_remote:true,bio:"Senior PM with 4.8y experience. Strong in roadmapping and data analysis."},
+  {id:"STU0051",name:"Student_51",domain:"data_science",education_level:"Master",education_level_idx:3,seniority:"Senior",seniority_idx:3,experience_years:3.9,verified_skills:{"C++":64,R:64.4,"Feature Engineering":79.7,Statistics:85.3,Hadoop:88.5,PyTorch:55.9,"scikit-learn":61.4,TensorFlow:72,"Deep Learning":68,NLP:74},skill_list:["C++","R","Feature Engineering","Statistics","Hadoop","PyTorch","scikit-learn","TensorFlow","Deep Learning","NLP"],city:"Bangalore",salary_expectation_lpa:16,open_to_remote:false,bio:"Senior Data Scientist with 3.9y experience. Specialised in ML and statistics."}
+];
+
+const JOBS = [
+  {id:"JOB_SWE",title:"Software Engineer",company:"Company_3",domain:"software_engineering",required_skills:["Node.js","Docker","PostgreSQL","REST APIs"],preferred_skills:["Kubernetes","CI/CD"],min_skill_threshold:65,min_experience_years:2,seniority_required:"Mid",seniority_required_idx:2,education_required:"Bachelor",education_required_idx:2,city:"Bangalore",remote_ok:true,salary_budget_lpa:18,description:"We need a mid-level software engineer skilled in Node.js, Docker and PostgreSQL."},
+  {id:"JOB_DS",title:"Data Scientist",company:"Company_7",domain:"data_science",required_skills:["Python","Machine Learning","Statistics","SQL"],preferred_skills:["PyTorch","NLP"],min_skill_threshold:70,min_experience_years:3,seniority_required:"Senior",seniority_required_idx:3,education_required:"Master",education_required_idx:3,city:"Remote",remote_ok:true,salary_budget_lpa:22,description:"Seeking a senior data scientist with ML and statistics expertise."},
+  {id:"JOB_PM",title:"Product Manager",company:"Company_12",domain:"product_management",required_skills:["Roadmapping","Agile","Data Analysis","JIRA"],preferred_skills:["OKRs","Wireframing"],min_skill_threshold:62,min_experience_years:3,seniority_required:"Mid",seniority_required_idx:2,education_required:"Bachelor",education_required_idx:2,city:"Mumbai",remote_ok:true,salary_budget_lpa:20,description:"Product Manager to own roadmap for our marketplace product."},
+  {id:"JOB_UX",title:"UX Designer",company:"Company_5",domain:"design",required_skills:["Figma","UX Research","Wireframing","Accessibility"],preferred_skills:["Motion Design","Prototyping"],min_skill_threshold:60,min_experience_years:1,seniority_required:"Junior",seniority_required_idx:1,education_required:"Bachelor",education_required_idx:2,city:"Hyderabad",remote_ok:true,salary_budget_lpa:12,description:"Junior UX Designer with Figma and user research skills."},
+  {id:"JOB_MKT",title:"Marketing Manager",company:"Company_9",domain:"marketing",required_skills:["SEO","Google Analytics","Campaign Management","Meta Ads"],preferred_skills:["HubSpot","CRM"],min_skill_threshold:65,min_experience_years:2.5,seniority_required:"Mid",seniority_required_idx:2,education_required:"Bachelor",education_required_idx:2,city:"Bangalore",remote_ok:false,salary_budget_lpa:15,description:"Marketing Manager to drive growth through SEO and digital campaigns."},
+  {id:"JOB_ML",title:"ML Engineer",company:"Company_15",domain:"data_science",required_skills:["Machine Learning","PyTorch","Model Deployment","Python"],preferred_skills:["NLP","Deep Learning","Spark"],min_skill_threshold:72,min_experience_years:4,seniority_required:"Lead",seniority_required_idx:4,education_required:"Master",education_required_idx:3,city:"Remote",remote_ok:true,salary_budget_lpa:30,description:"Lead ML Engineer to build and deploy production ML systems at scale."}
+];
+
+function computeScore(s, j) {
+  let score = 0;
+  const req = new Set(j.required_skills);
+  const stu = new Set(s.skill_list);
+  const matched = [...req].filter(x => stu.has(x));
+  const qualified = matched.filter(x => (s.verified_skills[x]||0) >= j.min_skill_threshold);
+  const skillRatio = req.size ? qualified.length / req.size : 0;
+  
+  if(s.domain === j.domain) score += 0.30;
+  score += 0.30 * skillRatio;
+  const expGap = s.experience_years - j.min_experience_years;
+  if(expGap >= 0) score += 0.12 * Math.min(1, 1 - expGap/10);
+  else score += 0.12 * Math.max(0, 1 + expGap/3);
+  if(s.education_level_idx >= j.education_required_idx) score += 0.10;
+  if(s.city === j.city || j.remote_ok || s.open_to_remote) score += 0.10;
+  if(s.salary_expectation_lpa <= j.salary_budget_lpa * 1.1) score += 0.08;
+  
+  const missing = [...req].filter(x => !stu.has(x));
+  const belowThresh = matched.filter(x => (s.verified_skills[x]||0) < j.min_skill_threshold);
+  
+  return { score: Math.min(score, 1), qualified, missing, belowThresh, matched };
+}
+
+function getVerdict(pct) {
+  if(pct >= 75) return { label:'Strong Match', cls:'verdict-strong', color:'#16A34A'};
+  if(pct >= 55) return { label:'Moderate Match', cls:'verdict-moderate', color:'#854D0E'};
+  if(pct >= 35) return { label:'Weak Match', cls:'verdict-weak', color:'#B91C1C'};
+  return { label:'No Match', cls:'verdict-none', color:'#6B7280'};
+}
+
+function ScoreRing(pct, color) {
+  const r = 44, circ = 2*Math.PI*r;
+  const fill = (pct/100)*circ;
+  return `<svg width="110" height="110" viewBox="0 0 110 110"><circle cx="55" cy="55" r="${r}" fill="none" stroke="var(--color-border-tertiary)" stroke-width="8"/><circle cx="55" cy="55" r="${r}" fill="none" stroke="${color}" stroke-width="8" stroke-dasharray="${fill} ${circ}" stroke-dashoffset="${circ*0.25}" stroke-linecap="round" transform="rotate(-90 55 55)" style="transition:stroke-dasharray .8s ease"/><text x="55" y="50" text-anchor="middle" font-size="22" font-weight="500" fill="var(--color-text-primary)" dy="0">${pct}%</text><text x="55" y="68" text-anchor="middle" font-size="11" fill="var(--color-text-secondary)">match</text></svg>`;
+}
+
+async function runMatch() {
+  const si = document.getElementById('sel-student').value;
+  const ji = document.getElementById('sel-job').value;
+  if(si===''||ji==='') { alert('Please select both a student and a job.'); return; }
+  const s = STUDENTS[+si], j = JOBS[+ji];
+  const btn = document.getElementById('run-match-btn');
+  btn.disabled = true; btn.textContent = 'Running match…';
+  const res = document.getElementById('match-result');
+  res.innerHTML = '<div class="loading-text">Scoring candidate against job requirements…</div>';
+  
+  const {score, qualified, missing, belowThresh, matched} = computeScore(s, j);
+  const pct = Math.round(score*100);
+  const v = getVerdict(pct);
+  
+  const prompt = `You are PlaceMux, an AI matching engine. Given this student-job pair, generate a concise matching explanation.
+
+Student: ${s.name}, ${s.seniority} ${s.domain.replace('_',' ')}, ${s.experience_years}y exp, ${s.city}, Skills: ${s.skill_list.join(', ')}, Education: ${s.education_level}
+Job: ${j.title} at ${j.company}, Required: ${j.required_skills.join(', ')}, Min exp: ${j.min_experience_years}y, Budget: ₹${j.salary_budget_lpa}L
+
+Match score: ${pct}% (${v.label})
+Qualified skills: ${qualified.join(', ')||'none'}
+Missing skills: ${missing.join(', ')||'none'}
+
+Provide:
+1. Two specific reasons FOR hiring (start each with "✅")
+2. Two specific concerns AGAINST (start each with "⚠️")  
+3. One concrete recommendation sentence
+
+Keep it brief and specific. Use the actual skill names.`;
+
+  try {
+    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,messages:[{role:'user',content:prompt}]})
+    });
+    const data = await resp.json();
+    const explanation = data.content?.[0]?.text || '';
+    
+    const lines = explanation.split('\n').filter(Boolean);
+    const fors = lines.filter(l=>l.includes('✅'));
+    const againsts = lines.filter(l=>l.includes('⚠️'));
+    const rec = lines.find(l=>!l.includes('✅')&&!l.includes('⚠️')&&l.length>20) || '';
+    
+    res.innerHTML = `
+      <div class="two-col">
+        <div class="card" style="text-align:center">
+          <div class="score-ring-wrap">${ScoreRing(pct,v.color)}</div>
+          <span class="verdict-badge ${v.cls}">${v.label}</span>
+          <div style="font-size:12px;color:var(--color-text-secondary);margin-top:12px">${s.name} → ${j.title}</div>
+          <div style="font-size:11px;color:var(--color-text-secondary)">${j.company}</div>
+          ${rec?`<div class="summary-box" style="margin-top:12px;text-align:left">${rec}</div>`:''}
+        </div>
+        <div class="card">
+          <div class="card-title">Explanation</div>
+          <ul class="reason-list">
+            ${fors.map(r=>`<li class="reason-item reason-for"><i class="ti ti-check icon" style="font-size:14px;flex-shrink:0;margin-top:2px"></i><span>${r.replace('✅','').trim()}</span></li>`).join('')}
+            ${againsts.map(r=>`<li class="reason-item reason-against"><i class="ti ti-alert-triangle icon" style="font-size:14px;flex-shrink:0;margin-top:2px"></i><span>${r.replace('⚠️','').trim()}</span></li>`).join('')}
+          </ul>
+          <div style="margin-top:1rem">
+            <div class="card-title">Skill breakdown</div>
+            <div class="skill-grid">
+              ${qualified.map(sk=>`<span class="skill-chip chip-green">${sk} (${Math.round(s.verified_skills[sk]||0)})</span>`).join('')}
+              ${belowThresh.map(sk=>`<span class="skill-chip chip-amber">${sk} (${Math.round(s.verified_skills[sk]||0)})</span>`).join('')}
+              ${missing.map(sk=>`<span class="skill-chip chip-red">${sk} ✗</span>`).join('')}
+            </div>
+            <div style="font-size:11px;color:var(--color-text-secondary);margin-top:8px">
+              <span style="margin-right:12px">🟢 Qualified above ${j.min_skill_threshold}</span>
+              <span style="margin-right:12px">🟡 Below threshold</span>
+              <span>🔴 Missing</span>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  } catch(e) {
+    res.innerHTML = `<div class="card"><b>Match score: ${pct}% — ${v.label}</b><br>Qualified: ${qualified.join(', ')||'—'}<br>Missing: ${missing.join(', ')||'—'}</div>`;
+  }
+  btn.disabled=false; btn.textContent='Run Match →';
+}
+
+function runRanking() {
+  const ji = document.getElementById('rank-sel-job').value;
+  const j = JOBS[+ji];
+  const ranked = STUDENTS.map(s => {
+    const r = computeScore(s, j);
+    return { s, score: r.score, qualified: r.qualified, missing: r.missing };
+  }).sort((a,b)=>b.score-a.score);
+  
+  const shortlisted = ranked.filter(x=>x.score>=0.5);
+  const others = ranked.filter(x=>x.score<0.5);
+  
+  const renderItem = (item, rank) => {
+    const pct = Math.round(item.score*100);
+    const v = getVerdict(pct);
+    return `<div class="rank-item">
+      <div class="rank-num">#${rank}</div>
+      <div>
+        <div class="rank-name">${item.s.name} <span style="font-size:11px;color:var(--color-text-secondary)">${item.s.seniority}</span></div>
+        <div class="rank-domain">${item.s.domain.replace('_',' ')} · ${item.s.city} · ${item.s.experience_years}y</div>
+        <div class="rank-score-bar-wrap">
+          <div class="rank-bar-bg"><div class="rank-bar-fill" style="width:${pct}%;background:${v.color}"></div></div>
+          <div class="rank-pct">${pct}%</div>
+        </div>
+        <div style="margin-top:4px;display:flex;flex-wrap:wrap;gap:4px">
+          ${item.qualified.slice(0,3).map(sk=>`<span class="skill-chip chip-green" style="font-size:11px">${sk}</span>`).join('')}
+          ${item.missing.slice(0,2).map(sk=>`<span class="skill-chip chip-red" style="font-size:11px">${sk} ✗</span>`).join('')}
+        </div>
+      </div>
+      <span class="verdict-badge ${v.cls}" style="white-space:nowrap;font-size:11px">${v.label}</span>
+    </div>`;
+  };
+  
+  document.getElementById('rank-result').innerHTML = `
+    <div class="card" style="margin-bottom:1rem">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div><strong>${j.title}</strong> at ${j.company}</div>
+        <div style="font-size:12px;color:var(--color-text-secondary)">${shortlisted.length}/${ranked.length} shortlisted</div>
+      </div>
+      <div style="font-size:12px;color:var(--color-text-secondary);margin-top:4px">Required: ${j.required_skills.join(', ')} · Min ${j.min_experience_years}y · ₹${j.salary_budget_lpa}L</div>
+    </div>
+    <div class="rank-list">
+      <div class="shortlist-hdr"><i class="ti ti-check" aria-hidden="true"></i> Shortlisted (${shortlisted.length})</div>
+      ${shortlisted.map((item,i)=>renderItem(item,i+1)).join('')}
+      <hr class="section-sep" />
+      <div class="shortlist-hdr" style="color:var(--color-text-secondary)">Not shortlisted (${others.length})</div>
+      ${others.map((item,i)=>renderItem(item,shortlisted.length+i+1)).join('')}
+    </div>`;
+}
+
+const addedSkills = [];
+function addSkill() {
+  const inp = document.getElementById('portal-skill-input');
+  const val = inp.value.trim();
+  if(val && !addedSkills.includes(val)) {
+    addedSkills.push(val);
+    renderAddedSkills();
+  }
+  inp.value='';
+}
+document.getElementById('portal-skill-input').addEventListener('keydown', e => { if(e.key==='Enter'){e.preventDefault();addSkill();}});
+
+function renderAddedSkills() {
+  document.getElementById('added-skills').innerHTML = addedSkills.map(s=>`<span class="added-skill-chip" onclick="removeSkill('${s}')">${s} ×</span>`).join('');
+}
+function removeSkill(s) { addedSkills.splice(addedSkills.indexOf(s),1); renderAddedSkills(); }
+
+function runPortal() {
+  const title = document.getElementById('portal-title').value || 'New Role';
+  const domain = document.getElementById('portal-domain').value;
+  const senIdx = +document.getElementById('portal-seniority').value;
+  const senLbls = ['Intern','Junior','Mid','Senior','Lead'];
+  const expMin = +document.getElementById('portal-exp').value;
+  const budget = +document.getElementById('portal-budget').value;
+  const skills = [...addedSkills];
+  
+  const customJob = {
+    id:'CUSTOM',title,company:'Your Company',domain,
+    required_skills: skills.length ? skills : ['Python','SQL'],
+    preferred_skills:[],min_skill_threshold:65,
+    min_experience_years:expMin,seniority_required:senLbls[senIdx],seniority_required_idx:senIdx,
+    education_required:'Bachelor',education_required_idx:2,
+    city:'Remote',remote_ok:true,salary_budget_lpa:budget,
+    description:`${title} role requiring ${skills.join(', ')}.`
+  };
+  
+  const ranked = STUDENTS.map(s => {
+    const r = computeScore(s, customJob);
+    return { s, score: r.score, qualified: r.qualified, missing: r.missing };
+  }).sort((a,b)=>b.score-a.score);
+  
+  const shortlisted = ranked.filter(x=>x.score>=0.5);
+  const v = getVerdict(Math.round(ranked[0]?.score*100||0));
+  
+  document.getElementById('portal-result').innerHTML = `
+    <div class="card">
+      <div class="card-title">Candidates found</div>
+      <div style="font-size:24px;font-weight:500;margin-bottom:4px">${shortlisted.length} shortlisted</div>
+      <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:1rem">out of ${ranked.length} candidates evaluated</div>
+      <div class="rank-list">
+        ${ranked.slice(0,6).map((item,i)=>{
+          const pct=Math.round(item.score*100);
+          const vv=getVerdict(pct);
+          return `<div class="rank-item">
+            <div class="rank-num">#${i+1}</div>
+            <div>
+              <div class="rank-name">${item.s.name} <span style="font-size:11px;color:var(--color-text-secondary)">${item.s.seniority} · ${item.s.city}</span></div>
+              <div class="rank-score-bar-wrap"><div class="rank-bar-bg"><div class="rank-bar-fill" style="width:${pct}%;background:${vv.color}"></div></div><div class="rank-pct">${pct}%</div></div>
+            </div>
+            <span class="verdict-badge ${vv.cls}" style="font-size:11px">${vv.label}</span>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+}
+
+function clearResult() { document.getElementById('match-result').innerHTML=''; }
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  document.getElementById('pane-'+name).classList.add('active');
+  if(name==='rank') runRanking();
+}
+
+document.getElementById('sel-student').addEventListener('change', function() {
+  const s = STUDENTS[+this.value];
+  if(!s) { document.getElementById('student-preview').innerHTML=''; return; }
+  document.getElementById('student-preview').innerHTML = `${s.seniority} · ${s.experience_years}y · ${s.city} · ${Object.keys(s.verified_skills).slice(0,4).join(', ')}`;
+});
+document.getElementById('sel-job').addEventListener('change', function() {
+  const j = JOBS[+this.value];
+  if(!j) { document.getElementById('job-preview').innerHTML=''; return; }
+  document.getElementById('job-preview').innerHTML = `${j.domain.replace('_',' ')} · Min ${j.min_experience_years}y · ₹${j.salary_budget_lpa}L · ${j.required_skills.slice(0,3).join(', ')}`;
+});
+</script>
