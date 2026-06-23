@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaceMux Spend Guardrail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>PlaceMux Spend-Quality Guardrail</h1>
+
+    <div class="card">
+        <h2>Student Skills</h2>
+        <input type="text" id="studentSkills" placeholder="Python,ML,FastAPI">
+
+        <h2>Required Skills</h2>
+        <input type="text" id="requiredSkills" placeholder="Python,ML">
+
+        <h2>Verified Score</h2>
+        <input type="number" id="verifiedScore" placeholder="85">
+
+        <h2>Experience (Years)</h2>
+        <input type="number" id="experience" placeholder="2">
+
+        <h2>Minimum Required Score</h2>
+        <input type="number" id="minScore" placeholder="70">
+
+        <button onclick="checkMatch()">Check Match</button>
+    </div>
+
+    <div class="result-card" id="resultCard">
+        <h2>Result</h2>
+
+        <p><strong>Match Score:</strong> <span id="matchScore"></span></p>
+
+        <p><strong>Prediction:</strong> <span id="prediction"></span></p>
+
+        <p><strong>Low Fit Warning:</strong> <span id="lowFit"></span></p>
+
+        <p><strong>Refund Triggered:</strong> <span id="refund"></span></p>
+
+        <p><strong>Reasons:</strong></p>
+        <ul id="reasons"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

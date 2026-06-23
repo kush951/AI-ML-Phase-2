@@ -1,0 +1,6 @@
+
+job_id,required_skills,min_score
+J1,"Python,ML,FastAPI",70
+J2,"React,Node",60
+J3,"SQL,Python",65
+J4,"Java,Spring Boot",80

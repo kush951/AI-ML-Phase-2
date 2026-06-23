@@ -1,0 +1,6 @@
+
+student_id,skills,experience,verified_score
+S1,"Python,ML,FastAPI",2,85
+S2,"HTML,CSS",0,30
+S3,"Python,SQL,Data Analysis",1,70
+S4,"Java,Spring Boot",3,88
