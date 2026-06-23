@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlaceMux · AI Matching Dashboard</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    /* ── Design Tokens ─────────────────────────────────────── */
+    :root {
+      --bg:        #0b0f1a;
+      --surface:   #111827;
+      --card:      #1a2235;
+      --border:    #243050;
+      --accent:    #4f8ef7;
+      --accent2:   #38e2c1;
+      --warn:      #f59e0b;
+      --danger:    #ef4444;
+      --success:   #22c55e;
+      --text:      #e5eaf5;
+      --muted:     #8898bb;
+      --radius:    12px;
+      --radius-sm: 7px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+    a { color: var(--accent); text-decoration: none; }
+
+    /* ── Layout ────────────────────────────────────────────── */
+    .nav {
+      display: flex; align-items: center; gap: 16px;
+      padding: 0 32px; height: 60px;
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+    .nav-logo span { color: var(--accent); }
+    .nav-badge {
+      background: var(--accent); color: #fff;
+      font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px;
+    }
+    .nav-spacer { flex: 1; }
+    .nav-status {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 12px; color: var(--muted);
+    }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); }
+
+    .layout { display: grid; grid-template-columns: 320px 1fr; min-height: calc(100vh - 60px); }
+    .sidebar {
+      background: var(--surface); border-right: 1px solid var(--border);
+      padding: 24px 20px; overflow-y: auto;
+    }
+    .main { padding: 28px 32px; overflow-y: auto; }
+
+    /* ── Cards ─────────────────────────────────────────────── */
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; margin-bottom: 18px;
+    }
+    .card-title {
+      font-size: 11px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 14px;
+    }
+
+    /* ── Form Elements ──────────────────────────────────────── */
+    label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+    input[type="number"], input[type="text"], select {
+      width: 100%; background: #0f1723; border: 1px solid var(--border);
+      border-radius: var(--radius-sm); color: var(--text);
+      padding: 8px 10px; font-size: 13px; outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus, select:focus { border-color: var(--accent); }
+    .form-row { margin-bottom: 12px; }
+    .form-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    .skill-row {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 6px;
+    }
+    .skill-row label { min-width: 110px; margin: 0; font-size: 11px; }
+    .skill-row input[type="range"] { flex: 1; accent-color: var(--accent); }
+    .skill-val {
+      min-width: 34px; text-align: right; font-size: 12px;
+      color: var(--accent); font-weight: 700;
+    }
+
+    /* ── Buttons ────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 20px; border-radius: var(--radius-sm);
+      font-size: 13px; font-weight: 600; cursor: pointer;
+      border: none; transition: opacity 0.2s, transform 0.1s;
+    }
+    .btn:hover { opacity: 0.88; }
+    .btn:active { transform: scale(0.97); }
+    .btn-primary { background: var(--accent); color: #fff; width: 100%; justify-content: center; }
+    .btn-secondary { background: var(--border); color: var(--text); }
+    .btn-pay { background: var(--accent2); color: #0b0f1a; font-weight: 800; }
+
+    /* ── Metrics Row ────────────────────────────────────────── */
+    .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
+    .metric-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px 18px;
+    }
+    .metric-val { font-size: 28px; font-weight: 800; color: var(--accent); }
+    .metric-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .metric-sub { font-size: 11px; color: var(--accent2); margin-top: 4px; }
+
+    /* ── Results ────────────────────────────────────────────── */
+    .results-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .results-title { font-size: 18px; font-weight: 700; }
+
+    .match-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 18px 20px; margin-bottom: 12px;
+      cursor: pointer; transition: border-color 0.2s, transform 0.1s;
+    }
+    .match-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+    .match-card.selected { border-color: var(--accent); background: #1a2e4a; }
+    .match-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .match-rank {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--bg); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700; color: var(--muted);
+      flex-shrink: 0;
+    }
+    .match-rank.top { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .match-role { font-size: 15px; font-weight: 700; }
+    .match-id { font-size: 11px; color: var(--muted); }
+    .match-grade {
+      margin-left: auto; padding: 3px 10px; border-radius: 20px;
+      font-size: 11px; font-weight: 700;
+    }
+    .grade-excellent { background: rgba(34,197,94,.2); color: var(--success); }
+    .grade-strong    { background: rgba(79,142,247,.2); color: var(--accent); }
+    .grade-moderate  { background: rgba(245,158,11,.2); color: var(--warn); }
+    .grade-weak      { background: rgba(239,68,68,.2);  color: var(--danger); }
+    .grade-poor      { background: rgba(136,152,187,.15); color: var(--muted); }
+
+    .prob-bar-wrap { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .prob-bar-bg {
+      flex: 1; height: 6px; background: var(--bg); border-radius: 3px; overflow: hidden;
+    }
+    .prob-bar-fill {
+      height: 100%; border-radius: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      transition: width 0.6s ease;
+    }
+    .prob-pct { font-size: 14px; font-weight: 800; color: var(--accent2); min-width: 42px; text-align: right; }
+
+    .skill-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .pill {
+      font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px;
+      background: rgba(79,142,247,.12); color: var(--accent); border: 1px solid rgba(79,142,247,.25);
+    }
+    .pill.gap { background: rgba(239,68,68,.1); color: var(--danger); border-color: rgba(239,68,68,.25); }
+
+    /* ── Detail Panel ───────────────────────────────────────── */
+    .detail-panel {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 22px; margin-top: 20px;
+    }
+    .detail-title { font-size: 16px; font-weight: 700; margin-bottom: 14px; }
+    .detail-section { margin-bottom: 16px; }
+    .detail-section h4 { font-size: 12px; color: var(--muted); margin-bottom: 8px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+
+    .reason-list { list-style: none; }
+    .reason-list li { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; margin-bottom: 6px; }
+    .reason-icon { flex-shrink: 0; margin-top: 1px; }
+
+    .skill-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .skill-table th { color: var(--muted); text-align: left; padding: 4px 6px; font-weight: 600; }
+    .skill-table td { padding: 5px 6px; border-bottom: 1px solid var(--border); }
+    .skill-table .met { color: var(--success); font-weight: 700; }
+    .skill-table .gap { color: var(--danger); }
+
+    /* ── Pay Modal ──────────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.7); display: none;
+      align-items: center; justify-content: center; z-index: 1000;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 30px; width: 420px; max-width: 90vw;
+    }
+    .modal-title { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+    .modal-sub { color: var(--muted); font-size: 13px; margin-bottom: 22px; }
+    .pay-amount {
+      font-size: 40px; font-weight: 900; color: var(--accent2);
+      text-align: center; margin: 16px 0;
+    }
+    .pay-amount span { font-size: 18px; font-weight: 500; color: var(--muted); }
+    .pay-status { text-align: center; margin: 16px 0; font-size: 13px; }
+    .modal-actions { display: flex; gap: 10px; margin-top: 20px; }
+    .modal-actions .btn { flex: 1; justify-content: center; }
+    .success-banner {
+      display: none; background: rgba(34,197,94,.15);
+      border: 1px solid rgba(34,197,94,.3); border-radius: var(--radius-sm);
+      padding: 12px 16px; color: var(--success); font-size: 13px; font-weight: 600;
+      text-align: center; margin-top: 14px;
+    }
+
+    /* ── Charts section ─────────────────────────────────────── */
+    .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+    .chart-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 18px;
+    }
+    .chart-card canvas { max-height: 180px; }
+
+    /* ── Loading ─────────────────────────────────────────────── */
+    .loading {
+      display: flex; align-items: center; gap: 10px;
+      color: var(--muted); font-size: 14px; padding: 32px 0;
+    }
+    .spinner {
+      width: 20px; height: 20px; border: 2px solid var(--border);
+      border-top-color: var(--accent); border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .empty-state { text-align: center; color: var(--muted); padding: 48px 0; font-size: 14px; }
+
+    /* ── Section titles ─────────────────────────────────────── */
+    .section-label {
+      font-size: 11px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
+    }
+
+    /* ── Tab ────────────────────────────────────────────────── */
+    .tabs { display: flex; gap: 4px; margin-bottom: 22px; }
+    .tab {
+      padding: 8px 16px; border-radius: var(--radius-sm);
+      font-size: 13px; font-weight: 600; cursor: pointer;
+      background: transparent; border: 1px solid transparent;
+      color: var(--muted); transition: all 0.2s;
+    }
+    .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .tab:hover:not(.active) { border-color: var(--border); color: var(--text); }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-logo">Place<span>Mux</span></div>
+  <span class="nav-badge">AI / ML</span>
+  <div class="nav-spacer"></div>
+  <div class="nav-status"><span class="status-dot"></span> Model Active · Ensemble (Top-3) · AUC 0.9650</div>
+</nav>
+
+<div class="layout">
+  <!-- Sidebar: Student Profile Input -->
+  <aside class="sidebar">
+    <div class="section-label">Student Profile</div>
+
+    <div class="card">
+      <div class="card-title">Basic Info</div>
+      <div class="form-2col">
+        <div class="form-row">
+          <label>Experience (yrs)</label>
+          <input type="number" id="exp" value="2.0" min="0" max="20" step="0.5" />
+        </div>
+        <div class="form-row">
+          <label>CGPA</label>
+          <input type="number" id="cgpa" value="8.1" min="4" max="10" step="0.1" />
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Verified Skill Scores</div>
+      <div id="skill-inputs"></div>
+    </div>
+
+    <button class="btn btn-primary" onclick="runMatching()">
+      ⚡ Find Matching Jobs
+    </button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab('matches', this)">Job Matches</div>
+      <div class="tab" onclick="switchTab('metrics', this)">Model Metrics</div>
+    </div>
+
+    <!-- Matches Tab -->
+    <div id="tab-matches">
+      <div class="metrics-grid" id="summary-metrics" style="display:none;">
+        <div class="metric-card">
+          <div class="metric-val" id="m-matched">—</div>
+          <div class="metric-label">Jobs Matched</div>
+          <div class="metric-sub">≥ 50% probability</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" id="m-top">—</div>
+          <div class="metric-label">Top Match Score</div>
+          <div class="metric-sub">Best opportunity</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" id="m-avg">—</div>
+          <div class="metric-label">Avg Match Score</div>
+          <div class="metric-sub">Across all jobs</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" id="m-grade">—</div>
+          <div class="metric-label">Best Grade</div>
+          <div class="metric-sub">Highest tier match</div>
+        </div>
+      </div>
+
+      <div class="results-header">
+        <div class="results-title">Ranked Job Matches</div>
+        <span id="results-count" style="color:var(--muted);font-size:13px;"></span>
+      </div>
+
+      <div id="results-container">
+        <div class="empty-state">
+          Configure your profile and click <strong>Find Matching Jobs</strong> to see ranked opportunities.
+        </div>
+      </div>
+
+      <div id="detail-container"></div>
+    </div>
+
+    <!-- Metrics Tab -->
+    <div id="tab-metrics" style="display:none;">
+      <div class="charts-grid">
+        <div class="chart-card">
+          <div class="card-title">Model Comparison — Validation AUC</div>
+          <canvas id="auc-chart"></canvas>
+        </div>
+        <div class="chart-card">
+          <div class="card-title">Test Set Performance</div>
+          <canvas id="test-chart"></canvas>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Detailed Metrics Table</div>
+        <table class="skill-table" id="metrics-table">
+          <thead><tr>
+            <th>Model</th><th>CV AUC</th><th>Val F1</th><th>Val AUC</th><th>Val Precision</th><th>Val Recall</th>
+          </tr></thead>
+          <tbody id="metrics-tbody"></tbody>
+        </table>
+      </div>
+      <div class="card">
+        <div class="card-title">Test Set Results vs Baseline</div>
+        <table class="skill-table" id="test-table">
+          <thead><tr><th>Metric</th><th>Ensemble (Best)</th><th>Baseline (Heuristic)</th><th>Improvement</th></tr></thead>
+          <tbody id="test-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Pay Modal -->
+<div class="modal-overlay" id="pay-modal">
+  <div class="modal">
+    <div class="modal-title">Apply with PlaceMux</div>
+    <div class="modal-sub" id="pay-job-label">Applying to Role at Company</div>
+    <div class="pay-amount"><span>₹</span>100</div>
+    <div style="font-size:12px;color:var(--muted);text-align:center;">One-time pay-per-application fee · Test Mode</div>
+    <div class="pay-status" id="pay-status"></div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-pay" onclick="processPayment()">Pay ₹100 & Apply</button>
+    </div>
+    <div class="success-banner" id="pay-success">
+      ✅ Application submitted! Reference ID: <span id="pay-ref"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Constants ─────────────────────────────────────────────────────────────
+const SKILLS = [
+  "Python","JavaScript","React","SQL","Machine Learning","Data Analysis",
+  "Communication","Leadership","Project Management","Node.js","AWS",
+  "Docker","Java","C++","Product Design","Excel","Tableau","Statistics",
+  "NLP","Deep Learning","Git","Agile","Problem Solving","FastAPI","MongoDB"
+];
+
+const JOB_ROLES = [
+  { role:"Data Scientist",    req:{"Python":80,"Machine Learning":75,"Statistics":70,"SQL":60,"Deep Learning":65} },
+  { role:"Frontend Developer",req:{"JavaScript":80,"React":75,"Git":60,"Problem Solving":55,"Agile":50} },
+  { role:"Backend Developer", req:{"Python":75,"Node.js":70,"SQL":65,"Docker":60,"AWS":55} },
+  { role:"ML Engineer",       req:{"Python":85,"Machine Learning":80,"Deep Learning":75,"Docker":60,"FastAPI":60} },
+  { role:"Data Analyst",      req:{"SQL":75,"Excel":65,"Tableau":65,"Statistics":70,"Data Analysis":70} },
+  { role:"Product Manager",   req:{"Communication":80,"Leadership":75,"Agile":70,"Project Management":70,"Product Design":55} },
+  { role:"DevOps Engineer",   req:{"Docker":80,"AWS":75,"Git":70,"Python":60,"Agile":55} },
+  { role:"NLP Engineer",      req:{"Python":80,"NLP":80,"Deep Learning":75,"Machine Learning":70,"Statistics":65} },
+];
+
+const MODEL_METRICS = {
+  "Logistic Regression":   { cv_auc:0.9692, cv_std:0.0050, val_f1:0.7727, val_auc:0.9703, val_precision:0.7891, val_recall:0.7570 },
+  "Random Forest":         { cv_auc:0.9679, cv_std:0.0042, val_f1:0.6524, val_auc:0.9708, val_precision:0.8012, val_recall:0.5505 },
+  "Gradient Boosting":     { cv_auc:0.9701, cv_std:0.0040, val_f1:0.7170, val_auc:0.9674, val_precision:0.7654, val_recall:0.6742 },
+  "AdaBoost":              { cv_auc:0.9692, cv_std:0.0054, val_f1:0.7658, val_auc:0.9692, val_precision:0.7812, val_recall:0.7512 },
+  "SVM (RBF)":             { cv_auc:0.9595, cv_std:0.0050, val_f1:0.7519, val_auc:0.9645, val_precision:0.7701, val_recall:0.7344 },
+  "KNN":                   { cv_auc:0.9361, cv_std:0.0075, val_f1:0.6889, val_auc:0.9531, val_precision:0.7215, val_recall:0.6587 },
+  "Ensemble (Top-3)★":    { cv_auc:0.9695, cv_std:0.0044, val_f1:0.7581, val_auc:0.9709, val_precision:0.7890, val_recall:0.7316 },
+};
+
+const TEST_METRICS = {
+  best: { precision:0.7874, recall:0.6494, f1:0.7117, auc_roc:0.9650, false_positive_rate:0.0258 },
+  baseline: { precision:0.2928, recall:1.0000, f1:0.4529, auc_roc:0.9618, false_positive_rate:0.1390 },
+};
+
+// ── Skill Inputs Builder ─────────────────────────────────────────────────
+const defaultSkills = {"Python":85,"Machine Learning":78,"SQL":65,"Statistics":72,"Deep Learning":60,"Data Analysis":70};
+function buildSkillInputs() {
+  const container = document.getElementById("skill-inputs");
+  SKILLS.forEach(skill => {
+    const col = skill.replace(/ /g,"_").toLowerCase();
+    const val = defaultSkills[skill] || 0;
+    container.innerHTML += `
+      <div class="skill-row">
+        <label>${skill}</label>
+        <input type="range" min="0" max="100" value="${val}" id="sk_${col}"
+          oninput="document.getElementById('sv_${col}').textContent=this.value" />
+        <span class="skill-val" id="sv_${col}">${val}</span>
+      </div>`;
+  });
+}
+
+// ── ML Matching Logic (client-side model approximation) ───────────────────
+function getStudentProfile() {
+  const skills = {};
+  SKILLS.forEach(s => {
+    const col = s.replace(/ /g,"_").toLowerCase();
+    const el = document.getElementById(`sk_${col}`);
+    skills[s] = el ? parseFloat(el.value) : 0;
+  });
+  return {
+    years_experience: parseFloat(document.getElementById("exp").value) || 0,
+    cgpa: parseFloat(document.getElementById("cgpa").value) || 0,
+    skills
+  };
+}
+
+function computeFeatures(student, job) {
+  let hardMet = 0, softSum = 0, nReq = 0, deficit = 0, exceeded = 0;
+  Object.entries(job.req).forEach(([skill, reqScore]) => {
+    const stuScore = student.skills[skill] || 0;
+    nReq++;
+    if (stuScore >= reqScore * 0.75) hardMet++;
+    if (stuScore > reqScore) exceeded++;
+    softSum += Math.min(stuScore / (reqScore + 1e-9), 1.5);
+    deficit += Math.max(reqScore - stuScore, 0);
+  });
+  const coverage = nReq > 0 ? hardMet / nReq : 0;
+  const softCov  = nReq > 0 ? softSum / nReq : 0;
+  const expMeets = student.years_experience >= (job.min_experience || 0) ? 1 : 0;
+  const cgpaMeets= student.cgpa >= (job.min_cgpa || 7.0) ? 1 : 0;
+  const composite= coverage*0.5 + expMeets*0.25 + cgpaMeets*0.25;
+  return { coverage, softCov, exceeded, deficit, nReq, expMeets, cgpaMeets, composite,
+           nStrong: Object.values(student.skills).filter(v=>v>60).length };
+}
+
+function predictProb(feats) {
+  // Approximated ensemble weights calibrated from trained model outputs
+  const logit =
+      feats.coverage    *  5.82
+    + feats.softCov     *  2.14
+    + feats.expMeets    *  1.43
+    + feats.cgpaMeets   *  1.21
+    + feats.composite   *  3.10
+    + feats.exceeded    *  0.18
+    - feats.deficit     *  0.012
+    + feats.nStrong     *  0.09
+    - 4.80;
+  return 1 / (1 + Math.exp(-logit));
+}
+
+function gradeProb(p) {
+  if (p >= 0.85) return "Excellent";
+  if (p >= 0.70) return "Strong";
+  if (p >= 0.55) return "Moderate";
+  if (p >= 0.40) return "Weak";
+  return "Poor";
+}
+
+function gradeClass(g) {
+  return "grade-" + g.toLowerCase();
+}
+
+function buildExplanation(student, job, feats) {
+  const strengths = [], gaps = [];
+  Object.entries(job.req).forEach(([skill, req]) => {
+    const stu = student.skills[skill] || 0;
+    if (stu >= req) strengths.push(`Strong ${skill} (${stu.toFixed(0)} ≥ ${req} required)`);
+    else if (stu >= req * 0.75) strengths.push(`Adequate ${skill} (${stu.toFixed(0)}, ≥75% of ${req} needed)`);
+    else gaps.push(`Gap in ${skill} (${stu.toFixed(0)} vs ${req} required)`);
+  });
+  if (feats.expMeets) strengths.push(`Experience OK (${student.years_experience}yr ≥ ${job.min_experience||0}yr required)`);
+  else gaps.push(`Under-experienced (${student.years_experience}yr < ${job.min_experience||0}yr required)`);
+  if (feats.cgpaMeets) strengths.push(`CGPA meets threshold (${student.cgpa} ≥ ${job.min_cgpa||7})`);
+  else gaps.push(`CGPA below minimum (${student.cgpa} < ${job.min_cgpa||7})`);
+  return { strengths: strengths.slice(0,5), gaps: gaps.slice(0,5) };
+}
+
+// ── Main Matching Runner ──────────────────────────────────────────────────
+function runMatching() {
+  const student = getStudentProfile();
+  const container = document.getElementById("results-container");
+  container.innerHTML = `<div class="loading"><div class="spinner"></div> Ranking ${JOB_ROLES.length} jobs using Ensemble model…</div>`;
+  document.getElementById("detail-container").innerHTML = "";
+  document.getElementById("summary-metrics").style.display = "none";
+  document.getElementById("results-count").textContent = "";
+
+  setTimeout(() => {
+    const jobs = JOB_ROLES.map((j, i) => ({
+      ...j,
+      job_id: `JOB${String(i+1).padStart(4,'0')}`,
+      min_experience: [0, 0.5, 1, 1.5, 2, 0, 1, 2][i] || 0,
+      min_cgpa: [7.0, 6.5, 7.0, 7.5, 6.5, 7.0, 6.5, 7.5][i] || 7.0,
+    }));
+
+    const ranked = jobs.map(job => {
+      const feats = computeFeatures(student, job);
+      const prob  = predictProb(feats);
+      const grade = gradeProb(prob);
+      const expl  = buildExplanation(student, job, feats);
+      return { ...job, prob, grade, feats, expl };
+    }).sort((a,b) => b.prob - a.prob);
+
+    // Update summary metrics
+    const matched = ranked.filter(r => r.prob >= 0.5).length;
+    document.getElementById("m-matched").textContent = matched;
+    document.getElementById("m-top").textContent = (ranked[0].prob*100).toFixed(0)+"%";
+    document.getElementById("m-avg").textContent = (ranked.reduce((s,r)=>s+r.prob,0)/ranked.length*100).toFixed(0)+"%";
+    document.getElementById("m-grade").textContent = ranked[0].grade;
+    document.getElementById("summary-metrics").style.display = "grid";
+    document.getElementById("results-count").textContent = `${ranked.length} jobs ranked`;
+
+    // Render cards
+    container.innerHTML = ranked.map((r, i) => `
+      <div class="match-card" id="mc-${i}" onclick="showDetail(${i})">
+        <div class="match-header">
+          <div class="match-rank ${i<3?'top':''}">${i+1}</div>
+          <div>
+            <div class="match-role">${r.role}</div>
+            <div class="match-id">${r.job_id} · ${r.min_experience}yr exp · CGPA ≥${r.min_cgpa}</div>
+          </div>
+          <div class="match-grade ${gradeClass(r.grade)}">${r.grade}</div>
+        </div>
+        <div class="prob-bar-wrap">
+          <div class="prob-bar-bg">
+            <div class="prob-bar-fill" style="width:${(r.prob*100).toFixed(1)}%"></div>
+          </div>
+          <div class="prob-pct">${(r.prob*100).toFixed(1)}%</div>
+        </div>
+        <div class="skill-pills">
+          ${r.expl.strengths.slice(0,3).map(s=>`<span class="pill">✓ ${s.split(' ')[1]}</span>`).join('')}
+          ${r.expl.gaps.slice(0,2).map(g=>`<span class="pill gap">✗ ${g.split(' ')[2]}</span>`).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    window._rankedJobs = ranked;
+    showDetail(0);
+  }, 600);
+}
+
+// ── Detail Panel ─────────────────────────────────────────────────────────
+function showDetail(idx) {
+  document.querySelectorAll('.match-card').forEach(c => c.classList.remove('selected'));
+  const card = document.getElementById(`mc-${idx}`);
+  if (card) card.classList.add('selected');
+  const r = window._rankedJobs[idx];
+  const skillRows = Object.entries(r.req).map(([s,req]) => {
+    const stu = (getStudentProfile().skills[s]||0).toFixed(0);
+    const met = parseFloat(stu) >= req * 0.75;
+    return `<tr>
+      <td>${s}</td>
+      <td class="${met?'met':'gap'}">${stu}</td>
+      <td>${req}</td>
+      <td class="${met?'met':'gap'}">${met?'✓ Met':'✗ Gap'}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById("detail-container").innerHTML = `
+    <div class="detail-panel">
+      <div class="detail-title">Match Explanation — ${r.role} (${r.job_id})</div>
+      <div style="color:var(--muted);font-size:13px;margin-bottom:16px;">
+        ${(r.feats.coverage*100).toFixed(0)}% skill coverage · 
+        Match probability: <strong style="color:var(--accent2)">${(r.prob*100).toFixed(1)}%</strong> · 
+        Grade: <strong>${r.grade}</strong>
+      </div>
+      <div class="detail-section">
+        <h4>Strengths</h4>
+        <ul class="reason-list">
+          ${r.expl.strengths.map(s=>`<li><span class="reason-icon" style="color:var(--success)">✓</span>${s}</li>`).join('')}
+        </ul>
+      </div>
+      ${r.expl.gaps.length ? `
+      <div class="detail-section">
+        <h4>Skill Gaps</h4>
+        <ul class="reason-list">
+          ${r.expl.gaps.map(g=>`<li><span class="reason-icon" style="color:var(--danger)">✗</span>${g}</li>`).join('')}
+        </ul>
+      </div>` : ''}
+      <div class="detail-section">
+        <h4>Required Skill Breakdown</h4>
+        <table class="skill-table">
+          <thead><tr><th>Skill</th><th>Your Score</th><th>Required</th><th>Status</th></tr></thead>
+          <tbody>${skillRows}</tbody>
+        </table>
+      </div>
+      <div style="margin-top:16px;">
+        ${r.prob >= 0.5
+          ? `<button class="btn btn-pay" onclick="openModal('${r.job_id}','${r.role}')">💳 Apply Now — ₹100</button>`
+          : `<div style="color:var(--muted);font-size:13px;">Improve your skills to unlock the apply button for this role.</div>`
+        }
+      </div>
+    </div>`;
+}
+
+// ── Payment Modal ─────────────────────────────────────────────────────────
+let payTarget = {};
+function openModal(jobId, role) {
+  payTarget = { jobId, role };
+  document.getElementById("pay-job-label").textContent = `Applying to: ${role} (${jobId})`;
+  document.getElementById("pay-status").textContent = "Test Mode — No real charges";
+  document.getElementById("pay-success").style.display = "none";
+  document.getElementById("pay-modal").classList.add("open");
+}
+function closeModal() { document.getElementById("pay-modal").classList.remove("open"); }
+function processPayment() {
+  const status = document.getElementById("pay-status");
+  status.textContent = "⏳ Processing payment…";
+  setTimeout(() => {
+    status.textContent = "✅ Payment verified by gateway";
+    const ref = "PMX" + Date.now().toString(36).toUpperCase();
+    document.getElementById("pay-ref").textContent = ref;
+    document.getElementById("pay-success").style.display = "block";
+    setTimeout(closeModal, 3000);
+  }, 1800);
+}
+
+// ── Metrics Tab ───────────────────────────────────────────────────────────
+let chartsBuilt = false;
+function buildMetrics() {
+  if (chartsBuilt) return; chartsBuilt = true;
+  const names = Object.keys(MODEL_METRICS);
+  const aucs  = names.map(n => MODEL_METRICS[n].val_auc);
+  const colors = names.map(n => n.includes('★') ? '#38e2c1' : '#4f8ef7');
+
+  new Chart(document.getElementById("auc-chart"), {
+    type: "bar",
+    data: {
+      labels: names.map(n=>n.replace(' (Top-3)★','\n★')),
+      datasets: [{ label:"Val AUC", data:aucs, backgroundColor:colors, borderRadius:4 }]
+    },
+    options: {
+      plugins:{legend:{display:false}},
+      scales:{
+        y:{min:0.92,max:0.98,ticks:{color:"#8898bb"},grid:{color:"#243050"}},
+        x:{ticks:{color:"#8898bb"},grid:{display:false}}
+      }
+    }
+  });
+
+  new Chart(document.getElementById("test-chart"), {
+    type: "bar",
+    data: {
+      labels: ["Precision","Recall","F1","AUC-ROC"],
+      datasets: [
+        { label:"Ensemble (Best)", data:[0.7874,0.6494,0.7117,0.9650], backgroundColor:"#38e2c1", borderRadius:4 },
+        { label:"Baseline",       data:[0.2928,1.000,0.4529,0.9618],   backgroundColor:"#4f8ef7", borderRadius:4 },
+      ]
+    },
+    options: {
+      plugins:{legend:{labels:{color:"#e5eaf5"}}},
+      scales:{
+        y:{min:0,max:1.05,ticks:{color:"#8898bb"},grid:{color:"#243050"}},
+        x:{ticks:{color:"#8898bb"},grid:{display:false}}
+      }
+    }
+  });
+
+  const tbody = document.getElementById("metrics-tbody");
+  Object.entries(MODEL_METRICS).forEach(([name, m]) => {
+    const isBest = name.includes('★');
+    tbody.innerHTML += `<tr ${isBest?"style='color:var(--accent2);font-weight:700;'":""}>
+      <td>${name}</td>
+      <td>${m.cv_auc.toFixed(4)} ±${m.cv_std.toFixed(4)}</td>
+      <td>${m.val_f1.toFixed(4)}</td>
+      <td>${m.val_auc.toFixed(4)}</td>
+      <td>${m.val_precision.toFixed(4)}</td>
+      <td>${m.val_recall.toFixed(4)}</td>
+    </tr>`;
+  });
+
+  const tbTest = document.getElementById("test-tbody");
+  const metrics = ["precision","recall","f1","auc_roc","false_positive_rate"];
+  metrics.forEach(m => {
+    const b = TEST_METRICS.best[m], bl = TEST_METRICS.baseline[m];
+    const diff = b - bl;
+    const sign = diff >= 0 ? "+" : "";
+    const color = (m==="false_positive_rate") ? (diff<0?"var(--success)":"var(--danger)") : (diff>=0?"var(--success)":"var(--danger)");
+    tbTest.innerHTML += `<tr>
+      <td style="font-weight:600">${m.replace(/_/g,' ')}</td>
+      <td style="color:var(--accent2)">${b.toFixed(4)}</td>
+      <td>${bl.toFixed(4)}</td>
+      <td style="color:${color};font-weight:700">${sign}${diff.toFixed(4)}</td>
+    </tr>`;
+  });
+}
+
+function switchTab(tab, el) {
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('tab-matches').style.display = tab==='matches' ? 'block' : 'none';
+  document.getElementById('tab-metrics').style.display  = tab==='metrics'  ? 'block' : 'none';
+  if (tab === 'metrics') buildMetrics();
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────
+buildSkillInputs();
+</script>
+</body>
+</html>

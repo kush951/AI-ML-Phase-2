@@ -1,0 +1,86 @@
+{
+  "Logistic Regression": {
+    "cv_auc": 0.969178,
+    "cv_std": 0.005011,
+    "val_precision": 0.918919,
+    "val_recall": 0.666667,
+    "val_f1": 0.772727,
+    "val_auc": 0.970267,
+    "val_ap": 0.849277
+  },
+  "Random Forest": {
+    "cv_auc": 0.967916,
+    "cv_std": 0.004229,
+    "val_precision": 0.485623,
+    "val_recall": 0.993464,
+    "val_f1": 0.652361,
+    "val_auc": 0.970779,
+    "val_ap": 0.848364
+  },
+  "Gradient Boosting": {
+    "cv_auc": 0.969815,
+    "cv_std": 0.003801,
+    "val_precision": 0.848214,
+    "val_recall": 0.620915,
+    "val_f1": 0.716981,
+    "val_auc": 0.967389,
+    "val_ap": 0.82998
+  },
+  "AdaBoost": {
+    "cv_auc": 0.963899,
+    "cv_std": 0.007175,
+    "val_precision": 0.906542,
+    "val_recall": 0.633987,
+    "val_f1": 0.746154,
+    "val_auc": 0.965775,
+    "val_ap": 0.8379
+  },
+  "SVM (RBF)": {
+    "cv_auc": 0.959522,
+    "cv_std": 0.004965,
+    "val_precision": 0.92381,
+    "val_recall": 0.633987,
+    "val_f1": 0.751938,
+    "val_auc": 0.964505,
+    "val_ap": 0.836885
+  },
+  "KNN": {
+    "cv_auc": 0.936061,
+    "cv_std": 0.007511,
+    "val_precision": 0.794872,
+    "val_recall": 0.607843,
+    "val_f1": 0.688889,
+    "val_auc": 0.953075,
+    "val_ap": 0.823951
+  },
+  "Ensemble (Top-3)": {
+    "cv_auc": 0.970052,
+    "cv_std": 0.004418,
+    "val_precision": 0.863248,
+    "val_recall": 0.660131,
+    "val_f1": 0.748148,
+    "val_auc": 0.970079,
+    "val_ap": 0.842056
+  },
+  "__best__": "Random Forest",
+  "__test_metrics__": {
+    "precision": 0.479495,
+    "recall": 0.987013,
+    "f1": 0.645435,
+    "auc_roc": 0.960977,
+    "avg_precision": 0.850558,
+    "false_positive_rate": 0.157744
+  },
+  "__baseline__": {
+    "precision": 0.292776,
+    "recall": 1.0,
+    "f1": 0.452941,
+    "auc_roc": 0.961768
+  },
+  "__improvement__": {
+    "precision": 0.18672,
+    "recall": -0.012987,
+    "f1": 0.192494,
+    "auc_roc": -0.000792
+  }
+}
