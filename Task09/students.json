@@ -1,0 +1,7442 @@
+[
+  {
+    "student_id":"S0000",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Python":0.7,
+      "Business Analysis":0.97,
+      "Cloud (AWS\/GCP\/Azure)":0.46,
+      "Data Engineering":0.27
+    },
+    "years_experience":0.7,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.6,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0001",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Computer Vision":0.78,
+      "Data Engineering":0.67,
+      "Kubernetes":0.5,
+      "Agile\/Scrum":0.45
+    },
+    "years_experience":1.8,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.6,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0002",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.97,
+      "Cloud (AWS\/GCP\/Azure)":0.87,
+      "Deep Learning":0.36,
+      "Computer Vision":0.43,
+      "Data Visualization":0.62,
+      "Kafka":0.4,
+      "SQL":0.84,
+      "Data Analysis":0.62,
+      "React":0.29
+    },
+    "years_experience":4.9,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.6,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0003",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Machine Learning":0.53,
+      "Leadership":0.63,
+      "Data Engineering":0.73,
+      "Data Visualization":0.66
+    },
+    "years_experience":2.2,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.638,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0004",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Computer Vision":0.74,
+      "Leadership":0.49,
+      "Cloud (AWS\/GCP\/Azure)":0.46,
+      "Project Management":0.66,
+      "Spark":0.87,
+      "Communication":0.59,
+      "Data Analysis":1.0,
+      "Agile\/Scrum":0.6
+    },
+    "years_experience":2.6,
+    "education_level":"Diploma",
+    "location":"Mumbai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.676,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0005",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "React":0.52,
+      "Cloud (AWS\/GCP\/Azure)":0.54,
+      "Data Analysis":0.48,
+      "Computer Vision":0.84,
+      "System Design":0.54,
+      "Project Management":0.64,
+      "Java":0.8,
+      "Power BI":0.51
+    },
+    "years_experience":4.7,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.609,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0006",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.59,
+      "Docker":0.72,
+      "Data Analysis":0.56,
+      "Data Visualization":0.81,
+      "Machine Learning":0.91
+    },
+    "years_experience":4.8,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.718,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0007",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.67,
+      "Cloud (AWS\/GCP\/Azure)":0.47,
+      "DevOps":0.62,
+      "Python":0.76,
+      "Leadership":0.97,
+      "Business Analysis":0.66,
+      "SQL":0.55,
+      "Tableau":0.13,
+      "Excel":0.67,
+      "Spark":0.41
+    },
+    "years_experience":0.9,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.591,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0008",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Deep Learning":1.0,
+      "JavaScript":0.44,
+      "Data Visualization":0.46,
+      "NLP":0.52,
+      "DevOps":0.79,
+      "Excel":0.77
+    },
+    "years_experience":7.9,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.663,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0009",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Spark":0.87,
+      "System Design":0.14,
+      "Data Analysis":0.55,
+      "Excel":0.63,
+      "Business Analysis":0.39,
+      "Docker":0.24
+    },
+    "years_experience":1.3,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.47,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0010",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Project Management":0.43,
+      "Statistics":0.74,
+      "React":0.75,
+      "Leadership":0.75,
+      "Communication":0.51,
+      "JavaScript":0.88
+    },
+    "years_experience":1.8,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.677,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0011",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Engineering":0.83,
+      "Data Analysis":0.69,
+      "Spark":0.49
+    },
+    "years_experience":3.9,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.67,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0012",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Engineering":0.64,
+      "Tableau":0.52,
+      "Docker":0.81,
+      "Spark":0.69,
+      "Node.js":0.6,
+      "Computer Vision":0.49,
+      "SQL":0.41,
+      "Business Analysis":0.95,
+      "Leadership":0.77,
+      "Power BI":0.68
+    },
+    "years_experience":1.5,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.656,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0013",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.56,
+      "FastAPI":0.97,
+      "Data Engineering":0.82,
+      "Excel":0.71,
+      "Kafka":0.58
+    },
+    "years_experience":5.2,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.728,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0014",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.75,
+      "Docker":0.58,
+      "Computer Vision":0.85,
+      "Excel":0.65,
+      "React":0.96
+    },
+    "years_experience":2.3,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.758,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0015",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Computer Vision":0.49,
+      "Machine Learning":0.63,
+      "System Design":0.71,
+      "Business Analysis":0.21,
+      "DevOps":0.72,
+      "Spark":0.58,
+      "Power BI":0.64
+    },
+    "years_experience":4.1,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.569,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0016",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Leadership":0.96,
+      "Excel":0.94,
+      "Data Engineering":0.66,
+      "React":0.92
+    },
+    "years_experience":5.0,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.87,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0017",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kafka":0.41,
+      "Cloud (AWS\/GCP\/Azure)":0.83,
+      "Computer Vision":0.6,
+      "Leadership":0.82,
+      "Project Management":0.65,
+      "Java":0.57,
+      "Data Engineering":-0.05,
+      "Spark":0.84
+    },
+    "years_experience":8.0,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.584,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0018",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Deep Learning":0.42,
+      "JavaScript":0.74,
+      "Data Analysis":0.46,
+      "Data Engineering":1.0,
+      "Spark":0.74,
+      "Statistics":0.42,
+      "NLP":0.52
+    },
+    "years_experience":7.5,
+    "education_level":"Diploma",
+    "location":"Mumbai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.614,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0019",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Spark":0.43,
+      "SQL":0.74,
+      "Business Analysis":0.78,
+      "DevOps":0.69
+    },
+    "years_experience":5.5,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.66,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0020",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Spark":0.83,
+      "Excel":0.82,
+      "Machine Learning":0.7,
+      "Data Analysis":1.0,
+      "Communication":1.0,
+      "Node.js":0.76,
+      "Cloud (AWS\/GCP\/Azure)":0.83
+    },
+    "years_experience":5.6,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.849,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0021",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "DevOps":0.45,
+      "Machine Learning":0.58,
+      "Power BI":0.83,
+      "JavaScript":0.7,
+      "System Design":1.0
+    },
+    "years_experience":0.3,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.712,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0022",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.43,
+      "Data Visualization":1.0,
+      "DevOps":0.27,
+      "Spark":0.65
+    },
+    "years_experience":1.9,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.588,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0023",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "NLP":0.19,
+      "Business Analysis":0.42,
+      "Kafka":1.0
+    },
+    "years_experience":6.4,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.537,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0024",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "React":0.71,
+      "Excel":1.0,
+      "Machine Learning":0.48,
+      "Docker":0.69
+    },
+    "years_experience":6.4,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.72,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0025",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "React":0.51,
+      "Java":0.84,
+      "Cloud (AWS\/GCP\/Azure)":0.48,
+      "Data Analysis":0.3,
+      "Data Visualization":0.63,
+      "Excel":0.69
+    },
+    "years_experience":7.0,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.575,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0026",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Machine Learning":0.12,
+      "SQL":0.87,
+      "Agile\/Scrum":0.97,
+      "Node.js":0.93,
+      "JavaScript":0.67,
+      "Business Analysis":0.71,
+      "Java":0.43
+    },
+    "years_experience":6.5,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.671,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0027",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Leadership":0.74,
+      "Kafka":0.5,
+      "Java":1.0,
+      "Agile\/Scrum":0.62
+    },
+    "years_experience":2.5,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.715,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0028",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "DevOps":0.48,
+      "Deep Learning":0.65,
+      "Computer Vision":0.53,
+      "Node.js":0.46,
+      "Leadership":0.56,
+      "React":0.74,
+      "Tableau":0.5
+    },
+    "years_experience":1.7,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.56,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0029",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Leadership":0.37,
+      "Computer Vision":0.62,
+      "Kubernetes":0.46,
+      "Docker":0.97,
+      "Tableau":0.65,
+      "Business Analysis":0.35,
+      "NLP":0.67,
+      "Kafka":0.78,
+      "Data Analysis":0.8,
+      "Statistics":0.67
+    },
+    "years_experience":3.8,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.634,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0030",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Project Management":0.83,
+      "Kafka":0.89,
+      "React":0.96,
+      "Docker":0.4,
+      "Excel":0.91,
+      "Data Engineering":0.42
+    },
+    "years_experience":1.8,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.735,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0031",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kafka":0.36,
+      "Excel":0.13,
+      "SQL":0.25,
+      "FastAPI":0.37,
+      "Deep Learning":0.86,
+      "Power BI":0.48
+    },
+    "years_experience":5.8,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.408,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0032",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Business Analysis":0.65,
+      "Excel":0.27,
+      "Docker":0.59,
+      "FastAPI":0.99,
+      "Cloud (AWS\/GCP\/Azure)":0.5
+    },
+    "years_experience":3.5,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.6,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0033",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.66,
+      "Spark":0.54,
+      "DevOps":0.36,
+      "Data Analysis":0.84,
+      "Deep Learning":0.73,
+      "Tableau":0.45,
+      "Data Engineering":0.6,
+      "React":0.71
+    },
+    "years_experience":7.2,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.611,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0034",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Python":0.85,
+      "JavaScript":0.49,
+      "Statistics":0.66,
+      "Data Visualization":0.45,
+      "React":0.67,
+      "Node.js":0.48,
+      "DevOps":0.34,
+      "Business Analysis":0.59,
+      "Agile\/Scrum":0.27,
+      "Data Engineering":1.0
+    },
+    "years_experience":4.3,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.58,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0035",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.38,
+      "Communication":0.8,
+      "Node.js":0.82
+    },
+    "years_experience":0.4,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.667,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0036",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.9,
+      "Kafka":0.68,
+      "Data Visualization":0.84,
+      "React":0.65,
+      "Cloud (AWS\/GCP\/Azure)":0.45,
+      "Excel":0.37,
+      "Node.js":0.46,
+      "Tableau":0.38,
+      "Data Analysis":0.78,
+      "Docker":0.61
+    },
+    "years_experience":0.2,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.612,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0037",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Leadership":0.39,
+      "SQL":0.44,
+      "System Design":0.93,
+      "Computer Vision":0.89,
+      "FastAPI":0.74,
+      "Project Management":0.63,
+      "Cloud (AWS\/GCP\/Azure)":0.82,
+      "JavaScript":0.68,
+      "NLP":0.43,
+      "Agile\/Scrum":0.2
+    },
+    "years_experience":3.2,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.615,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0038",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "SQL":0.77,
+      "Project Management":0.31,
+      "Data Visualization":0.6,
+      "Statistics":0.63,
+      "Leadership":0.36,
+      "Agile\/Scrum":0.59
+    },
+    "years_experience":0.6,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.543,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0039",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "SQL":0.8,
+      "Node.js":0.62,
+      "JavaScript":0.74,
+      "Communication":0.42,
+      "FastAPI":0.44,
+      "Project Management":0.67,
+      "Deep Learning":0.63,
+      "Spark":0.49,
+      "NLP":0.87,
+      "Kubernetes":0.35
+    },
+    "years_experience":0.7,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.603,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0040",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.43,
+      "Python":1.0,
+      "Docker":0.6,
+      "Kafka":0.5,
+      "NLP":1.0,
+      "Excel":0.68,
+      "Computer Vision":0.92,
+      "JavaScript":0.81,
+      "Cloud (AWS\/GCP\/Azure)":0.31
+    },
+    "years_experience":5.5,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.694,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0041",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Statistics":0.67,
+      "Data Engineering":0.66,
+      "React":0.95,
+      "Project Management":0.48
+    },
+    "years_experience":2.8,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.69,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0042",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Statistics":0.84,
+      "Cloud (AWS\/GCP\/Azure)":0.83,
+      "Data Engineering":0.82,
+      "SQL":0.66,
+      "Business Analysis":0.52,
+      "Computer Vision":0.7,
+      "Java":0.88
+    },
+    "years_experience":5.8,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.75,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0043",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Engineering":0.69,
+      "JavaScript":0.69,
+      "NLP":0.81,
+      "Statistics":0.71,
+      "Python":0.92,
+      "Project Management":0.55,
+      "DevOps":0.65
+    },
+    "years_experience":0.1,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.717,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0044",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.56,
+      "NLP":0.38,
+      "Machine Learning":0.51,
+      "Cloud (AWS\/GCP\/Azure)":0.86,
+      "Docker":0.95,
+      "SQL":0.73,
+      "Data Analysis":0.62,
+      "React":0.65,
+      "Tableau":0.91,
+      "Business Analysis":0.42
+    },
+    "years_experience":4.9,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.659,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0045",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Excel":0.79,
+      "System Design":0.4,
+      "Node.js":0.44,
+      "Statistics":0.78,
+      "Spark":0.61,
+      "Agile\/Scrum":0.72,
+      "Machine Learning":0.94
+    },
+    "years_experience":1.3,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.669,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0046",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Python":0.6,
+      "Node.js":0.66,
+      "FastAPI":0.61,
+      "Project Management":0.81,
+      "Agile\/Scrum":0.7
+    },
+    "years_experience":1.9,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.676,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0047",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.59,
+      "SQL":0.96,
+      "DevOps":0.45,
+      "Data Engineering":0.76,
+      "Communication":0.7,
+      "Deep Learning":0.53
+    },
+    "years_experience":4.6,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.665,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0048",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Project Management":0.96,
+      "Statistics":0.31,
+      "Kafka":0.41,
+      "React":0.62,
+      "Cloud (AWS\/GCP\/Azure)":0.38,
+      "Kubernetes":0.79,
+      "DevOps":0.67,
+      "Docker":0.47,
+      "FastAPI":0.3,
+      "Data Analysis":0.62
+    },
+    "years_experience":6.1,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.553,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0049",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Docker":0.63,
+      "Kubernetes":0.53,
+      "Communication":1.0,
+      "FastAPI":0.31,
+      "Kafka":0.79
+    },
+    "years_experience":7.8,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.652,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0050",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.54,
+      "Leadership":1.0,
+      "SQL":0.75,
+      "NLP":0.42,
+      "Kafka":0.48,
+      "Node.js":0.7,
+      "Project Management":0.41,
+      "Docker":1.0
+    },
+    "years_experience":3.2,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.662,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0051",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.72,
+      "Machine Learning":0.89,
+      "Computer Vision":0.84,
+      "Kubernetes":0.56,
+      "JavaScript":0.62,
+      "Agile\/Scrum":0.55,
+      "Docker":0.92,
+      "Communication":0.6,
+      "FastAPI":0.66,
+      "Spark":0.77
+    },
+    "years_experience":4.4,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.713,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0052",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":0.91,
+      "SQL":1.0,
+      "Communication":0.57,
+      "Power BI":0.95
+    },
+    "years_experience":3.3,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.857,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0053",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "DevOps":0.71,
+      "Deep Learning":0.26,
+      "React":0.46,
+      "Computer Vision":0.95,
+      "Agile\/Scrum":0.65,
+      "Kubernetes":0.66,
+      "Business Analysis":0.59,
+      "Spark":0.27,
+      "Data Analysis":0.39,
+      "Cloud (AWS\/GCP\/Azure)":0.51
+    },
+    "years_experience":6.9,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.545,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0054",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.8,
+      "DevOps":0.63,
+      "Data Visualization":0.36,
+      "Spark":0.91,
+      "React":0.5,
+      "FastAPI":0.74,
+      "Kafka":0.21,
+      "Computer Vision":0.72
+    },
+    "years_experience":3.0,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.609,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0055",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.8,
+      "System Design":0.5,
+      "Java":0.43,
+      "Excel":0.61,
+      "SQL":0.61
+    },
+    "years_experience":5.2,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.59,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0056",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.45,
+      "Agile\/Scrum":0.89,
+      "Project Management":0.33,
+      "React":0.52,
+      "Communication":0.77,
+      "Data Analysis":0.58,
+      "Kafka":0.32
+    },
+    "years_experience":7.0,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.551,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0057",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.57,
+      "Leadership":0.69,
+      "Statistics":0.38,
+      "Data Engineering":0.35,
+      "Business Analysis":0.36,
+      "Data Analysis":0.76
+    },
+    "years_experience":7.2,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.518,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0058",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.33,
+      "Kafka":0.51,
+      "Node.js":0.69,
+      "Deep Learning":0.72,
+      "Data Engineering":0.84,
+      "Kubernetes":0.45,
+      "Excel":0.68
+    },
+    "years_experience":1.1,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.603,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0059",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":1.0,
+      "Leadership":0.48,
+      "Python":0.72,
+      "Tableau":0.41,
+      "FastAPI":0.5,
+      "Statistics":0.52,
+      "Spark":0.72,
+      "DevOps":0.73,
+      "NLP":0.54,
+      "Data Analysis":0.48
+    },
+    "years_experience":1.9,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.61,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0060",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Python":0.8,
+      "Power BI":0.88,
+      "Leadership":0.39,
+      "React":1.0,
+      "Cloud (AWS\/GCP\/Azure)":0.58,
+      "Kafka":0.64,
+      "System Design":0.27
+    },
+    "years_experience":7.2,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.651,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0061",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.6,
+      "Computer Vision":0.36,
+      "Agile\/Scrum":0.8,
+      "Cloud (AWS\/GCP\/Azure)":0.41,
+      "Leadership":0.89,
+      "Data Visualization":0.49
+    },
+    "years_experience":2.5,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.592,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0062",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Business Analysis":0.76,
+      "Deep Learning":0.98,
+      "Data Analysis":0.79,
+      "Statistics":0.52,
+      "Java":0.49,
+      "Kafka":0.65,
+      "Node.js":0.88,
+      "NLP":1.0
+    },
+    "years_experience":7.6,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.759,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0063",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":1.0,
+      "Data Analysis":0.57,
+      "Deep Learning":0.56,
+      "Data Visualization":0.1
+    },
+    "years_experience":7.7,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.558,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0064",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.36,
+      "DevOps":0.73,
+      "SQL":0.53
+    },
+    "years_experience":6.6,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.54,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0065",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Python":0.42,
+      "Agile\/Scrum":0.79,
+      "DevOps":0.56,
+      "Java":0.56,
+      "Spark":0.71,
+      "Data Engineering":0.81,
+      "Communication":0.59,
+      "Data Analysis":0.56,
+      "Business Analysis":0.65,
+      "FastAPI":0.73
+    },
+    "years_experience":3.6,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.638,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0066",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.58,
+      "SQL":0.69,
+      "Power BI":0.86,
+      "Docker":0.67,
+      "Agile\/Scrum":0.84,
+      "Node.js":0.84,
+      "Cloud (AWS\/GCP\/Azure)":0.63,
+      "Machine Learning":0.88,
+      "JavaScript":0.48
+    },
+    "years_experience":0.5,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.719,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0067",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":1.0,
+      "Leadership":0.63,
+      "Computer Vision":0.75,
+      "Communication":1.0,
+      "Power BI":0.4,
+      "Agile\/Scrum":0.56,
+      "Python":0.71,
+      "Machine Learning":0.52,
+      "Java":0.7,
+      "Data Engineering":0.3
+    },
+    "years_experience":4.8,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.657,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0068",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Tableau":0.43,
+      "NLP":0.92,
+      "SQL":0.62,
+      "Leadership":0.63,
+      "Python":0.64,
+      "Deep Learning":0.75,
+      "Kafka":0.56
+    },
+    "years_experience":0.5,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.65,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0069",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":0.7,
+      "Kubernetes":0.99,
+      "Data Engineering":0.74,
+      "Agile\/Scrum":0.81
+    },
+    "years_experience":3.7,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.81,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0070",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.47,
+      "Leadership":0.59,
+      "SQL":0.6,
+      "Docker":0.61,
+      "Project Management":0.93,
+      "FastAPI":0.48,
+      "Data Analysis":0.6,
+      "Business Analysis":0.9,
+      "Java":0.64
+    },
+    "years_experience":3.6,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.647,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0071",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.39,
+      "FastAPI":0.84,
+      "Data Engineering":0.58,
+      "Kafka":0.81,
+      "Java":0.63,
+      "Spark":1.0
+    },
+    "years_experience":5.5,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.708,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0072",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.62,
+      "Node.js":0.29,
+      "SQL":0.4,
+      "Business Analysis":0.56
+    },
+    "years_experience":4.5,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.468,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0073",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.61,
+      "Excel":0.74,
+      "Leadership":0.53,
+      "Data Visualization":0.64,
+      "Node.js":0.26,
+      "Business Analysis":0.69,
+      "Machine Learning":0.5,
+      "Statistics":0.86,
+      "Agile\/Scrum":0.77
+    },
+    "years_experience":1.8,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.622,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0074",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Agile\/Scrum":0.76,
+      "Kafka":0.73,
+      "Leadership":0.51
+    },
+    "years_experience":1.4,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.667,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0075",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "NLP":0.46,
+      "Excel":0.57,
+      "Deep Learning":0.83
+    },
+    "years_experience":0.2,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.62,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0076",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.87,
+      "NLP":0.84,
+      "JavaScript":0.93,
+      "Statistics":0.73,
+      "Business Analysis":0.68,
+      "Kafka":0.45,
+      "System Design":0.72,
+      "Agile\/Scrum":0.49,
+      "Data Analysis":0.52,
+      "Machine Learning":0.7
+    },
+    "years_experience":2.8,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.693,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0077",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.88,
+      "Leadership":0.61,
+      "Statistics":0.78,
+      "Machine Learning":0.75,
+      "Data Engineering":0.77,
+      "React":0.64,
+      "Agile\/Scrum":0.67,
+      "Power BI":0.65,
+      "Python":0.53,
+      "Computer Vision":0.42
+    },
+    "years_experience":4.0,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.67,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0078",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.86,
+      "Python":1.0,
+      "FastAPI":0.46
+    },
+    "years_experience":4.6,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.773,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0079",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "SQL":0.87,
+      "React":0.26,
+      "Python":0.98,
+      "Java":0.85,
+      "NLP":0.66,
+      "Agile\/Scrum":0.92,
+      "FastAPI":0.45
+    },
+    "years_experience":2.5,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.713,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0080",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.62,
+      "Kubernetes":0.8,
+      "Communication":0.55,
+      "SQL":0.6,
+      "Computer Vision":0.28
+    },
+    "years_experience":6.5,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.57,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0081",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Computer Vision":1.0,
+      "NLP":0.87,
+      "Agile\/Scrum":0.5,
+      "Deep Learning":0.49,
+      "Data Visualization":0.41,
+      "Tableau":0.55,
+      "Communication":0.48
+    },
+    "years_experience":5.1,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.614,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0082",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":0.27,
+      "Data Analysis":0.73,
+      "Docker":0.39,
+      "Communication":0.6,
+      "Statistics":0.71
+    },
+    "years_experience":3.7,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.54,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0083",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.45,
+      "Communication":0.82,
+      "Excel":0.96,
+      "Kafka":0.56,
+      "Agile\/Scrum":1.0,
+      "Tableau":0.76,
+      "Kubernetes":0.53
+    },
+    "years_experience":4.8,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.726,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0084",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Tableau":0.59,
+      "Spark":0.73,
+      "Power BI":0.64,
+      "Java":0.62
+    },
+    "years_experience":5.7,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.645,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0085",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.61,
+      "Kafka":0.7,
+      "Statistics":0.35,
+      "React":0.92,
+      "Node.js":0.74
+    },
+    "years_experience":2.7,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.664,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0086",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Statistics":0.42,
+      "Cloud (AWS\/GCP\/Azure)":0.27,
+      "Business Analysis":0.54,
+      "Leadership":0.92,
+      "Agile\/Scrum":0.59,
+      "Deep Learning":0.56,
+      "Java":0.63,
+      "Data Analysis":0.57,
+      "System Design":0.38
+    },
+    "years_experience":2.6,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.542,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0087",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.55,
+      "Leadership":0.53,
+      "Node.js":0.79,
+      "Kubernetes":0.71
+    },
+    "years_experience":7.6,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.645,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0088",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Deep Learning":0.78,
+      "Data Analysis":0.93,
+      "Statistics":0.85,
+      "Excel":0.86,
+      "Tableau":0.29
+    },
+    "years_experience":0.3,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.742,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0089",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Deep Learning":0.83,
+      "NLP":0.7,
+      "Spark":0.55,
+      "Power BI":0.13,
+      "Project Management":0.39,
+      "Data Visualization":0.44,
+      "Agile\/Scrum":0.68,
+      "Excel":0.51,
+      "FastAPI":0.69
+    },
+    "years_experience":6.3,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.547,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0090",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":1.0,
+      "Data Visualization":0.68,
+      "Statistics":0.55,
+      "Spark":0.65,
+      "React":0.94,
+      "Kubernetes":0.83,
+      "Power BI":0.47,
+      "Node.js":0.96,
+      "NLP":0.88,
+      "Computer Vision":0.75
+    },
+    "years_experience":6.1,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.771,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0091",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Power BI":0.52,
+      "Node.js":0.82,
+      "Data Analysis":0.27,
+      "Kafka":0.84,
+      "Data Engineering":0.56
+    },
+    "years_experience":3.2,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.602,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0092",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":1.0,
+      "Data Engineering":0.49,
+      "Python":0.44,
+      "Java":0.36
+    },
+    "years_experience":1.1,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.572,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0093",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":0.55,
+      "Agile\/Scrum":0.63,
+      "Python":0.61,
+      "Data Analysis":0.81,
+      "Excel":0.85,
+      "Cloud (AWS\/GCP\/Azure)":0.71,
+      "Computer Vision":0.71,
+      "Deep Learning":0.44,
+      "DevOps":0.98,
+      "Spark":0.93
+    },
+    "years_experience":4.8,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.722,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0094",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Project Management":0.49,
+      "Deep Learning":0.86,
+      "Statistics":0.76,
+      "Node.js":0.92,
+      "Python":0.46,
+      "Agile\/Scrum":0.62
+    },
+    "years_experience":7.6,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.685,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0095",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.65,
+      "React":0.69,
+      "JavaScript":0.69
+    },
+    "years_experience":5.9,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.677,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0096",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Machine Learning":0.47,
+      "JavaScript":0.41,
+      "DevOps":0.36,
+      "Java":0.43,
+      "Power BI":0.13
+    },
+    "years_experience":3.8,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.36,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0097",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Machine Learning":0.35,
+      "Statistics":0.87,
+      "Computer Vision":0.6,
+      "Kafka":0.66,
+      "Tableau":0.55,
+      "Excel":0.52,
+      "Power BI":0.69,
+      "Java":0.6,
+      "Spark":0.56,
+      "Kubernetes":0.52
+    },
+    "years_experience":6.4,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.592,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0098",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.64,
+      "NLP":0.57,
+      "Docker":0.35,
+      "Project Management":0.43,
+      "Excel":0.48,
+      "JavaScript":0.6,
+      "Kubernetes":0.91,
+      "Cloud (AWS\/GCP\/Azure)":0.79,
+      "Data Analysis":0.56
+    },
+    "years_experience":3.4,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.592,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0099",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Business Analysis":0.9,
+      "Excel":0.22,
+      "Kafka":1.0
+    },
+    "years_experience":2.2,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.707,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0100",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.56,
+      "Tableau":0.46,
+      "Business Analysis":0.75,
+      "Leadership":0.75,
+      "NLP":0.53,
+      "Python":0.5,
+      "Deep Learning":0.7,
+      "Agile\/Scrum":0.63
+    },
+    "years_experience":1.2,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.61,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0101",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Visualization":0.65,
+      "Data Analysis":0.75,
+      "System Design":0.63,
+      "Deep Learning":0.42,
+      "Kubernetes":0.46,
+      "JavaScript":0.82,
+      "React":0.64,
+      "Java":0.8,
+      "Communication":0.02,
+      "Cloud (AWS\/GCP\/Azure)":0.87
+    },
+    "years_experience":2.3,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.606,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0102",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Excel":0.49,
+      "Data Analysis":-0.02,
+      "FastAPI":0.84,
+      "NLP":0.16,
+      "Spark":0.95
+    },
+    "years_experience":5.7,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.484,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0103",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Tableau":0.62,
+      "JavaScript":1.0,
+      "Kubernetes":0.62,
+      "Data Engineering":0.67,
+      "SQL":0.88
+    },
+    "years_experience":2.9,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.758,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0104",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Agile\/Scrum":0.97,
+      "Spark":0.65,
+      "Data Analysis":0.31,
+      "Statistics":0.59,
+      "React":0.68
+    },
+    "years_experience":7.8,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.64,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0105",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Deep Learning":0.58,
+      "Spark":0.66,
+      "Power BI":0.55,
+      "Data Visualization":0.25,
+      "DevOps":0.64,
+      "Communication":0.77,
+      "System Design":0.44,
+      "NLP":0.61
+    },
+    "years_experience":7.5,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.562,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0106",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Excel":0.76,
+      "Data Analysis":0.77,
+      "Cloud (AWS\/GCP\/Azure)":0.77,
+      "Computer Vision":0.42,
+      "Communication":0.6,
+      "DevOps":0.88,
+      "Kafka":1.0
+    },
+    "years_experience":1.2,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.743,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0107",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.67,
+      "Machine Learning":0.49,
+      "Communication":0.71
+    },
+    "years_experience":4.9,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.623,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0108",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.9,
+      "Statistics":0.63,
+      "Docker":0.72,
+      "Data Engineering":0.85,
+      "Tableau":0.73,
+      "Leadership":0.52,
+      "React":0.66
+    },
+    "years_experience":4.9,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.716,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0109",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "React":0.66,
+      "Deep Learning":0.75,
+      "Data Visualization":0.55,
+      "JavaScript":0.68,
+      "Kubernetes":1.0,
+      "DevOps":0.8,
+      "SQL":0.79,
+      "Java":0.49
+    },
+    "years_experience":7.7,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.715,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0110",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Computer Vision":0.56,
+      "Data Visualization":0.65,
+      "NLP":0.48,
+      "Docker":0.79,
+      "Kubernetes":0.67,
+      "FastAPI":0.91,
+      "Power BI":0.81,
+      "Statistics":0.7
+    },
+    "years_experience":4.8,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.696,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0111",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Excel":0.75,
+      "SQL":0.77,
+      "Node.js":0.51
+    },
+    "years_experience":0.4,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.677,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0112",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.8,
+      "DevOps":0.41,
+      "Statistics":0.73,
+      "Data Analysis":0.78,
+      "React":0.4,
+      "Kubernetes":0.57
+    },
+    "years_experience":0.8,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.615,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0113",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Visualization":0.58,
+      "Deep Learning":0.75,
+      "Computer Vision":0.68,
+      "Agile\/Scrum":0.54,
+      "Kubernetes":0.85,
+      "React":0.39,
+      "Tableau":0.72,
+      "Machine Learning":0.47
+    },
+    "years_experience":4.9,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.622,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0114",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "System Design":0.63,
+      "Java":0.61,
+      "Kubernetes":0.49,
+      "Power BI":0.73,
+      "Excel":0.47,
+      "DevOps":0.39,
+      "Docker":0.15
+    },
+    "years_experience":4.7,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.496,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0115",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.87,
+      "Tableau":0.72,
+      "Data Visualization":0.33,
+      "System Design":0.6,
+      "Power BI":0.68,
+      "Data Engineering":0.46,
+      "Business Analysis":0.71
+    },
+    "years_experience":4.6,
+    "education_level":"Diploma",
+    "location":"Mumbai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.624,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0116",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.52,
+      "Node.js":0.88,
+      "Deep Learning":0.42,
+      "Spark":0.75,
+      "Project Management":0.69,
+      "Computer Vision":0.7,
+      "Power BI":0.82,
+      "Kubernetes":0.52,
+      "Agile\/Scrum":0.44,
+      "Docker":0.6
+    },
+    "years_experience":7.3,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.634,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0117",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Agile\/Scrum":0.76,
+      "Docker":0.73,
+      "Computer Vision":1.0,
+      "Data Engineering":0.6,
+      "Cloud (AWS\/GCP\/Azure)":0.81,
+      "DevOps":0.73,
+      "Statistics":0.95
+    },
+    "years_experience":2.5,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.797,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0118",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "SQL":1.0,
+      "System Design":0.55,
+      "Leadership":0.61,
+      "DevOps":0.81,
+      "React":0.61,
+      "Tableau":0.47,
+      "JavaScript":0.51
+    },
+    "years_experience":3.8,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.651,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0119",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Deep Learning":0.7,
+      "SQL":1.0,
+      "Agile\/Scrum":0.79,
+      "Business Analysis":0.67,
+      "System Design":0.79,
+      "Data Engineering":0.79,
+      "Data Visualization":0.76
+    },
+    "years_experience":3.8,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.786,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0120",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.52,
+      "Communication":0.67,
+      "Kafka":0.82,
+      "Spark":0.61,
+      "Docker":0.38
+    },
+    "years_experience":0.7,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.6,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0121",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.3,
+      "Spark":1.0,
+      "Power BI":0.32,
+      "NLP":0.46,
+      "Kafka":0.79
+    },
+    "years_experience":7.5,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.574,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0122",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "System Design":0.43,
+      "Agile\/Scrum":0.59,
+      "SQL":1.0,
+      "Java":0.5,
+      "Statistics":0.52,
+      "FastAPI":0.68,
+      "Communication":0.74
+    },
+    "years_experience":3.7,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.637,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0123",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Business Analysis":0.73,
+      "Java":0.57,
+      "Tableau":0.94
+    },
+    "years_experience":1.5,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.747,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0124",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.67,
+      "React":0.64,
+      "Leadership":0.49,
+      "SQL":0.8,
+      "NLP":0.63,
+      "Deep Learning":0.83,
+      "Docker":0.42,
+      "Java":0.52
+    },
+    "years_experience":2.1,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.625,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0125",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Leadership":0.58,
+      "SQL":0.84,
+      "FastAPI":0.23
+    },
+    "years_experience":5.6,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.55,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0126",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.64,
+      "Agile\/Scrum":0.07,
+      "Data Engineering":0.82,
+      "Excel":0.43,
+      "Deep Learning":0.87,
+      "Docker":0.94,
+      "Tableau":0.47
+    },
+    "years_experience":6.4,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.606,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0127",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.88,
+      "FastAPI":0.77,
+      "Project Management":0.88,
+      "JavaScript":0.75
+    },
+    "years_experience":4.0,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.82,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0128",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "SQL":0.42,
+      "Leadership":0.72,
+      "Computer Vision":0.58,
+      "Project Management":0.67,
+      "System Design":0.3,
+      "Docker":0.73,
+      "Data Analysis":0.62,
+      "Kubernetes":0.45,
+      "FastAPI":0.78,
+      "Machine Learning":0.35
+    },
+    "years_experience":4.6,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.562,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0129",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "DevOps":1.0,
+      "Machine Learning":0.85,
+      "Kafka":0.85,
+      "Spark":0.69
+    },
+    "years_experience":6.2,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.848,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0130",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Excel":1.0,
+      "React":1.0,
+      "Spark":0.57,
+      "Data Analysis":0.71,
+      "Leadership":1.0,
+      "Tableau":0.6,
+      "DevOps":0.67,
+      "Deep Learning":0.1,
+      "Communication":0.34,
+      "JavaScript":0.72
+    },
+    "years_experience":3.4,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.671,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0131",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.3,
+      "Deep Learning":0.34,
+      "Cloud (AWS\/GCP\/Azure)":0.76,
+      "Computer Vision":0.55,
+      "Business Analysis":0.89,
+      "Data Visualization":0.76,
+      "SQL":0.37,
+      "Machine Learning":0.75,
+      "Leadership":0.75,
+      "Node.js":0.54
+    },
+    "years_experience":0.4,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.601,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0132",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Visualization":0.8,
+      "Excel":0.64,
+      "Kafka":0.88,
+      "Machine Learning":0.52,
+      "Deep Learning":0.35,
+      "Kubernetes":0.49
+    },
+    "years_experience":6.5,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.613,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0133",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.97,
+      "Statistics":0.35,
+      "Cloud (AWS\/GCP\/Azure)":0.5,
+      "Machine Learning":0.5,
+      "DevOps":0.11,
+      "System Design":0.66
+    },
+    "years_experience":7.5,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.515,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0134",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.75,
+      "Deep Learning":0.51,
+      "Statistics":0.55,
+      "React":0.3,
+      "NLP":0.87,
+      "Data Visualization":0.52,
+      "DevOps":0.9,
+      "Docker":0.6,
+      "Data Engineering":0.75
+    },
+    "years_experience":1.6,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.639,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0135",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "DevOps":0.76,
+      "Business Analysis":0.83,
+      "Power BI":0.71,
+      "Computer Vision":0.61
+    },
+    "years_experience":0.6,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.727,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0136",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Statistics":0.62,
+      "Python":0.91,
+      "Computer Vision":0.49,
+      "Excel":0.59,
+      "Business Analysis":0.46,
+      "SQL":0.66,
+      "Tableau":0.83,
+      "Docker":0.6
+    },
+    "years_experience":5.2,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.645,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0137",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":0.87,
+      "SQL":0.43,
+      "Tableau":0.78,
+      "Business Analysis":0.67,
+      "Docker":0.76,
+      "Data Visualization":0.62,
+      "Java":1.0,
+      "Computer Vision":0.47,
+      "JavaScript":0.55,
+      "Power BI":0.75
+    },
+    "years_experience":3.0,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.69,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0138",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.8,
+      "Data Visualization":0.33,
+      "Power BI":0.73,
+      "Docker":0.58,
+      "Business Analysis":0.74,
+      "Communication":0.53,
+      "Tableau":0.61,
+      "Excel":1.0
+    },
+    "years_experience":7.7,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.665,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0139",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.26,
+      "Deep Learning":0.6,
+      "Power BI":0.6
+    },
+    "years_experience":1.2,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.487,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0140",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Machine Learning":0.9,
+      "Agile\/Scrum":0.67,
+      "Communication":0.62,
+      "Leadership":0.67,
+      "Spark":0.61,
+      "Docker":0.41,
+      "Power BI":0.6,
+      "Data Visualization":0.88
+    },
+    "years_experience":5.6,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.67,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0141",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.54,
+      "Deep Learning":0.55,
+      "Data Engineering":0.43,
+      "Computer Vision":0.93
+    },
+    "years_experience":0.6,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.612,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0142",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Project Management":0.94,
+      "Data Engineering":0.63,
+      "Statistics":0.85,
+      "Leadership":0.69,
+      "Data Analysis":0.49,
+      "Communication":0.81
+    },
+    "years_experience":5.1,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.735,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0143",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.9,
+      "Tableau":0.47,
+      "Java":0.5,
+      "System Design":0.59,
+      "SQL":0.92,
+      "Kubernetes":0.51,
+      "Machine Learning":0.6,
+      "Data Engineering":0.9,
+      "Computer Vision":0.58
+    },
+    "years_experience":6.8,
+    "education_level":"Diploma",
+    "location":"Mumbai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.663,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0144",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Visualization":0.54,
+      "Power BI":0.76,
+      "Project Management":0.71,
+      "React":0.67,
+      "Kafka":1.0
+    },
+    "years_experience":3.1,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.736,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0145",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.77,
+      "Business Analysis":0.73,
+      "JavaScript":0.89,
+      "Machine Learning":0.78
+    },
+    "years_experience":4.9,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.792,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0146",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Tableau":0.38,
+      "FastAPI":0.78,
+      "Docker":0.6,
+      "Data Engineering":0.58,
+      "JavaScript":0.39,
+      "DevOps":0.41,
+      "React":0.63
+    },
+    "years_experience":1.2,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.539,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0147",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.57,
+      "SQL":0.72,
+      "Data Analysis":0.7,
+      "Python":0.42,
+      "Statistics":0.76,
+      "FastAPI":0.56,
+      "Kafka":0.64,
+      "Cloud (AWS\/GCP\/Azure)":0.86
+    },
+    "years_experience":4.8,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.654,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0148",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.79,
+      "React":0.54,
+      "Data Visualization":0.6,
+      "Data Analysis":0.57,
+      "Business Analysis":0.72,
+      "DevOps":0.58,
+      "Data Engineering":0.87
+    },
+    "years_experience":0.5,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.667,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0149",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Docker":0.46,
+      "Tableau":0.46,
+      "Data Analysis":0.68,
+      "JavaScript":0.74,
+      "Cloud (AWS\/GCP\/Azure)":0.49,
+      "Data Engineering":1.0,
+      "Business Analysis":0.51
+    },
+    "years_experience":6.4,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.62,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0150",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Power BI":0.89,
+      "Kafka":0.78,
+      "Excel":0.61,
+      "Communication":0.45,
+      "Agile\/Scrum":1.0,
+      "Deep Learning":0.81,
+      "Statistics":0.62,
+      "Java":0.57,
+      "Tableau":0.43
+    },
+    "years_experience":4.6,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.684,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0151",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Power BI":0.44,
+      "Tableau":0.51,
+      "React":0.54,
+      "JavaScript":0.42,
+      "SQL":0.86,
+      "System Design":0.59,
+      "Computer Vision":0.59
+    },
+    "years_experience":2.3,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.564,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0152",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.44,
+      "Statistics":0.77,
+      "Data Engineering":0.82,
+      "Cloud (AWS\/GCP\/Azure)":0.49,
+      "Leadership":0.8
+    },
+    "years_experience":4.8,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.664,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0153",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "DevOps":0.77,
+      "Machine Learning":0.75,
+      "Tableau":0.59,
+      "JavaScript":0.55,
+      "Project Management":0.45,
+      "Kafka":0.48,
+      "Agile\/Scrum":0.47,
+      "Communication":0.42,
+      "Data Analysis":0.83
+    },
+    "years_experience":6.4,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.59,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0154",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Engineering":0.61,
+      "Kubernetes":0.46,
+      "Business Analysis":0.55,
+      "Spark":0.38,
+      "DevOps":0.87,
+      "System Design":0.45,
+      "Project Management":0.53
+    },
+    "years_experience":2.8,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.55,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0155",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.57,
+      "Data Analysis":0.85,
+      "SQL":0.71,
+      "Power BI":0.87,
+      "Business Analysis":0.44,
+      "Deep Learning":0.68,
+      "JavaScript":0.59
+    },
+    "years_experience":2.4,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.673,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0156",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Leadership":0.48,
+      "Tableau":0.8,
+      "NLP":0.63,
+      "Kafka":0.7
+    },
+    "years_experience":4.5,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.653,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0157",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "NLP":0.76,
+      "Communication":0.92,
+      "Leadership":0.7,
+      "Node.js":0.74,
+      "React":0.9
+    },
+    "years_experience":3.1,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.804,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0158",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "System Design":0.46,
+      "SQL":0.61,
+      "Tableau":0.68,
+      "Excel":0.74
+    },
+    "years_experience":5.4,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.622,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0159",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Agile\/Scrum":0.77,
+      "React":0.36,
+      "System Design":0.57,
+      "SQL":0.91,
+      "JavaScript":0.74,
+      "Tableau":0.7,
+      "FastAPI":0.78,
+      "Kafka":0.77,
+      "NLP":0.78
+    },
+    "years_experience":4.1,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.709,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0160",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.93,
+      "NLP":0.73,
+      "Docker":0.79,
+      "Communication":0.8,
+      "DevOps":1.0,
+      "Project Management":0.36,
+      "Power BI":0.38,
+      "Spark":0.87,
+      "Tableau":0.58
+    },
+    "years_experience":1.6,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.716,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0161",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.98,
+      "Leadership":0.72,
+      "Docker":0.61,
+      "Kafka":0.8,
+      "Project Management":0.53,
+      "FastAPI":0.62,
+      "Excel":0.33,
+      "NLP":0.74,
+      "Data Analysis":0.68,
+      "System Design":0.4
+    },
+    "years_experience":0.9,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.641,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0162",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "DevOps":0.69,
+      "Power BI":0.86,
+      "Data Visualization":0.62,
+      "Machine Learning":0.36,
+      "Excel":0.66,
+      "Business Analysis":1.0,
+      "FastAPI":0.8,
+      "Kafka":0.68
+    },
+    "years_experience":6.9,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.709,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0163",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Computer Vision":0.83,
+      "Tableau":0.44,
+      "Business Analysis":0.4,
+      "System Design":0.77,
+      "Project Management":0.73,
+      "JavaScript":0.29
+    },
+    "years_experience":6.4,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.577,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0164",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.88,
+      "Project Management":0.58,
+      "Statistics":0.95,
+      "System Design":0.43,
+      "Cloud (AWS\/GCP\/Azure)":0.87
+    },
+    "years_experience":3.3,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.742,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0165",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Engineering":0.9,
+      "Deep Learning":0.66,
+      "Project Management":1.0,
+      "Java":0.56,
+      "Power BI":0.72
+    },
+    "years_experience":5.1,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.768,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0166",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.85,
+      "Tableau":0.78,
+      "Spark":0.57,
+      "Data Visualization":1.0
+    },
+    "years_experience":3.0,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.8,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0167",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Excel":1.0,
+      "Data Visualization":0.95,
+      "Business Analysis":0.45
+    },
+    "years_experience":6.8,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.8,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0168",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Docker":0.42,
+      "Cloud (AWS\/GCP\/Azure)":0.55,
+      "Java":0.62,
+      "Power BI":0.86,
+      "Statistics":0.37,
+      "Excel":0.92
+    },
+    "years_experience":0.4,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.623,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0169",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":0.44,
+      "Python":1.0,
+      "Node.js":0.43,
+      "Computer Vision":0.52,
+      "Project Management":1.0
+    },
+    "years_experience":7.0,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.678,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0170",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.42,
+      "JavaScript":0.42,
+      "Leadership":0.66,
+      "Communication":0.44,
+      "NLP":0.73,
+      "Machine Learning":0.7,
+      "React":0.67
+    },
+    "years_experience":4.7,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.577,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0171",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Power BI":0.73,
+      "SQL":0.66,
+      "Excel":0.74,
+      "Node.js":0.68,
+      "Project Management":0.56,
+      "Deep Learning":0.54,
+      "Docker":0.77,
+      "Data Analysis":0.38
+    },
+    "years_experience":7.0,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.633,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0172",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Agile\/Scrum":0.9,
+      "Communication":0.35,
+      "NLP":0.77
+    },
+    "years_experience":5.0,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.673,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0173",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Excel":0.82,
+      "Computer Vision":0.61,
+      "Data Analysis":0.75,
+      "SQL":0.77,
+      "Deep Learning":0.87,
+      "Data Visualization":0.78,
+      "Power BI":0.43,
+      "System Design":0.49,
+      "React":0.71,
+      "JavaScript":0.35
+    },
+    "years_experience":6.8,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.658,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0174",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Business Analysis":0.55,
+      "React":0.65,
+      "Statistics":0.38,
+      "Communication":0.65,
+      "Machine Learning":0.11,
+      "Data Engineering":0.55
+    },
+    "years_experience":7.9,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.482,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0175",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.79,
+      "DevOps":0.71,
+      "Leadership":0.72,
+      "NLP":0.67,
+      "Data Visualization":0.71,
+      "Docker":0.42,
+      "Data Analysis":0.49,
+      "Python":0.48,
+      "System Design":0.38
+    },
+    "years_experience":0.7,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.597,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0176",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.81,
+      "Kubernetes":0.43,
+      "Computer Vision":0.83,
+      "Tableau":0.8,
+      "Deep Learning":0.39,
+      "DevOps":0.93,
+      "Java":0.78
+    },
+    "years_experience":5.8,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.71,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0177",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kafka":0.6,
+      "Node.js":0.61,
+      "SQL":0.5,
+      "FastAPI":0.4
+    },
+    "years_experience":1.4,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.528,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0178",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "NLP":0.3,
+      "Docker":0.6,
+      "JavaScript":0.63
+    },
+    "years_experience":1.0,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.51,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0179",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.53,
+      "Tableau":0.64,
+      "Node.js":0.72
+    },
+    "years_experience":5.7,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.63,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0180",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Machine Learning":0.71,
+      "Docker":0.23,
+      "Excel":0.6,
+      "System Design":0.56,
+      "NLP":0.65,
+      "JavaScript":0.64,
+      "Tableau":0.67,
+      "Cloud (AWS\/GCP\/Azure)":0.63
+    },
+    "years_experience":0.4,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.586,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0181",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kafka":0.93,
+      "Excel":0.48,
+      "Machine Learning":0.5,
+      "DevOps":0.74,
+      "Tableau":0.37
+    },
+    "years_experience":2.2,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.604,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0182",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.81,
+      "Leadership":0.81,
+      "Spark":0.98,
+      "Machine Learning":1.0
+    },
+    "years_experience":0.6,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.9,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0183",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.59,
+      "DevOps":0.72,
+      "FastAPI":0.33,
+      "Python":0.66,
+      "JavaScript":0.84,
+      "Computer Vision":1.0,
+      "Statistics":0.53,
+      "System Design":0.7
+    },
+    "years_experience":4.4,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.671,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0184",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Python":0.33,
+      "Data Engineering":0.66,
+      "DevOps":0.46,
+      "JavaScript":0.64,
+      "Communication":0.48,
+      "Project Management":0.81,
+      "Kafka":1.0,
+      "Java":0.2,
+      "Business Analysis":0.9
+    },
+    "years_experience":7.8,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.609,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0185",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Machine Learning":0.77,
+      "Kafka":0.48,
+      "Data Engineering":0.83,
+      "Spark":0.51
+    },
+    "years_experience":6.0,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.648,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0186",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.64,
+      "System Design":0.82,
+      "Spark":0.75,
+      "Machine Learning":0.36,
+      "Node.js":0.63,
+      "Leadership":0.48,
+      "Deep Learning":0.64,
+      "Data Engineering":0.73,
+      "Statistics":0.75
+    },
+    "years_experience":4.7,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.644,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0187",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":0.98,
+      "Java":0.64,
+      "Node.js":0.75,
+      "SQL":0.82,
+      "DevOps":0.9,
+      "JavaScript":0.79,
+      "Computer Vision":0.38,
+      "Kafka":1.0,
+      "Statistics":0.75,
+      "Project Management":0.61
+    },
+    "years_experience":2.0,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.762,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0188",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Leadership":0.73,
+      "Statistics":0.7,
+      "Cloud (AWS\/GCP\/Azure)":0.54
+    },
+    "years_experience":7.6,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.657,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0189",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "SQL":0.7,
+      "FastAPI":0.7,
+      "Kafka":0.68,
+      "Tableau":0.51,
+      "Power BI":0.71,
+      "Deep Learning":0.84
+    },
+    "years_experience":5.5,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.69,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0190",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kafka":0.55,
+      "Power BI":0.69,
+      "Data Analysis":0.96,
+      "Python":0.44,
+      "Excel":0.62,
+      "Computer Vision":0.7,
+      "Communication":0.53
+    },
+    "years_experience":4.6,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.641,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0191",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Leadership":0.68,
+      "Node.js":0.69,
+      "NLP":0.61,
+      "JavaScript":0.54,
+      "Computer Vision":0.55,
+      "Excel":0.59,
+      "Cloud (AWS\/GCP\/Azure)":0.85,
+      "Business Analysis":0.58,
+      "FastAPI":0.63
+    },
+    "years_experience":2.2,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.636,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0192",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.69,
+      "Tableau":0.47,
+      "DevOps":0.43,
+      "Spark":0.59,
+      "Python":0.85,
+      "React":0.53
+    },
+    "years_experience":3.1,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.593,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0193",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Python":0.73,
+      "Spark":0.44,
+      "Tableau":0.48,
+      "Data Visualization":0.86,
+      "Cloud (AWS\/GCP\/Azure)":0.66,
+      "Machine Learning":0.77
+    },
+    "years_experience":2.0,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.657,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0194",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Visualization":0.85,
+      "Data Engineering":0.36,
+      "System Design":0.42
+    },
+    "years_experience":6.8,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.543,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0195",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Tableau":0.95,
+      "Business Analysis":0.5,
+      "Project Management":0.86,
+      "JavaScript":0.96,
+      "System Design":1.0,
+      "Python":0.84,
+      "Excel":0.34,
+      "Spark":0.9
+    },
+    "years_experience":1.4,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.794,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0196",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Agile\/Scrum":0.6,
+      "Data Engineering":0.51,
+      "Python":0.89,
+      "Kubernetes":0.71,
+      "Docker":0.48,
+      "Excel":0.81
+    },
+    "years_experience":6.9,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.667,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0197",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Visualization":0.97,
+      "SQL":0.84,
+      "Excel":0.6,
+      "Kubernetes":0.84,
+      "JavaScript":0.58
+    },
+    "years_experience":0.8,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.766,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0198",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Business Analysis":0.58,
+      "Node.js":0.55,
+      "Tableau":0.95,
+      "Communication":0.59,
+      "Docker":0.97
+    },
+    "years_experience":1.8,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.728,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0199",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Deep Learning":0.5,
+      "NLP":0.85,
+      "Business Analysis":0.37,
+      "Python":0.53,
+      "Project Management":0.6,
+      "System Design":0.5,
+      "React":0.98
+    },
+    "years_experience":4.9,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.619,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0200",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Business Analysis":0.78,
+      "Data Analysis":0.38,
+      "Data Engineering":0.63,
+      "JavaScript":0.47,
+      "Java":0.79,
+      "NLP":0.66,
+      "Communication":0.59,
+      "Spark":0.48
+    },
+    "years_experience":6.3,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.598,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0201",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Business Analysis":0.82,
+      "Node.js":0.34,
+      "NLP":0.35,
+      "Spark":0.49,
+      "Docker":0.68,
+      "React":0.87,
+      "JavaScript":0.67,
+      "DevOps":0.6,
+      "Data Visualization":0.8,
+      "SQL":0.67
+    },
+    "years_experience":0.8,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.629,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0202",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Business Analysis":0.42,
+      "Data Analysis":0.5,
+      "DevOps":0.6,
+      "Spark":0.66,
+      "Java":0.76
+    },
+    "years_experience":7.1,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.588,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0203",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Computer Vision":0.61,
+      "Kafka":0.63,
+      "Node.js":0.81,
+      "Project Management":0.65,
+      "DevOps":0.71,
+      "Business Analysis":0.31,
+      "Data Visualization":0.48,
+      "Tableau":0.76
+    },
+    "years_experience":3.4,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.62,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0204",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Computer Vision":0.81,
+      "SQL":0.58,
+      "Python":0.84,
+      "Kafka":0.36,
+      "NLP":0.67,
+      "Communication":0.86,
+      "Statistics":0.79,
+      "Data Analysis":0.82,
+      "Docker":1.0,
+      "Spark":0.5
+    },
+    "years_experience":2.1,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.723,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0205",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "System Design":0.81,
+      "Machine Learning":0.81,
+      "Deep Learning":0.74,
+      "Data Visualization":0.14,
+      "Project Management":0.51,
+      "Leadership":0.44,
+      "SQL":0.51
+    },
+    "years_experience":6.7,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.566,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0206",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Docker":0.22,
+      "Statistics":0.64,
+      "Data Analysis":0.74,
+      "React":0.36,
+      "Project Management":0.58,
+      "Machine Learning":0.58
+    },
+    "years_experience":6.1,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.52,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0207",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Deep Learning":0.76,
+      "Machine Learning":1.0,
+      "Node.js":0.81,
+      "Data Analysis":0.87,
+      "Leadership":0.51,
+      "Excel":0.94
+    },
+    "years_experience":6.5,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.815,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0208",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "DevOps":0.35,
+      "Java":0.47,
+      "Excel":0.74,
+      "Cloud (AWS\/GCP\/Azure)":0.72,
+      "Kubernetes":0.41,
+      "FastAPI":0.54,
+      "Python":0.74,
+      "Project Management":0.63,
+      "Agile\/Scrum":0.92
+    },
+    "years_experience":6.3,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.613,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0209",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.86,
+      "Docker":0.82,
+      "System Design":0.87,
+      "Agile\/Scrum":0.63,
+      "Spark":0.6,
+      "Machine Learning":0.79,
+      "NLP":0.54,
+      "Cloud (AWS\/GCP\/Azure)":0.68,
+      "React":0.98
+    },
+    "years_experience":7.4,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.752,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0210",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Statistics":0.79,
+      "Cloud (AWS\/GCP\/Azure)":0.63,
+      "Power BI":0.55,
+      "Docker":0.96,
+      "Project Management":0.68,
+      "Leadership":0.48,
+      "SQL":0.61
+    },
+    "years_experience":0.7,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.671,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0211",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Visualization":0.38,
+      "Kubernetes":0.36,
+      "Excel":0.85,
+      "JavaScript":0.39,
+      "Machine Learning":0.61,
+      "Spark":0.84,
+      "NLP":1.0,
+      "Data Analysis":0.67,
+      "Statistics":0.72,
+      "Kafka":0.71
+    },
+    "years_experience":2.9,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.653,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0212",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kubernetes":0.66,
+      "React":0.17,
+      "Communication":0.82,
+      "SQL":0.4,
+      "Leadership":0.69,
+      "Python":0.44,
+      "Data Engineering":0.97,
+      "JavaScript":0.63,
+      "Docker":1.0,
+      "Agile\/Scrum":0.69
+    },
+    "years_experience":0.4,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.647,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0213",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.68,
+      "Communication":0.95,
+      "Node.js":0.59,
+      "Kubernetes":0.54,
+      "Python":0.67,
+      "Data Visualization":0.82
+    },
+    "years_experience":1.8,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.708,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0214",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Spark":0.97,
+      "React":0.49,
+      "Excel":0.32,
+      "JavaScript":0.58,
+      "FastAPI":0.71,
+      "Cloud (AWS\/GCP\/Azure)":0.36,
+      "Computer Vision":0.63,
+      "Tableau":0.76,
+      "Statistics":0.49
+    },
+    "years_experience":5.2,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.59,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0215",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.74,
+      "Java":0.87,
+      "Cloud (AWS\/GCP\/Azure)":0.65,
+      "Communication":0.72,
+      "Spark":0.88,
+      "Excel":0.37,
+      "Data Visualization":0.51,
+      "Power BI":0.75,
+      "Project Management":0.68,
+      "Statistics":0.68
+    },
+    "years_experience":4.0,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.685,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0216",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "React":0.54,
+      "Business Analysis":0.39,
+      "Machine Learning":0.18,
+      "System Design":0.72,
+      "Project Management":0.54,
+      "Power BI":0.78,
+      "Computer Vision":0.79,
+      "Java":0.91,
+      "Data Engineering":0.49
+    },
+    "years_experience":3.8,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.593,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0217",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Leadership":0.59,
+      "Spark":0.67,
+      "Java":0.79,
+      "Communication":0.79,
+      "Data Analysis":0.5
+    },
+    "years_experience":7.1,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.668,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0218",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":0.41,
+      "Excel":0.52,
+      "SQL":0.52,
+      "Docker":0.67,
+      "Machine Learning":0.87,
+      "Communication":0.86,
+      "System Design":0.45
+    },
+    "years_experience":7.0,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.614,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0219",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Node.js":0.61,
+      "System Design":0.37,
+      "FastAPI":0.67,
+      "Deep Learning":0.78,
+      "Java":0.9,
+      "Project Management":0.81,
+      "NLP":0.65,
+      "Data Analysis":0.66
+    },
+    "years_experience":6.1,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.681,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0220",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.53,
+      "Node.js":0.71,
+      "React":0.83,
+      "Spark":0.83,
+      "Docker":0.67,
+      "Excel":0.71,
+      "Python":0.54,
+      "Machine Learning":0.53,
+      "DevOps":0.4
+    },
+    "years_experience":2.0,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.639,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0221",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "React":0.84,
+      "Kubernetes":0.97,
+      "System Design":0.6,
+      "Statistics":0.81
+    },
+    "years_experience":5.8,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.805,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0222",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Spark":0.69,
+      "Docker":0.97,
+      "JavaScript":0.87,
+      "Data Visualization":0.89,
+      "Computer Vision":0.55,
+      "NLP":0.58,
+      "React":0.46,
+      "Python":0.87
+    },
+    "years_experience":0.3,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.735,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0223",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Agile\/Scrum":0.95,
+      "Machine Learning":0.89,
+      "Leadership":0.74
+    },
+    "years_experience":3.6,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.86,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0224",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Project Management":0.68,
+      "Deep Learning":0.57,
+      "Computer Vision":0.51,
+      "Kafka":0.56,
+      "Leadership":0.58,
+      "Communication":0.7,
+      "Python":0.57,
+      "Statistics":0.63,
+      "Node.js":0.55,
+      "SQL":0.72
+    },
+    "years_experience":1.6,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.607,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0225",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.71,
+      "Project Management":0.23,
+      "Node.js":0.52,
+      "Statistics":0.56,
+      "NLP":0.44,
+      "Machine Learning":0.65
+    },
+    "years_experience":0.7,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.518,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0226",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Data Analysis":0.68,
+      "Data Visualization":0.89,
+      "Kubernetes":0.49,
+      "Business Analysis":0.12,
+      "SQL":0.8
+    },
+    "years_experience":2.1,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.596,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0227",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Excel":0.71,
+      "Statistics":0.49,
+      "JavaScript":0.64
+    },
+    "years_experience":6.1,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.613,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0228",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Java":0.56,
+      "JavaScript":0.61,
+      "Spark":0.97,
+      "FastAPI":0.52,
+      "Agile\/Scrum":0.78
+    },
+    "years_experience":0.9,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.688,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0229",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Project Management":0.63,
+      "Excel":0.58,
+      "Docker":0.76,
+      "Tableau":0.61,
+      "Node.js":0.42,
+      "Communication":0.78,
+      "NLP":0.75,
+      "SQL":0.36,
+      "Deep Learning":0.73
+    },
+    "years_experience":2.9,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.624,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0230",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Kafka":0.83,
+      "Docker":1.0,
+      "SQL":0.68,
+      "Node.js":0.32,
+      "FastAPI":0.6,
+      "Machine Learning":0.63,
+      "Data Analysis":0.51,
+      "Cloud (AWS\/GCP\/Azure)":1.0,
+      "Communication":0.54,
+      "Java":0.35
+    },
+    "years_experience":4.9,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.646,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0231",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "JavaScript":0.61,
+      "Leadership":0.58,
+      "Spark":0.56,
+      "Communication":0.88,
+      "React":0.33,
+      "Deep Learning":0.7,
+      "DevOps":0.59,
+      "Agile\/Scrum":0.5,
+      "Machine Learning":0.66,
+      "Python":0.71
+    },
+    "years_experience":1.8,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.612,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0232",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "FastAPI":0.64,
+      "Tableau":0.79,
+      "System Design":0.48,
+      "Data Analysis":0.82
+    },
+    "years_experience":5.2,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.682,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0233",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "DevOps":0.81,
+      "Python":0.88,
+      "Power BI":0.8
+    },
+    "years_experience":5.0,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.83,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0234",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Communication":0.81,
+      "Leadership":0.3,
+      "FastAPI":0.48,
+      "Java":0.95,
+      "JavaScript":0.39,
+      "Machine Learning":0.46
+    },
+    "years_experience":2.9,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.565,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0235",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Python":0.47,
+      "Java":0.59,
+      "JavaScript":0.98,
+      "Power BI":0.91,
+      "Communication":0.28,
+      "Statistics":0.67
+    },
+    "years_experience":5.9,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.65,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0236",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Computer Vision":0.71,
+      "SQL":0.53,
+      "Excel":0.47,
+      "React":0.94,
+      "Kafka":0.92,
+      "FastAPI":0.73
+    },
+    "years_experience":5.4,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.717,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0237",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Docker":0.45,
+      "Python":0.58,
+      "Kubernetes":0.26,
+      "Business Analysis":0.42,
+      "Machine Learning":0.74
+    },
+    "years_experience":5.5,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.49,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0238",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "React":0.22,
+      "Leadership":0.47,
+      "Agile\/Scrum":1.0,
+      "Spark":0.41
+    },
+    "years_experience":5.5,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.525,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0239",
+    "payment_tier":"paid",
+    "verified_skills":{
+      "Statistics":0.78,
+      "FastAPI":0.83,
+      "Tableau":0.49,
+      "Deep Learning":0.79,
+      "Power BI":0.44,
+      "Node.js":0.52,
+      "Agile\/Scrum":0.95,
+      "Project Management":0.52
+    },
+    "years_experience":1.7,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.665,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0240",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Project Management":0.55,
+      "Communication":0.54,
+      "NLP":0.43,
+      "Kubernetes":0.74,
+      "DevOps":0.72
+    },
+    "years_experience":3.8,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.596,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0241",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Spark":0.71,
+      "Excel":0.62,
+      "Node.js":0.54,
+      "Tableau":0.48,
+      "Python":0.6,
+      "Kubernetes":0.48,
+      "SQL":0.57
+    },
+    "years_experience":6.7,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.571,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0242",
+    "payment_tier":"free",
+    "verified_skills":{
+      "JavaScript":0.75,
+      "Power BI":0.92,
+      "FastAPI":0.84
+    },
+    "years_experience":5.9,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.837,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0243",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Engineering":0.79,
+      "Kubernetes":0.66,
+      "Tableau":0.29,
+      "Excel":0.78,
+      "Power BI":0.39,
+      "Project Management":0.12,
+      "Statistics":0.91,
+      "Data Visualization":0.71,
+      "Leadership":0.72
+    },
+    "years_experience":6.9,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.597,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0244",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Visualization":0.99,
+      "Business Analysis":0.68,
+      "Computer Vision":0.59,
+      "Statistics":0.92,
+      "FastAPI":0.52,
+      "NLP":0.64
+    },
+    "years_experience":2.2,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.723,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0245",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Python":0.64,
+      "Java":0.84,
+      "FastAPI":0.48,
+      "Project Management":0.64,
+      "Deep Learning":0.32,
+      "Machine Learning":0.69,
+      "Tableau":0.46
+    },
+    "years_experience":6.3,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.581,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0246",
+    "payment_tier":"free",
+    "verified_skills":{
+      "NLP":0.39,
+      "Kubernetes":0.73,
+      "Data Analysis":0.72,
+      "Tableau":0.68,
+      "Spark":0.64,
+      "Kafka":0.77
+    },
+    "years_experience":2.9,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.655,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0247",
+    "payment_tier":"free",
+    "verified_skills":{
+      "DevOps":0.83,
+      "Power BI":0.44,
+      "Data Visualization":0.23,
+      "Communication":0.25,
+      "Python":0.53,
+      "SQL":0.44,
+      "Leadership":1.0,
+      "JavaScript":0.36,
+      "FastAPI":0.41,
+      "Data Engineering":0.76
+    },
+    "years_experience":2.3,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.525,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0248",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Docker":0.94,
+      "Machine Learning":0.54,
+      "Statistics":0.33,
+      "Communication":0.54,
+      "Computer Vision":0.67,
+      "Java":0.87,
+      "Kubernetes":0.67,
+      "Data Analysis":0.9,
+      "SQL":0.67,
+      "NLP":0.48
+    },
+    "years_experience":6.6,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.661,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0249",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Python":0.66,
+      "FastAPI":0.63,
+      "Project Management":0.67,
+      "Java":0.35,
+      "Machine Learning":0.47
+    },
+    "years_experience":2.1,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.556,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0250",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Java":0.53,
+      "Python":0.91,
+      "React":0.73,
+      "Leadership":0.97,
+      "SQL":0.71,
+      "DevOps":0.45,
+      "Spark":0.78,
+      "Communication":0.52,
+      "Agile\/Scrum":0.89
+    },
+    "years_experience":4.9,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.721,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0251",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Power BI":0.71,
+      "Leadership":0.23,
+      "Python":0.52,
+      "Docker":0.87,
+      "NLP":0.48,
+      "DevOps":1.0,
+      "Data Engineering":0.99,
+      "Deep Learning":0.51,
+      "React":0.3
+    },
+    "years_experience":0.1,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.623,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0252",
+    "payment_tier":"free",
+    "verified_skills":{
+      "System Design":0.2,
+      "Agile\/Scrum":0.13,
+      "React":0.49
+    },
+    "years_experience":2.4,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.273,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0253",
+    "payment_tier":"free",
+    "verified_skills":{
+      "NLP":0.64,
+      "Data Engineering":0.72,
+      "Agile\/Scrum":0.72,
+      "Power BI":0.23,
+      "Cloud (AWS\/GCP\/Azure)":0.88
+    },
+    "years_experience":8.0,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.638,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0254",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Statistics":0.23,
+      "Leadership":0.86,
+      "Data Analysis":0.79,
+      "Cloud (AWS\/GCP\/Azure)":0.42
+    },
+    "years_experience":1.0,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.575,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0255",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Spark":0.61,
+      "Computer Vision":0.34,
+      "Java":0.68,
+      "Docker":0.51
+    },
+    "years_experience":4.5,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.535,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0256",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Python":0.85,
+      "Java":0.59,
+      "Data Engineering":0.39,
+      "Tableau":0.66,
+      "Project Management":0.51
+    },
+    "years_experience":5.9,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.6,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0257",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Visualization":0.74,
+      "Statistics":0.68,
+      "Docker":0.79,
+      "DevOps":0.23,
+      "SQL":0.71,
+      "NLP":0.91,
+      "Communication":0.37,
+      "Agile\/Scrum":0.37
+    },
+    "years_experience":7.1,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.6,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0258",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Visualization":0.54,
+      "System Design":0.51,
+      "Computer Vision":0.27,
+      "Machine Learning":0.86,
+      "DevOps":0.27,
+      "Cloud (AWS\/GCP\/Azure)":0.39,
+      "Tableau":0.76,
+      "Business Analysis":0.78,
+      "Docker":0.76
+    },
+    "years_experience":0.1,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.571,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0259",
+    "payment_tier":"free",
+    "verified_skills":{
+      "FastAPI":0.7,
+      "NLP":0.92,
+      "System Design":0.53,
+      "Leadership":0.41,
+      "Excel":0.62
+    },
+    "years_experience":1.8,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.636,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0260",
+    "payment_tier":"free",
+    "verified_skills":{
+      "JavaScript":0.26,
+      "Data Engineering":0.89,
+      "Machine Learning":0.64,
+      "Leadership":0.56,
+      "Computer Vision":0.54,
+      "Kubernetes":0.52,
+      "Kafka":0.88
+    },
+    "years_experience":2.2,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.613,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0261",
+    "payment_tier":"free",
+    "verified_skills":{
+      "React":0.54,
+      "Communication":0.72,
+      "JavaScript":0.39,
+      "System Design":0.29,
+      "Spark":0.91
+    },
+    "years_experience":4.1,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.57,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0262",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Spark":0.51,
+      "Agile\/Scrum":0.49,
+      "Python":0.67,
+      "Kubernetes":0.77,
+      "Deep Learning":0.58,
+      "FastAPI":0.5,
+      "NLP":0.64,
+      "Data Engineering":0.96,
+      "Data Analysis":0.56,
+      "Power BI":0.37
+    },
+    "years_experience":3.8,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.605,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0263",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Python":0.18,
+      "Data Engineering":0.57,
+      "Machine Learning":0.67,
+      "Deep Learning":0.7,
+      "System Design":0.81,
+      "Tableau":0.49,
+      "NLP":0.16,
+      "Power BI":0.9,
+      "Communication":0.33
+    },
+    "years_experience":5.8,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.534,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0264",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Agile\/Scrum":0.29,
+      "Docker":0.65,
+      "Excel":0.49,
+      "Spark":0.52,
+      "NLP":0.47,
+      "Data Engineering":0.57,
+      "Node.js":0.42,
+      "Kafka":0.34,
+      "Deep Learning":0.68,
+      "System Design":0.62
+    },
+    "years_experience":0.9,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.505,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0265",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Power BI":0.8,
+      "Deep Learning":0.78,
+      "Agile\/Scrum":0.43,
+      "SQL":0.6,
+      "NLP":0.51,
+      "Docker":0.37,
+      "Excel":0.24,
+      "Business Analysis":0.59,
+      "Machine Learning":0.6
+    },
+    "years_experience":7.5,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.547,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0266",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Excel":0.39,
+      "Machine Learning":0.89,
+      "Project Management":0.92,
+      "Kubernetes":0.39,
+      "Node.js":0.41,
+      "Data Engineering":0.5,
+      "Docker":0.59,
+      "React":0.94
+    },
+    "years_experience":7.3,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.629,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0267",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.41,
+      "Computer Vision":0.58,
+      "Python":0.7,
+      "Project Management":0.95,
+      "Business Analysis":0.52,
+      "Excel":0.65,
+      "System Design":0.36,
+      "Kubernetes":0.72,
+      "SQL":0.58
+    },
+    "years_experience":4.5,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.608,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0268",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Node.js":0.85,
+      "DevOps":0.43,
+      "Tableau":0.79,
+      "Spark":0.6,
+      "Docker":0.77,
+      "NLP":0.43
+    },
+    "years_experience":5.9,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.645,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0269",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Tableau":0.86,
+      "Project Management":0.5,
+      "NLP":0.3,
+      "SQL":0.87,
+      "Computer Vision":1.0,
+      "Kubernetes":0.69,
+      "React":0.6,
+      "Java":0.88,
+      "DevOps":0.96,
+      "Agile\/Scrum":0.53
+    },
+    "years_experience":1.8,
+    "education_level":"Diploma",
+    "location":"Chennai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.719,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0270",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Kafka":0.63,
+      "React":0.95,
+      "Agile\/Scrum":0.48,
+      "Communication":0.46,
+      "Kubernetes":0.43,
+      "Statistics":0.69,
+      "Project Management":0.88,
+      "Excel":0.65,
+      "Machine Learning":0.45
+    },
+    "years_experience":0.3,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.624,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0271",
+    "payment_tier":"free",
+    "verified_skills":{
+      "JavaScript":0.72,
+      "Data Engineering":0.6,
+      "Communication":0.95
+    },
+    "years_experience":2.8,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.757,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0272",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Kubernetes":0.59,
+      "Python":0.29,
+      "Business Analysis":0.5,
+      "Project Management":0.35,
+      "Data Analysis":0.5,
+      "Tableau":0.39
+    },
+    "years_experience":1.8,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.437,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0273",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.9,
+      "NLP":0.34,
+      "Node.js":0.59
+    },
+    "years_experience":4.0,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.61,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0274",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Spark":0.42,
+      "DevOps":0.67,
+      "Power BI":0.45,
+      "Tableau":0.62,
+      "System Design":0.42,
+      "Cloud (AWS\/GCP\/Azure)":0.89,
+      "Project Management":0.42
+    },
+    "years_experience":6.9,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.556,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0275",
+    "payment_tier":"free",
+    "verified_skills":{
+      "React":0.21,
+      "Communication":0.54,
+      "Tableau":0.47,
+      "Data Engineering":0.4
+    },
+    "years_experience":4.1,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.405,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0276",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Statistics":1.0,
+      "Data Analysis":1.0,
+      "React":0.81,
+      "Leadership":0.42,
+      "Business Analysis":0.63,
+      "Java":0.72
+    },
+    "years_experience":7.6,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.763,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0277",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Business Analysis":0.5,
+      "Data Engineering":0.64,
+      "Excel":0.74,
+      "Cloud (AWS\/GCP\/Azure)":0.51,
+      "Computer Vision":0.52,
+      "Spark":0.95
+    },
+    "years_experience":5.4,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.643,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0278",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Excel":0.88,
+      "Docker":0.43,
+      "JavaScript":0.44
+    },
+    "years_experience":7.9,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.583,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0279",
+    "payment_tier":"free",
+    "verified_skills":{
+      "React":0.67,
+      "Data Engineering":0.38,
+      "Data Visualization":0.37,
+      "System Design":0.54,
+      "Deep Learning":0.36,
+      "Machine Learning":0.79,
+      "Kubernetes":0.85
+    },
+    "years_experience":5.6,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.566,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0280",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Leadership":1.0,
+      "Computer Vision":0.45,
+      "React":0.51
+    },
+    "years_experience":4.9,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.653,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0281",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Engineering":0.46,
+      "Cloud (AWS\/GCP\/Azure)":0.6,
+      "Docker":0.54,
+      "Agile\/Scrum":0.42,
+      "Java":0.7,
+      "JavaScript":0.47,
+      "NLP":0.65
+    },
+    "years_experience":4.6,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.549,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0282",
+    "payment_tier":"free",
+    "verified_skills":{
+      "DevOps":0.7,
+      "Node.js":0.7,
+      "Excel":0.29,
+      "React":0.57,
+      "Computer Vision":0.6,
+      "Deep Learning":0.51
+    },
+    "years_experience":7.1,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.562,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0283",
+    "payment_tier":"free",
+    "verified_skills":{
+      "DevOps":0.65,
+      "Excel":0.67,
+      "System Design":0.72,
+      "Machine Learning":0.59,
+      "React":0.98,
+      "SQL":0.87,
+      "Project Management":0.79
+    },
+    "years_experience":2.1,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.753,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0284",
+    "payment_tier":"free",
+    "verified_skills":{
+      "JavaScript":0.68,
+      "Python":0.85,
+      "Node.js":0.53,
+      "SQL":0.5,
+      "Kafka":0.64,
+      "Leadership":0.42,
+      "Agile\/Scrum":0.49
+    },
+    "years_experience":5.9,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.587,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0285",
+    "payment_tier":"free",
+    "verified_skills":{
+      "FastAPI":0.4,
+      "Communication":0.42,
+      "Deep Learning":0.41,
+      "NLP":0.64,
+      "Spark":0.54,
+      "Java":0.68,
+      "Node.js":0.72
+    },
+    "years_experience":2.5,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.544,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0286",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.49,
+      "Spark":0.67,
+      "FastAPI":0.92,
+      "Data Visualization":0.65,
+      "JavaScript":0.35,
+      "Business Analysis":0.2,
+      "System Design":0.58,
+      "Kubernetes":0.52,
+      "Excel":0.65
+    },
+    "years_experience":0.5,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.559,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0287",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Visualization":0.68,
+      "React":0.61,
+      "Kubernetes":0.52
+    },
+    "years_experience":2.1,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.603,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0288",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Engineering":0.86,
+      "Kafka":0.88,
+      "Business Analysis":0.89,
+      "Statistics":0.65,
+      "FastAPI":0.71,
+      "Communication":0.46,
+      "Deep Learning":0.06
+    },
+    "years_experience":4.3,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.644,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0289",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Project Management":0.68,
+      "DevOps":0.28,
+      "NLP":0.69,
+      "System Design":0.75,
+      "Agile\/Scrum":0.45
+    },
+    "years_experience":5.1,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.57,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0290",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Tableau":0.59,
+      "Data Analysis":0.77,
+      "FastAPI":0.97,
+      "Statistics":0.6,
+      "JavaScript":0.71,
+      "Node.js":0.45
+    },
+    "years_experience":3.8,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.682,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0291",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Statistics":0.46,
+      "Python":0.75,
+      "Data Visualization":0.41,
+      "Node.js":0.53,
+      "Tableau":0.77,
+      "Kafka":0.88,
+      "Agile\/Scrum":0.45,
+      "Data Engineering":0.72,
+      "Spark":0.58,
+      "DevOps":0.81
+    },
+    "years_experience":1.9,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.636,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0292",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Node.js":0.77,
+      "Computer Vision":0.74,
+      "Excel":0.3,
+      "Data Analysis":0.69,
+      "NLP":0.42,
+      "Deep Learning":0.61,
+      "Statistics":0.91
+    },
+    "years_experience":0.2,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.634,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0293",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Project Management":1.0,
+      "FastAPI":0.63,
+      "Business Analysis":0.62,
+      "Python":0.64,
+      "Data Engineering":0.8
+    },
+    "years_experience":6.3,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.738,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0294",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Java":0.6,
+      "Data Analysis":0.49,
+      "Power BI":0.58
+    },
+    "years_experience":4.3,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.557,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0295",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Power BI":0.8,
+      "Python":0.6,
+      "SQL":0.55,
+      "Data Visualization":0.27,
+      "Project Management":0.68,
+      "Data Engineering":0.04,
+      "React":0.52,
+      "FastAPI":0.3,
+      "Kafka":0.65
+    },
+    "years_experience":2.5,
+    "education_level":"Master's",
+    "location":"Mumbai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.49,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0296",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.73,
+      "Docker":1.0,
+      "Communication":0.69,
+      "Statistics":0.49
+    },
+    "years_experience":0.9,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.728,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0297",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Tableau":0.61,
+      "Cloud (AWS\/GCP\/Azure)":0.57,
+      "System Design":0.94,
+      "SQL":0.69,
+      "React":0.33
+    },
+    "years_experience":3.0,
+    "education_level":"Diploma",
+    "location":"Mumbai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.628,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0298",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Analysis":0.64,
+      "Leadership":0.74,
+      "Agile\/Scrum":0.8,
+      "Java":0.78,
+      "Data Visualization":0.74,
+      "Communication":0.5,
+      "Machine Learning":0.83,
+      "Business Analysis":0.49,
+      "JavaScript":0.45,
+      "Tableau":0.85
+    },
+    "years_experience":0.2,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.682,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0299",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Spark":0.4,
+      "Machine Learning":0.38,
+      "Docker":0.54,
+      "Project Management":0.37,
+      "FastAPI":0.5,
+      "DevOps":0.5,
+      "Statistics":0.8
+    },
+    "years_experience":6.9,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.499,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0300",
+    "payment_tier":"free",
+    "verified_skills":{
+      "FastAPI":0.59,
+      "Statistics":0.61,
+      "Power BI":0.47,
+      "Cloud (AWS\/GCP\/Azure)":0.45,
+      "DevOps":0.62
+    },
+    "years_experience":6.9,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.548,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0301",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Computer Vision":0.64,
+      "Kubernetes":0.47,
+      "Leadership":0.86,
+      "Docker":0.79,
+      "Data Visualization":0.76,
+      "DevOps":0.95,
+      "Deep Learning":0.75,
+      "Agile\/Scrum":0.88,
+      "Statistics":0.9
+    },
+    "years_experience":1.6,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.778,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0302",
+    "payment_tier":"free",
+    "verified_skills":{
+      "System Design":0.42,
+      "Communication":0.75,
+      "Power BI":0.41
+    },
+    "years_experience":0.4,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.527,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0303",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Kafka":0.41,
+      "Computer Vision":0.18,
+      "Communication":0.62
+    },
+    "years_experience":0.6,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.403,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0304",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Power BI":0.56,
+      "JavaScript":0.22,
+      "Tableau":0.72,
+      "Project Management":0.67,
+      "Machine Learning":0.51,
+      "Agile\/Scrum":0.59,
+      "Cloud (AWS\/GCP\/Azure)":0.62,
+      "Kubernetes":0.8,
+      "Excel":0.7
+    },
+    "years_experience":4.6,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.599,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0305",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Business Analysis":0.87,
+      "SQL":0.52,
+      "Data Visualization":0.64,
+      "Communication":0.67,
+      "System Design":0.36,
+      "JavaScript":0.31,
+      "Leadership":0.59,
+      "FastAPI":0.34,
+      "Kafka":0.54
+    },
+    "years_experience":7.5,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.538,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0306",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Node.js":0.47,
+      "Data Visualization":0.55,
+      "Communication":0.64,
+      "Kafka":0.15,
+      "Business Analysis":0.59,
+      "Java":1.0,
+      "Agile\/Scrum":0.41,
+      "Data Engineering":0.67
+    },
+    "years_experience":5.8,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.56,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0307",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Spark":0.63,
+      "Statistics":0.57,
+      "Python":0.73,
+      "Data Engineering":0.32,
+      "Computer Vision":0.56
+    },
+    "years_experience":4.5,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.562,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0308",
+    "payment_tier":"free",
+    "verified_skills":{
+      "JavaScript":0.85,
+      "Deep Learning":0.77,
+      "Spark":0.71,
+      "Cloud (AWS\/GCP\/Azure)":0.88,
+      "Kafka":0.44,
+      "System Design":0.54,
+      "Data Engineering":0.25,
+      "Business Analysis":0.77,
+      "Power BI":0.93,
+      "Statistics":0.5
+    },
+    "years_experience":7.3,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.664,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0309",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Analysis":0.36,
+      "Data Visualization":0.7,
+      "Machine Learning":0.5,
+      "Spark":0.44,
+      "Java":0.38,
+      "JavaScript":0.95,
+      "Node.js":0.62,
+      "Business Analysis":0.47,
+      "SQL":0.71
+    },
+    "years_experience":0.3,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.57,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0310",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Deep Learning":0.6,
+      "Machine Learning":0.34,
+      "Leadership":0.78,
+      "Business Analysis":0.71,
+      "React":0.63,
+      "FastAPI":0.49
+    },
+    "years_experience":2.7,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.592,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0311",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.47,
+      "Data Analysis":0.62,
+      "React":0.39,
+      "Kubernetes":0.76,
+      "Node.js":-0.03,
+      "Data Visualization":0.34,
+      "Project Management":0.45,
+      "Deep Learning":0.58,
+      "Business Analysis":0.58
+    },
+    "years_experience":5.5,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.462,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0312",
+    "payment_tier":"free",
+    "verified_skills":{
+      "JavaScript":0.81,
+      "Kafka":0.69,
+      "Computer Vision":0.76,
+      "Java":0.76,
+      "Spark":0.28,
+      "Agile\/Scrum":0.45,
+      "Communication":0.45,
+      "Python":0.73,
+      "Statistics":0.53
+    },
+    "years_experience":5.5,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.607,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0313",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Business Analysis":0.96,
+      "Machine Learning":0.42,
+      "Data Engineering":0.61,
+      "Agile\/Scrum":0.57
+    },
+    "years_experience":5.6,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.64,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0314",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Python":0.33,
+      "Java":0.52,
+      "Computer Vision":0.91,
+      "Business Analysis":0.59,
+      "DevOps":0.5,
+      "Excel":0.43,
+      "Data Visualization":0.8,
+      "Tableau":0.46,
+      "Kubernetes":0.6,
+      "Cloud (AWS\/GCP\/Azure)":0.67
+    },
+    "years_experience":1.6,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.581,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0315",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Analysis":0.55,
+      "React":0.99,
+      "Leadership":0.39
+    },
+    "years_experience":0.2,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.643,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0316",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Spark":0.26,
+      "Java":0.53,
+      "Docker":0.55,
+      "Excel":0.76
+    },
+    "years_experience":4.5,
+    "education_level":"Diploma",
+    "location":"Bangalore",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.525,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0317",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Java":1.0,
+      "Docker":0.52,
+      "React":0.43,
+      "Business Analysis":0.39,
+      "NLP":1.0,
+      "Python":0.76,
+      "JavaScript":0.58
+    },
+    "years_experience":0.5,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.669,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0318",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Engineering":0.57,
+      "Deep Learning":0.36,
+      "Java":0.42,
+      "React":0.23,
+      "Leadership":0.52,
+      "Spark":0.41,
+      "Data Analysis":0.41
+    },
+    "years_experience":2.5,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.417,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0319",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Computer Vision":0.51,
+      "Communication":0.55,
+      "Deep Learning":0.48,
+      "System Design":0.8,
+      "DevOps":0.83
+    },
+    "years_experience":7.2,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.634,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0320",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Java":0.75,
+      "Data Analysis":0.95,
+      "DevOps":0.63,
+      "Business Analysis":0.64,
+      "SQL":0.38
+    },
+    "years_experience":7.7,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.67,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0321",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Visualization":1.0,
+      "Computer Vision":1.0,
+      "SQL":0.7,
+      "Deep Learning":0.4,
+      "NLP":0.42
+    },
+    "years_experience":4.9,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.704,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0322",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Analysis":0.55,
+      "Project Management":0.41,
+      "Data Visualization":0.74,
+      "Docker":0.41,
+      "Deep Learning":0.69,
+      "Kubernetes":0.7,
+      "Agile\/Scrum":0.93,
+      "Power BI":0.67
+    },
+    "years_experience":0.1,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.638,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0323",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Visualization":0.42,
+      "Computer Vision":0.61,
+      "Data Analysis":0.45,
+      "NLP":0.64,
+      "FastAPI":0.55,
+      "Agile\/Scrum":0.63
+    },
+    "years_experience":5.9,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.55,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0324",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Agile\/Scrum":0.38,
+      "Business Analysis":0.57,
+      "System Design":0.63,
+      "Kafka":0.55,
+      "DevOps":0.84,
+      "Kubernetes":0.59,
+      "Communication":0.34,
+      "Project Management":0.8,
+      "Machine Learning":0.37
+    },
+    "years_experience":5.0,
+    "education_level":"Diploma",
+    "location":"Mumbai",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.563,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0325",
+    "payment_tier":"free",
+    "verified_skills":{
+      "React":0.51,
+      "Spark":0.87,
+      "Statistics":0.45,
+      "Data Visualization":0.78,
+      "Excel":0.47,
+      "FastAPI":0.55,
+      "NLP":0.53,
+      "Node.js":0.47,
+      "Tableau":0.6,
+      "Agile\/Scrum":0.24
+    },
+    "years_experience":4.4,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.547,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0326",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Python":0.38,
+      "NLP":0.44,
+      "FastAPI":0.19,
+      "System Design":0.69,
+      "Project Management":0.3,
+      "Computer Vision":0.67,
+      "Excel":0.67,
+      "Data Analysis":0.42,
+      "Cloud (AWS\/GCP\/Azure)":0.66,
+      "Java":0.41
+    },
+    "years_experience":6.3,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.483,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0327",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Machine Learning":0.57,
+      "Data Visualization":0.74,
+      "NLP":0.88,
+      "Java":0.45,
+      "System Design":0.68,
+      "Leadership":0.63,
+      "Deep Learning":0.38,
+      "Excel":0.53,
+      "Business Analysis":0.53
+    },
+    "years_experience":1.1,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.599,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0328",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Python":0.71,
+      "FastAPI":0.5,
+      "Docker":0.41,
+      "Excel":0.48,
+      "DevOps":0.53,
+      "Kafka":0.64,
+      "Agile\/Scrum":0.48
+    },
+    "years_experience":4.4,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.536,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0329",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Machine Learning":0.51,
+      "Communication":0.86,
+      "JavaScript":0.65,
+      "Deep Learning":0.46,
+      "Excel":0.49
+    },
+    "years_experience":0.7,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.594,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0330",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Leadership":0.63,
+      "Statistics":0.48,
+      "Agile\/Scrum":0.35,
+      "Project Management":0.67,
+      "System Design":0.68
+    },
+    "years_experience":2.4,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.562,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0331",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Power BI":0.56,
+      "DevOps":0.5,
+      "Data Analysis":0.78,
+      "Statistics":0.63,
+      "Docker":0.73,
+      "Deep Learning":0.84,
+      "SQL":0.69,
+      "Project Management":0.84,
+      "Cloud (AWS\/GCP\/Azure)":0.57
+    },
+    "years_experience":0.7,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.682,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0332",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.28,
+      "Kubernetes":0.61,
+      "System Design":0.24,
+      "Agile\/Scrum":0.61,
+      "JavaScript":0.71,
+      "Deep Learning":0.5,
+      "Power BI":0.57,
+      "Excel":0.73
+    },
+    "years_experience":0.9,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.531,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0333",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Tableau":0.39,
+      "Agile\/Scrum":0.89,
+      "Node.js":0.67,
+      "Excel":0.88,
+      "Machine Learning":0.54,
+      "Java":0.46
+    },
+    "years_experience":0.5,
+    "education_level":"Master's",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.638,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0334",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Visualization":0.56,
+      "Python":0.57,
+      "SQL":0.68,
+      "Leadership":0.76,
+      "Java":0.44,
+      "Tableau":0.85,
+      "React":0.91,
+      "System Design":0.42
+    },
+    "years_experience":5.2,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.649,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0335",
+    "payment_tier":"free",
+    "verified_skills":{
+      "FastAPI":0.32,
+      "Tableau":0.48,
+      "Power BI":0.56,
+      "Node.js":0.59,
+      "Business Analysis":0.44,
+      "Machine Learning":0.52,
+      "Kubernetes":0.91,
+      "Statistics":0.42
+    },
+    "years_experience":0.5,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.53,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0336",
+    "payment_tier":"free",
+    "verified_skills":{
+      "React":0.64,
+      "Communication":0.69,
+      "DevOps":0.63,
+      "Power BI":0.43,
+      "NLP":0.8,
+      "System Design":0.35,
+      "Agile\/Scrum":0.59,
+      "Kafka":0.68
+    },
+    "years_experience":7.0,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.601,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0337",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Kubernetes":0.68,
+      "Statistics":0.16,
+      "NLP":0.56,
+      "SQL":0.62,
+      "JavaScript":0.37,
+      "Machine Learning":0.63
+    },
+    "years_experience":1.5,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.503,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0338",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Visualization":0.74,
+      "Java":0.59,
+      "Deep Learning":0.79,
+      "Kafka":0.65,
+      "SQL":0.67,
+      "Kubernetes":0.53,
+      "Leadership":0.58
+    },
+    "years_experience":6.8,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.65,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0339",
+    "payment_tier":"free",
+    "verified_skills":{
+      "SQL":0.66,
+      "Kubernetes":0.51,
+      "Data Visualization":0.45
+    },
+    "years_experience":4.6,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.54,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0340",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Computer Vision":0.68,
+      "Kafka":0.68,
+      "Statistics":0.59,
+      "Cloud (AWS\/GCP\/Azure)":0.63,
+      "DevOps":0.43,
+      "Java":0.43,
+      "FastAPI":0.65,
+      "Leadership":0.78
+    },
+    "years_experience":2.5,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.609,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0341",
+    "payment_tier":"free",
+    "verified_skills":{
+      "NLP":0.5,
+      "Data Analysis":0.64,
+      "Statistics":0.3,
+      "Agile\/Scrum":0.65,
+      "Java":0.65,
+      "DevOps":0.64
+    },
+    "years_experience":3.4,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.563,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0342",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Agile\/Scrum":0.52,
+      "JavaScript":0.56,
+      "Statistics":0.7,
+      "Java":0.31,
+      "Computer Vision":0.74,
+      "Project Management":0.7,
+      "Leadership":0.39,
+      "DevOps":0.33,
+      "Data Analysis":0.12,
+      "FastAPI":0.69
+    },
+    "years_experience":1.1,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.506,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0343",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Project Management":0.71,
+      "Kafka":0.46,
+      "Leadership":0.53,
+      "Java":0.61,
+      "Tableau":0.77
+    },
+    "years_experience":6.8,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.616,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0344",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Kubernetes":0.75,
+      "SQL":0.65,
+      "React":0.43,
+      "Power BI":0.39,
+      "Project Management":0.31
+    },
+    "years_experience":4.3,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.506,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0345",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Agile\/Scrum":0.73,
+      "Data Engineering":0.66,
+      "DevOps":0.53,
+      "NLP":0.4,
+      "Docker":0.86,
+      "React":0.57
+    },
+    "years_experience":2.7,
+    "education_level":"Bachelor's",
+    "location":"Mumbai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.625,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0346",
+    "payment_tier":"free",
+    "verified_skills":{
+      "SQL":0.67,
+      "System Design":0.58,
+      "Agile\/Scrum":0.88,
+      "FastAPI":0.83,
+      "Java":0.63,
+      "DevOps":0.41,
+      "Kafka":0.31,
+      "Power BI":0.61,
+      "NLP":0.91,
+      "Statistics":0.8
+    },
+    "years_experience":7.1,
+    "education_level":"Diploma",
+    "location":"Mumbai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.663,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0347",
+    "payment_tier":"free",
+    "verified_skills":{
+      "DevOps":0.49,
+      "Statistics":0.94,
+      "React":0.41,
+      "Agile\/Scrum":0.2,
+      "System Design":0.89,
+      "FastAPI":0.48,
+      "Computer Vision":1.0,
+      "Business Analysis":0.29,
+      "Leadership":0.36,
+      "Java":0.46
+    },
+    "years_experience":4.1,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.552,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0348",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Spark":0.86,
+      "DevOps":0.29,
+      "Machine Learning":0.63,
+      "Python":0.91,
+      "Project Management":0.46,
+      "Kafka":0.71,
+      "JavaScript":0.45,
+      "SQL":0.73
+    },
+    "years_experience":4.4,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.63,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0349",
+    "payment_tier":"free",
+    "verified_skills":{
+      "DevOps":0.5,
+      "React":0.99,
+      "Power BI":0.62,
+      "JavaScript":0.62,
+      "Node.js":0.53,
+      "Deep Learning":0.51
+    },
+    "years_experience":7.1,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.628,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0350",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Communication":0.84,
+      "Tableau":0.41,
+      "Node.js":0.85,
+      "Excel":0.48,
+      "FastAPI":0.4
+    },
+    "years_experience":6.6,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.596,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0351",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Node.js":0.66,
+      "Agile\/Scrum":0.68,
+      "Python":0.48,
+      "System Design":0.39,
+      "Docker":0.6
+    },
+    "years_experience":4.4,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.562,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0352",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Project Management":0.52,
+      "JavaScript":0.62,
+      "SQL":0.67,
+      "System Design":0.55,
+      "Docker":0.28,
+      "Kafka":0.66,
+      "Data Analysis":0.68,
+      "Deep Learning":0.58,
+      "Kubernetes":0.36,
+      "Cloud (AWS\/GCP\/Azure)":0.33
+    },
+    "years_experience":2.5,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.525,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0353",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Docker":0.82,
+      "FastAPI":0.45,
+      "Kubernetes":0.51
+    },
+    "years_experience":7.8,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.593,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0354",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Project Management":0.76,
+      "Kafka":0.6,
+      "Agile\/Scrum":0.28
+    },
+    "years_experience":4.5,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.547,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0355",
+    "payment_tier":"free",
+    "verified_skills":{
+      "System Design":0.6,
+      "Machine Learning":0.55,
+      "Leadership":0.5,
+      "Statistics":0.61,
+      "Tableau":0.91
+    },
+    "years_experience":2.0,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.634,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0356",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Business Analysis":0.76,
+      "SQL":0.72,
+      "Agile\/Scrum":0.84
+    },
+    "years_experience":1.2,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.773,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0357",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Tableau":0.55,
+      "Project Management":0.67,
+      "Data Engineering":0.89,
+      "Docker":0.97,
+      "NLP":0.73,
+      "Kubernetes":0.79,
+      "Machine Learning":0.94
+    },
+    "years_experience":1.9,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.791,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0358",
+    "payment_tier":"free",
+    "verified_skills":{
+      "System Design":0.59,
+      "Business Analysis":0.57,
+      "Power BI":0.97,
+      "JavaScript":0.81,
+      "Machine Learning":0.67,
+      "Communication":0.38
+    },
+    "years_experience":7.6,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.665,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0359",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.63,
+      "Deep Learning":0.89,
+      "Kubernetes":0.53,
+      "Node.js":1.0,
+      "Python":0.71,
+      "Statistics":0.27,
+      "FastAPI":0.22,
+      "React":0.19,
+      "Leadership":0.79,
+      "Java":0.71
+    },
+    "years_experience":2.1,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.594,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0360",
+    "payment_tier":"free",
+    "verified_skills":{
+      "FastAPI":0.46,
+      "Data Visualization":0.3,
+      "Leadership":0.56,
+      "Business Analysis":0.77,
+      "Data Engineering":0.59,
+      "Power BI":0.63,
+      "Excel":0.6,
+      "System Design":0.79,
+      "Computer Vision":0.69
+    },
+    "years_experience":4.2,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.599,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0361",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Cloud (AWS\/GCP\/Azure)":0.87,
+      "Computer Vision":0.49,
+      "Machine Learning":0.85,
+      "Python":0.18,
+      "Agile\/Scrum":0.4,
+      "Data Analysis":0.36,
+      "Excel":0.89
+    },
+    "years_experience":1.0,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.577,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0362",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Statistics":0.87,
+      "FastAPI":0.64,
+      "Leadership":0.3,
+      "Data Analysis":0.43,
+      "Communication":0.3,
+      "Spark":0.58,
+      "Cloud (AWS\/GCP\/Azure)":0.95
+    },
+    "years_experience":2.2,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.581,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0363",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Machine Learning":0.73,
+      "Cloud (AWS\/GCP\/Azure)":0.58,
+      "Power BI":0.38,
+      "Spark":0.78,
+      "NLP":0.79,
+      "FastAPI":0.76,
+      "Data Analysis":0.35,
+      "Docker":0.72
+    },
+    "years_experience":0.8,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.636,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0364",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Machine Learning":0.6,
+      "Data Analysis":0.82,
+      "System Design":0.69,
+      "Business Analysis":0.53
+    },
+    "years_experience":5.1,
+    "education_level":"Diploma",
+    "location":"Remote",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.66,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0365",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Deep Learning":0.51,
+      "Project Management":0.27,
+      "Java":0.4,
+      "React":0.63,
+      "System Design":0.55,
+      "Python":0.24,
+      "Kubernetes":0.73
+    },
+    "years_experience":3.1,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.476,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0366",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Java":0.66,
+      "Leadership":0.34,
+      "Statistics":0.89,
+      "React":0.39,
+      "Machine Learning":0.92,
+      "Communication":0.61,
+      "Data Visualization":0.43,
+      "Data Analysis":0.67
+    },
+    "years_experience":7.7,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.614,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0367",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Communication":0.84,
+      "Project Management":0.84,
+      "JavaScript":0.74,
+      "Docker":0.59
+    },
+    "years_experience":1.5,
+    "education_level":"Bachelor's",
+    "location":"Hyderabad",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.752,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0368",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Tableau":0.49,
+      "DevOps":0.08,
+      "Communication":0.6,
+      "Statistics":0.8
+    },
+    "years_experience":0.1,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.492,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0369",
+    "payment_tier":"free",
+    "verified_skills":{
+      "React":0.12,
+      "SQL":0.7,
+      "Computer Vision":0.32
+    },
+    "years_experience":3.7,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.38,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0370",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Kafka":0.47,
+      "Data Analysis":0.41,
+      "Machine Learning":0.65,
+      "Business Analysis":0.57,
+      "Deep Learning":0.57,
+      "Docker":0.5
+    },
+    "years_experience":1.4,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.528,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0371",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Agile\/Scrum":0.67,
+      "NLP":0.96,
+      "Power BI":0.27,
+      "System Design":0.76,
+      "Data Analysis":0.9,
+      "SQL":0.57,
+      "Data Visualization":0.35,
+      "Docker":1.0,
+      "Kafka":0.5,
+      "Leadership":0.55
+    },
+    "years_experience":6.7,
+    "education_level":"Bachelor's",
+    "location":"Bangalore",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.653,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0372",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Java":0.61,
+      "Data Analysis":0.48,
+      "SQL":0.52,
+      "Cloud (AWS\/GCP\/Azure)":0.69,
+      "Deep Learning":0.61
+    },
+    "years_experience":1.1,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.582,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0373",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Analysis":0.86,
+      "Python":0.48,
+      "Spark":0.27,
+      "NLP":0.5,
+      "Kafka":0.62,
+      "Project Management":0.7,
+      "Communication":0.72,
+      "System Design":0.46,
+      "Statistics":0.65,
+      "Node.js":0.74
+    },
+    "years_experience":4.8,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.6,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0374",
+    "payment_tier":"free",
+    "verified_skills":{
+      "JavaScript":0.87,
+      "Node.js":1.0,
+      "Python":0.55,
+      "DevOps":0.31,
+      "Data Engineering":0.33,
+      "Computer Vision":0.84,
+      "SQL":0.58
+    },
+    "years_experience":3.7,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Data Scientist",
+    "avg_skill_score":0.64,
+    "n_verified_skills":7
+  },
+  {
+    "student_id":"S0375",
+    "payment_tier":"free",
+    "verified_skills":{
+      "SQL":0.73,
+      "Tableau":0.87,
+      "Deep Learning":0.88,
+      "Leadership":0.68,
+      "Docker":0.55,
+      "Spark":0.81
+    },
+    "years_experience":2.7,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.753,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0376",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Kafka":0.63,
+      "DevOps":0.64,
+      "NLP":0.52
+    },
+    "years_experience":1.9,
+    "education_level":"PhD",
+    "location":"Chennai",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.597,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0377",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Node.js":0.59,
+      "Computer Vision":0.62,
+      "Business Analysis":0.75,
+      "Leadership":0.49,
+      "Java":0.67,
+      "Data Engineering":0.66,
+      "SQL":0.55,
+      "Tableau":0.54
+    },
+    "years_experience":3.5,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.609,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0378",
+    "payment_tier":"free",
+    "verified_skills":{
+      "React":0.57,
+      "JavaScript":0.66,
+      "Deep Learning":0.78,
+      "FastAPI":0.58,
+      "Business Analysis":0.78
+    },
+    "years_experience":0.3,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.674,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0379",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Excel":0.61,
+      "FastAPI":0.46,
+      "Node.js":0.57,
+      "NLP":0.71
+    },
+    "years_experience":6.4,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.588,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0380",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Analysis":0.28,
+      "Node.js":0.39,
+      "Excel":0.54,
+      "Kubernetes":0.92,
+      "Docker":0.59,
+      "Computer Vision":0.45
+    },
+    "years_experience":2.6,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.528,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0381",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Node.js":0.58,
+      "Machine Learning":0.36,
+      "Docker":0.42
+    },
+    "years_experience":6.5,
+    "education_level":"Diploma",
+    "location":"Hyderabad",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.453,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0382",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Analysis":0.69,
+      "DevOps":0.48,
+      "Data Visualization":0.68,
+      "Python":0.51,
+      "Project Management":0.71,
+      "Business Analysis":0.64
+    },
+    "years_experience":5.4,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.618,
+    "n_verified_skills":6
+  },
+  {
+    "student_id":"S0383",
+    "payment_tier":"free",
+    "verified_skills":{
+      "FastAPI":0.6,
+      "Data Visualization":0.74,
+      "Deep Learning":0.46
+    },
+    "years_experience":6.3,
+    "education_level":"Master's",
+    "location":"Remote",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.6,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0384",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Excel":0.37,
+      "Communication":0.8,
+      "Data Analysis":0.44
+    },
+    "years_experience":6.0,
+    "education_level":"Bachelor's",
+    "location":"Remote",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.537,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0385",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Business Analysis":0.57,
+      "Machine Learning":0.42,
+      "Kubernetes":0.81,
+      "Leadership":0.52,
+      "JavaScript":0.69,
+      "Spark":0.53,
+      "SQL":0.57,
+      "React":0.57
+    },
+    "years_experience":7.9,
+    "education_level":"Bachelor's",
+    "location":"Chennai",
+    "preferred_role":"ML Engineer",
+    "avg_skill_score":0.585,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0386",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Business Analysis":0.47,
+      "Data Visualization":0.79,
+      "System Design":0.46,
+      "Project Management":0.54,
+      "Computer Vision":0.63,
+      "Spark":0.45,
+      "Kafka":0.76,
+      "Data Engineering":0.22,
+      "Java":0.6,
+      "JavaScript":0.36
+    },
+    "years_experience":6.6,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.528,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0387",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Tableau":0.65,
+      "Leadership":0.97,
+      "Project Management":0.81,
+      "Kafka":0.48,
+      "Data Analysis":1.0,
+      "Computer Vision":0.72,
+      "FastAPI":0.7,
+      "Power BI":0.52
+    },
+    "years_experience":7.0,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.731,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0388",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Docker":0.38,
+      "JavaScript":0.5,
+      "Node.js":0.47,
+      "FastAPI":0.97,
+      "Business Analysis":0.76
+    },
+    "years_experience":1.9,
+    "education_level":"Master's",
+    "location":"Hyderabad",
+    "preferred_role":"Business Analyst",
+    "avg_skill_score":0.616,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0389",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Communication":0.35,
+      "Kafka":0.55,
+      "Tableau":0.35,
+      "Java":0.67,
+      "Docker":0.74,
+      "System Design":0.5,
+      "Leadership":0.64,
+      "Project Management":0.46
+    },
+    "years_experience":3.0,
+    "education_level":"Master's",
+    "location":"Bangalore",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.532,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0390",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Statistics":0.65,
+      "FastAPI":0.71,
+      "NLP":0.49,
+      "Agile\/Scrum":0.18,
+      "Excel":0.63,
+      "Project Management":0.49,
+      "DevOps":1.0,
+      "Kafka":1.0
+    },
+    "years_experience":4.6,
+    "education_level":"PhD",
+    "location":"Delhi",
+    "preferred_role":"Full Stack Developer",
+    "avg_skill_score":0.644,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0391",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Computer Vision":0.53,
+      "DevOps":0.77,
+      "Project Management":0.43,
+      "Machine Learning":0.78,
+      "Leadership":0.69
+    },
+    "years_experience":7.4,
+    "education_level":"PhD",
+    "location":"Hyderabad",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.64,
+    "n_verified_skills":5
+  },
+  {
+    "student_id":"S0392",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Kafka":0.74,
+      "Java":0.44,
+      "Deep Learning":0.63,
+      "Python":1.0,
+      "Business Analysis":0.41,
+      "DevOps":0.5,
+      "Kubernetes":0.55,
+      "Spark":0.2,
+      "Communication":0.43,
+      "Statistics":0.31
+    },
+    "years_experience":5.9,
+    "education_level":"Diploma",
+    "location":"Mumbai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.521,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0393",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Statistics":0.71,
+      "Python":0.72,
+      "React":0.42,
+      "Agile\/Scrum":0.66
+    },
+    "years_experience":5.1,
+    "education_level":"Bachelor's",
+    "location":"Delhi",
+    "preferred_role":"Backend Engineer",
+    "avg_skill_score":0.628,
+    "n_verified_skills":4
+  },
+  {
+    "student_id":"S0394",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Data Analysis":0.64,
+      "DevOps":0.32,
+      "Excel":0.7
+    },
+    "years_experience":0.7,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Data Engineer",
+    "avg_skill_score":0.553,
+    "n_verified_skills":3
+  },
+  {
+    "student_id":"S0395",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Agile\/Scrum":0.56,
+      "Kafka":0.39,
+      "Kubernetes":0.58,
+      "Machine Learning":0.62,
+      "Leadership":0.5,
+      "JavaScript":0.74,
+      "React":0.36,
+      "Deep Learning":0.69
+    },
+    "years_experience":1.7,
+    "education_level":"PhD",
+    "location":"Remote",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.555,
+    "n_verified_skills":8
+  },
+  {
+    "student_id":"S0396",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Statistics":0.72,
+      "NLP":0.67,
+      "Tableau":0.2,
+      "Business Analysis":0.66,
+      "Node.js":0.67,
+      "Power BI":0.59,
+      "Excel":0.93,
+      "Deep Learning":0.52,
+      "System Design":0.77,
+      "Agile\/Scrum":0.71
+    },
+    "years_experience":7.3,
+    "education_level":"PhD",
+    "location":"Mumbai",
+    "preferred_role":"Product Manager",
+    "avg_skill_score":0.644,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0397",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Project Management":0.96,
+      "System Design":0.7,
+      "Data Visualization":0.69,
+      "Deep Learning":0.45,
+      "Computer Vision":0.39,
+      "NLP":0.52,
+      "React":0.61,
+      "Statistics":0.6,
+      "DevOps":0.56,
+      "Docker":1.0
+    },
+    "years_experience":6.7,
+    "education_level":"PhD",
+    "location":"Bangalore",
+    "preferred_role":"Frontend Engineer",
+    "avg_skill_score":0.648,
+    "n_verified_skills":10
+  },
+  {
+    "student_id":"S0398",
+    "payment_tier":"free",
+    "verified_skills":{
+      "NLP":0.67,
+      "Docker":0.6,
+      "Project Management":0.59,
+      "Communication":0.34,
+      "Data Engineering":0.23,
+      "Python":0.44,
+      "SQL":0.44,
+      "Cloud (AWS\/GCP\/Azure)":0.44,
+      "Spark":0.57
+    },
+    "years_experience":4.1,
+    "education_level":"Diploma",
+    "location":"Delhi",
+    "preferred_role":"Data Analyst",
+    "avg_skill_score":0.48,
+    "n_verified_skills":9
+  },
+  {
+    "student_id":"S0399",
+    "payment_tier":"free",
+    "verified_skills":{
+      "Deep Learning":0.51,
+      "Java":0.68,
+      "FastAPI":0.53
+    },
+    "years_experience":1.3,
+    "education_level":"Master's",
+    "location":"Delhi",
+    "preferred_role":"DevOps Engineer",
+    "avg_skill_score":0.573,
+    "n_verified_skills":3
+  }
+]

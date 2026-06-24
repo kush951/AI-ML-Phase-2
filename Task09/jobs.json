@@ -1,0 +1,1700 @@
+[
+  {
+    "job_id":"J0000",
+    "role":"Business Analyst",
+    "required_skills":[
+      "Machine Learning",
+      "Statistics",
+      "Spark",
+      "Kubernetes",
+      "Communication",
+      "Data Analysis",
+      "Power BI",
+      "Computer Vision"
+    ],
+    "nice_to_have":[
+      "Excel",
+      "Cloud (AWS\/GCP\/Azure)",
+      "NLP"
+    ],
+    "min_experience":1,
+    "education_required":"Master's",
+    "location":"Any",
+    "salary_lpa":15.4,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0001",
+    "role":"Data Analyst",
+    "required_skills":[
+      "Cloud (AWS\/GCP\/Azure)",
+      "Leadership",
+      "Project Management",
+      "Excel",
+      "JavaScript",
+      "SQL",
+      "DevOps",
+      "System Design"
+    ],
+    "nice_to_have":[
+      "FastAPI",
+      "NLP",
+      "Python"
+    ],
+    "min_experience":5,
+    "education_required":"Master's",
+    "location":"Delhi",
+    "salary_lpa":32.0,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0002",
+    "role":"Business Analyst",
+    "required_skills":[
+      "Kafka",
+      "NLP",
+      "SQL",
+      "Computer Vision",
+      "Deep Learning",
+      "Kubernetes"
+    ],
+    "nice_to_have":[
+      "JavaScript",
+      "Java",
+      "Project Management"
+    ],
+    "min_experience":5,
+    "education_required":"Diploma",
+    "location":"Hyderabad",
+    "salary_lpa":20.6,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0003",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Power BI",
+      "Deep Learning",
+      "Kafka"
+    ],
+    "nice_to_have":[
+      "Python"
+    ],
+    "min_experience":2,
+    "education_required":"Master's",
+    "location":"Remote",
+    "salary_lpa":17.1,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0004",
+    "role":"Data Analyst",
+    "required_skills":[
+      "NLP",
+      "Project Management",
+      "Statistics",
+      "Python",
+      "Business Analysis",
+      "SQL"
+    ],
+    "nice_to_have":[
+      "JavaScript",
+      "Data Engineering",
+      "Spark"
+    ],
+    "min_experience":1,
+    "education_required":"Master's",
+    "location":"Mumbai",
+    "salary_lpa":11.6,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0005",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Project Management",
+      "Data Visualization",
+      "Tableau"
+    ],
+    "nice_to_have":[
+      "SQL",
+      "Data Analysis",
+      "Python",
+      "Excel"
+    ],
+    "min_experience":3,
+    "education_required":"Diploma",
+    "location":"Mumbai",
+    "salary_lpa":7.9,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0006",
+    "role":"ML Engineer",
+    "required_skills":[
+      "Docker",
+      "SQL",
+      "Cloud (AWS\/GCP\/Azure)",
+      "Machine Learning",
+      "Data Analysis",
+      "Statistics",
+      "Leadership",
+      "Python"
+    ],
+    "nice_to_have":[
+      "Data Engineering"
+    ],
+    "min_experience":5,
+    "education_required":"Bachelor's",
+    "location":"Chennai",
+    "salary_lpa":36.4,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0007",
+    "role":"Full Stack Developer",
+    "required_skills":[
+      "Python",
+      "Data Analysis",
+      "Deep Learning",
+      "Excel"
+    ],
+    "nice_to_have":[
+      "Power BI",
+      "JavaScript",
+      "Leadership"
+    ],
+    "min_experience":2,
+    "education_required":"Bachelor's",
+    "location":"Any",
+    "salary_lpa":22.0,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0008",
+    "role":"Data Analyst",
+    "required_skills":[
+      "Kubernetes",
+      "System Design",
+      "Data Analysis",
+      "SQL",
+      "Spark",
+      "Data Visualization",
+      "Python",
+      "Kafka"
+    ],
+    "nice_to_have":[
+      "Statistics",
+      "React"
+    ],
+    "min_experience":5,
+    "education_required":"Diploma",
+    "location":"Remote",
+    "salary_lpa":7.6,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0009",
+    "role":"Full Stack Developer",
+    "required_skills":[
+      "JavaScript",
+      "Project Management",
+      "System Design",
+      "NLP"
+    ],
+    "nice_to_have":[
+      "Kubernetes",
+      "Tableau",
+      "SQL",
+      "Computer Vision"
+    ],
+    "min_experience":3,
+    "education_required":"PhD",
+    "location":"Mumbai",
+    "salary_lpa":22.5,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0010",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Data Visualization",
+      "Java",
+      "SQL",
+      "FastAPI",
+      "Excel",
+      "Kubernetes"
+    ],
+    "nice_to_have":[
+      "NLP"
+    ],
+    "min_experience":2,
+    "education_required":"Master's",
+    "location":"Chennai",
+    "salary_lpa":30.0,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0011",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "Docker",
+      "SQL",
+      "React"
+    ],
+    "nice_to_have":[
+      "Java",
+      "DevOps",
+      "Project Management"
+    ],
+    "min_experience":3,
+    "education_required":"Bachelor's",
+    "location":"Chennai",
+    "salary_lpa":18.7,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0012",
+    "role":"Data Scientist",
+    "required_skills":[
+      "Excel",
+      "Data Analysis",
+      "Power BI",
+      "Tableau",
+      "Docker",
+      "Leadership"
+    ],
+    "nice_to_have":[
+      "React",
+      "Computer Vision"
+    ],
+    "min_experience":3,
+    "education_required":"Diploma",
+    "location":"Hyderabad",
+    "salary_lpa":19.8,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0013",
+    "role":"Full Stack Developer",
+    "required_skills":[
+      "SQL",
+      "Deep Learning",
+      "React",
+      "Excel",
+      "Project Management",
+      "System Design",
+      "Kafka",
+      "NLP"
+    ],
+    "nice_to_have":[
+      "Data Analysis"
+    ],
+    "min_experience":1,
+    "education_required":"Master's",
+    "location":"Mumbai",
+    "salary_lpa":25.4,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0014",
+    "role":"Business Analyst",
+    "required_skills":[
+      "Data Engineering",
+      "Power BI",
+      "Node.js",
+      "Business Analysis",
+      "Docker",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "nice_to_have":[
+      "Spark"
+    ],
+    "min_experience":5,
+    "education_required":"Master's",
+    "location":"Any",
+    "salary_lpa":32.4,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0015",
+    "role":"Data Engineer",
+    "required_skills":[
+      "JavaScript",
+      "Docker",
+      "Leadership",
+      "Agile\/Scrum",
+      "React",
+      "Spark",
+      "Kubernetes",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "nice_to_have":[
+      "Deep Learning",
+      "Communication",
+      "SQL",
+      "Statistics"
+    ],
+    "min_experience":3,
+    "education_required":"Bachelor's",
+    "location":"Remote",
+    "salary_lpa":37.9,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0016",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Business Analysis",
+      "Machine Learning",
+      "Power BI"
+    ],
+    "nice_to_have":[
+      "SQL"
+    ],
+    "min_experience":0,
+    "education_required":"Bachelor's",
+    "location":"Hyderabad",
+    "salary_lpa":25.8,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0017",
+    "role":"Product Manager",
+    "required_skills":[
+      "Statistics",
+      "Agile\/Scrum",
+      "SQL",
+      "Data Visualization",
+      "Data Analysis"
+    ],
+    "nice_to_have":[
+      "Power BI",
+      "Kafka"
+    ],
+    "min_experience":3,
+    "education_required":"PhD",
+    "location":"Mumbai",
+    "salary_lpa":14.6,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0018",
+    "role":"ML Engineer",
+    "required_skills":[
+      "Kubernetes",
+      "Cloud (AWS\/GCP\/Azure)",
+      "DevOps",
+      "Java",
+      "Tableau",
+      "Excel"
+    ],
+    "nice_to_have":[
+      "Leadership",
+      "Python",
+      "Machine Learning",
+      "Docker"
+    ],
+    "min_experience":3,
+    "education_required":"PhD",
+    "location":"Delhi",
+    "salary_lpa":34.7,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0019",
+    "role":"DevOps Engineer",
+    "required_skills":[
+      "Machine Learning",
+      "Kafka",
+      "NLP",
+      "DevOps",
+      "Leadership",
+      "Data Visualization"
+    ],
+    "nice_to_have":[
+      "JavaScript",
+      "Excel",
+      "Data Engineering",
+      "System Design"
+    ],
+    "min_experience":1,
+    "education_required":"Master's",
+    "location":"Remote",
+    "salary_lpa":18.0,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0020",
+    "role":"Data Scientist",
+    "required_skills":[
+      "Leadership",
+      "DevOps",
+      "System Design"
+    ],
+    "nice_to_have":[
+      "Docker",
+      "Agile\/Scrum",
+      "NLP",
+      "Kubernetes"
+    ],
+    "min_experience":3,
+    "education_required":"Master's",
+    "location":"Hyderabad",
+    "salary_lpa":25.3,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0021",
+    "role":"Full Stack Developer",
+    "required_skills":[
+      "Data Visualization",
+      "Statistics",
+      "Java",
+      "Machine Learning",
+      "Python",
+      "System Design"
+    ],
+    "nice_to_have":[
+      "SQL",
+      "Computer Vision",
+      "Docker"
+    ],
+    "min_experience":5,
+    "education_required":"Diploma",
+    "location":"Any",
+    "salary_lpa":36.1,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0022",
+    "role":"ML Engineer",
+    "required_skills":[
+      "SQL",
+      "Node.js",
+      "JavaScript",
+      "Machine Learning",
+      "Leadership"
+    ],
+    "nice_to_have":[
+      "Statistics",
+      "Tableau",
+      "React",
+      "Business Analysis"
+    ],
+    "min_experience":0,
+    "education_required":"Master's",
+    "location":"Bangalore",
+    "salary_lpa":16.2,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0023",
+    "role":"DevOps Engineer",
+    "required_skills":[
+      "Machine Learning",
+      "FastAPI",
+      "Leadership"
+    ],
+    "nice_to_have":[
+      "Docker",
+      "Communication",
+      "System Design"
+    ],
+    "min_experience":2,
+    "education_required":"Diploma",
+    "location":"Remote",
+    "salary_lpa":20.9,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0024",
+    "role":"Data Engineer",
+    "required_skills":[
+      "React",
+      "System Design",
+      "Java"
+    ],
+    "nice_to_have":[
+      "Leadership",
+      "SQL",
+      "Spark"
+    ],
+    "min_experience":0,
+    "education_required":"Bachelor's",
+    "location":"Delhi",
+    "salary_lpa":21.9,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0025",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "NLP",
+      "Agile\/Scrum",
+      "Statistics",
+      "JavaScript",
+      "Node.js",
+      "Computer Vision",
+      "Docker",
+      "Communication"
+    ],
+    "nice_to_have":[
+      "Data Analysis",
+      "Tableau",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "min_experience":2,
+    "education_required":"Diploma",
+    "location":"Delhi",
+    "salary_lpa":39.9,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0026",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "Agile\/Scrum",
+      "Business Analysis",
+      "Data Analysis",
+      "Project Management",
+      "System Design",
+      "SQL"
+    ],
+    "nice_to_have":[
+      "Data Visualization",
+      "React"
+    ],
+    "min_experience":0,
+    "education_required":"PhD",
+    "location":"Hyderabad",
+    "salary_lpa":11.6,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0027",
+    "role":"Full Stack Developer",
+    "required_skills":[
+      "Kubernetes",
+      "Tableau",
+      "Statistics"
+    ],
+    "nice_to_have":[
+      "FastAPI",
+      "Business Analysis",
+      "Agile\/Scrum"
+    ],
+    "min_experience":1,
+    "education_required":"PhD",
+    "location":"Hyderabad",
+    "salary_lpa":13.0,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0028",
+    "role":"Backend Engineer",
+    "required_skills":[
+      "Leadership",
+      "Data Visualization",
+      "DevOps",
+      "NLP",
+      "Python",
+      "Communication",
+      "Project Management"
+    ],
+    "nice_to_have":[
+      "Agile\/Scrum",
+      "Data Engineering",
+      "Tableau",
+      "System Design"
+    ],
+    "min_experience":3,
+    "education_required":"Master's",
+    "location":"Remote",
+    "salary_lpa":23.2,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0029",
+    "role":"Data Analyst",
+    "required_skills":[
+      "Kafka",
+      "System Design",
+      "Business Analysis",
+      "Communication",
+      "Machine Learning",
+      "Kubernetes",
+      "Computer Vision"
+    ],
+    "nice_to_have":[
+      "Node.js",
+      "DevOps",
+      "NLP",
+      "Statistics"
+    ],
+    "min_experience":2,
+    "education_required":"PhD",
+    "location":"Hyderabad",
+    "salary_lpa":15.5,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0030",
+    "role":"Data Analyst",
+    "required_skills":[
+      "Excel",
+      "Node.js",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "nice_to_have":[
+      "Kafka",
+      "Java"
+    ],
+    "min_experience":2,
+    "education_required":"Bachelor's",
+    "location":"Hyderabad",
+    "salary_lpa":12.6,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0031",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Python",
+      "Data Engineering",
+      "Tableau",
+      "Power BI"
+    ],
+    "nice_to_have":[
+      "JavaScript",
+      "Kubernetes"
+    ],
+    "min_experience":5,
+    "education_required":"PhD",
+    "location":"Hyderabad",
+    "salary_lpa":27.3,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0032",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "NLP",
+      "Cloud (AWS\/GCP\/Azure)",
+      "Deep Learning"
+    ],
+    "nice_to_have":[
+      "Python",
+      "JavaScript"
+    ],
+    "min_experience":5,
+    "education_required":"Bachelor's",
+    "location":"Remote",
+    "salary_lpa":34.7,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0033",
+    "role":"DevOps Engineer",
+    "required_skills":[
+      "Tableau",
+      "Python",
+      "Machine Learning",
+      "Data Analysis",
+      "Java",
+      "Agile\/Scrum",
+      "Statistics",
+      "Power BI"
+    ],
+    "nice_to_have":[
+      "System Design",
+      "Kubernetes",
+      "Kafka",
+      "NLP"
+    ],
+    "min_experience":1,
+    "education_required":"Bachelor's",
+    "location":"Bangalore",
+    "salary_lpa":24.6,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0034",
+    "role":"ML Engineer",
+    "required_skills":[
+      "Kubernetes",
+      "Leadership",
+      "Power BI",
+      "System Design",
+      "Data Visualization",
+      "Kafka",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "nice_to_have":[
+      "DevOps"
+    ],
+    "min_experience":1,
+    "education_required":"Diploma",
+    "location":"Any",
+    "salary_lpa":33.0,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0035",
+    "role":"Backend Engineer",
+    "required_skills":[
+      "Tableau",
+      "Business Analysis",
+      "Data Engineering",
+      "Kafka",
+      "Node.js"
+    ],
+    "nice_to_have":[
+      "Computer Vision",
+      "Deep Learning",
+      "SQL",
+      "NLP"
+    ],
+    "min_experience":2,
+    "education_required":"PhD",
+    "location":"Hyderabad",
+    "salary_lpa":13.2,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0036",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Docker",
+      "DevOps",
+      "JavaScript",
+      "Project Management",
+      "SQL",
+      "Java",
+      "Spark"
+    ],
+    "nice_to_have":[
+      "System Design"
+    ],
+    "min_experience":1,
+    "education_required":"Master's",
+    "location":"Any",
+    "salary_lpa":37.7,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0037",
+    "role":"Data Scientist",
+    "required_skills":[
+      "Project Management",
+      "JavaScript",
+      "Power BI",
+      "Statistics",
+      "Python"
+    ],
+    "nice_to_have":[
+      "Data Visualization",
+      "Business Analysis",
+      "Data Analysis",
+      "Spark"
+    ],
+    "min_experience":1,
+    "education_required":"Master's",
+    "location":"Chennai",
+    "salary_lpa":17.8,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0038",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "Spark",
+      "Tableau",
+      "Leadership",
+      "SQL",
+      "DevOps",
+      "Data Engineering",
+      "FastAPI",
+      "React"
+    ],
+    "nice_to_have":[
+      "Python",
+      "Kubernetes",
+      "Java"
+    ],
+    "min_experience":0,
+    "education_required":"Bachelor's",
+    "location":"Delhi",
+    "salary_lpa":11.6,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0039",
+    "role":"Data Scientist",
+    "required_skills":[
+      "Communication",
+      "Java",
+      "Spark",
+      "Tableau"
+    ],
+    "nice_to_have":[
+      "Excel",
+      "Project Management",
+      "FastAPI",
+      "Kafka"
+    ],
+    "min_experience":2,
+    "education_required":"Diploma",
+    "location":"Any",
+    "salary_lpa":32.1,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0040",
+    "role":"Product Manager",
+    "required_skills":[
+      "Business Analysis",
+      "Node.js",
+      "Power BI",
+      "Java",
+      "Project Management",
+      "Spark"
+    ],
+    "nice_to_have":[
+      "SQL",
+      "NLP",
+      "Excel",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "min_experience":0,
+    "education_required":"Master's",
+    "location":"Hyderabad",
+    "salary_lpa":25.7,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0041",
+    "role":"Data Analyst",
+    "required_skills":[
+      "FastAPI",
+      "Project Management",
+      "Python",
+      "Data Visualization",
+      "Machine Learning",
+      "Communication",
+      "Power BI"
+    ],
+    "nice_to_have":[
+      "Data Engineering",
+      "Excel",
+      "DevOps"
+    ],
+    "min_experience":0,
+    "education_required":"PhD",
+    "location":"Mumbai",
+    "salary_lpa":26.6,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0042",
+    "role":"Data Analyst",
+    "required_skills":[
+      "SQL",
+      "NLP",
+      "Data Engineering",
+      "Kubernetes",
+      "Project Management"
+    ],
+    "nice_to_have":[
+      "Kafka"
+    ],
+    "min_experience":5,
+    "education_required":"PhD",
+    "location":"Any",
+    "salary_lpa":37.8,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0043",
+    "role":"ML Engineer",
+    "required_skills":[
+      "Excel",
+      "Business Analysis",
+      "Deep Learning",
+      "Cloud (AWS\/GCP\/Azure)",
+      "NLP",
+      "Leadership"
+    ],
+    "nice_to_have":[
+      "Project Management",
+      "Node.js",
+      "React",
+      "Statistics"
+    ],
+    "min_experience":3,
+    "education_required":"Master's",
+    "location":"Mumbai",
+    "salary_lpa":18.2,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0044",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Python",
+      "Kafka",
+      "DevOps",
+      "Communication",
+      "Agile\/Scrum",
+      "Power BI"
+    ],
+    "nice_to_have":[
+      "Cloud (AWS\/GCP\/Azure)",
+      "SQL"
+    ],
+    "min_experience":1,
+    "education_required":"Master's",
+    "location":"Remote",
+    "salary_lpa":34.7,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0045",
+    "role":"Business Analyst",
+    "required_skills":[
+      "Agile\/Scrum",
+      "Node.js",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "nice_to_have":[
+      "Deep Learning",
+      "Data Analysis",
+      "React",
+      "NLP"
+    ],
+    "min_experience":0,
+    "education_required":"Diploma",
+    "location":"Remote",
+    "salary_lpa":22.9,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0046",
+    "role":"Data Analyst",
+    "required_skills":[
+      "SQL",
+      "Data Engineering",
+      "Project Management",
+      "Computer Vision",
+      "Power BI",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "nice_to_have":[
+      "Node.js",
+      "Kafka",
+      "Agile\/Scrum",
+      "Kubernetes"
+    ],
+    "min_experience":3,
+    "education_required":"Bachelor's",
+    "location":"Chennai",
+    "salary_lpa":11.8,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0047",
+    "role":"Backend Engineer",
+    "required_skills":[
+      "Node.js",
+      "NLP",
+      "Tableau",
+      "Deep Learning",
+      "Python"
+    ],
+    "nice_to_have":[
+      "React",
+      "JavaScript"
+    ],
+    "min_experience":5,
+    "education_required":"PhD",
+    "location":"Mumbai",
+    "salary_lpa":17.3,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0048",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "Data Analysis",
+      "Python",
+      "Docker",
+      "Deep Learning",
+      "Java",
+      "Project Management",
+      "React",
+      "Leadership"
+    ],
+    "nice_to_have":[
+      "Statistics",
+      "System Design",
+      "Agile\/Scrum",
+      "Excel"
+    ],
+    "min_experience":0,
+    "education_required":"Diploma",
+    "location":"Chennai",
+    "salary_lpa":6.1,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0049",
+    "role":"Data Scientist",
+    "required_skills":[
+      "Docker",
+      "Kafka",
+      "JavaScript",
+      "Agile\/Scrum",
+      "Leadership"
+    ],
+    "nice_to_have":[
+      "Business Analysis",
+      "Power BI"
+    ],
+    "min_experience":0,
+    "education_required":"Master's",
+    "location":"Chennai",
+    "salary_lpa":26.3,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0050",
+    "role":"Data Analyst",
+    "required_skills":[
+      "Leadership",
+      "JavaScript",
+      "Deep Learning",
+      "Spark",
+      "DevOps"
+    ],
+    "nice_to_have":[
+      "Machine Learning",
+      "Project Management",
+      "Computer Vision",
+      "Statistics"
+    ],
+    "min_experience":5,
+    "education_required":"PhD",
+    "location":"Delhi",
+    "salary_lpa":35.6,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0051",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "Java",
+      "Project Management",
+      "Kubernetes",
+      "Node.js"
+    ],
+    "nice_to_have":[
+      "Deep Learning"
+    ],
+    "min_experience":0,
+    "education_required":"Master's",
+    "location":"Bangalore",
+    "salary_lpa":39.2,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0052",
+    "role":"DevOps Engineer",
+    "required_skills":[
+      "Business Analysis",
+      "JavaScript",
+      "Node.js",
+      "Statistics",
+      "Cloud (AWS\/GCP\/Azure)",
+      "Agile\/Scrum"
+    ],
+    "nice_to_have":[
+      "Java",
+      "Leadership",
+      "FastAPI"
+    ],
+    "min_experience":1,
+    "education_required":"Master's",
+    "location":"Remote",
+    "salary_lpa":39.8,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0053",
+    "role":"Data Analyst",
+    "required_skills":[
+      "Machine Learning",
+      "Computer Vision",
+      "Deep Learning",
+      "Data Engineering"
+    ],
+    "nice_to_have":[
+      "Statistics",
+      "Data Analysis",
+      "Agile\/Scrum",
+      "React"
+    ],
+    "min_experience":3,
+    "education_required":"PhD",
+    "location":"Bangalore",
+    "salary_lpa":39.8,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0054",
+    "role":"ML Engineer",
+    "required_skills":[
+      "FastAPI",
+      "JavaScript",
+      "Project Management",
+      "DevOps",
+      "Docker",
+      "Kafka"
+    ],
+    "nice_to_have":[
+      "Agile\/Scrum"
+    ],
+    "min_experience":1,
+    "education_required":"Diploma",
+    "location":"Delhi",
+    "salary_lpa":7.4,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0055",
+    "role":"Business Analyst",
+    "required_skills":[
+      "Power BI",
+      "NLP",
+      "Business Analysis",
+      "Kubernetes",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "nice_to_have":[
+      "Leadership",
+      "Tableau"
+    ],
+    "min_experience":1,
+    "education_required":"Diploma",
+    "location":"Chennai",
+    "salary_lpa":31.6,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0056",
+    "role":"Data Scientist",
+    "required_skills":[
+      "Kafka",
+      "Data Analysis",
+      "Data Engineering",
+      "Data Visualization"
+    ],
+    "nice_to_have":[
+      "DevOps",
+      "Business Analysis",
+      "Deep Learning",
+      "React"
+    ],
+    "min_experience":2,
+    "education_required":"Diploma",
+    "location":"Hyderabad",
+    "salary_lpa":17.4,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0057",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Deep Learning",
+      "Python",
+      "Data Analysis"
+    ],
+    "nice_to_have":[
+      "DevOps",
+      "Kafka",
+      "Tableau"
+    ],
+    "min_experience":3,
+    "education_required":"Master's",
+    "location":"Chennai",
+    "salary_lpa":27.7,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0058",
+    "role":"Business Analyst",
+    "required_skills":[
+      "Communication",
+      "Agile\/Scrum",
+      "FastAPI",
+      "Java",
+      "Business Analysis"
+    ],
+    "nice_to_have":[
+      "Spark"
+    ],
+    "min_experience":1,
+    "education_required":"Bachelor's",
+    "location":"Any",
+    "salary_lpa":5.8,
+    "n_required_skills":5
+  },
+  {
+    "job_id":"J0059",
+    "role":"Data Analyst",
+    "required_skills":[
+      "Java",
+      "Tableau",
+      "Machine Learning",
+      "Business Analysis",
+      "Data Analysis",
+      "DevOps",
+      "Agile\/Scrum",
+      "React"
+    ],
+    "nice_to_have":[
+      "Deep Learning",
+      "Kubernetes",
+      "JavaScript"
+    ],
+    "min_experience":1,
+    "education_required":"PhD",
+    "location":"Bangalore",
+    "salary_lpa":4.7,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0060",
+    "role":"Data Analyst",
+    "required_skills":[
+      "React",
+      "Data Visualization",
+      "Statistics",
+      "Communication"
+    ],
+    "nice_to_have":[
+      "Spark",
+      "Business Analysis"
+    ],
+    "min_experience":0,
+    "education_required":"Master's",
+    "location":"Hyderabad",
+    "salary_lpa":32.8,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0061",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Spark",
+      "Leadership",
+      "Agile\/Scrum",
+      "Deep Learning",
+      "JavaScript",
+      "Kafka",
+      "SQL",
+      "Tableau"
+    ],
+    "nice_to_have":[
+      "Communication",
+      "Cloud (AWS\/GCP\/Azure)",
+      "System Design"
+    ],
+    "min_experience":3,
+    "education_required":"PhD",
+    "location":"Delhi",
+    "salary_lpa":24.3,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0062",
+    "role":"DevOps Engineer",
+    "required_skills":[
+      "Data Visualization",
+      "Node.js",
+      "Tableau",
+      "JavaScript",
+      "Agile\/Scrum",
+      "NLP"
+    ],
+    "nice_to_have":[
+      "Kubernetes"
+    ],
+    "min_experience":0,
+    "education_required":"Diploma",
+    "location":"Chennai",
+    "salary_lpa":16.3,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0063",
+    "role":"ML Engineer",
+    "required_skills":[
+      "Communication",
+      "Leadership",
+      "Project Management",
+      "Deep Learning",
+      "Docker",
+      "Kubernetes"
+    ],
+    "nice_to_have":[
+      "Power BI",
+      "Agile\/Scrum"
+    ],
+    "min_experience":2,
+    "education_required":"PhD",
+    "location":"Hyderabad",
+    "salary_lpa":6.9,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0064",
+    "role":"Data Scientist",
+    "required_skills":[
+      "Deep Learning",
+      "Kafka",
+      "Leadership",
+      "Statistics",
+      "Data Engineering",
+      "Kubernetes"
+    ],
+    "nice_to_have":[
+      "DevOps",
+      "React",
+      "Business Analysis"
+    ],
+    "min_experience":5,
+    "education_required":"Diploma",
+    "location":"Bangalore",
+    "salary_lpa":22.5,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0065",
+    "role":"Product Manager",
+    "required_skills":[
+      "Node.js",
+      "SQL",
+      "FastAPI",
+      "Leadership",
+      "Business Analysis",
+      "System Design",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "nice_to_have":[
+      "Docker",
+      "Java",
+      "Tableau",
+      "Data Analysis"
+    ],
+    "min_experience":0,
+    "education_required":"Diploma",
+    "location":"Remote",
+    "salary_lpa":27.8,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0066",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "Power BI",
+      "React",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "nice_to_have":[
+      "Kubernetes",
+      "Tableau"
+    ],
+    "min_experience":2,
+    "education_required":"PhD",
+    "location":"Any",
+    "salary_lpa":28.1,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0067",
+    "role":"ML Engineer",
+    "required_skills":[
+      "Java",
+      "Excel",
+      "Tableau",
+      "NLP",
+      "Computer Vision",
+      "Power BI",
+      "Data Analysis"
+    ],
+    "nice_to_have":[
+      "Business Analysis",
+      "React",
+      "Spark"
+    ],
+    "min_experience":3,
+    "education_required":"Diploma",
+    "location":"Bangalore",
+    "salary_lpa":18.2,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0068",
+    "role":"Business Analyst",
+    "required_skills":[
+      "Communication",
+      "Docker",
+      "FastAPI"
+    ],
+    "nice_to_have":[
+      "Tableau",
+      "React"
+    ],
+    "min_experience":3,
+    "education_required":"Master's",
+    "location":"Chennai",
+    "salary_lpa":33.3,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0069",
+    "role":"ML Engineer",
+    "required_skills":[
+      "Project Management",
+      "Leadership",
+      "Kafka",
+      "Spark",
+      "React",
+      "Statistics",
+      "Data Analysis"
+    ],
+    "nice_to_have":[
+      "NLP",
+      "Python",
+      "Data Engineering"
+    ],
+    "min_experience":0,
+    "education_required":"Bachelor's",
+    "location":"Any",
+    "salary_lpa":5.0,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0070",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "Communication",
+      "Data Engineering",
+      "Node.js",
+      "Power BI",
+      "Kafka",
+      "DevOps"
+    ],
+    "nice_to_have":[
+      "Computer Vision",
+      "Data Analysis"
+    ],
+    "min_experience":3,
+    "education_required":"Bachelor's",
+    "location":"Hyderabad",
+    "salary_lpa":19.2,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0071",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Spark",
+      "Deep Learning",
+      "Business Analysis"
+    ],
+    "nice_to_have":[
+      "Data Visualization",
+      "Docker"
+    ],
+    "min_experience":3,
+    "education_required":"Diploma",
+    "location":"Any",
+    "salary_lpa":20.2,
+    "n_required_skills":3
+  },
+  {
+    "job_id":"J0072",
+    "role":"Data Scientist",
+    "required_skills":[
+      "Statistics",
+      "System Design",
+      "Power BI",
+      "React"
+    ],
+    "nice_to_have":[
+      "Machine Learning",
+      "JavaScript"
+    ],
+    "min_experience":0,
+    "education_required":"PhD",
+    "location":"Hyderabad",
+    "salary_lpa":34.6,
+    "n_required_skills":4
+  },
+  {
+    "job_id":"J0073",
+    "role":"Data Scientist",
+    "required_skills":[
+      "Machine Learning",
+      "Docker",
+      "React",
+      "Spark",
+      "Kubernetes",
+      "System Design",
+      "Business Analysis",
+      "Agile\/Scrum"
+    ],
+    "nice_to_have":[
+      "Kafka",
+      "Leadership",
+      "Cloud (AWS\/GCP\/Azure)"
+    ],
+    "min_experience":5,
+    "education_required":"Diploma",
+    "location":"Hyderabad",
+    "salary_lpa":24.8,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0074",
+    "role":"Full Stack Developer",
+    "required_skills":[
+      "Cloud (AWS\/GCP\/Azure)",
+      "Spark",
+      "Communication",
+      "Node.js",
+      "Docker",
+      "SQL",
+      "Tableau"
+    ],
+    "nice_to_have":[
+      "Data Visualization"
+    ],
+    "min_experience":3,
+    "education_required":"PhD",
+    "location":"Bangalore",
+    "salary_lpa":9.8,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0075",
+    "role":"Data Engineer",
+    "required_skills":[
+      "Docker",
+      "JavaScript",
+      "FastAPI",
+      "Data Engineering",
+      "Kubernetes",
+      "Power BI",
+      "System Design",
+      "Leadership"
+    ],
+    "nice_to_have":[
+      "React",
+      "Excel"
+    ],
+    "min_experience":1,
+    "education_required":"Master's",
+    "location":"Remote",
+    "salary_lpa":29.6,
+    "n_required_skills":8
+  },
+  {
+    "job_id":"J0076",
+    "role":"ML Engineer",
+    "required_skills":[
+      "Tableau",
+      "Docker",
+      "Kafka",
+      "NLP",
+      "Agile\/Scrum",
+      "Computer Vision"
+    ],
+    "nice_to_have":[
+      "JavaScript",
+      "Excel",
+      "Spark"
+    ],
+    "min_experience":3,
+    "education_required":"Bachelor's",
+    "location":"Mumbai",
+    "salary_lpa":11.2,
+    "n_required_skills":6
+  },
+  {
+    "job_id":"J0077",
+    "role":"Frontend Engineer",
+    "required_skills":[
+      "SQL",
+      "Tableau",
+      "Node.js",
+      "Docker",
+      "Statistics",
+      "Data Engineering",
+      "Computer Vision"
+    ],
+    "nice_to_have":[
+      "Business Analysis",
+      "Machine Learning",
+      "Python",
+      "DevOps"
+    ],
+    "min_experience":2,
+    "education_required":"Bachelor's",
+    "location":"Mumbai",
+    "salary_lpa":33.8,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0078",
+    "role":"Product Manager",
+    "required_skills":[
+      "Tableau",
+      "Data Analysis",
+      "Java",
+      "Node.js",
+      "SQL",
+      "Agile\/Scrum",
+      "Data Engineering"
+    ],
+    "nice_to_have":[
+      "NLP"
+    ],
+    "min_experience":1,
+    "education_required":"PhD",
+    "location":"Delhi",
+    "salary_lpa":39.8,
+    "n_required_skills":7
+  },
+  {
+    "job_id":"J0079",
+    "role":"Product Manager",
+    "required_skills":[
+      "Data Visualization",
+      "Spark",
+      "DevOps",
+      "Cloud (AWS\/GCP\/Azure)",
+      "Deep Learning"
+    ],
+    "nice_to_have":[
+      "Power BI"
+    ],
+    "min_experience":5,
+    "education_required":"Diploma",
+    "location":"Remote",
+    "salary_lpa":5.8,
+    "n_required_skills":5
+  }
+]

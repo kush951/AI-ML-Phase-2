@@ -1,0 +1,200 @@
+{
+  "timestamp": "2026-06-24T04:26:52.316648",
+  "n_train": 1360,
+  "n_val": 240,
+  "n_test": 400,
+  "feature_cols": [
+    "skill_coverage",
+    "avg_score_on_required",
+    "n_skills_matched",
+    "nice_to_have_coverage",
+    "edu_match",
+    "exp_match",
+    "loc_match",
+    "student_avg_skill",
+    "years_experience",
+    "n_student_skills",
+    "n_job_required"
+  ],
+  "models": {
+    "Baseline (Skill Overlap)": {
+      "val": {
+        "precision": 0.4444,
+        "recall": 1.0,
+        "f1": 0.6154,
+        "fpr": 0.0658,
+        "tp": 12,
+        "fp": 15,
+        "tn": 213,
+        "fn": 0,
+        "auc_roc": 0.9669
+      },
+      "test": {
+        "precision": 0.4773,
+        "recall": 1.0,
+        "f1": 0.6462,
+        "fpr": 0.0607,
+        "tp": 21,
+        "fp": 23,
+        "tn": 356,
+        "fn": 0,
+        "auc_roc": 0.9648
+      },
+      "cv_f1": null
+    },
+    "Logistic Regression": {
+      "val": {
+        "precision": 0.9167,
+        "recall": 0.9167,
+        "f1": 0.9167,
+        "fpr": 0.0044,
+        "tp": 11,
+        "fp": 1,
+        "tn": 227,
+        "fn": 1,
+        "auc_roc": 0.9978
+      },
+      "test": {
+        "precision": 0.8889,
+        "recall": 0.7619,
+        "f1": 0.8205,
+        "fpr": 0.0053,
+        "tp": 16,
+        "fp": 2,
+        "tn": 377,
+        "fn": 5,
+        "auc_roc": 0.9961
+      },
+      "cv_f1": 0.8938
+    },
+    "Random Forest": {
+      "val": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "tp": 12,
+        "fp": 0,
+        "tn": 228,
+        "fn": 0,
+        "auc_roc": 1.0
+      },
+      "test": {
+        "precision": 0.9545,
+        "recall": 1.0,
+        "f1": 0.9767,
+        "fpr": 0.0026,
+        "tp": 21,
+        "fp": 1,
+        "tn": 378,
+        "fn": 0,
+        "auc_roc": 1.0
+      },
+      "cv_f1": 0.9867
+    },
+    "Gradient Boosting": {
+      "val": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "tp": 12,
+        "fp": 0,
+        "tn": 228,
+        "fn": 0,
+        "auc_roc": 1.0
+      },
+      "test": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "tp": 21,
+        "fp": 0,
+        "tn": 379,
+        "fn": 0,
+        "auc_roc": 1.0
+      },
+      "cv_f1": 0.9931
+    },
+    "XGBoost": {
+      "val": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "tp": 12,
+        "fp": 0,
+        "tn": 228,
+        "fn": 0,
+        "auc_roc": 1.0
+      },
+      "test": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "tp": 21,
+        "fp": 0,
+        "tn": 379,
+        "fn": 0,
+        "auc_roc": 1.0
+      },
+      "cv_f1": 0.9852
+    },
+    "SVM": {
+      "val": {
+        "precision": 0.9167,
+        "recall": 0.9167,
+        "f1": 0.9167,
+        "fpr": 0.0044,
+        "tp": 11,
+        "fp": 1,
+        "tn": 227,
+        "fn": 1,
+        "auc_roc": 0.9978
+      },
+      "test": {
+        "precision": 0.9444,
+        "recall": 0.8095,
+        "f1": 0.8718,
+        "fpr": 0.0026,
+        "tp": 17,
+        "fp": 1,
+        "tn": 378,
+        "fn": 4,
+        "auc_roc": 0.9976
+      },
+      "cv_f1": 0.9169
+    }
+  },
+  "best_model": "Gradient Boosting",
+  "conversion_quality_check": {
+    "paid_metrics": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "tp": 57,
+      "fp": 0,
+      "tn": 1143,
+      "fn": 0
+    },
+    "free_metrics": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "tp": 47,
+      "fp": 0,
+      "tn": 753,
+      "fn": 0
+    },
+    "precision_gap": 0.0,
+    "recall_gap": 0.0,
+    "f1_gap": 0.0,
+    "threshold": 0.08,
+    "relevance_regression_detected": false,
+    "verdict": "\u2705 No relevance regression \u2014 paid/free parity maintained"
+  }
+}
