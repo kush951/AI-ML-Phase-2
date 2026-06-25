@@ -101,7 +101,7 @@ async def rank(req: RankRequest):
 
 @app.get("/api/health")
 async def health():
-    return {"status": "healthy", "model": "loaded", "version": "1.0.0"}
+    return {"status": "healthy", "models": "loaded", "version": "1.0.0"}
 
 
 @app.get("/api/skills")

@@ -47,11 +47,11 @@ pip install -r requirements.txt
 
 python3 data/generate_data.py     # generates the sample dataset (CSV)
 python3 db/seed.py                # loads it into placemux.db
-python3 ml/train.py               # trains the model, appends to reports/experiment_log.csv
+python3 ml/train.py               # trains the models, appends to reports/experiment_log.csv
 python3 ml/evaluate.py            # full evaluation report -> reports/metrics_report.{json,md}
 
 python3 -m uvicorn api.main:app --host 127.0.0.1 --port 8011
-# open http://127.0.0.1:8011  -> the frontend (student / company / model report tabs)
+# open http://127.0.0.1:8011  -> the frontend (student / company / models report tabs)
 ```
 
 Run the tests:

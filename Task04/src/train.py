@@ -56,7 +56,7 @@ def false_positive_rate(y_true, y_pred):
 def baseline_predict(df, threshold=0.5):
     """Stage B.1 baseline: rank purely by required-skill overlap ratio.
     No verified score, no domain match, no experience — the thing every
-    later model must beat."""
+    later models must beat."""
     return (df["required_overlap_ratio"] >= threshold).astype(int)
 
 
@@ -96,7 +96,7 @@ def main():
     baseline_metrics = eval_block(y_val, base_val_pred)
     print("\n[Baseline: skill-overlap-only rule] validation metrics:", baseline_metrics)
 
-    # ---------------- Candidate models (multiple model families) ----------------
+    # ---------------- Candidate models (multiple models families) ----------------
     candidates = {
         "logistic_regression": LogisticRegression(max_iter=1000, class_weight="balanced", random_state=42),
         "random_forest": RandomForestClassifier(
@@ -124,7 +124,7 @@ def main():
         train_time = round(time.time() - t0, 3)
 
         metrics = eval_block(y_val, val_pred, val_proba)
-        metrics.update({"model": name, "train_seconds": train_time})
+        metrics.update({"models": name, "train_seconds": train_time})
         experiment_log.append(metrics)
         fitted[name] = model
         print(f"[{name}] val:", metrics)
@@ -135,12 +135,12 @@ def main():
     # ---------------- Model selection ----------------
     # Selection rule (declared up front, not picked after peeking at test):
     # rank by ROC-AUC first (overall ranking quality), tie-break by F1
-    # (balance of precision/recall), then prefer the model that also beats
+    # (balance of precision/recall), then prefer the models that also beats
     # the baseline's false-positive rate — a hiring product punishes FPs hard.
     log_df["selection_score"] = log_df["roc_auc"] * 0.6 + log_df["f1"] * 0.4
-    best_name = log_df.sort_values("selection_score", ascending=False).iloc[0]["model"]
+    best_name = log_df.sort_values("selection_score", ascending=False).iloc[0]["models"]
     best_model = fitted[best_name]
-    print(f"\n>>> Selected best model: {best_name}")
+    print(f"\n>>> Selected best models: {best_name}")
 
     # ---------------- Final, single-touch test evaluation ----------------
     if best_name in ("logistic_regression", "svm_rbf", "knn"):
@@ -154,7 +154,7 @@ def main():
     base_test_pred = baseline_predict(df_test)
     base_test_metrics = eval_block(y_test, base_test_pred)
 
-    print("\n[FINAL — held-out test] best model:", test_metrics)
+    print("\n[FINAL — held-out test] best models:", test_metrics)
     print("[FINAL — held-out test] baseline   :", base_test_metrics)
 
     # ---------------- Segment breakdown (no single-number-no-baseline pitfall) ----------------

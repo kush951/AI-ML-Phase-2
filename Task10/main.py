@@ -82,7 +82,7 @@ class RankRequest(BaseModel):
 # ── Endpoints ────────────────────────────────────────────────────────────────
 @app.get("/health")
 def health():
-    return {"status": "ok", "model": "SVM (RBF)", "version": "1.0.0"}
+    return {"status": "ok", "models": "SVM (RBF)", "version": "1.0.0"}
 
 
 @app.post("/match")

@@ -28,9 +28,9 @@ FRONTEND_DIR = Path(__file__).parent.parent / "frontend"
 STUDENTS, JOBS = save_sample_data(str(DATA_DIR))
 JOBS_BY_ID = {j["id"]: j for j in JOBS}
 
-print("Training match-quality model on sample data...")
+print("Training match-quality models on sample data...")
 MODEL, METRICS = train_and_evaluate(STUDENTS, JOBS, log_path=str(DATA_DIR / "experiment_log.csv"))
-print("Done. Baseline vs model metrics:", METRICS)
+print("Done. Baseline vs models metrics:", METRICS)
 
 
 class JobPosting(BaseModel):
@@ -106,7 +106,7 @@ def get_candidates(job_id: str, top_k: int = 10):
 
 @app.get("/api/metrics")
 def get_metrics():
-    """Real numbers, not vibes -- precision/recall/FPR, baseline vs model."""
+    """Real numbers, not vibes -- precision/recall/FPR, baseline vs models."""
     return METRICS
 
 

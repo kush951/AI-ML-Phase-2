@@ -1,5 +1,5 @@
 """
-Trains the match-quality model and evaluates it against the dumb baseline
+Trains the match-quality models and evaluates it against the dumb baseline
 on held-out data, producing real precision / recall / false-positive-rate
 numbers (Section 4 "Real metrics, not vibes" + Section 8 scoring rubric).
 
@@ -31,8 +31,8 @@ def simulate_label(features: dict) -> int:
     """Simulated ground truth: was this actually a good match?
 
     A student who comfortably clears most thresholds tends to be a good
-    hire; we add noise so the model has something real to learn (i.e. the
-    rule-based baseline will NOT be perfect, and the model has room to beat it).
+    hire; we add noise so the models has something real to learn (i.e. the
+    rule-based baseline will NOT be perfect, and the models has room to beat it).
     """
     score = (
         2.2 * features["coverage_ratio"]
@@ -45,7 +45,7 @@ def simulate_label(features: dict) -> int:
 
 
 def _random_synthetic_jobs(n: int, from_skills):
-    """Extra randomly-thresholded jobs used ONLY to give the model enough
+    """Extra randomly-thresholded jobs used ONLY to give the models enough
     (student, job) pairs to learn from. The 3 hand-shaped jobs in
     data.SAMPLE_JOBS stay reserved for the live demo / UI.
     """
@@ -99,7 +99,7 @@ def train_and_evaluate(students, jobs, log_path: str = "../data/experiment_log.c
             "recall": recall_score(y_test, y_pred_baseline, zero_division=0),
             "false_positive_rate": fpr(y_test, y_pred_baseline),
         },
-        "model": {
+        "models": {
             "precision": precision_score(y_test, y_pred_model, zero_division=0),
             "recall": recall_score(y_test, y_pred_model, zero_division=0),
             "false_positive_rate": fpr(y_test, y_pred_model),
@@ -130,7 +130,7 @@ def _append_experiment_log(log_path: str, results: dict):
             round(results["baseline"]["precision"], 4),
             round(results["baseline"]["recall"], 4),
             round(results["baseline"]["false_positive_rate"], 4),
-            round(results["model"]["precision"], 4),
-            round(results["model"]["recall"], 4),
-            round(results["model"]["false_positive_rate"], 4),
+            round(results["models"]["precision"], 4),
+            round(results["models"]["recall"], 4),
+            round(results["models"]["false_positive_rate"], 4),
         ])

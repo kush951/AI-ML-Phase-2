@@ -57,6 +57,6 @@ print("Precision:", precision)
 print("Recall:", recall)
 print("False Positive Rate:", round(fpr, 2))
 
-joblib.dump(model, "model.pkl")
+joblib.dump(model, "models.pkl")
 
-print("Model saved as model.pkl")
+print("Model saved as models.pkl")

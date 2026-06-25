@@ -1,5 +1,5 @@
 """
-PlaceMux - Train the ranking model
+PlaceMux - Train the ranking models
 =====================================
 Trains a calibrated logistic regression on the engineered feature vector
 (see ml/features.py) to predict P(good_match) for a (student, job) pair.
@@ -8,16 +8,16 @@ That probability is the ranking score used for both:
   - Candidate ranking for companies (rank students for a fixed job)
 
 Model: GradientBoostingClassifier, calibrated via Platt scaling (sigmoid).
-We moved from a linear model to gradient-boosted trees because the engineered
+We moved from a linear models to gradient-boosted trees because the engineered
 feature set includes step-function and interaction signals (per-skill
-threshold coverage, coverage x strength, a near-miss gap) that a linear model
+threshold coverage, coverage x strength, a near-miss gap) that a linear models
 can only combine additively -- trees capture the nonlinear interactions
-between them directly. Explainability is preserved two ways: (1) the model
+between them directly. Explainability is preserved two ways: (1) the models
 still scores a small, named, auditable feature set (not raw text or
 embeddings), and (2) we report permutation/impurity-based feature importances
 from the trained trees as the global explainability artifact, alongside the
 existing per-prediction plain-English reasons (see ml/features.py) which are
-independent of model type.
+independent of models type.
 
 Every run appends to reports/experiment_log.csv so results are reproducible
 and comparable across iterations (the "experiment log" the study guide asks for).
@@ -136,13 +136,13 @@ def main():
     )
     clf.fit(X_train, y_train)
 
-    # quick val check (used only for model selection, never for the reported test numbers)
+    # quick val check (used only for models selection, never for the reported test numbers)
     val_acc = clf.score(X_val, y_val)
     val_pr_auc_final = average_precision_score(y_val, clf.predict_proba(X_val)[:, 1])
 
     # --- Operating threshold selection (also on validation only) ---
     # The default 0.5 cutoff is arbitrary. We instead pick the threshold that gives the
-    # model the BEST PRECISION it can reach while matching or beating the baseline's
+    # models the BEST PRECISION it can reach while matching or beating the baseline's
     # recall at its own 0.5 cutoff -- a fair apples-to-apples operating point, not a
     # cherry-picked one. Falls back to 0.5 if no threshold clears the recall bar.
     from sklearn.metrics import precision_recall_curve, precision_score, recall_score

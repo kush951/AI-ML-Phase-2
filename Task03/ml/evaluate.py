@@ -1,9 +1,9 @@
 """
-PlaceMux - Comprehensive model evaluation
+PlaceMux - Comprehensive models evaluation
 ============================================
 Directly answers the review feedback "expand evaluation metrics to include
 more comprehensive performance analysis". Produces, on the HELD-OUT TEST SET
-ONLY (never seen during training or model selection):
+ONLY (never seen during training or models selection):
 
   Classification metrics @ threshold 0.5:
     - precision, recall, F1, false-positive rate, accuracy, confusion matrix
@@ -137,7 +137,7 @@ def main():
 
     model_scores = clf.predict_proba(X_test)[:, 1]
 
-    # ---- overall: model vs baseline ----
+    # ---- overall: models vs baseline ----
     model_overall = classification_metrics(y_test, model_scores, threshold=model_threshold)
     baseline_overall = classification_metrics(y_test, base_test, threshold=0.5)
     model_rank_cat, n_model_q = ranking_metrics(y_test, model_scores, group_ids=cat_test)
@@ -157,30 +157,30 @@ def main():
             continue
         seg_model = classification_metrics(y_test[mask], model_scores[mask])
         seg_base = classification_metrics(y_test[mask], base_test[mask])
-        segments[cat] = {"model": seg_model, "baseline": seg_base}
+        segments[cat] = {"models": seg_model, "baseline": seg_base}
 
     calib = calibration_table(y_test, model_scores)
 
     report = {
         "generated_at": pd.Timestamp.now().strftime("%Y-%m-%d %H:%M:%S"),
         "test_set_size": int(len(y_test)),
-        "note": "All metrics computed on a held-out test split never used for training or model selection.",
-        "overall": {"model": model_overall, "baseline": baseline_overall},
+        "note": "All metrics computed on a held-out test split never used for training or models selection.",
+        "overall": {"models": model_overall, "baseline": baseline_overall},
         "ranking_quality_job_ranking_for_students": {
-            "model": model_rank_by_student, "baseline": base_rank_by_student,
+            "models": model_rank_by_student, "baseline": base_rank_by_student,
             "n_students_evaluated": n_student_q,
             "definition": "Grouped by student_id: for each student, were the jobs that are true good-matches "
                            "ranked near the top of the list shown to them? Students with zero positive-label "
                            "jobs in the test split are excluded (ranking is undefined with no relevant item).",
         },
         "ranking_quality_candidate_ranking_for_companies": {
-            "model": model_rank_by_job, "baseline": base_rank_by_job,
+            "models": model_rank_by_job, "baseline": base_rank_by_job,
             "n_jobs_evaluated": n_job_q,
             "definition": "Grouped by job_id: for each job, were the candidates who are true good-matches "
                            "ranked near the top of the candidate list shown to the company?",
         },
         "ranking_quality_by_job_category": {
-            "model": model_rank_cat, "baseline": base_rank_cat,
+            "models": model_rank_cat, "baseline": base_rank_cat,
             "n_queries_evaluated": n_model_q,
             "definition": "Secondary cut: rows grouped by job category instead of individual student/job, "
                            "as a coarser sanity check.",
@@ -232,9 +232,9 @@ def main():
     md = [f"# PlaceMux Ranking Model — Evaluation Report",
           f"_Generated {report['generated_at']} · test set n={report['test_set_size']}_",
           "",
-          "All numbers below are computed on a **held-out test split** the model never trained or tuned on.",
+          "All numbers below are computed on a **held-out test split** the models never trained or tuned on.",
           "",
-          "## Overall: model vs baseline (threshold = 0.5)",
+          "## Overall: models vs baseline (threshold = 0.5)",
           "",
           "| Metric | Baseline (overlap) | Model (calibrated logistic regression) | Δ |",
           "|---|---|---|---|"]
@@ -266,7 +266,7 @@ def main():
            "| Category | n | Model Precision | Model Recall | Model FPR | Baseline Precision | Baseline Recall |",
            "|---|---|---|---|---|---|---|"]
     for cat, seg in segments.items():
-        m, b = seg["model"], seg["baseline"]
+        m, b = seg["models"], seg["baseline"]
         md.append(f"| {cat} | {m['n']} | {m['precision']} | {m['recall']} | {m['false_positive_rate']} "
                    f"| {b['precision']} | {b['recall']} |")
 
@@ -275,7 +275,7 @@ def main():
     for c in calib:
         md.append(f"| {c['bucket']} | {c['n']} | {c['mean_predicted']} | {c['actual_positive_rate']} |")
 
-    md += ["", "## Confusion matrix (model, threshold=0.5)", "",
+    md += ["", "## Confusion matrix (models, threshold=0.5)", "",
            f"TP={model_overall['confusion_matrix']['tp']}  FP={model_overall['confusion_matrix']['fp']}  "
            f"TN={model_overall['confusion_matrix']['tn']}  FN={model_overall['confusion_matrix']['fn']}",
            "", "![PR Curve](pr_curve.png)", "![ROC Curve](roc_curve.png)", "![Calibration](calibration.png)"]

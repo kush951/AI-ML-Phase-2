@@ -1,6 +1,6 @@
 """
 PlaceMux · Data Generator
-Produces real-shaped synthetic candidate–job pair data for model training.
+Produces real-shaped synthetic candidate–job pair data for models training.
 """
 
 import numpy as np

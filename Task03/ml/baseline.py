@@ -3,7 +3,7 @@ PlaceMux - Baseline ranker
 ============================
 The "dumb" baseline described in the study guide: rank purely by raw overlap
 of required vs verified skills (unweighted, no experience, no learned weights).
-Every later model's numbers are only meaningful relative to this.
+Every later models's numbers are only meaningful relative to this.
 """
 import numpy as np
 

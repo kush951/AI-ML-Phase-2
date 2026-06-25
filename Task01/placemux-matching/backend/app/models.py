@@ -1,5 +1,5 @@
 """
-Marketplace data model — the persisted entities behind the student<->job
+Marketplace data models — the persisted entities behind the student<->job
 feature space. This is the schema Backend and the matching engine both
 agree on (see API_CONTRACT.md for the wire contract built on top of it).
 """

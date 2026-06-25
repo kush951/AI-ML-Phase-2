@@ -1,7 +1,7 @@
 """
 PlaceMux · Dumb Baseline
 Rank by skill-overlap score only — no ML, no features beyond F1.
-Every later model must beat this on all metrics.
+Every later models must beat this on all metrics.
 """
 
 from __future__ import annotations
@@ -39,7 +39,7 @@ class SkillOverlapBaseline:
         fpr = fp / max(fp + tn, 1)
 
         return {
-            "model":     "Baseline (skill overlap only)",
+            "models":     "Baseline (skill overlap only)",
             "precision": round(precision_score(y, y_pred, zero_division=0), 4),
             "recall":    round(recall_score(y, y_pred, zero_division=0), 4),
             "f1":        round(f1_score(y, y_pred, zero_division=0), 4),

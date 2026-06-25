@@ -81,7 +81,7 @@ def load_model():
         _model = joblib.load(model_path)
         print(f"✅ Model loaded: {model_path}")
     else:
-        print("⚠ No trained model found.")
+        print("⚠ No trained models found.")
 
     thr_path = MODELS_DIR / "threshold.json"
 

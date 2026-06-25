@@ -3,9 +3,9 @@ The student<->job feature space.
 
 Design principle from the study guide: a feature is a measurable signal
 (verified skill score, JD requirement, years of exposure). Garbage or
-leaky features beat any fancy model, so this module is deliberately the
+leaky features beat any fancy models, so this module is deliberately the
 single source of truth for every feature used downstream — both by the
-baseline and by the trained model. Nothing in matching.py invents a
+baseline and by the trained models. Nothing in matching.py invents a
 feature that isn't defined here.
 
 All features are computed only from information that is legitimately
@@ -30,7 +30,7 @@ def compute_features(student: Dict, job: Dict) -> Dict[str, float]:
     """
     student: {years_experience, education_level, verified_skills: {skill: score}, location, remote_ok}
     job:     {min_experience, role_level, required_skills: {skill: min_score}, location, remote_ok}
-    Returns a flat dict of numeric features — the row a model is trained/scored on.
+    Returns a flat dict of numeric features — the row a models is trained/scored on.
     """
     required: Dict[str, float] = job.get("required_skills", {}) or {}
     have: Dict[str, float] = student.get("verified_skills", {}) or {}

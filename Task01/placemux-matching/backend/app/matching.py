@@ -1,7 +1,7 @@
 """
 The matching engine: baseline ranker, trained classifier, explainability,
 and held-out evaluation. Per the study guide — "build a dumb baseline
-before any clever model", "report precision/recall/false-positive rate
+before any clever models", "report precision/recall/false-positive rate
 on real sample data", "every match needs a plain-English why".
 """
 import json
@@ -27,7 +27,7 @@ METRICS_PATH = os.path.join(MODEL_DIR, "metrics.json")
 EXPERIMENT_LOG_PATH = os.path.join(MODEL_DIR, "experiment_log.jsonl")
 
 BASELINE_THRESHOLD = 0.6   # skill_overlap_ratio >= this -> baseline says "match"
-MODEL_THRESHOLD = 0.5      # predicted probability >= this -> model says "match"
+MODEL_THRESHOLD = 0.5      # predicted probability >= this -> models says "match"
 
 
 # ---------------------------------------------------------------- baseline
@@ -53,7 +53,7 @@ def _build_dataset(pairs_per_job: int = 25, n_students: int = 300, n_jobs: int =
 
 def _best_f1_threshold(y_true, scores) -> float:
     """Pick the operating point that maximises F1 on this scorer's own ROC/PR curve,
-    so baseline and model are each evaluated at their best realistic threshold
+    so baseline and models are each evaluated at their best realistic threshold
     rather than an arbitrary fixed cutoff."""
     precisions, recalls, thresholds = precision_recall_curve(y_true, scores)
     if len(thresholds) == 0:
@@ -100,7 +100,7 @@ def train_and_evaluate(pairs_per_job: int = 25) -> Dict:
     model_threshold = _best_f1_threshold(y_val, val_model_probs)
     baseline_threshold = _best_f1_threshold(y_val, val_baseline_scores)
 
-    # refit on the full training split (train+val) for the model we actually deploy
+    # refit on the full training split (train+val) for the models we actually deploy
     clf.fit(X_train, y_train)
     model_probs = clf.predict_proba(X_test)[:, 1]
     baseline_scores_test = X_test[:, FEATURE_NAMES.index("skill_overlap_ratio")]
@@ -123,7 +123,7 @@ def train_and_evaluate(pairs_per_job: int = 25) -> Dict:
         "trained_on_pairs": int(n_pairs),
         "test_set_size": int(len(y_test)),
         "baseline": baseline_metrics,
-        "model": model_metrics,
+        "models": model_metrics,
         "lift_over_baseline_pct": lift,
         "feature_coefficients": coefs,
     }

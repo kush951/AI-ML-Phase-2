@@ -79,7 +79,7 @@ def generate_job(jid: int) -> dict:
 
 
 def compute_match_features(student: dict, job: dict) -> dict:
-    """Compute features for a (student, job) pair — these feed the model."""
+    """Compute features for a (student, job) pair — these feed the models."""
     s_skills = set(student["verified_skills"].keys())
     j_required = set(job["required_skills"])
     j_nice = set(job["nice_to_have"])

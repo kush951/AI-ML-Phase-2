@@ -28,7 +28,7 @@ artefacts_path = ROOT / "experiments" / "best_model.pkl"
 with open(artefacts_path, "rb") as f:
     ARTEFACTS = pickle.load(f)
 
-MODEL = ARTEFACTS["model"]
+MODEL = ARTEFACTS["models"]
 VECTORIZER = ARTEFACTS["vectorizer"]
 MODEL_NAME = ARTEFACTS["model_name"]
 FEATURE_IMPORTANCES = ARTEFACTS.get("feature_importances", {})
@@ -124,7 +124,7 @@ def _predict(student: dict, job: dict) -> tuple[float, np.ndarray]:
 def root():
     return {
         "service": "PlaceMux Matching API",
-        "model": MODEL_NAME,
+        "models": MODEL_NAME,
         "version": "1.0.0",
         "endpoints": ["/match", "/rank", "/explain", "/metrics", "/models",
                       "/students", "/jobs"]
@@ -225,7 +225,7 @@ def explain_existing_pair(student_id: str, job_id: str):
 
 @app.get("/metrics")
 def get_metrics():
-    """Return all model evaluation metrics from the experiment log."""
+    """Return all models evaluation metrics from the experiment log."""
     return {
         "best_model": EXP_LOG["best_model"],
         "best_metrics": EXP_LOG["best_metrics"],

@@ -32,7 +32,7 @@ placemux-matching/
 ```bash
 cd backend
 pip install -r requirements.txt
-python train.py            # trains the model, writes artifacts/metrics.json
+python train.py            # trains the models, writes artifacts/metrics.json
 uvicorn app.main:app --reload --port 8000
 ```
 

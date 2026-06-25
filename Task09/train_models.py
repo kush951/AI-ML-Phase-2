@@ -1,6 +1,6 @@
 """
 train_models.py
-PlaceMux · Task 9 — Multi-model selection & evaluation
+PlaceMux · Task 9 — Multi-models selection & evaluation
 Models: Baseline, Logistic Regression, Random Forest, Gradient Boosting, XGBoost, SVM
 Metrics: Precision, Recall, F1, FPR, AUC-ROC
 """
@@ -62,7 +62,7 @@ FEATURE_COLS = [
 # ─────────────────────────────────────────────────────────────
 class SkillOverlapBaseline:
     """
-    Simple rule-based baseline model.
+    Simple rule-based baseline models.
     """
 
     def __init__(self, threshold=0.5):

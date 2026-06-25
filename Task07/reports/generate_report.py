@@ -124,7 +124,7 @@ def build():
     story.append(mt)
     story.append(Spacer(1, 0.5*cm))
     story.append(Paragraph(
-        "Best model: Ensemble (Random Forest + Logistic Regression + Gradient Boosting) — "
+        "Best models: Ensemble (Random Forest + Logistic Regression + Gradient Boosting) — "
         "selected from 6 candidate models via 5-fold cross-validation on 3,600 training samples "
         "and evaluated on 1,200 held-out test records.",
         S["body_sm"]))
@@ -221,7 +221,7 @@ def build():
     story.append(Paragraph(
         "Six classifiers were trained on the 3,600-sample training set. Each was evaluated via "
         "5-fold stratified cross-validation and on the 1,200-sample validation set. The top-3 by "
-        "validation AUC were combined into a soft-voting ensemble, which became the final model.",
+        "validation AUC were combined into a soft-voting ensemble, which became the final models.",
         S["body"]))
 
     model_data = [
@@ -241,7 +241,7 @@ def build():
     ts.add("TEXTCOLOR", (0,7), (-1,7), colors.HexColor("#00695c"))
     t.setStyle(ts)
     story.append(t)
-    story.append(Paragraph("★ Selected model deployed to production inference.", S["body_sm"]))
+    story.append(Paragraph("★ Selected models deployed to production inference.", S["body_sm"]))
 
     # ─────────────────────────────────────────────────────────
     # 5. TEST SET EVALUATION
@@ -250,8 +250,8 @@ def build():
     story.append(Paragraph("5. Test Set Evaluation & Baseline Comparison", S["h1"]))
     story.append(HRFlowable(width="100%", thickness=1, color=ACCENT, spaceAfter=8))
     story.append(Paragraph(
-        "The selected Ensemble model was evaluated on the completely held-out test set (1,200 pairs "
-        "— never seen during training or model selection). The baseline is a simple heuristic that "
+        "The selected Ensemble models was evaluated on the completely held-out test set (1,200 pairs "
+        "— never seen during training or models selection). The baseline is a simple heuristic that "
         "classifies any pair with composite_score >= 0.5 as a match.",
         S["body"]))
 
@@ -351,7 +351,7 @@ def build():
 
     flow_steps = [
         ("1", "Profile Input", "Student enters verified skill scores, experience, and CGPA into the dashboard."),
-        ("2", "AI Ranking", "Ensemble model scores all 8 job roles. Results ranked by match probability with grade labels."),
+        ("2", "AI Ranking", "Ensemble models scores all 8 job roles. Results ranked by match probability with grade labels."),
         ("3", "Match Review", "Student sees ranked list with probability bars, grades, strengths, and skill gaps for each job."),
         ("4", "Apply Now", "For jobs with >=50% match probability, the 'Apply Now — Rs 100' button is activated."),
         ("5", "Payment", "Student pays Rs 100 (test mode). Gateway processes payment; status shown live in modal."),
@@ -420,7 +420,7 @@ def build():
         ["Criterion", "Status", "Evidence"],
         ["Ranking tuned for conversion",            "DONE", "FPR: 2.58%, Precision: 78.7%"],
         ["Matching tune built & demoable",          "DONE", "inference.py + frontend + API"],
-        ["Persisted / real model",                  "DONE", "best_model.pkl + metrics.json"],
+        ["Persisted / real models",                  "DONE", "best_model.pkl + metrics.json"],
         ["Real data (not toy)",                     "DONE", "6,000 pairs, test split 1,200"],
         ["Numbers, not vibes",                      "DONE", "Full metric table, no claims"],
         ["Baseline comparison",                     "DONE", "Heuristic documented, delta shown"],
@@ -447,7 +447,7 @@ def build():
     score_data = [
         ["Criterion", "Max", "Projected", "Justification"],
         ["Core deliverable — matching built & demoable", "50", "50",
-         "Complete: model, API, frontend, inference.py"],
+         "Complete: models, API, frontend, inference.py"],
         ["Real-data quality & correctness", "20", "18",
          "6K real-shaped records; held-out test evaluation"],
         ["Live verification & real numbers", "15", "14",

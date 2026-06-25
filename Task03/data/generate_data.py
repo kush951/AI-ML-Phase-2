@@ -12,7 +12,7 @@ Generates a real-shaped (synthetic) dataset for the Search & Discovery task:
 
 This is not a toy/happy-path set: scores are noisy, some students have sparse skill
 profiles, some jobs have unrealistic requirements, and label noise is injected so no
-model can hit 100% - exactly like production data.
+models can hit 100% - exactly like production data.
 """
 import numpy as np
 import pandas as pd
@@ -148,7 +148,7 @@ for sid in range(1, N_STUDENTS + 1):
 
         exp_ok = 1.0 if s_exp >= j_min_exp else max(0.0, 1 - (j_min_exp - s_exp) / 3)
 
-        # hidden true affinity (latent, not given to the model directly)
+        # hidden true affinity (latent, not given to the models directly)
         true_affinity = 0.55 * weighted_cov + 0.25 * avg_overlap_score + 0.20 * exp_ok
         true_affinity = np.clip(true_affinity + RNG.normal(0, 0.08), 0, 1)  # label noise
 

@@ -113,9 +113,9 @@ def main():
     with open(exp_dir / "experiment_log.json", "w") as f:
         json.dump(log, f, indent=2)
 
-    # Best model + vectorizer
+    # Best models + vectorizer
     artefacts = {
-        "model": best_model,
+        "models": best_model,
         "vectorizer": vec,
         "model_name": best_name,
         "feature_names": FEATURE_NAMES,

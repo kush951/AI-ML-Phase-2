@@ -145,7 +145,7 @@ if __name__ == "__main__":
     from utils.features import FEATURE_COLS
     from models.baseline import SkillOverlapBaseline
 
-    print("Loading test data and best model...")
+    print("Loading test data and best models...")
     best_model = joblib.load(MODELS_DIR / "best_model.pkl")
     X_test     = pd.read_csv(MODELS_DIR / "X_test.csv")
     y_test     = pd.read_csv(MODELS_DIR / "y_test.csv").squeeze()
@@ -161,7 +161,7 @@ if __name__ == "__main__":
     b_metrics  = baseline.evaluate(X_test[FEATURE_COLS], y_test)
     print_report(b_metrics, "Baseline (skill overlap)")
 
-    # Best model
+    # Best models
     metrics = evaluate_model(best_model, X_test[FEATURE_COLS], y_test, threshold=threshold)
     print_report(metrics, "Best Model (XGBoost)")
 

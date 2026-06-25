@@ -3,7 +3,7 @@ main.py  —  PlaceMux AI/ML API
 Task 9 · Failure Handling & Resilience
 Endpoints:
   GET  /health              — liveness probe
-  GET  /models/summary      — all model metrics from experiment log
+  GET  /models/summary      — all models metrics from experiment log
   POST /match               — predict match for (student, job) pair
   GET  /conversion-check    — paywall relevance check results
   GET  /explain             — one-example walkthrough
@@ -96,13 +96,13 @@ def health():
 
 @app.get("/models/summary")
 def models_summary():
-    """Return all model metrics from the experiment log."""
+    """Return all models metrics from the experiment log."""
     load_artefacts()
     models = _log["models"]
     rows = []
     for name, res in models.items():
         row = {
-            "model": name,
+            "models": name,
             "precision": res["test"]["precision"],
             "recall":    res["test"]["recall"],
             "f1":        res["test"]["f1"],

@@ -435,7 +435,7 @@ function buildSkillInputs() {
   });
 }
 
-// ── ML Matching Logic (client-side model approximation) ───────────────────
+// ── ML Matching Logic (client-side models approximation) ───────────────────
 function getStudentProfile() {
   const skills = {};
   SKILLS.forEach(s => {
@@ -470,7 +470,7 @@ function computeFeatures(student, job) {
 }
 
 function predictProb(feats) {
-  // Approximated ensemble weights calibrated from trained model outputs
+  // Approximated ensemble weights calibrated from trained models outputs
   const logit =
       feats.coverage    *  5.82
     + feats.softCov     *  2.14

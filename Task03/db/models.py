@@ -84,7 +84,7 @@ class JobSkillRequirement(Base):
 
 
 class Application(Base):
-    """Ground-truth labelled (student, job) pairs used to train/evaluate the model."""
+    """Ground-truth labelled (student, job) pairs used to train/evaluate the models."""
     __tablename__ = "applications"
     id = Column(Integer, primary_key=True, autoincrement=True)
     student_id = Column(Integer, ForeignKey("students.student_id"), nullable=False)

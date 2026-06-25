@@ -23,7 +23,7 @@ REPORTS_DIR = ROOT / "reports"
 app = FastAPI(
     title="PlaceMux Explainable Matching API",
     description="Serves match scores with a plain-English explanation payload "
-                "for every student-job pair, plus the model evaluation behind it.",
+                "for every student-job pair, plus the models evaluation behind it.",
     version="1.0.0",
 )
 app.add_middleware(
@@ -83,7 +83,7 @@ def build_feature_row(student_id: str, job_id: str) -> dict:
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "model": model_meta["best_model_name"]}
+    return {"status": "ok", "models": model_meta["best_model_name"]}
 
 
 @app.get("/students")
@@ -136,7 +136,7 @@ def shortlist(job_id: str, top_n: int = 10):
 
 @app.get("/metrics")
 def metrics():
-    """Evaluation numbers behind the model — for the live-verification demo."""
+    """Evaluation numbers behind the models — for the live-verification demo."""
     return model_meta
 
 

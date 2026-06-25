@@ -8,7 +8,7 @@ plus supporting endpoints for the frontend, the metrics report, and health.
 
 Every ranking call:
   1. reads live data from the database (not flat files) for student/job/skill state
-  2. computes both the baseline score and the trained model score
+  2. computes both the baseline score and the trained models score
   3. attaches a plain-English explanation per the study guide's "no black box" rule
   4. PERSISTS the result to match_scores so it's durable/auditable (see db/models.py)
   5. handles edge cases explicitly: unknown student/job (404), zero candidates,
@@ -45,7 +45,7 @@ def get_model():
     global _model
     if _model is None:
         if not MODEL_PATH.exists():
-            raise HTTPException(status_code=503, detail="Ranking model not trained yet. Run ml/train.py first.")
+            raise HTTPException(status_code=503, detail="Ranking models not trained yet. Run ml/train.py first.")
         _model = joblib.load(MODEL_PATH)
     return _model
 

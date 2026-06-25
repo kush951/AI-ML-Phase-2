@@ -10,7 +10,7 @@ Design notes (why it's not a toy example):
   * Verified skill scores are noisy (a student's "true" ability vs. the
     score the verification quiz returned) — mirrors real assessment noise.
   * The label (`is_good_match`) is generated from a latent quality function
-    plus genuine label noise (~8%), so no model can hit 100% — accuracy
+    plus genuine label noise (~8%), so no models can hit 100% — accuracy
     has to be earned, and a baseline is meaningful to compare against.
   * JDs have both "required" and "nice-to-have" skills with different
     weights, and a seniority/experience gap term, to mimic a real ATS-style
@@ -143,7 +143,7 @@ def build_features(students, jobs, n_pairs):
         meets_min_score = 1.0 if avg_req_score >= j["min_verified_score"] else 0.0
         verified_breadth = len(s["skills"])
 
-        # ---- latent "true" match quality (not given to the model directly) ----
+        # ---- latent "true" match quality (not given to the models directly) ----
         latent = (
             3.2 * req_overlap_ratio
             + 0.9 * nice_overlap_ratio

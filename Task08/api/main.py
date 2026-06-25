@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = joblib.load("model.pkl")
+model = joblib.load("models.pkl")
 
 class MatchRequest(BaseModel):
     student_skills: list

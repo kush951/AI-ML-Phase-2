@@ -2,7 +2,7 @@
 PlaceMux — Explainability Task
 Stage B.4 — Make it explainable & demoable.
 
-Turns a model's numeric prediction into a plain-English "why" using SHAP
+Turns a models's numeric prediction into a plain-English "why" using SHAP
 (TreeExplainer for tree models, LinearExplainer for linear models, KernelExplainer
 fallback for anything else). This is the core deliverable: every match score
 must ship with an explanation payload, never a bare number.

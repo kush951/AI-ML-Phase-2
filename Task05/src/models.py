@@ -1,6 +1,6 @@
 """
 PlaceMux · Model Zoo & Selection
-Trains, evaluates and selects the best matching model.
+Trains, evaluates and selects the best matching models.
 """
 import json
 import time
@@ -105,7 +105,7 @@ def get_models():
     }
 
 
-# ─── Baseline (no model) ───────────────────────────────────────────────────────
+# ─── Baseline (no models) ───────────────────────────────────────────────────────
 
 def baseline_predict_proba(X: np.ndarray) -> np.ndarray:
     """Skill overlap ratio is column 0 (skill_match_ratio)."""
@@ -134,7 +134,7 @@ def evaluate(y_true: np.ndarray, y_pred: np.ndarray, y_proba: np.ndarray) -> dic
 # ─── Full training & comparison ────────────────────────────────────────────────
 
 def train_and_compare(X_train, y_train, X_test, y_test, feature_names):
-    """Train every model, evaluate, return sorted results."""
+    """Train every models, evaluate, return sorted results."""
     models = get_models()
     results = {}
     trained_models = {}
@@ -165,7 +165,7 @@ def train_and_compare(X_train, y_train, X_test, y_test, feature_names):
 
 
 def select_best(results: dict) -> str:
-    """Choose best model by harmonic mean of F1 + AUC-ROC."""
+    """Choose best models by harmonic mean of F1 + AUC-ROC."""
     def composite(m):
         return 2 * m["f1"] * m["roc_auc"] / max(m["f1"] + m["roc_auc"], 1e-6)
 
@@ -174,7 +174,7 @@ def select_best(results: dict) -> str:
 
 
 def get_feature_importances(model, feature_names: list[str]) -> dict:
-    """Extract feature importances from the best model (if available)."""
+    """Extract feature importances from the best models (if available)."""
     clf = model
     # Unwrap pipeline
     if hasattr(model, "named_steps"):

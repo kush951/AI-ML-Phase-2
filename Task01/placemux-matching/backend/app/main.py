@@ -85,7 +85,7 @@ def seed_if_empty():
             db.add(models.Job(**j))
         db.commit()
     db.close()
-    # ensure a trained model + metrics exist on first boot
+    # ensure a trained models + metrics exist on first boot
     get_model()
 
 
@@ -230,7 +230,7 @@ def explain_one_match(student_id: int, job_id: int, db: Session = Depends(get_db
 # ----------------------------------------------------------------- metrics
 @app.get("/metrics", response_model=schemas.MetricsOut, tags=["metrics"])
 def get_metrics():
-    """Held-out precision / recall / false-positive rate for model vs baseline."""
+    """Held-out precision / recall / false-positive rate for models vs baseline."""
     m = load_metrics()
     return schemas.MetricsOut(**m)
 

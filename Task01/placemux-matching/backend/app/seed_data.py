@@ -1,12 +1,12 @@
 """
 Generates a real-shaped sample dataset (students, companies, jobs, and
-historical outcome labels) so the matching model has something to train
+historical outcome labels) so the matching models has something to train
 and evaluate against before live marketplace data exists.
 
 This is clearly-synthetic data used for demo/training purposes — the
 study guide explicitly asks for "real-shaped, even if small" sample data,
 not a hand-picked toy example. Swap this generator for a real export
-once Backend's marketplace data model is live; nothing downstream
+once Backend's marketplace data models is live; nothing downstream
 (features.py, matching.py) needs to change.
 """
 import random
@@ -86,7 +86,7 @@ def generate_labeled_pairs(students: List[Dict], jobs: List[Dict], pairs_per_job
     Synthetic historical outcome labels (1 = went on to a successful
     shortlist/hire, 0 = did not), generated from an underlying rule with
     noise so the data is real-shaped: imperfectly separable, not a toy
-    linear-sep example. Used purely to train/evaluate the demo model.
+    linear-sep example. Used purely to train/evaluate the demo models.
     """
     from .features import compute_features
 

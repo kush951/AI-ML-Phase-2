@@ -1,6 +1,6 @@
 """
 Integration tests for the FastAPI Search & Discovery service.
-Uses FastAPI's TestClient against the real seeded database and trained model
+Uses FastAPI's TestClient against the real seeded database and trained models
 (run db/seed.py and ml/train.py first). Covers:
   - happy path ranking for both deliverables
   - ordering correctness (descending by score)
@@ -143,10 +143,10 @@ def test_metrics_endpoint_has_expected_structure():
                 "ranking_quality_candidate_ranking_for_companies",
                 "segment_breakdown_by_job_category", "calibration"]:
         assert key in body
-    assert "model" in body["overall"]
+    assert "models" in body["overall"]
     assert "baseline" in body["overall"]
-    assert "precision" in body["overall"]["model"]
-    assert "false_positive_rate" in body["overall"]["model"]
+    assert "precision" in body["overall"]["models"]
+    assert "false_positive_rate" in body["overall"]["models"]
 
 
 def test_list_students_and_jobs_endpoints():

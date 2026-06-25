@@ -95,7 +95,7 @@ def evaluate(name, y_true, y_pred, y_prob):
     cm = confusion_matrix(y_true, y_pred)
     tn, fp, fn, tp = cm.ravel()
     return {
-        "model": name,
+        "models": name,
         "precision": round(precision_score(y_true, y_pred, zero_division=0), 4),
         "recall":    round(recall_score(y_true, y_pred, zero_division=0), 4),
         "f1":        round(f1_score(y_true, y_pred, zero_division=0), 4),
@@ -114,11 +114,11 @@ def plot_model_comparison(results_df):
     metrics = ["f1", "roc_auc", "avg_precision"]
     titles  = ["F1 Score", "ROC-AUC", "Avg Precision (PR-AUC)"]
     for ax, metric, title in zip(axes, metrics, titles):
-        bars = ax.barh(results_df["model"], results_df[metric], color=PALETTE[:len(results_df)])
+        bars = ax.barh(results_df["models"], results_df[metric], color=PALETTE[:len(results_df)])
         ax.set_xlim(0, 1.05)
         ax.set_xlabel(title)
         ax.set_title(title)
-        ax.axvline(x=results_df[results_df["model"] == "Baseline"][metric].values[0],
+        ax.axvline(x=results_df[results_df["models"] == "Baseline"][metric].values[0],
                    color="gray", linestyle="--", linewidth=1.5, label="Baseline")
         for bar, val in zip(bars, results_df[metric]):
             ax.text(val + 0.01, bar.get_y() + bar.get_height() / 2,
@@ -224,11 +224,11 @@ def main():
 
     # --- Select best ---
     results_df = pd.DataFrame(results)
-    ml_results = results_df[results_df["model"] != "Baseline"].copy()
+    ml_results = results_df[results_df["models"] != "Baseline"].copy()
     best_row = ml_results.loc[ml_results["roc_auc"].idxmax()]
-    best_name = best_row["model"]
+    best_name = best_row["models"]
     best_model = trained_models[best_name]
-    print(f"\n✓ Best model: {best_name}  (AUC={best_row['roc_auc']:.4f}  F1={best_row['f1']:.4f})")
+    print(f"\n✓ Best models: {best_name}  (AUC={best_row['roc_auc']:.4f}  F1={best_row['f1']:.4f})")
 
     # --- Plots ---
     print("\n[Generating Plots]")

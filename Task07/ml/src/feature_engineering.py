@@ -1,6 +1,6 @@
 """
 PlaceMux · AI/ML · Feature Engineering
-Builds interaction features from student-job pairs for the matching model.
+Builds interaction features from student-job pairs for the matching models.
 """
 
 import numpy as np
@@ -19,7 +19,7 @@ SKILLS = [
 def build_features(df: pd.DataFrame) -> pd.DataFrame:
     """
     Engineer matching-specific features from raw student+job columns.
-    Returns a DataFrame of numeric features for model input.
+    Returns a DataFrame of numeric features for models input.
     """
     features = pd.DataFrame(index=df.index)
 
