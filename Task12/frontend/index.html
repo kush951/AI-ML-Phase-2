@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PlaceMux AI Dashboard</title>
+
+<style>
+
+/* =========================
+   PLACEMUX AI DASHBOARD
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top left,#2563eb 0%,transparent 25%),
+    radial-gradient(circle at bottom right,#06b6d4 0%,transparent 25%),
+    linear-gradient(135deg,#020617,#0f172a,#111827);
+
+    color:white;
+
+    overflow-x:hidden;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+
+    padding-top:40px;
+    padding-bottom:60px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    animation:fadeIn 1s ease;
+}
+
+.header h1{
+
+    font-size:55px;
+
+    font-weight:700;
+
+    background:linear-gradient(
+        90deg,
+        #38bdf8,
+        #818cf8,
+        #22d3ee
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom:15px;
+}
+
+.header p{
+
+    font-size:18px;
+
+    color:#cbd5e1;
+
+    letter-spacing:1px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+    position:relative;
+
+    background:rgba(255,255,255,0.06);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    backdrop-filter:blur(14px);
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,0.4);
+
+    transition:0.4s;
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    background:rgba(56,189,248,0.15);
+
+    border-radius:50%;
+
+    top:-60px;
+    right:-60px;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 18px 40px rgba(37,99,235,0.3);
+}
+
+.card h2{
+
+    margin-bottom:18px;
+
+    font-size:24px;
+
+    color:#e2e8f0;
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+textarea{
+
+    width:100%;
+    height:220px;
+
+    border:none;
+    outline:none;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    resize:none;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+    background:rgba(255,255,255,0.9);
+
+    color:#0f172a;
+
+    transition:0.3s;
+}
+
+textarea:focus{
+
+    transform:scale(1.01);
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,0.5);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-area{
+
+    text-align:center;
+
+    margin-top:45px;
+}
+
+button{
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:16px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4
+    );
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,0.4);
+
+    transition:0.4s;
+}
+
+button:hover{
+
+    transform:translateY(-4px) scale(1.03);
+
+    box-shadow:
+    0 15px 35px rgba(6,182,212,0.5);
+}
+
+/* =========================
+   RESULT CARD
+========================= */
+
+.result-card{
+
+    margin-top:50px;
+
+    background:rgba(255,255,255,0.07);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:28px;
+
+    padding:40px;
+
+    backdrop-filter:blur(15px);
+
+    display:none;
+
+    animation:slideUp 0.8s ease;
+}
+
+.result-card h2{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:30px;
+
+    color:#f8fafc;
+}
+
+/* =========================
+   SCORE CIRCLE
+========================= */
+
+.score-circle{
+
+    width:180px;
+    height:180px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:42px;
+    font-weight:700;
+
+    background:linear-gradient(
+        135deg,
+        #22c55e,
+        #06b6d4
+    );
+
+    box-shadow:
+    0 0 40px rgba(34,197,94,0.5);
+
+    margin-bottom:35px;
+
+    animation:pulse 2s infinite;
+}
+
+/* =========================
+   RESULT SECTION
+========================= */
+
+.result-section{
+
+    margin-top:30px;
+}
+
+.result-section h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+    color:#38bdf8;
+}
+
+/* =========================
+   TAG
+========================= */
+
+.tag{
+
+    display:inline-block;
+
+    padding:12px 18px;
+
+    margin:8px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #1d4ed8,
+        #06b6d4
+    );
+
+    font-size:15px;
+
+    font-weight:500;
+
+    box-shadow:
+    0 8px 18px rgba(37,99,235,0.3);
+
+    transition:0.3s;
+}
+
+.tag:hover{
+
+    transform:scale(1.08);
+}
+
+#explanation{
+
+    line-height:1.8;
+
+    font-size:17px;
+
+    color:#e2e8f0;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+@media(max-width:900px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .header h1{
+        font-size:38px;
+    }
+
+    .score-circle{
+        width:150px;
+        height:150px;
+        font-size:34px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>🚀 PlaceMux AI Dashboard</h1>
+
+        <p>
+            Resume Parsing • AI Matching • E-Sign • Tamper Detection
+        </p>
+
+    </div>
+
+    <!-- GRID -->
+
+    <div class="grid">
+
+        <!-- RESUME -->
+
+        <div class="card">
+
+            <h2>📄 Resume Skills</h2>
+
+            <textarea
+                id="resume"
+                placeholder="Example: python, aws, docker, fastapi">
+            </textarea>
+
+        </div>
+
+        <!-- JD -->
+
+        <div class="card">
+
+            <h2>💼 JD Skills</h2>
+
+            <textarea
+                id="jd"
+                placeholder="Example: python, docker, sql">
+            </textarea>
+
+        </div>
+
+    </div>
+
+    <!-- BUTTON -->
+
+    <div class="btn-area">
+
+        <button onclick="matchSkills()">
+            Generate AI Match
+        </button>
+
+    </div>
+
+    <!-- RESULT -->
+
+    <div class="result-card" id="resultCard">
+
+        <h2>📊 Match Result</h2>
+
+        <div class="score-circle" id="scoreCircle">
+            0%
+        </div>
+
+        <div class="result-section">
+
+            <h3>✅ Matched Skills</h3>
+
+            <div id="matchedSkills"></div>
+
+        </div>
+
+        <div class="result-section">
+
+            <h3>❌ Missing Skills</h3>
+
+            <div id="missingSkills"></div>
+
+        </div>
+
+        <div class="result-section">
+
+            <h3>🧠 AI Explanation</h3>
+
+            <p id="explanation"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+async function matchSkills() {
+
+    const resume = document
+        .getElementById("resume")
+        .value
+        .split(",");
+
+    const jd = document
+        .getElementById("jd")
+        .value
+        .split(",");
+
+    const response = await fetch(
+        "http://127.0.0.1:8000/match",
+        {
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify({
+                resume_skills: resume,
+                jd_skills: jd
+            })
+        }
+    );
+
+    const data = await response.json();
+
+    document.getElementById(
+        "resultCard"
+    ).style.display = "block";
+
+    document.getElementById(
+        "scoreCircle"
+    ).innerHTML = data.match_score + "%";
+
+    let matchedHTML = "";
+
+    data.matched_skills.forEach(skill => {
+
+        matchedHTML += `
+            <span class="tag">
+                ${skill}
+            </span>
+        `;
+    });
+
+    document.getElementById(
+        "matchedSkills"
+    ).innerHTML = matchedHTML;
+
+    let missingHTML = "";
+
+    data.missing_skills.forEach(skill => {
+
+        missingHTML += `
+            <span class="tag">
+                ${skill}
+            </span>
+        `;
+    });
+
+    document.getElementById(
+        "missingSkills"
+    ).innerHTML = missingHTML;
+
+    document.getElementById(
+        "explanation"
+    ).innerHTML = data.explanation;
+}
+
+</script>
+
+</body>
+</html>
