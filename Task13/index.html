@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaceMux - Proctoring Verification System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #2563eb;
+            --success: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --bg-light: #f9fafb;
+            --bg-dark: #111827;
+            --text-light: #f3f4f6;
+            --text-dark: #1f2937;
+            --border: #e5e7eb;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text-dark);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Header */
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+        
+        .header p {
+            color: #6b7280;
+            font-size: 1.1em;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        
+        /* Main Layout */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 1024px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+        }
+        
+        .card h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border);
+        }
+        
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .form-group input[type="range"] {
+            padding: 0;
+            cursor: pointer;
+        }
+        
+        .slider-value {
+            font-weight: 600;
+            color: var(--primary);
+            margin-left: 10px;
+        }
+        
+        /* Buttons */
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-secondary {
+            background: var(--bg-light);
+            color: var(--text-dark);
+            border: 2px solid var(--border);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-full {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+        }
+        
+        /* Prediction Result */
+        .result-card {
+            border-left: 4px solid var(--primary);
+            margin-top: 20px;
+            padding: 20px;
+            background: var(--bg-light);
+            border-radius: 8px;
+        }
+        
+        .result-card.fraud {
+            border-left-color: var(--danger);
+        }
+        
+        .result-card.safe {
+            border-left-color: var(--success);
+        }
+        
+        .result-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .metric {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
+        }
+        
+        .metric-label {
+            color: #6b7280;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        
+        .metric-value {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        
+        /* Status Indicator */
+        .status {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .status.fraud {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+        }
+        
+        .status.safe {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success);
+        }
+        
+        .status.warning {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--warning);
+        }
+        
+        /* Factors List */
+        .factors {
+            margin-top: 15px;
+        }
+        
+        .factor-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+        
+        .factor-list {
+            list-style: none;
+        }
+        
+        .factor-item {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            color: #6b7280;
+        }
+        
+        .factor-item::before {
+            content: '•';
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .factor-item.risk {
+            color: var(--danger);
+        }
+        
+        .factor-item.risk::before {
+            content: '⚠';
+        }
+        
+        .factor-item.positive::before {
+            content: '✓';
+            color: var(--success);
+        }
+        
+        /* Examples Section */
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .example-card {
+            background: var(--bg-light);
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .example-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .example-card h3 {
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .example-card p {
+            color: #6b7280;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        /* Metrics Display */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .metric-box {
+            background: linear-gradient(135deg, var(--primary), #1d4ed8);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .metric-box h3 {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .metric-box .value {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        
+        /* Loading State */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .loading.show {
+            display: block;
+        }
+        
+        .spinner {
+            border: 4px solid var(--bg-light);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border);
+        }
+        
+        .tab-btn {
+            padding: 12px 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            color: #6b7280;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .examples-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>PlaceMux Verification</h1>
+            <p>Intelligent False-Positive Reduction System</p>
+            <span class="badge">✓ ML-Powered Verification</span>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-grid">
+            <!-- Prediction Form -->
+            <div class="card">
+                <h2>Session Analysis</h2>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="switchTab('manual')">Manual Input</button>
+                    <button class="tab-btn" onclick="switchTab('examples')">Examples</button>
+                </div>
+                
+                <!-- Manual Input Tab -->
+                <div id="manual" class="tab-content active">
+                    <form id="predictionForm">
+                        <div class="form-group">
+                            <label>
+                                Skill Match Score
+                                <span class="slider-value" id="skillMatchValue">0.50</span>
+                            </label>
+                            <input type="range" id="skillMatch" name="skill_match" min="0" max="1" step="0.01" value="0.5" oninput="updateSlider(this)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                Session Duration (normalized)
+                                <span class="slider-value" id="sessionDurationValue">0.50</span>
+                            </label>
+                            <input type="range" id="sessionDuration" name="session_duration" min="0" max="1" step="0.01" value="0.5" oninput="updateSlider(this)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Camera Available</label>
+                            <select id="cameraAvailable" name="camera_available">
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                Environment Quality
+                                <span class="slider-value" id="envQualityValue">0.50</span>
+                            </label>
+                            <input type="range" id="envQuality" name="env_quality" min="0" max="1" step="0.01" value="0.5" oninput="updateSlider(this)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                Verification Confidence
+                                <span class="slider-value" id="verificationConfidenceValue">0.50</span>
+                            </label>
+                            <input type="range" id="verificationConfidence" name="verification_confidence" min="0" max="1" step="0.01" value="0.5" oninput="updateSlider(this)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                Completion Percentage
+                                <span class="slider-value" id="completionPctValue">0.50</span>
+                            </label>
+                            <input type="range" id="completionPct" name="completion_pct" min="0" max="1" step="0.01" value="0.5" oninput="updateSlider(this)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                Answer Consistency
+                                <span class="slider-value" id="answerConsistencyValue">0.50</span>
+                            </label>
+                            <input type="range" id="answerConsistency" name="answer_consistency" min="0" max="1" step="0.01" value="0.5" oninput="updateSlider(this)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                Device Stability
+                                <span class="slider-value" id="deviceStabilityValue">0.50</span>
+                            </label>
+                            <input type="range" id="deviceStability" name="device_stability" min="0" max="1" step="0.01" value="0.5" oninput="updateSlider(this)">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Analyze Session</button>
+                    </form>
+                </div>
+                
+                <!-- Examples Tab -->
+                <div id="examples" class="tab-content">
+                    <div class="examples-grid" id="examplesContainer"></div>
+                </div>
+            </div>
+            
+            <!-- Results -->
+            <div class="card">
+                <h2>Analysis Results</h2>
+                
+                <div id="resultContainer" style="display: none;">
+                    <div class="loading" id="loadingSpinner">
+                        <div class="spinner"></div>
+                        <p>Analyzing session...</p>
+                    </div>
+                    
+                    <div id="resultContent" style="display: none;">
+                        <div class="status" id="predictionStatus"></div>
+                        
+                        <div class="result-grid">
+                            <div class="metric">
+                                <div class="metric-label">Fraud Probability</div>
+                                <div class="metric-value" id="fraudProbability">-</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Confidence</div>
+                                <div class="metric-value" id="confidence">-</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Risk Level</div>
+                                <div class="metric-value" id="riskLevel">-</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Recommended Action</div>
+                                <div class="metric-value" id="recommendedAction" style="font-size: 0.9em;">-</div>
+                            </div>
+                        </div>
+                        
+                        <div class="factors">
+                            <div id="riskFactors">
+                                <div class="factor-title">⚠ Risk Factors</div>
+                                <ul class="factor-list" id="riskList"></ul>
+                            </div>
+                        </div>
+                        
+                        <div class="factors">
+                            <div id="positiveFactors">
+                                <div class="factor-title">✓ Positive Factors</div>
+                                <ul class="factor-list" id="positiveList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p id="placeholderMessage" style="color: #6b7280; text-align: center; padding: 40px 0;">
+                    Enter session data to see analysis results
+                </p>
+            </div>
+        </div>
+        
+        <!-- Metrics Section -->
+        <div class="card">
+            <h2>Model Performance Metrics</h2>
+            <div class="metrics-grid" id="metricsContainer"></div>
+        </div>
+    </div>
+    
+    <script>
+        const API_URL = 'http://localhost:5000/api';
+        
+        function updateSlider(input) {
+            const name = input.name;
+            const id = input.id.charAt(0).toUpperCase() + input.id.slice(1) + 'Value';
+            document.getElementById(id).textContent = parseFloat(input.value).toFixed(2);
+        }
+        
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+            
+            if (tabName === 'examples') {
+                loadExamples();
+            }
+        }
+        
+        function loadMetrics() {
+            fetch(`${API_URL}/metrics`)
+                .then(r => r.json())
+                .then(data => {
+                    const metrics = [
+                        { label: 'Precision', value: (data.validation.precision * 100).toFixed(2), unit: '%' },
+                        { label: 'Recall', value: (data.validation.recall * 100).toFixed(2), unit: '%' },
+                        { label: 'F1 Score', value: (data.validation.f1_score * 100).toFixed(2), unit: '%' },
+                        { label: 'ROC-AUC', value: (data.validation.roc_auc * 100).toFixed(2), unit: '%' },
+                        { label: 'False Positive Rate ↓', value: (data.validation.false_positive_rate * 100).toFixed(2), unit: '%' },
+                        { label: 'Accuracy', value: (data.validation.accuracy * 100).toFixed(2), unit: '%' }
+                    ];
+                    
+                    const container = document.getElementById('metricsContainer');
+                    container.innerHTML = metrics.map(m => `
+                        <div class="metric-box">
+                            <h3>${m.label}</h3>
+                            <div class="value">${m.value}${m.unit}</div>
+                        </div>
+                    `).join('');
+                });
+        }
+        
+        function loadExamples() {
+            fetch(`${API_URL}/example-cases`)
+                .then(r => r.json())
+                .then(data => {
+                    const container = document.getElementById('examplesContainer');
+                    container.innerHTML = data.cases.map((c, i) => `
+                        <div class="example-card" onclick="loadExampleCase(${i})">
+                            <h3>Case ${i + 1}</h3>
+                            <p>${c.description}</p>
+                            <button class="btn btn-secondary" style="width: 100%;">Load & Analyze</button>
+                        </div>
+                    `).join('');
+                });
+        }
+        
+        function loadExampleCase(index) {
+            fetch(`${API_URL}/example-cases`)
+                .then(r => r.json())
+                .then(data => {
+                    const caseData = data.cases[index].data;
+                    document.getElementById('skillMatch').value = caseData.skill_match;
+                    document.getElementById('sessionDuration').value = caseData.session_duration;
+                    document.getElementById('cameraAvailable').value = caseData.camera_available;
+                    document.getElementById('envQuality').value = caseData.env_quality;
+                    document.getElementById('verificationConfidence').value = caseData.verification_confidence;
+                    document.getElementById('completionPct').value = caseData.completion_pct;
+                    document.getElementById('answerConsistency').value = caseData.answer_consistency;
+                    document.getElementById('deviceStability').value = caseData.device_stability;
+                    
+                    // Update displays
+                    document.querySelectorAll('input[type="range"]').forEach(input => updateSlider(input));
+                    
+                    // Switch to manual tab
+                    document.getElementById('manual').classList.add('active');
+                    document.getElementById('examples').classList.remove('active');
+                    document.querySelectorAll('.tab-btn')[0].classList.add('active');
+                    document.querySelectorAll('.tab-btn')[1].classList.remove('active');
+                    
+                    // Predict
+                    predictFromForm();
+                });
+        }
+        
+        document.getElementById('predictionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            predictFromForm();
+        });
+        
+        function predictFromForm() {
+            const formData = {
+                skill_match: parseFloat(document.getElementById('skillMatch').value),
+                session_duration: parseFloat(document.getElementById('sessionDuration').value),
+                camera_available: parseInt(document.getElementById('cameraAvailable').value),
+                env_quality: parseFloat(document.getElementById('envQuality').value),
+                verification_confidence: parseFloat(document.getElementById('verificationConfidence').value),
+                completion_pct: parseFloat(document.getElementById('completionPct').value),
+                answer_consistency: parseFloat(document.getElementById('answerConsistency').value),
+                device_stability: parseFloat(document.getElementById('deviceStability').value)
+            };
+            
+            showLoading();
+            
+            fetch(`${API_URL}/predict`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(r => r.json())
+            .then(data => {
+                displayResults(data);
+            })
+            .catch(err => {
+                console.error('Error:', err);
+                alert('Error analyzing session. Make sure the API is running on localhost:5000');
+                hideLoading();
+            });
+        }
+        
+        function showLoading() {
+            document.getElementById('resultContainer').style.display = 'block';
+            document.getElementById('placeholderMessage').style.display = 'none';
+            document.getElementById('loadingSpinner').classList.add('show');
+            document.getElementById('resultContent').style.display = 'none';
+        }
+        
+        function hideLoading() {
+            document.getElementById('loadingSpinner').classList.remove('show');
+        }
+        
+        function displayResults(data) {
+            hideLoading();
+            document.getElementById('resultContent').style.display = 'block';
+            
+            const isFraud = data.prediction === 'FRAUD';
+            const statusClass = isFraud ? 'fraud' : 'safe';
+            const statusText = isFraud ? '⚠ FRAUD DETECTED' : '✓ LEGITIMATE';
+            
+            document.getElementById('predictionStatus').className = `status ${statusClass}`;
+            document.getElementById('predictionStatus').textContent = statusText;
+            
+            document.getElementById('fraudProbability').textContent = (data.fraud_probability * 100).toFixed(1) + '%';
+            document.getElementById('confidence').textContent = (data.confidence * 100).toFixed(1) + '%';
+            document.getElementById('riskLevel').textContent = data.risk_level;
+            document.getElementById('recommendedAction').textContent = data.recommended_action;
+            
+            // Risk Factors
+            const riskList = document.getElementById('riskList');
+            riskList.innerHTML = data.risk_factors.length > 0 ?
+                data.risk_factors.map(f => `<li class="factor-item risk">${f}</li>`).join('') :
+                '<li class="factor-item" style="color: #9ca3af;">No risk factors detected</li>';
+            
+            document.getElementById('riskFactors').style.display = data.risk_factors.length > 0 ? 'block' : 'none';
+            
+            // Positive Factors
+            const positiveList = document.getElementById('positiveList');
+            positiveList.innerHTML = data.positive_factors.length > 0 ?
+                data.positive_factors.map(f => `<li class="factor-item positive">${f}</li>`).join('') :
+                '<li class="factor-item" style="color: #9ca3af;">No additional positive factors</li>';
+            
+            document.getElementById('positiveFactors').style.display = data.positive_factors.length > 0 ? 'block' : 'none';
+        }
+        
+        // Initialize
+        window.addEventListener('load', function() {
+            loadMetrics();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+PS C:\Users\kushp\OneDrive\Desktop\AI-ML Phase 2\Task13> python app.py
+Training model...
+======================================================================
+PlaceMux Proctoring FP Reduction - Model Training Pipeline
+======================================================================
+
+1. Generating synthetic proctoring data...
+   - Total samples: 1600
+   - Fraud cases: 240 (15.0%)
+
+2. Preparing data...
+   - Training set: 1024 samples
+   - Validation set: 256 samples
+   - Test set: 320 samples
+
+3. Training models...
+
+Building Baseline Model (Logistic Regression):
+  Model: Baseline (Logistic Regression)
+  Precision:    0.7273
+  Recall:       0.4211
+  F1 Score:     0.5333
+  ROC-AUC:      0.8940
+  False Positive Rate: 0.0275
+  False Negative Rate: 0.5789
+  True Positives:  16
+  False Positives: 6 ← (FP Reduction Focus)
+  True Negatives:  212
+  False Negatives: 22
+  Accuracy:     0.8906
+
+Building Random Forest Model:
+  Model: Random Forest
+  Precision:    1.0000
+  Recall:       0.6316
+  F1 Score:     0.7742
+  ROC-AUC:      0.9924
+  False Positive Rate: 0.0000
+  False Negative Rate: 0.3684
+  True Positives:  24
+  False Positives: 0 ← (FP Reduction Focus)
+  True Negatives:  218
+  False Negatives: 14
+  Accuracy:     0.9453
+
+Building Gradient Boosting Model:
+  Model: Gradient Boosting
+  Precision:    1.0000
+  Recall:       0.8947
+  F1 Score:     0.9444
+  ROC-AUC:      0.9806
+  False Positive Rate: 0.0000
+  False Negative Rate: 0.1053
+  True Positives:  34
+  False Positives: 0 ← (FP Reduction Focus)
+  True Negatives:  218
+  False Negatives: 4
+  Accuracy:     0.9844
+
+======================================================================
+
+BEST MODEL SELECTED: GRADIENT_BOOSTING
+======================================================================
+False Positive Rate: 0.0000
+False Negatives: 0.1053
+F1 Score: 0.9444
+Precision: 1.0000
+Recall: 0.8947
+ROC-AUC: 0.9806
+
+4. Final evaluation on test set...
+  Model: Best Model (gradient_boosting) - Test Set
+  Precision:    0.9783
+  Recall:       0.9375
+  F1 Score:     0.9574
+  ROC-AUC:      0.9712
+  False Positive Rate: 0.0037
+  False Negative Rate: 0.0625
+  True Positives:  45
+  False Positives: 1 ← (FP Reduction Focus)
+  True Negatives:  271
+  False Negatives: 3
+  Accuracy:     0.9875
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.36:5000
+Press CTRL+C to quit
+ * Restarting with stat
+Training model...
+======================================================================
+PlaceMux Proctoring FP Reduction - Model Training Pipeline
+======================================================================
+
+1. Generating synthetic proctoring data...
+   - Total samples: 1600
+   - Fraud cases: 240 (15.0%)
+
+2. Preparing data...
+   - Training set: 1024 samples
+   - Validation set: 256 samples
+   - Test set: 320 samples
+
+3. Training models...
+
+Building Baseline Model (Logistic Regression):
+  Model: Baseline (Logistic Regression)
+  Precision:    0.7273
+  Recall:       0.4211
+  F1 Score:     0.5333
+  ROC-AUC:      0.8940
+  False Positive Rate: 0.0275
+  False Negative Rate: 0.5789
+  True Positives:  16
+  False Positives: 6 ← (FP Reduction Focus)
+  True Negatives:  212
+  False Negatives: 22
+  Accuracy:     0.8906
+
+Building Random Forest Model:
+  Model: Random Forest
+  Precision:    1.0000
+  Recall:       0.6316
+  F1 Score:     0.7742
+  ROC-AUC:      0.9924
+  False Positive Rate: 0.0000
+  False Negative Rate: 0.3684
+  True Positives:  24
+  False Positives: 0 ← (FP Reduction Focus)
+  True Negatives:  218
+  False Negatives: 14
+  Accuracy:     0.9453
+
+Building Gradient Boosting Model:
+  Model: Gradient Boosting
+  Precision:    1.0000
+  Recall:       0.8947
+  F1 Score:     0.9444
+  ROC-AUC:      0.9806
+  False Positive Rate: 0.0000
+  False Negative Rate: 0.1053
+  True Positives:  34
+  False Positives: 0 ← (FP Reduction Focus)
+  True Negatives:  218
+  False Negatives: 4
+  Accuracy:     0.9844
+
+======================================================================
+
+BEST MODEL SELECTED: GRADIENT_BOOSTING
+======================================================================
+False Positive Rate: 0.0000
+False Negatives: 0.1053
+F1 Score: 0.9444
+Precision: 1.0000
+Recall: 0.8947
+ROC-AUC: 0.9806
+
+4. Final evaluation on test set...
+  Model: Best Model (gradient_boosting) - Test Set
+  Precision:    0.9783
+  Recall:       0.9375
+  F1 Score:     0.9574
+  ROC-AUC:      0.9712
+  False Positive Rate: 0.0037
+  False Negative Rate: 0.0625
+  True Positives:  45
+  False Positives: 1 ← (FP Reduction Focus)
+  True Negatives:  271
+  False Negatives: 3
+  Accuracy:     0.9875
+ * Debugger is active!
+ * Debugger PIN: 139-175-362
