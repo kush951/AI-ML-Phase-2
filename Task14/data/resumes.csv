@@ -1,0 +1,9 @@
+candidate_id,resume_text,verified_skills,experience_years
+C001,Python Django REST APIs PostgreSQL backend developer 5 years,"Python,Django,REST APIs,PostgreSQL",5
+C002,Machine Learning TensorFlow NLP PyTorch Data Analysis 3 years,"Machine Learning,TensorFlow,NLP",3
+C003,React JavaScript CSS HTML Frontend Vue.js developer 4 years,"React,JavaScript,CSS",4
+C004,Java Spring Boot Microservices AWS Docker 6 years,"Java,Spring Boot,Docker",6
+C005,Python SQL Statistics Tableau Data Science 5 years,"Python,SQL,Statistics",5
+C006,Docker Kubernetes Jenkins AWS DevOps CI/CD 4 years,"Docker,Kubernetes,Jenkins",4
+C007,React Node.js MongoDB Express Full Stack 3 years,"React,Node.js,MongoDB",3
+C008,AWS Azure GCP Cloud Architecture Infrastructure 7 years,"AWS,Cloud Architecture",7

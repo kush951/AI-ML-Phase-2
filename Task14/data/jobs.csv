@@ -1,0 +1,9 @@
+job_id,job_title,job_description,required_skills,experience_required
+J001,Senior Python Developer,Python Django REST APIs PostgreSQL AWS,"Python,Django,REST APIs,PostgreSQL",5
+J002,ML Engineer,Machine Learning TensorFlow PyTorch NLP,"Machine Learning,TensorFlow,PyTorch",3
+J003,React Frontend Developer,React JavaScript CSS Vue.js,"React,JavaScript,CSS",4
+J004,Java Backend Engineer,Java Spring Boot Microservices Docker,"Java,Spring Boot,Microservices",6
+J005,Data Scientist,Python SQL Statistics Tableau,"Python,SQL,Statistics",5
+J006,DevOps Engineer,Docker Kubernetes Jenkins CI/CD,"Docker,Kubernetes,Jenkins",4
+J007,Full Stack Developer,React Node.js MongoDB Express,"React,Node.js,MongoDB",3
+J008,Cloud Architect,AWS Cloud Architecture Azure GCP,"AWS,Cloud Architecture",7

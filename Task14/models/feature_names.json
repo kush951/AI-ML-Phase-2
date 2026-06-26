@@ -1,0 +1,9 @@
+[
+  "skill_overlap",
+  "required_skills_match",
+  "exp_match",
+  "text_similarity",
+  "exp_required",
+  "num_required_skills",
+  "num_candidate_skills"
+]
