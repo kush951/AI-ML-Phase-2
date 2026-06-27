@@ -1,0 +1,301 @@
+student_id,college_id,name,degree,specialization,cgpa,years_of_experience,verified_skills,skill_level,communication_score,teamwork_score,leadership_score,internship_count,project_count
+STU_0001,COL_07,Student_1,MSc,Finance,6.64,4,"Python,Java",Basic,0.72,0.94,0.0,3,5
+STU_0002,COL_01,Student_2,MSc,IT,7.84,3,"Java,ML",Intermediate,0.45,0.01,0.94,1,2
+STU_0003,COL_09,Student_3,MTech,Finance,6.81,3,"AWS,Django,Java,SQL",Intermediate,0.43,0.21,0.57,0,7
+STU_0004,COL_18,Student_4,MTech,AI,9.29,3,"JavaScript,Java,Django",Intermediate,0.59,0.97,0.61,0,1
+STU_0005,COL_15,Student_5,MBA,CSE,6.05,0,"Java,SQL,AWS,API Design,ML",Intermediate,0.07,0.36,0.12,2,1
+STU_0006,COL_08,Student_6,MSc,IT,6.33,4,"SQL,Java,AWS,Django",Advanced,0.72,0.24,0.26,2,1
+STU_0007,COL_15,Student_7,MTech,IT,7.54,2,"Java,Django,ML,JavaScript",Intermediate,0.2,0.94,0.6,2,6
+STU_0008,COL_02,Student_8,MTech,Finance,7.03,4,"Java,JavaScript,React",Intermediate,0.82,0.86,0.01,3,3
+STU_0009,COL_09,Student_9,MBA,CSE,6.42,3,"JavaScript,AWS,Data Analysis,Java,API Design",Intermediate,0.3,0.28,0.04,0,2
+STU_0010,COL_02,Student_10,MSc,Business,6.12,0,"Python,ML",Basic,0.73,0.37,0.63,1,6
+STU_0011,COL_11,Student_11,BTech,CSE,7.12,4,"Python,Data Analysis,AWS,Django",Advanced,0.4,0.52,0.84,2,4
+STU_0012,COL_18,Student_12,MTech,DS,6.8,1,"AWS,JavaScript,ML,React,Data Analysis",Intermediate,0.88,0.19,0.28,2,3
+STU_0013,COL_20,Student_13,BTech,AI,6.29,3,"Java,Django,AWS",Basic,0.31,0.49,0.45,0,1
+STU_0014,COL_04,Student_14,BTech,AI,6.83,4,"ML,Java,AWS,API Design,Python",Basic,0.37,0.27,0.24,1,6
+STU_0015,COL_13,Student_15,BSc,Business,9.17,2,"JavaScript,Java,ML",Basic,0.02,0.65,0.18,3,6
+STU_0016,COL_14,Student_16,MBA,Business,7.3,0,"Java,Data Analysis",Intermediate,0.85,0.32,0.17,0,2
+STU_0017,COL_03,Student_17,MTech,Business,7.26,2,"SQL,ML,AWS",Basic,0.42,0.26,0.61,3,2
+STU_0018,COL_07,Student_18,BTech,AI,8.79,0,"AWS,Python,API Design,React,ML",Basic,0.47,0.54,0.29,1,2
+STU_0019,COL_17,Student_19,MSc,IT,8.88,2,"Java,JavaScript,Django,Data Analysis,ML",Basic,0.05,0.53,0.54,2,4
+STU_0020,COL_16,Student_20,MBA,IT,7.81,2,"Django,API Design",Advanced,0.7,0.41,0.17,0,7
+STU_0021,COL_02,Student_21,BTech,Finance,6.98,4,"React,Python,Django,Java",Basic,0.34,0.09,0.09,1,6
+STU_0022,COL_20,Student_22,MBA,AI,6.06,1,"Django,React,Java,JavaScript,API Design",Advanced,0.89,0.26,0.02,2,2
+STU_0023,COL_01,Student_23,MBA,Finance,6.57,1,"Data Analysis,ML",Intermediate,0.94,0.39,0.96,1,3
+STU_0024,COL_12,Student_24,MBA,Finance,6.75,1,"React,AWS",Intermediate,0.34,0.26,0.5,1,5
+STU_0025,COL_18,Student_25,MBA,DS,9.07,3,"Data Analysis,ML",Intermediate,0.13,0.25,0.58,2,6
+STU_0026,COL_05,Student_26,MSc,CSE,8.38,0,"Data Analysis,JavaScript,AWS,Java",Basic,0.05,0.96,0.85,0,7
+STU_0027,COL_14,Student_27,MSc,DS,7.73,4,"ML,Java",Intermediate,0.09,0.49,0.06,2,2
+STU_0028,COL_05,Student_28,BSc,Finance,7.23,1,"JavaScript,API Design,Java,SQL",Advanced,0.71,0.08,0.08,2,5
+STU_0029,COL_01,Student_29,MSc,CSE,9.32,0,"React,Python",Intermediate,0.91,0.11,0.49,0,2
+STU_0030,COL_20,Student_30,MSc,Finance,8.88,0,"Data Analysis,JavaScript,SQL,Java",Advanced,0.56,0.32,0.04,0,3
+STU_0031,COL_05,Student_31,MSc,DS,8.43,0,"JavaScript,React,SQL",Advanced,0.05,0.28,0.95,3,6
+STU_0032,COL_12,Student_32,MSc,Finance,6.97,3,"ML,JavaScript,Python,AWS,Data Analysis",Basic,0.45,0.03,0.28,0,4
+STU_0033,COL_13,Student_33,MSc,Finance,6.47,2,"API Design,React",Intermediate,0.16,0.41,0.78,1,7
+STU_0034,COL_17,Student_34,BSc,Finance,8.62,0,"SQL,React,ML",Intermediate,0.53,0.75,0.91,2,5
+STU_0035,COL_05,Student_35,MTech,IT,7.32,4,"ML,React,API Design",Intermediate,0.05,0.27,0.02,1,2
+STU_0036,COL_03,Student_36,BSc,IT,8.98,3,"JavaScript,API Design",Basic,0.14,0.01,0.35,1,2
+STU_0037,COL_15,Student_37,BSc,DS,9.16,3,"AWS,API Design",Intermediate,0.46,0.84,0.77,3,5
+STU_0038,COL_02,Student_38,MBA,IT,7.15,2,"Java,ML,Python,AWS",Advanced,0.52,0.97,0.6,2,3
+STU_0039,COL_05,Student_39,MTech,AI,7.22,4,"Data Analysis,JavaScript,Django",Intermediate,0.04,0.8,0.63,2,6
+STU_0040,COL_11,Student_40,MBA,CSE,6.97,0,"API Design,React,Django,Data Analysis,Java",Intermediate,0.75,0.04,0.25,2,3
+STU_0041,COL_15,Student_41,BSc,AI,6.38,1,"ML,React,Django",Advanced,0.09,0.54,0.23,0,4
+STU_0042,COL_04,Student_42,MTech,DS,8.27,1,"AWS,Django,React,JavaScript",Intermediate,0.9,0.61,0.24,2,5
+STU_0043,COL_06,Student_43,MBA,CSE,6.83,4,"Python,AWS,Django",Basic,0.9,0.08,0.52,3,5
+STU_0044,COL_04,Student_44,MTech,AI,9.39,3,"AWS,SQL,React,Java",Intermediate,0.57,0.28,0.77,1,2
+STU_0045,COL_04,Student_45,BSc,AI,7.78,0,"Java,React,Data Analysis,API Design,SQL",Basic,0.34,0.13,0.06,3,2
+STU_0046,COL_13,Student_46,MTech,AI,6.89,4,"SQL,API Design",Advanced,0.75,0.41,0.93,2,1
+STU_0047,COL_02,Student_47,MSc,DS,6.23,3,"Java,API Design,Data Analysis,Python,JavaScript",Basic,0.63,0.91,0.32,1,1
+STU_0048,COL_18,Student_48,BSc,Finance,7.05,0,"ML,Django",Basic,0.94,0.63,0.33,3,4
+STU_0049,COL_15,Student_49,MBA,CSE,7.87,2,"SQL,Java,React,API Design,JavaScript",Basic,0.71,0.49,0.75,1,6
+STU_0050,COL_13,Student_50,MSc,Finance,6.45,4,"ML,Python,React,Data Analysis,JavaScript",Intermediate,0.72,0.6,0.83,1,2
+STU_0051,COL_08,Student_51,MTech,Business,8.15,1,"AWS,Django",Basic,0.65,0.77,0.37,0,6
+STU_0052,COL_19,Student_52,MBA,Business,9.27,2,"React,API Design,JavaScript,Data Analysis",Intermediate,0.31,0.23,0.61,2,1
+STU_0053,COL_09,Student_53,MTech,AI,8.76,1,"Django,React",Intermediate,0.45,0.22,0.45,2,6
+STU_0054,COL_07,Student_54,MSc,Business,6.12,0,"JavaScript,Django",Intermediate,0.09,1.0,0.5,0,5
+STU_0055,COL_19,Student_55,BSc,DS,7.22,4,"Data Analysis,SQL",Intermediate,0.48,0.5,0.77,3,1
+STU_0056,COL_08,Student_56,MBA,DS,7.31,1,"ML,AWS,Django,JavaScript",Basic,0.22,0.23,0.67,0,6
+STU_0057,COL_15,Student_57,MBA,DS,9.11,3,"AWS,Django,Python,SQL",Basic,0.29,0.9,0.01,2,1
+STU_0058,COL_19,Student_58,MBA,DS,8.04,3,"Django,ML,React",Intermediate,0.03,0.83,0.35,3,6
+STU_0059,COL_09,Student_59,MTech,Finance,7.03,3,"Django,SQL,AWS",Basic,0.48,0.51,0.74,1,5
+STU_0060,COL_07,Student_60,BTech,Business,8.26,3,"ML,React,Python",Intermediate,0.27,0.55,0.65,1,4
+STU_0061,COL_10,Student_61,MBA,DS,9.15,2,"JavaScript,SQL,ML,Python,React",Intermediate,0.52,0.05,0.17,2,1
+STU_0062,COL_19,Student_62,MBA,AI,8.7,4,"API Design,AWS",Advanced,0.73,0.21,0.03,3,3
+STU_0063,COL_03,Student_63,MSc,DS,8.96,2,"Data Analysis,JavaScript",Intermediate,0.69,0.43,0.25,2,2
+STU_0064,COL_05,Student_64,MSc,AI,9.39,1,"ML,Java,React,Django,Python",Intermediate,0.52,0.09,0.96,2,7
+STU_0065,COL_17,Student_65,MBA,Business,8.23,0,"SQL,React,ML",Intermediate,0.31,0.12,0.73,2,2
+STU_0066,COL_18,Student_66,MSc,DS,7.12,1,"ML,API Design,Django,Java",Intermediate,0.44,0.4,0.57,3,1
+STU_0067,COL_04,Student_67,MBA,Business,7.12,1,"SQL,Python",Basic,0.38,0.93,0.07,1,4
+STU_0068,COL_17,Student_68,MBA,Business,7.68,0,"JavaScript,API Design,AWS,Data Analysis,SQL",Basic,0.47,0.3,0.85,1,6
+STU_0069,COL_05,Student_69,BTech,CSE,9.19,0,"ML,AWS,API Design,Java",Basic,0.59,0.98,0.88,3,3
+STU_0070,COL_13,Student_70,MTech,CSE,8.6,3,"Django,Java,Python,JavaScript",Basic,0.18,0.22,0.19,2,6
+STU_0071,COL_05,Student_71,MBA,Business,9.39,0,"Data Analysis,Django",Intermediate,1.0,0.9,0.46,0,5
+STU_0072,COL_15,Student_72,BTech,CSE,9.13,4,"Java,ML,Data Analysis",Advanced,0.04,0.33,0.93,2,3
+STU_0073,COL_02,Student_73,MSc,Business,6.91,4,"Django,JavaScript,Python,React,Data Analysis",Advanced,0.5,0.48,0.59,1,3
+STU_0074,COL_08,Student_74,MTech,DS,9.03,0,"Java,Data Analysis,ML",Advanced,0.7,0.68,0.62,1,4
+STU_0075,COL_07,Student_75,MBA,DS,9.36,0,"JavaScript,Python,Django,React",Intermediate,0.01,0.29,0.62,0,1
+STU_0076,COL_17,Student_76,MTech,AI,6.03,4,"Django,AWS,React,SQL",Intermediate,0.18,0.75,0.79,3,4
+STU_0077,COL_18,Student_77,MSc,DS,6.58,3,"React,AWS,SQL",Advanced,0.97,0.75,0.13,0,4
+STU_0078,COL_07,Student_78,MBA,DS,8.88,2,"AWS,JavaScript,SQL,Python",Intermediate,0.16,0.79,0.69,3,2
+STU_0079,COL_15,Student_79,MSc,Business,6.46,2,"API Design,Python",Intermediate,0.31,0.32,0.72,1,5
+STU_0080,COL_03,Student_80,BTech,CSE,8.5,1,"API Design,ML,SQL,Java",Basic,0.8,0.29,0.91,1,3
+STU_0081,COL_20,Student_81,BTech,Business,6.41,0,"Data Analysis,AWS,Java",Intermediate,0.59,0.43,0.98,0,5
+STU_0082,COL_18,Student_82,MTech,Business,9.41,2,"Data Analysis,React",Basic,0.1,0.57,0.02,1,6
+STU_0083,COL_20,Student_83,BTech,IT,8.72,1,"SQL,JavaScript,ML,Django,AWS",Basic,0.4,0.13,0.57,1,2
+STU_0084,COL_18,Student_84,MTech,IT,6.59,0,"AWS,API Design,SQL,Java,Data Analysis",Advanced,0.34,0.81,0.08,3,4
+STU_0085,COL_06,Student_85,MTech,Business,7.58,2,"API Design,JavaScript,React,Python",Basic,0.98,0.34,0.18,2,5
+STU_0086,COL_19,Student_86,MSc,IT,6.07,2,"API Design,Django,ML",Basic,0.42,0.2,0.84,0,6
+STU_0087,COL_20,Student_87,MBA,AI,8.57,3,"Data Analysis,AWS,ML,Django,SQL",Intermediate,0.87,0.9,0.42,1,3
+STU_0088,COL_19,Student_88,MTech,Business,7.26,2,"Django,ML",Intermediate,0.37,0.51,0.41,1,5
+STU_0089,COL_09,Student_89,MSc,Finance,7.56,0,"React,SQL,API Design,AWS,Django",Intermediate,0.33,0.77,0.13,0,7
+STU_0090,COL_15,Student_90,BSc,IT,6.26,1,"Java,Data Analysis",Basic,0.17,0.04,0.74,0,4
+STU_0091,COL_05,Student_91,BTech,CSE,8.47,3,"Django,Data Analysis,AWS,JavaScript",Basic,0.64,0.22,0.18,2,5
+STU_0092,COL_01,Student_92,BTech,DS,6.15,1,"ML,SQL,API Design,Python,Django",Advanced,0.45,0.52,0.49,3,6
+STU_0093,COL_20,Student_93,MBA,AI,8.47,1,"JavaScript,ML,Django,SQL,API Design",Advanced,0.26,0.66,0.98,2,2
+STU_0094,COL_18,Student_94,MTech,CSE,8.91,0,"AWS,Java,Data Analysis,JavaScript,API Design",Advanced,0.67,0.58,0.35,1,2
+STU_0095,COL_06,Student_95,BTech,CSE,7.42,4,"Python,React",Intermediate,0.81,0.76,0.8,2,5
+STU_0096,COL_11,Student_96,BTech,Business,7.91,0,"Java,ML",Basic,0.37,0.23,0.07,2,6
+STU_0097,COL_14,Student_97,MTech,IT,7.62,2,"JavaScript,Data Analysis",Basic,0.15,0.53,0.25,3,7
+STU_0098,COL_11,Student_98,MTech,AI,9.34,4,"ML,Java",Advanced,0.06,0.93,0.35,1,6
+STU_0099,COL_04,Student_99,MBA,AI,8.35,4,"ML,API Design,Python,AWS",Intermediate,0.12,0.18,0.68,1,7
+STU_0100,COL_13,Student_100,BTech,IT,6.65,3,"JavaScript,Java,React,AWS,API Design",Basic,0.0,0.64,0.52,3,1
+STU_0101,COL_09,Student_101,MTech,IT,7.26,1,"Django,ML,Data Analysis,API Design,SQL",Intermediate,0.67,0.1,0.62,0,7
+STU_0102,COL_18,Student_102,MBA,CSE,8.58,1,"React,Java",Intermediate,0.26,0.63,0.06,0,2
+STU_0103,COL_03,Student_103,MBA,IT,7.42,4,"API Design,AWS,Java,ML",Intermediate,0.27,0.08,0.09,0,4
+STU_0104,COL_03,Student_104,BTech,CSE,6.79,0,"Django,Data Analysis,JavaScript,ML",Intermediate,0.88,0.65,0.53,0,2
+STU_0105,COL_03,Student_105,MTech,AI,8.32,0,"AWS,JavaScript,Python,API Design",Intermediate,0.75,0.17,0.41,1,1
+STU_0106,COL_16,Student_106,MSc,CSE,7.05,3,"Java,Django,Python,API Design",Intermediate,0.09,0.26,0.79,3,1
+STU_0107,COL_16,Student_107,MSc,Business,6.56,4,"JavaScript,ML,API Design",Advanced,0.55,0.31,0.4,2,2
+STU_0108,COL_04,Student_108,MTech,Business,9.22,2,"Django,JavaScript,API Design,Data Analysis",Intermediate,0.67,0.53,0.72,2,7
+STU_0109,COL_20,Student_109,BTech,Finance,6.08,2,"API Design,Data Analysis,AWS",Intermediate,0.31,0.61,0.14,3,6
+STU_0110,COL_14,Student_110,MBA,AI,7.76,0,"Data Analysis,ML,JavaScript",Basic,0.78,0.12,0.59,2,6
+STU_0111,COL_20,Student_111,MTech,Finance,6.37,4,"Python,SQL,API Design,ML",Basic,0.48,0.75,0.62,2,1
+STU_0112,COL_19,Student_112,BTech,DS,6.26,3,"ML,Java,API Design",Advanced,0.62,0.31,0.62,3,6
+STU_0113,COL_07,Student_113,MTech,Finance,9.1,4,"JavaScript,SQL,Python,Java",Basic,0.13,0.42,0.79,0,2
+STU_0114,COL_07,Student_114,MBA,CSE,7.13,1,"React,ML,JavaScript",Intermediate,0.45,0.84,0.1,1,6
+STU_0115,COL_04,Student_115,MTech,AI,6.85,1,"API Design,Data Analysis,ML,Python,Java",Basic,0.1,0.66,0.94,1,4
+STU_0116,COL_16,Student_116,MBA,CSE,8.94,1,"API Design,Django,Python,ML,Data Analysis",Advanced,0.45,0.88,0.11,3,1
+STU_0117,COL_05,Student_117,MBA,CSE,8.61,0,"Django,ML",Basic,0.35,0.77,0.66,3,3
+STU_0118,COL_11,Student_118,MTech,Finance,7.92,1,"SQL,ML,AWS",Basic,0.62,0.77,0.64,1,7
+STU_0119,COL_18,Student_119,MTech,Finance,6.44,2,"Django,Python,Data Analysis,JavaScript,API Design",Basic,0.6,0.1,0.38,1,4
+STU_0120,COL_18,Student_120,MSc,Business,9.25,3,"ML,Django,Data Analysis,SQL,Java",Advanced,0.26,0.54,0.64,1,5
+STU_0121,COL_08,Student_121,MSc,DS,7.12,2,"API Design,Python",Intermediate,0.15,0.34,0.41,0,5
+STU_0122,COL_01,Student_122,BSc,Business,7.98,4,"JavaScript,API Design,Python",Intermediate,0.99,0.1,0.4,1,2
+STU_0123,COL_11,Student_123,BTech,IT,8.6,2,"ML,JavaScript,API Design,Data Analysis",Intermediate,0.04,0.75,0.2,1,5
+STU_0124,COL_20,Student_124,BSc,DS,8.95,2,"JavaScript,Python",Basic,0.66,0.0,0.18,1,6
+STU_0125,COL_14,Student_125,MSc,AI,8.78,3,"Django,Java",Basic,0.7,0.05,0.49,1,2
+STU_0126,COL_19,Student_126,MSc,AI,7.13,2,"API Design,Java,Python",Basic,0.74,0.24,0.37,0,3
+STU_0127,COL_15,Student_127,BSc,CSE,9.27,4,"Java,API Design",Advanced,0.2,0.57,0.98,2,5
+STU_0128,COL_11,Student_128,BTech,Business,8.91,4,"React,API Design,SQL",Intermediate,0.46,0.48,0.44,3,5
+STU_0129,COL_04,Student_129,MTech,AI,6.17,1,"AWS,JavaScript,Data Analysis,Java",Basic,0.4,0.92,0.47,0,6
+STU_0130,COL_12,Student_130,MTech,Business,6.13,2,"SQL,JavaScript,Django,API Design",Advanced,0.05,0.62,0.56,0,4
+STU_0131,COL_18,Student_131,BTech,DS,7.22,1,"JavaScript,Python,Django,ML,Java",Intermediate,0.98,0.14,0.73,0,1
+STU_0132,COL_19,Student_132,BSc,CSE,9.31,3,"ML,Data Analysis",Intermediate,0.52,0.11,0.86,1,3
+STU_0133,COL_09,Student_133,BTech,CSE,8.15,1,"React,JavaScript",Advanced,0.46,0.75,0.29,2,6
+STU_0134,COL_10,Student_134,BSc,DS,8.75,4,"Python,Data Analysis,Java,JavaScript,AWS",Advanced,0.24,0.45,0.98,1,1
+STU_0135,COL_02,Student_135,BTech,Business,7.2,3,"Data Analysis,AWS",Intermediate,0.96,0.2,0.52,3,4
+STU_0136,COL_09,Student_136,MSc,Finance,8.22,0,"Python,AWS,JavaScript,API Design",Advanced,0.91,0.28,0.98,0,4
+STU_0137,COL_01,Student_137,MBA,AI,8.87,4,"Data Analysis,Django,AWS,Java,React",Advanced,0.49,0.12,0.73,1,4
+STU_0138,COL_06,Student_138,MTech,DS,6.57,2,"ML,API Design",Intermediate,0.97,0.34,0.3,1,2
+STU_0139,COL_06,Student_139,BSc,AI,7.1,2,"Python,API Design,Data Analysis",Basic,0.11,0.09,0.72,2,4
+STU_0140,COL_02,Student_140,BTech,DS,7.58,1,"API Design,Java,JavaScript,SQL",Advanced,0.63,0.13,0.68,1,3
+STU_0141,COL_08,Student_141,MSc,Business,9.0,3,"AWS,ML",Intermediate,0.21,0.03,0.3,1,4
+STU_0142,COL_14,Student_142,MSc,AI,6.81,0,"API Design,React,SQL,AWS",Intermediate,0.38,0.23,0.38,1,3
+STU_0143,COL_19,Student_143,BSc,AI,6.06,1,"SQL,API Design,Java",Advanced,0.02,0.96,0.73,2,4
+STU_0144,COL_19,Student_144,MSc,Business,6.76,4,"JavaScript,Java",Intermediate,0.3,0.3,0.74,3,3
+STU_0145,COL_04,Student_145,MSc,IT,8.34,0,"Django,API Design,Java,AWS,JavaScript",Intermediate,0.66,0.25,0.22,3,1
+STU_0146,COL_09,Student_146,MBA,CSE,8.34,0,"Data Analysis,Django,JavaScript",Intermediate,0.89,0.44,0.61,2,6
+STU_0147,COL_20,Student_147,BTech,Finance,8.24,3,"Django,Python,Data Analysis,Java,React",Intermediate,0.51,0.63,0.07,0,2
+STU_0148,COL_17,Student_148,MBA,AI,8.11,2,"SQL,ML,Java,API Design,React",Intermediate,0.47,0.59,0.54,0,6
+STU_0149,COL_17,Student_149,BSc,AI,6.38,1,"Django,React,SQL,Data Analysis",Intermediate,0.09,0.62,0.11,2,3
+STU_0150,COL_07,Student_150,BTech,Finance,8.36,2,"Data Analysis,Java,ML,API Design",Intermediate,0.3,0.72,0.95,0,1
+STU_0151,COL_14,Student_151,MBA,CSE,8.11,1,"AWS,React,JavaScript",Intermediate,0.75,0.07,0.08,2,1
+STU_0152,COL_07,Student_152,MTech,Finance,8.38,1,"AWS,Django,SQL,React",Intermediate,0.74,0.53,0.83,1,2
+STU_0153,COL_17,Student_153,BTech,Business,7.86,2,"SQL,Java",Advanced,0.69,0.43,0.67,2,1
+STU_0154,COL_06,Student_154,MTech,Business,7.56,1,"AWS,ML,Java,Data Analysis,Django",Intermediate,0.71,0.69,0.37,3,4
+STU_0155,COL_05,Student_155,MSc,Finance,9.12,0,"React,Python,Django,ML",Intermediate,0.79,0.6,0.1,3,5
+STU_0156,COL_08,Student_156,MTech,AI,8.03,0,"Data Analysis,Django,API Design,ML",Intermediate,0.04,0.03,0.39,1,3
+STU_0157,COL_18,Student_157,BSc,Finance,7.6,1,"Python,Data Analysis",Advanced,0.55,0.09,0.61,1,4
+STU_0158,COL_17,Student_158,MBA,Business,7.89,4,"Django,API Design",Intermediate,0.26,0.19,0.06,1,7
+STU_0159,COL_12,Student_159,MBA,AI,8.91,3,"ML,API Design,SQL,Data Analysis",Advanced,0.88,0.62,0.57,1,3
+STU_0160,COL_05,Student_160,MBA,AI,8.98,4,"SQL,Python,API Design,React,Java",Intermediate,0.04,0.75,0.55,0,1
+STU_0161,COL_20,Student_161,BTech,Business,6.12,0,"AWS,Python,API Design,Data Analysis",Intermediate,0.44,0.61,0.92,2,2
+STU_0162,COL_17,Student_162,BSc,Finance,9.43,1,"Java,ML,React,Django,Python",Intermediate,0.3,0.24,0.31,2,3
+STU_0163,COL_05,Student_163,MBA,Business,6.77,1,"Data Analysis,Python,SQL,AWS,Java",Intermediate,0.8,0.28,0.21,0,6
+STU_0164,COL_15,Student_164,BSc,DS,6.7,1,"Java,API Design",Intermediate,0.14,0.75,0.77,3,1
+STU_0165,COL_01,Student_165,MSc,DS,8.15,0,"Django,Java,AWS",Basic,0.96,0.52,0.3,3,1
+STU_0166,COL_02,Student_166,MTech,AI,8.47,3,"Python,AWS,ML",Basic,0.15,0.27,0.02,2,5
+STU_0167,COL_07,Student_167,BTech,CSE,8.24,4,"SQL,React",Intermediate,0.87,0.45,0.82,1,4
+STU_0168,COL_20,Student_168,MTech,Business,7.62,3,"Python,Java",Basic,0.5,0.28,0.13,1,7
+STU_0169,COL_11,Student_169,BTech,AI,7.41,0,"AWS,SQL,Django,JavaScript",Basic,0.25,0.74,0.32,2,1
+STU_0170,COL_01,Student_170,BSc,DS,7.98,1,"Django,React,Python,ML,AWS",Intermediate,0.96,0.09,0.69,1,5
+STU_0171,COL_01,Student_171,MSc,DS,8.95,1,"Java,SQL,API Design,Python",Intermediate,0.94,0.27,0.48,2,4
+STU_0172,COL_05,Student_172,MTech,CSE,7.26,3,"AWS,React,Python,SQL,API Design",Advanced,0.19,0.55,0.42,1,1
+STU_0173,COL_09,Student_173,BSc,Business,9.08,0,"React,ML,AWS,JavaScript,Django",Basic,0.68,0.47,0.58,0,4
+STU_0174,COL_11,Student_174,BSc,Finance,6.2,1,"Django,JavaScript",Basic,0.74,0.33,0.91,3,5
+STU_0175,COL_11,Student_175,BTech,AI,6.15,1,"ML,AWS,JavaScript",Basic,0.77,0.81,0.12,1,7
+STU_0176,COL_01,Student_176,MTech,AI,8.25,3,"ML,Java,React,Python,JavaScript",Intermediate,0.78,0.46,0.4,3,3
+STU_0177,COL_09,Student_177,MBA,IT,8.11,4,"ML,API Design,JavaScript,React",Intermediate,0.78,0.2,0.73,2,2
+STU_0178,COL_10,Student_178,BSc,Finance,6.97,4,"Java,ML",Advanced,0.34,0.72,0.54,2,1
+STU_0179,COL_14,Student_179,MTech,IT,6.52,4,"Data Analysis,API Design,React,AWS,Java",Basic,0.5,0.68,0.08,1,6
+STU_0180,COL_18,Student_180,MTech,Business,7.51,2,"API Design,Java,Data Analysis",Advanced,0.53,0.39,0.66,0,4
+STU_0181,COL_03,Student_181,MSc,DS,9.43,0,"Python,Data Analysis,SQL,API Design,React",Advanced,0.73,0.36,0.7,2,5
+STU_0182,COL_16,Student_182,MTech,IT,8.65,4,"Java,Django,API Design",Advanced,0.76,0.86,0.6,0,2
+STU_0183,COL_04,Student_183,MBA,AI,9.24,1,"Data Analysis,API Design,Python,ML",Basic,0.48,0.66,0.12,0,6
+STU_0184,COL_02,Student_184,BSc,CSE,6.16,4,"Java,Data Analysis,API Design,ML",Intermediate,0.36,0.79,0.25,3,5
+STU_0185,COL_18,Student_185,MSc,CSE,6.84,1,"React,AWS,Django",Basic,0.18,0.87,0.28,0,4
+STU_0186,COL_05,Student_186,BSc,DS,7.5,3,"Data Analysis,Django,ML",Advanced,0.89,0.54,0.2,3,1
+STU_0187,COL_16,Student_187,BSc,Business,6.72,0,"Java,Data Analysis,React,API Design",Intermediate,0.77,0.35,0.82,1,1
+STU_0188,COL_17,Student_188,MBA,AI,7.49,4,"JavaScript,ML,Data Analysis,Java",Intermediate,0.2,0.2,0.01,3,3
+STU_0189,COL_19,Student_189,MSc,AI,7.09,2,"JavaScript,Python,API Design,Data Analysis",Intermediate,0.82,0.18,0.37,2,7
+STU_0190,COL_04,Student_190,MBA,Business,8.07,0,"AWS,SQL,Django,JavaScript,React",Basic,0.6,0.3,0.71,0,5
+STU_0191,COL_06,Student_191,BTech,CSE,8.48,2,"AWS,React,SQL,ML,API Design",Intermediate,0.86,0.27,0.81,0,1
+STU_0192,COL_13,Student_192,MSc,AI,6.55,0,"ML,SQL,AWS,Java",Intermediate,0.73,0.38,0.03,3,3
+STU_0193,COL_08,Student_193,MTech,CSE,9.4,4,"ML,Java,API Design,Data Analysis",Basic,0.5,0.72,0.86,0,6
+STU_0194,COL_03,Student_194,BSc,AI,6.79,2,"JavaScript,Python,AWS",Intermediate,0.07,0.31,0.94,1,7
+STU_0195,COL_19,Student_195,BSc,IT,6.87,3,"ML,Data Analysis",Intermediate,0.88,0.61,0.25,0,6
+STU_0196,COL_18,Student_196,BTech,DS,8.37,2,"API Design,React,Java",Basic,0.28,0.28,0.43,0,2
+STU_0197,COL_10,Student_197,BTech,IT,9.4,4,"Data Analysis,ML,JavaScript,API Design,Python",Intermediate,0.26,0.21,0.48,3,2
+STU_0198,COL_10,Student_198,MTech,DS,8.08,2,"Data Analysis,Java",Basic,0.55,0.64,0.7,1,7
+STU_0199,COL_10,Student_199,BTech,CSE,8.35,0,"React,Data Analysis,ML,Django",Intermediate,0.21,0.94,0.01,3,6
+STU_0200,COL_04,Student_200,MTech,Business,8.38,3,"AWS,Java",Intermediate,0.84,0.19,0.67,3,6
+STU_0201,COL_17,Student_201,MTech,IT,8.6,1,"Java,Django,JavaScript,React",Intermediate,1.0,0.23,0.55,0,2
+STU_0202,COL_18,Student_202,MSc,Finance,6.32,0,"Django,JavaScript",Basic,0.06,0.46,0.73,1,1
+STU_0203,COL_11,Student_203,MTech,Business,9.33,1,"API Design,Python,React",Basic,0.99,0.29,0.77,0,1
+STU_0204,COL_06,Student_204,BSc,CSE,7.17,3,"React,SQL,Django,Data Analysis,JavaScript",Advanced,0.64,0.83,0.5,1,4
+STU_0205,COL_11,Student_205,MBA,AI,7.47,2,"API Design,Python,React",Intermediate,0.41,0.66,0.26,1,5
+STU_0206,COL_16,Student_206,MBA,Finance,8.75,3,"API Design,ML",Intermediate,0.25,0.52,0.54,0,5
+STU_0207,COL_20,Student_207,BTech,Finance,7.08,4,"Data Analysis,JavaScript,SQL,AWS,ML",Basic,0.83,0.35,0.52,0,2
+STU_0208,COL_17,Student_208,MSc,DS,7.45,0,"Django,Java",Advanced,0.53,0.79,0.3,1,1
+STU_0209,COL_17,Student_209,BSc,IT,9.09,1,"AWS,Data Analysis,ML",Basic,0.39,0.23,0.22,3,3
+STU_0210,COL_09,Student_210,BTech,Business,9.05,2,"API Design,SQL,ML",Intermediate,0.53,0.12,0.61,3,5
+STU_0211,COL_07,Student_211,MTech,CSE,6.72,4,"Django,React,SQL",Intermediate,0.07,0.47,0.56,0,3
+STU_0212,COL_16,Student_212,BTech,Business,8.53,0,"AWS,Data Analysis",Intermediate,0.51,0.82,0.4,2,3
+STU_0213,COL_11,Student_213,MBA,Business,7.36,1,"AWS,API Design,JavaScript,Data Analysis",Intermediate,0.98,0.45,0.51,1,7
+STU_0214,COL_20,Student_214,MBA,DS,6.15,2,"Python,Java,AWS,Data Analysis",Intermediate,0.93,0.38,0.83,3,1
+STU_0215,COL_09,Student_215,MSc,AI,6.33,0,"Python,SQL,JavaScript,Data Analysis,ML",Intermediate,0.14,0.67,0.62,0,3
+STU_0216,COL_07,Student_216,MSc,CSE,7.21,4,"React,API Design,ML",Intermediate,0.76,0.31,0.41,2,6
+STU_0217,COL_16,Student_217,BSc,CSE,6.85,2,"AWS,Django,ML",Intermediate,0.8,0.27,0.69,2,3
+STU_0218,COL_06,Student_218,BSc,Business,6.79,4,"Python,React,Django,JavaScript,API Design",Intermediate,0.98,0.79,0.77,3,4
+STU_0219,COL_01,Student_219,MSc,CSE,7.62,4,"API Design,Django",Intermediate,0.74,0.44,0.67,1,2
+STU_0220,COL_08,Student_220,BSc,CSE,8.02,2,"Java,ML,SQL,Python,React",Basic,0.36,0.78,0.57,2,4
+STU_0221,COL_16,Student_221,MBA,DS,6.06,1,"ML,API Design",Intermediate,0.39,0.07,0.64,2,3
+STU_0222,COL_02,Student_222,MTech,Finance,7.36,3,"AWS,SQL,Python,Django,Java",Basic,1.0,0.98,0.65,0,2
+STU_0223,COL_20,Student_223,BTech,Business,6.19,2,"Django,React",Intermediate,0.7,0.65,0.28,2,1
+STU_0224,COL_07,Student_224,MSc,CSE,6.63,3,"React,JavaScript,API Design",Basic,0.17,0.45,0.45,3,6
+STU_0225,COL_06,Student_225,BSc,AI,7.71,4,"JavaScript,React",Intermediate,0.35,0.05,0.03,3,2
+STU_0226,COL_17,Student_226,MSc,AI,6.86,2,"SQL,Java,ML,Django",Intermediate,0.6,0.62,0.94,0,6
+STU_0227,COL_14,Student_227,MSc,AI,6.23,3,"API Design,SQL",Intermediate,0.06,0.94,0.07,2,5
+STU_0228,COL_20,Student_228,BSc,Finance,8.66,3,"Python,API Design,Django,Java,SQL",Intermediate,0.67,0.06,0.21,1,4
+STU_0229,COL_18,Student_229,MTech,DS,7.97,4,"Data Analysis,Python,Java,AWS,SQL",Basic,0.46,0.31,0.82,1,5
+STU_0230,COL_02,Student_230,BTech,Business,8.54,1,"JavaScript,API Design,ML,SQL",Intermediate,0.2,0.49,0.74,2,4
+STU_0231,COL_12,Student_231,BSc,AI,7.26,2,"AWS,ML,API Design,React,Python",Basic,0.95,0.18,0.57,0,4
+STU_0232,COL_14,Student_232,MSc,AI,7.93,0,"Java,Python",Intermediate,0.9,0.6,0.58,2,6
+STU_0233,COL_06,Student_233,BSc,IT,7.29,2,"Data Analysis,Django,Java,JavaScript,React",Advanced,0.25,0.26,0.0,2,2
+STU_0234,COL_18,Student_234,BTech,AI,7.32,0,"ML,JavaScript,Java",Advanced,0.04,0.29,0.21,1,7
+STU_0235,COL_13,Student_235,MBA,CSE,8.7,4,"JavaScript,React,API Design,SQL,AWS",Intermediate,0.48,0.67,0.76,3,7
+STU_0236,COL_17,Student_236,BSc,AI,8.35,3,"JavaScript,Java,Django",Advanced,0.8,0.75,0.22,3,7
+STU_0237,COL_12,Student_237,BTech,Finance,6.39,0,"Data Analysis,Django,SQL,AWS,API Design",Intermediate,0.21,0.56,0.86,3,7
+STU_0238,COL_06,Student_238,MTech,Business,6.07,2,"Java,AWS,API Design",Advanced,0.67,0.93,0.27,0,6
+STU_0239,COL_19,Student_239,MSc,IT,8.17,4,"AWS,React,Data Analysis,Django",Basic,0.72,0.71,0.62,1,3
+STU_0240,COL_03,Student_240,BSc,AI,6.91,1,"AWS,Django,JavaScript,ML,API Design",Basic,0.71,0.27,0.34,0,1
+STU_0241,COL_02,Student_241,BSc,IT,6.02,1,"Data Analysis,AWS",Intermediate,0.06,0.01,0.21,0,4
+STU_0242,COL_15,Student_242,MTech,IT,9.13,3,"SQL,AWS,API Design,React",Advanced,0.82,0.17,0.49,3,6
+STU_0243,COL_15,Student_243,MTech,IT,6.48,0,"API Design,Data Analysis",Intermediate,0.93,0.82,0.57,2,3
+STU_0244,COL_08,Student_244,MTech,IT,7.14,0,"React,Python,JavaScript,SQL,ML",Intermediate,0.23,0.9,0.78,3,4
+STU_0245,COL_19,Student_245,BSc,AI,6.78,1,"AWS,Data Analysis",Intermediate,0.35,0.05,0.05,3,1
+STU_0246,COL_08,Student_246,MBA,CSE,6.89,1,"Django,SQL,Java",Basic,0.56,0.16,0.83,3,6
+STU_0247,COL_13,Student_247,BSc,Business,6.64,4,"API Design,React,Django,Java",Basic,0.42,0.6,0.94,1,4
+STU_0248,COL_06,Student_248,BSc,IT,9.4,0,"Java,AWS",Intermediate,0.55,0.4,0.83,3,5
+STU_0249,COL_17,Student_249,BSc,IT,6.37,3,"Python,Java",Advanced,0.04,0.42,0.17,0,2
+STU_0250,COL_03,Student_250,BSc,CSE,7.1,1,"Django,ML,API Design,Python,AWS",Intermediate,0.53,0.68,0.43,3,2
+STU_0251,COL_11,Student_251,MBA,Finance,6.03,1,"AWS,JavaScript",Advanced,0.22,0.88,0.56,1,3
+STU_0252,COL_11,Student_252,BTech,AI,7.14,0,"Django,SQL",Intermediate,0.62,0.45,0.78,0,4
+STU_0253,COL_12,Student_253,BTech,IT,6.42,0,"Python,Java",Intermediate,0.13,0.57,0.44,1,6
+STU_0254,COL_10,Student_254,BTech,Business,7.38,0,"ML,Python",Advanced,0.97,0.14,0.23,3,2
+STU_0255,COL_12,Student_255,BTech,IT,9.24,2,"ML,API Design,SQL,React",Intermediate,0.31,0.04,0.59,0,4
+STU_0256,COL_07,Student_256,MTech,IT,6.96,2,"JavaScript,Java,Python,AWS",Basic,0.22,0.32,0.26,3,5
+STU_0257,COL_16,Student_257,MSc,AI,6.18,3,"Java,JavaScript",Intermediate,0.69,0.55,0.22,0,5
+STU_0258,COL_20,Student_258,MBA,AI,8.57,3,"Python,Django,Data Analysis",Basic,0.64,0.26,0.89,3,7
+STU_0259,COL_04,Student_259,BTech,DS,7.44,3,"Data Analysis,AWS,JavaScript,React",Intermediate,0.08,0.03,0.99,0,2
+STU_0260,COL_09,Student_260,MTech,AI,9.42,2,"Python,React",Intermediate,0.67,0.5,0.64,2,5
+STU_0261,COL_11,Student_261,BTech,DS,7.95,3,"Django,React,AWS,JavaScript",Basic,0.77,0.25,0.87,3,3
+STU_0262,COL_11,Student_262,MTech,DS,9.37,2,"React,API Design,AWS,SQL,Data Analysis",Intermediate,0.14,0.02,0.46,1,1
+STU_0263,COL_13,Student_263,BTech,Business,6.77,4,"React,AWS,Data Analysis",Intermediate,0.93,0.33,0.47,0,2
+STU_0264,COL_02,Student_264,MSc,AI,8.72,2,"Data Analysis,AWS,API Design,Django,Python",Advanced,0.59,0.17,0.02,0,2
+STU_0265,COL_14,Student_265,MBA,IT,6.45,1,"Python,JavaScript,Java,Data Analysis,AWS",Intermediate,0.99,0.61,0.31,0,4
+STU_0266,COL_20,Student_266,MTech,Business,7.04,4,"Java,Data Analysis,Python,React",Advanced,0.13,0.13,0.81,0,1
+STU_0267,COL_15,Student_267,MSc,IT,7.11,2,"Java,AWS,SQL,Python,API Design",Intermediate,0.55,0.15,0.09,3,5
+STU_0268,COL_20,Student_268,BSc,Finance,7.8,0,"Django,API Design,Data Analysis,Python",Intermediate,0.1,0.18,0.99,3,3
+STU_0269,COL_16,Student_269,BSc,AI,8.04,0,"SQL,JavaScript,Django,ML",Intermediate,0.13,0.63,0.13,2,4
+STU_0270,COL_12,Student_270,MSc,Finance,6.9,3,"React,Java,SQL,Python",Intermediate,0.31,0.49,0.8,2,3
+STU_0271,COL_08,Student_271,MSc,IT,7.83,2,"Java,Python,AWS",Basic,0.64,0.82,0.04,2,3
+STU_0272,COL_06,Student_272,MSc,Business,8.29,3,"ML,Java",Basic,0.7,0.56,0.36,0,5
+STU_0273,COL_14,Student_273,MBA,CSE,9.41,4,"Java,AWS,Python",Intermediate,0.41,0.93,0.25,2,2
+STU_0274,COL_11,Student_274,BTech,IT,8.86,4,"AWS,Java,Data Analysis,API Design",Basic,0.94,0.87,0.45,0,3
+STU_0275,COL_06,Student_275,MTech,DS,8.31,3,"SQL,JavaScript,AWS",Basic,0.26,0.53,0.11,2,4
+STU_0276,COL_01,Student_276,BTech,AI,7.37,1,"AWS,Data Analysis,React,API Design,Django",Intermediate,0.1,0.12,0.25,3,2
+STU_0277,COL_20,Student_277,BSc,DS,7.98,0,"React,Data Analysis,API Design",Advanced,0.08,0.48,0.63,1,4
+STU_0278,COL_18,Student_278,MTech,Finance,6.68,4,"JavaScript,Python",Intermediate,0.58,0.94,0.67,0,2
+STU_0279,COL_05,Student_279,MSc,Business,8.16,0,"Django,SQL,Java",Basic,0.12,0.13,0.19,1,4
+STU_0280,COL_06,Student_280,MBA,IT,7.55,2,"React,ML,AWS,Data Analysis",Intermediate,0.83,0.63,0.78,0,5
+STU_0281,COL_16,Student_281,MSc,AI,6.05,0,"SQL,Django",Intermediate,0.37,0.63,0.01,2,3
+STU_0282,COL_10,Student_282,MSc,Finance,7.35,3,"API Design,Python,AWS,React",Basic,0.55,0.52,0.99,0,4
+STU_0283,COL_14,Student_283,MBA,Finance,6.17,1,"Data Analysis,API Design",Advanced,0.3,0.08,0.17,0,4
+STU_0284,COL_14,Student_284,BTech,AI,7.25,2,"Data Analysis,Python,SQL",Basic,0.67,0.64,0.41,2,1
+STU_0285,COL_08,Student_285,MSc,AI,7.17,0,"Java,API Design,SQL",Basic,0.62,0.21,0.59,0,2
+STU_0286,COL_15,Student_286,MSc,Finance,6.98,0,"ML,Django,Python,SQL",Intermediate,0.98,0.18,0.8,1,4
+STU_0287,COL_01,Student_287,BSc,AI,8.81,4,"Django,API Design,ML",Intermediate,0.57,0.06,0.63,2,4
+STU_0288,COL_13,Student_288,MSc,Business,9.08,4,"API Design,Java",Intermediate,0.59,0.58,0.16,0,7
+STU_0289,COL_13,Student_289,MSc,IT,6.24,2,"Django,AWS,API Design",Intermediate,0.2,0.51,0.13,0,7
+STU_0290,COL_20,Student_290,MBA,Business,7.47,0,"SQL,AWS,JavaScript,ML,React",Basic,0.09,0.32,0.1,2,7
+STU_0291,COL_03,Student_291,BTech,DS,8.19,0,"Django,Java,API Design,AWS,Data Analysis",Basic,0.59,0.32,0.63,2,3
+STU_0292,COL_16,Student_292,BSc,CSE,8.0,2,"JavaScript,ML",Intermediate,0.07,0.83,0.18,2,2
+STU_0293,COL_10,Student_293,BTech,AI,8.03,3,"JavaScript,API Design",Intermediate,0.56,0.71,0.66,2,2
+STU_0294,COL_15,Student_294,MTech,Finance,9.26,1,"SQL,Data Analysis",Basic,0.14,0.86,0.5,3,5
+STU_0295,COL_10,Student_295,MSc,CSE,8.66,1,"JavaScript,Python,SQL",Advanced,0.15,0.15,0.33,2,1
+STU_0296,COL_13,Student_296,MTech,CSE,8.55,3,"Python,SQL,AWS",Intermediate,0.23,0.41,0.27,2,6
+STU_0297,COL_16,Student_297,BTech,AI,8.78,3,"AWS,Django,Java,React",Intermediate,0.9,0.27,0.81,1,4
+STU_0298,COL_16,Student_298,MSc,DS,9.06,4,"React,API Design",Intermediate,0.05,0.67,0.23,2,3
+STU_0299,COL_02,Student_299,MSc,DS,6.62,4,"Python,Java,Django",Basic,0.78,0.8,0.99,0,7
+STU_0300,COL_08,Student_300,MSc,DS,9.06,4,"AWS,Java,API Design,React,Django",Intermediate,0.19,0.72,0.51,2,1

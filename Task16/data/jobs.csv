@@ -1,0 +1,201 @@
+job_id,job_title,company,experience_level,min_experience,required_skills,min_cgpa,salary_range,location,job_type,posted_date
+JOB_0001,ML Engineer,DevFactory,Senior (5+ yrs),2,"Java,Python,Django,API Design,React,AWS",6.61,22L - 47L,Hyderabad,Contract,2026-06-27 20:10:19.975294
+JOB_0002,Cloud Architect,WebSolutions,Junior (0-2 yrs),5,"Django,ML,API Design,Python,AWS",7.96,22L - 41L,Delhi,Full-time,2026-06-27 20:10:19.975294
+JOB_0003,Data Scientist,WebSolutions,Mid (2-5 yrs),3,"SQL,JavaScript,React,Python",7.97,24L - 26L,Bangalore,Full-time,2026-06-27 20:10:19.975294
+JOB_0004,AI/ML Engineer,WebSolutions,Fresher,3,"Data Analysis,React,Python",6.92,4L - 28L,Delhi,Full-time,2026-06-27 20:10:19.975294
+JOB_0005,Data Scientist,WebSolutions,Junior (0-2 yrs),0,"Java,ML,Data Analysis,React,Python",7.72,4L - 33L,Pune,Contract,2026-06-27 20:10:19.975294
+JOB_0006,Cloud Architect,WebSolutions,Junior (0-2 yrs),1,"JavaScript,React,SQL,AWS,API Design",6.15,3L - 34L,Bangalore,Full-time,2026-06-27 20:10:19.976297
+JOB_0007,Full Stack Developer,AIInnovate,Junior (0-2 yrs),5,"ML,JavaScript,Django,SQL,AWS,Python",6.68,7L - 35L,Delhi,Contract,2026-06-27 20:10:19.976297
+JOB_0008,Software Engineer,DataDynamics,Mid (2-5 yrs),5,"Python,Data Analysis,ML,AWS,React",6.56,3L - 28L,Bangalore,Contract,2026-06-27 20:10:19.976297
+JOB_0009,Data Scientist,CloudSys,Fresher,4,"Python,Java,Data Analysis,AWS",7.98,24L - 41L,Bangalore,Contract,2026-06-27 20:10:19.976297
+JOB_0010,Backend Engineer,CloudSys,Junior (0-2 yrs),0,"Data Analysis,Java,Python,React,AWS",6.21,18L - 42L,Hyderabad,Full-time,2026-06-27 20:10:19.976297
+JOB_0011,Cloud Architect,WebSolutions,Mid (2-5 yrs),0,"Django,AWS,Java,SQL,Python",7.52,3L - 44L,Delhi,Full-time,2026-06-27 20:10:19.976297
+JOB_0012,Cloud Architect,DevFactory,Fresher,2,"Python,ML,Data Analysis",6.23,6L - 34L,Pune,Full-time,2026-06-27 20:10:19.976297
+JOB_0013,AI/ML Engineer,CloudSys,Mid (2-5 yrs),3,"Python,API Design,React",6.62,7L - 36L,Bangalore,Contract,2026-06-27 20:10:19.976297
+JOB_0014,Software Engineer,WebSolutions,Mid (2-5 yrs),4,"Data Analysis,React,SQL,Django",6.42,17L - 36L,Pune,Contract,2026-06-27 20:10:19.976297
+JOB_0015,Software Engineer,AIInnovate,Fresher,2,"SQL,ML,JavaScript",7.26,4L - 25L,Bangalore,Full-time,2026-06-27 20:10:19.976297
+JOB_0016,Backend Engineer,CloudSys,Junior (0-2 yrs),1,"JavaScript,React,Java,API Design,SQL",7.24,4L - 28L,Delhi,Contract,2026-06-27 20:10:19.976297
+JOB_0017,Software Engineer,TechCorp,Junior (0-2 yrs),2,"AWS,Java,ML,Data Analysis,Django",6.94,20L - 26L,Mumbai,Contract,2026-06-27 20:10:19.976297
+JOB_0018,Backend Engineer,DevFactory,Mid (2-5 yrs),0,"Data Analysis,API Design,React,SQL,AWS",6.77,15L - 48L,Bangalore,Full-time,2026-06-27 20:10:19.976297
+JOB_0019,Frontend Developer,DevFactory,Fresher,1,"Data Analysis,JavaScript,Java,AWS,ML,API Design",7.16,13L - 45L,Delhi,Contract,2026-06-27 20:10:19.976297
+JOB_0020,Backend Engineer,DevFactory,Senior (5+ yrs),1,"Data Analysis,JavaScript,API Design",7.78,6L - 42L,Pune,Contract,2026-06-27 20:10:19.976297
+JOB_0021,Frontend Developer,CloudSys,Senior (5+ yrs),0,"ML,React,API Design",6.52,19L - 42L,Delhi,Full-time,2026-06-27 20:10:19.977295
+JOB_0022,Data Scientist,TechCorp,Junior (0-2 yrs),2,"SQL,Java,AWS",6.73,22L - 28L,Delhi,Contract,2026-06-27 20:10:19.977295
+JOB_0023,Backend Engineer,WebSolutions,Junior (0-2 yrs),3,"AWS,JavaScript,SQL,Java,API Design,Data Analysis",6.77,10L - 31L,Mumbai,Contract,2026-06-27 20:10:19.977295
+JOB_0024,Full Stack Developer,TechCorp,Junior (0-2 yrs),2,"Django,ML,JavaScript,SQL",7.93,13L - 26L,Mumbai,Contract,2026-06-27 20:10:19.977295
+JOB_0025,Software Engineer,AIInnovate,Junior (0-2 yrs),3,"Python,JavaScript,Data Analysis",7.95,17L - 37L,Bangalore,Contract,2026-06-27 20:10:19.977295
+JOB_0026,Data Scientist,AIInnovate,Senior (5+ yrs),2,"AWS,ML,Python,Django",6.14,6L - 46L,Hyderabad,Contract,2026-06-27 20:10:19.977295
+JOB_0027,Full Stack Developer,CloudSys,Junior (0-2 yrs),5,"Java,AWS,Python",6.17,9L - 29L,Pune,Full-time,2026-06-27 20:10:19.977295
+JOB_0028,ML Engineer,DataDynamics,Fresher,4,"React,API Design,SQL",7.12,10L - 34L,Delhi,Full-time,2026-06-27 20:10:19.977295
+JOB_0029,Backend Engineer,WebSolutions,Mid (2-5 yrs),5,"SQL,JavaScript,React,AWS",7.58,21L - 25L,Mumbai,Full-time,2026-06-27 20:10:19.977295
+JOB_0030,Full Stack Developer,DataDynamics,Fresher,1,"React,Data Analysis,Django,JavaScript",7.52,4L - 30L,Delhi,Full-time,2026-06-27 20:10:19.977295
+JOB_0031,AI/ML Engineer,AIInnovate,Fresher,1,"JavaScript,Data Analysis,Python,ML,React,Django",6.87,16L - 40L,Hyderabad,Full-time,2026-06-27 20:10:19.977295
+JOB_0032,Cloud Architect,DevFactory,Senior (5+ yrs),1,"AWS,JavaScript,Django,Java",6.07,14L - 46L,Mumbai,Contract,2026-06-27 20:10:19.977295
+JOB_0033,Backend Engineer,WebSolutions,Junior (0-2 yrs),5,"Data Analysis,Python,React",6.56,9L - 48L,Bangalore,Full-time,2026-06-27 20:10:19.977295
+JOB_0034,Data Scientist,AIInnovate,Fresher,3,"AWS,React,JavaScript,Python,ML,Data Analysis",6.07,22L - 32L,Delhi,Full-time,2026-06-27 20:10:19.977295
+JOB_0035,Backend Engineer,TechCorp,Fresher,1,"Django,Data Analysis,API Design,React",7.31,10L - 36L,Delhi,Contract,2026-06-27 20:10:19.977295
+JOB_0036,Backend Engineer,AIInnovate,Fresher,2,"JavaScript,ML,Java,Django",7.37,21L - 47L,Pune,Contract,2026-06-27 20:10:19.977295
+JOB_0037,Software Engineer,AIInnovate,Senior (5+ yrs),1,"JavaScript,Data Analysis,SQL",6.63,5L - 32L,Pune,Contract,2026-06-27 20:10:19.978297
+JOB_0038,Data Engineer,AIInnovate,Junior (0-2 yrs),2,"Python,Data Analysis,React,JavaScript,Django,API Design",7.15,18L - 47L,Mumbai,Full-time,2026-06-27 20:10:19.978297
+JOB_0039,DevOps Engineer,DevFactory,Fresher,2,"React,Python,JavaScript,API Design",7.52,5L - 39L,Mumbai,Full-time,2026-06-27 20:10:19.978297
+JOB_0040,Cloud Architect,TechCorp,Senior (5+ yrs),2,"Java,JavaScript,SQL,Python,ML,React",7.69,15L - 47L,Pune,Contract,2026-06-27 20:10:19.978297
+JOB_0041,Full Stack Developer,DevFactory,Junior (0-2 yrs),0,"JavaScript,Java,Django,ML,Data Analysis,SQL",7.27,5L - 29L,Hyderabad,Contract,2026-06-27 20:10:19.978297
+JOB_0042,Data Scientist,DevFactory,Mid (2-5 yrs),1,"JavaScript,Java,Data Analysis",8.0,13L - 49L,Delhi,Full-time,2026-06-27 20:10:19.978297
+JOB_0043,ML Engineer,WebSolutions,Mid (2-5 yrs),1,"AWS,API Design,React,JavaScript,Python,Django",7.26,11L - 45L,Hyderabad,Full-time,2026-06-27 20:10:19.978297
+JOB_0044,ML Engineer,WebSolutions,Mid (2-5 yrs),0,"Data Analysis,API Design,React,JavaScript,Python",7.48,12L - 40L,Mumbai,Contract,2026-06-27 20:10:19.978297
+JOB_0045,DevOps Engineer,DataDynamics,Junior (0-2 yrs),0,"Django,AWS,SQL,Java,ML",6.3,19L - 30L,Mumbai,Full-time,2026-06-27 20:10:19.978297
+JOB_0046,AI/ML Engineer,AIInnovate,Mid (2-5 yrs),1,"Python,SQL,AWS",6.93,18L - 49L,Delhi,Full-time,2026-06-27 20:10:19.978297
+JOB_0047,Full Stack Developer,WebSolutions,Senior (5+ yrs),5,"AWS,SQL,API Design,Data Analysis,React,Java",6.14,23L - 48L,Mumbai,Full-time,2026-06-27 20:10:19.978297
+JOB_0048,Data Engineer,WebSolutions,Fresher,3,"React,JavaScript,SQL,ML,Java",6.61,20L - 38L,Mumbai,Contract,2026-06-27 20:10:19.978297
+JOB_0049,Full Stack Developer,AIInnovate,Mid (2-5 yrs),4,"API Design,Python,ML,Java,JavaScript,React",6.01,12L - 33L,Delhi,Full-time,2026-06-27 20:10:19.978297
+JOB_0050,DevOps Engineer,DataDynamics,Junior (0-2 yrs),1,"ML,Django,Java,API Design",7.53,19L - 33L,Bangalore,Full-time,2026-06-27 20:10:19.978297
+JOB_0051,Data Engineer,TechCorp,Junior (0-2 yrs),3,"AWS,Django,Python",7.52,3L - 35L,Bangalore,Contract,2026-06-27 20:10:19.978297
+JOB_0052,Data Engineer,AIInnovate,Junior (0-2 yrs),5,"ML,API Design,React",6.1,8L - 46L,Bangalore,Contract,2026-06-27 20:10:19.979299
+JOB_0053,DevOps Engineer,DevFactory,Junior (0-2 yrs),5,"Data Analysis,SQL,ML",6.9,15L - 30L,Delhi,Full-time,2026-06-27 20:10:19.979299
+JOB_0054,Full Stack Developer,AIInnovate,Senior (5+ yrs),4,"Java,API Design,SQL,Python",7.82,19L - 26L,Pune,Full-time,2026-06-27 20:10:19.979299
+JOB_0055,Frontend Developer,WebSolutions,Mid (2-5 yrs),1,"ML,AWS,React,Data Analysis",7.99,23L - 46L,Pune,Full-time,2026-06-27 20:10:19.979299
+JOB_0056,Software Engineer,AIInnovate,Senior (5+ yrs),4,"Java,JavaScript,Python,React,Data Analysis,SQL",6.54,16L - 29L,Hyderabad,Contract,2026-06-27 20:10:19.979299
+JOB_0057,AI/ML Engineer,CloudSys,Senior (5+ yrs),1,"AWS,Java,Django",6.97,5L - 46L,Pune,Full-time,2026-06-27 20:10:19.979299
+JOB_0058,Full Stack Developer,TechCorp,Fresher,0,"AWS,API Design,Django",6.28,20L - 36L,Hyderabad,Full-time,2026-06-27 20:10:19.979299
+JOB_0059,Full Stack Developer,DataDynamics,Senior (5+ yrs),5,"AWS,SQL,Python,Java,React",6.7,6L - 31L,Mumbai,Contract,2026-06-27 20:10:19.979299
+JOB_0060,AI/ML Engineer,AIInnovate,Senior (5+ yrs),1,"Java,API Design,Python,JavaScript,Django",7.49,14L - 34L,Delhi,Contract,2026-06-27 20:10:19.979299
+JOB_0061,Data Scientist,DataDynamics,Junior (0-2 yrs),3,"JavaScript,AWS,Python,API Design,SQL,ML",6.81,11L - 43L,Mumbai,Full-time,2026-06-27 20:10:19.979299
+JOB_0062,Backend Engineer,DataDynamics,Junior (0-2 yrs),1,"React,Django,AWS,Python",6.44,24L - 46L,Hyderabad,Full-time,2026-06-27 20:10:19.979299
+JOB_0063,ML Engineer,DevFactory,Senior (5+ yrs),4,"ML,React,API Design,JavaScript,Django,SQL",6.43,7L - 34L,Bangalore,Full-time,2026-06-27 20:10:19.979299
+JOB_0064,ML Engineer,DevFactory,Senior (5+ yrs),5,"API Design,ML,Java,Data Analysis,AWS,Python",6.53,14L - 49L,Delhi,Contract,2026-06-27 20:10:19.979299
+JOB_0065,Cloud Architect,TechCorp,Senior (5+ yrs),0,"ML,Data Analysis,JavaScript,React,SQL",7.53,17L - 35L,Pune,Full-time,2026-06-27 20:10:19.979299
+JOB_0066,Data Engineer,AIInnovate,Senior (5+ yrs),4,"JavaScript,Java,SQL,ML,React,Django",6.92,10L - 46L,Delhi,Full-time,2026-06-27 20:10:19.979299
+JOB_0067,ML Engineer,DevFactory,Junior (0-2 yrs),2,"Python,Django,JavaScript,ML",6.05,15L - 31L,Delhi,Contract,2026-06-27 20:10:19.979299
+JOB_0068,Cloud Architect,TechCorp,Mid (2-5 yrs),3,"ML,Django,JavaScript",7.42,16L - 30L,Hyderabad,Contract,2026-06-27 20:10:19.980301
+JOB_0069,Cloud Architect,AIInnovate,Fresher,3,"Django,Data Analysis,ML",7.65,24L - 45L,Delhi,Contract,2026-06-27 20:10:19.980301
+JOB_0070,ML Engineer,DataDynamics,Mid (2-5 yrs),1,"React,AWS,SQL,API Design,JavaScript",7.33,18L - 29L,Mumbai,Full-time,2026-06-27 20:10:19.980301
+JOB_0071,Backend Engineer,DevFactory,Senior (5+ yrs),4,"SQL,ML,Python,React,JavaScript",7.64,23L - 39L,Hyderabad,Contract,2026-06-27 20:10:19.980301
+JOB_0072,ML Engineer,TechCorp,Senior (5+ yrs),4,"AWS,Java,Python,React",7.31,8L - 35L,Pune,Full-time,2026-06-27 20:10:19.980301
+JOB_0073,DevOps Engineer,WebSolutions,Junior (0-2 yrs),1,"Django,Data Analysis,API Design,AWS,ML",7.82,8L - 44L,Pune,Full-time,2026-06-27 20:10:19.980301
+JOB_0074,ML Engineer,DataDynamics,Junior (0-2 yrs),5,"Django,JavaScript,React,ML,SQL,Data Analysis",7.28,14L - 28L,Delhi,Full-time,2026-06-27 20:10:19.980301
+JOB_0075,Cloud Architect,TechCorp,Mid (2-5 yrs),1,"JavaScript,React,Python",7.33,18L - 25L,Delhi,Full-time,2026-06-27 20:10:19.980301
+JOB_0076,Full Stack Developer,DevFactory,Senior (5+ yrs),2,"Python,SQL,React",7.68,13L - 32L,Bangalore,Full-time,2026-06-27 20:10:19.980301
+JOB_0077,Backend Engineer,WebSolutions,Fresher,2,"JavaScript,API Design,Django,Python",7.17,12L - 46L,Mumbai,Contract,2026-06-27 20:10:19.980301
+JOB_0078,Cloud Architect,DevFactory,Junior (0-2 yrs),0,"Java,JavaScript,SQL,React,Python,AWS",7.19,15L - 43L,Bangalore,Full-time,2026-06-27 20:10:19.980301
+JOB_0079,Frontend Developer,DevFactory,Fresher,1,"AWS,Data Analysis,Django,React,ML",7.24,12L - 34L,Mumbai,Full-time,2026-06-27 20:10:19.980301
+JOB_0080,Cloud Architect,DevFactory,Mid (2-5 yrs),5,"Python,SQL,JavaScript",6.11,7L - 44L,Mumbai,Full-time,2026-06-27 20:10:19.980301
+JOB_0081,Software Engineer,TechCorp,Mid (2-5 yrs),0,"Python,AWS,Java",6.99,15L - 25L,Hyderabad,Full-time,2026-06-27 20:10:19.980301
+JOB_0082,Frontend Developer,AIInnovate,Senior (5+ yrs),2,"AWS,SQL,Django",6.99,6L - 35L,Delhi,Full-time,2026-06-27 20:10:19.980301
+JOB_0083,Data Engineer,CloudSys,Junior (0-2 yrs),1,"API Design,Python,AWS,SQL,ML",7.79,7L - 40L,Hyderabad,Full-time,2026-06-27 20:10:19.981297
+JOB_0084,Backend Engineer,AIInnovate,Senior (5+ yrs),1,"Java,AWS,Data Analysis",7.03,21L - 25L,Delhi,Contract,2026-06-27 20:10:19.981297
+JOB_0085,ML Engineer,WebSolutions,Senior (5+ yrs),2,"JavaScript,Java,Python",6.71,11L - 42L,Hyderabad,Full-time,2026-06-27 20:10:19.981297
+JOB_0086,Full Stack Developer,AIInnovate,Mid (2-5 yrs),4,"Data Analysis,Django,Java,ML",6.33,22L - 40L,Pune,Full-time,2026-06-27 20:10:19.981297
+JOB_0087,ML Engineer,DataDynamics,Mid (2-5 yrs),1,"Django,React,ML,AWS,Data Analysis",6.77,14L - 31L,Mumbai,Full-time,2026-06-27 20:10:19.981297
+JOB_0088,DevOps Engineer,TechCorp,Junior (0-2 yrs),1,"JavaScript,ML,SQL,Data Analysis,Django,Java",6.13,11L - 49L,Delhi,Full-time,2026-06-27 20:10:19.981297
+JOB_0089,Data Scientist,WebSolutions,Fresher,5,"AWS,Data Analysis,JavaScript,Django,ML,Python",7.87,5L - 43L,Hyderabad,Contract,2026-06-27 20:10:19.981297
+JOB_0090,Data Engineer,WebSolutions,Fresher,1,"ML,React,JavaScript,Django",7.36,22L - 29L,Mumbai,Contract,2026-06-27 20:10:19.981297
+JOB_0091,DevOps Engineer,WebSolutions,Fresher,4,"AWS,Data Analysis,Django",6.41,11L - 26L,Pune,Contract,2026-06-27 20:10:19.981297
+JOB_0092,Full Stack Developer,TechCorp,Mid (2-5 yrs),4,"API Design,SQL,React,ML,AWS",6.24,14L - 39L,Hyderabad,Contract,2026-06-27 20:10:19.981297
+JOB_0093,Data Scientist,DevFactory,Junior (0-2 yrs),4,"Django,SQL,AWS,ML",6.26,24L - 47L,Pune,Full-time,2026-06-27 20:10:19.981297
+JOB_0094,ML Engineer,DataDynamics,Fresher,5,"React,Data Analysis,API Design,Django,Python,Java",7.21,9L - 26L,Hyderabad,Contract,2026-06-27 20:10:19.982198
+JOB_0095,DevOps Engineer,AIInnovate,Senior (5+ yrs),3,"SQL,Data Analysis,Python,Django",7.24,4L - 49L,Bangalore,Full-time,2026-06-27 20:10:19.982198
+JOB_0096,Full Stack Developer,TechCorp,Mid (2-5 yrs),4,"Python,SQL,AWS,ML,API Design",6.4,9L - 33L,Bangalore,Full-time,2026-06-27 20:10:19.982198
+JOB_0097,DevOps Engineer,CloudSys,Fresher,1,"JavaScript,Data Analysis,API Design,Python,ML,Django",6.52,15L - 25L,Pune,Full-time,2026-06-27 20:10:19.982198
+JOB_0098,Software Engineer,CloudSys,Junior (0-2 yrs),1,"JavaScript,AWS,SQL",7.74,20L - 30L,Hyderabad,Contract,2026-06-27 20:10:19.982198
+JOB_0099,Data Scientist,CloudSys,Fresher,3,"API Design,Django,SQL,JavaScript",7.09,18L - 31L,Hyderabad,Full-time,2026-06-27 20:10:19.982198
+JOB_0100,DevOps Engineer,TechCorp,Junior (0-2 yrs),4,"Data Analysis,API Design,ML,JavaScript,React",6.25,5L - 34L,Pune,Contract,2026-06-27 20:10:19.982198
+JOB_0101,Backend Engineer,TechCorp,Mid (2-5 yrs),2,"API Design,Java,Python,ML",6.96,3L - 42L,Mumbai,Full-time,2026-06-27 20:10:19.982198
+JOB_0102,AI/ML Engineer,DataDynamics,Fresher,4,"Data Analysis,API Design,Python,AWS,Java,Django",7.27,17L - 34L,Bangalore,Full-time,2026-06-27 20:10:19.982198
+JOB_0103,Data Engineer,TechCorp,Senior (5+ yrs),2,"SQL,AWS,Django,Python",7.58,18L - 25L,Delhi,Full-time,2026-06-27 20:10:19.982198
+JOB_0104,Cloud Architect,DataDynamics,Junior (0-2 yrs),0,"API Design,SQL,ML,Java",7.04,14L - 28L,Mumbai,Full-time,2026-06-27 20:10:19.982198
+JOB_0105,Software Engineer,CloudSys,Senior (5+ yrs),1,"Django,API Design,React,Python,AWS,ML",6.37,19L - 26L,Bangalore,Full-time,2026-06-27 20:10:19.982198
+JOB_0106,DevOps Engineer,CloudSys,Senior (5+ yrs),3,"SQL,API Design,AWS,React,ML",7.65,7L - 44L,Delhi,Full-time,2026-06-27 20:10:19.982198
+JOB_0107,Full Stack Developer,DevFactory,Junior (0-2 yrs),3,"Data Analysis,SQL,JavaScript,AWS",7.07,7L - 37L,Pune,Contract,2026-06-27 20:10:19.982198
+JOB_0108,AI/ML Engineer,TechCorp,Mid (2-5 yrs),2,"SQL,React,Django,JavaScript,Python,API Design",7.24,22L - 29L,Bangalore,Contract,2026-06-27 20:10:19.982198
+JOB_0109,Frontend Developer,DataDynamics,Senior (5+ yrs),3,"React,ML,Python,JavaScript,API Design,Data Analysis",7.84,18L - 39L,Mumbai,Full-time,2026-06-27 20:10:19.983196
+JOB_0110,Frontend Developer,DataDynamics,Mid (2-5 yrs),1,"JavaScript,ML,Django",6.77,6L - 29L,Mumbai,Full-time,2026-06-27 20:10:19.983196
+JOB_0111,ML Engineer,DataDynamics,Junior (0-2 yrs),4,"Java,SQL,ML,JavaScript,Data Analysis",7.9,16L - 44L,Pune,Full-time,2026-06-27 20:10:19.983196
+JOB_0112,Backend Engineer,DevFactory,Junior (0-2 yrs),5,"JavaScript,Django,AWS,SQL",7.15,8L - 27L,Delhi,Contract,2026-06-27 20:10:19.983196
+JOB_0113,Full Stack Developer,TechCorp,Senior (5+ yrs),1,"Data Analysis,SQL,ML,Python",6.42,9L - 40L,Pune,Contract,2026-06-27 20:10:19.983196
+JOB_0114,Frontend Developer,WebSolutions,Senior (5+ yrs),2,"API Design,Data Analysis,React",7.46,11L - 45L,Delhi,Contract,2026-06-27 20:10:19.983196
+JOB_0115,ML Engineer,AIInnovate,Junior (0-2 yrs),0,"JavaScript,SQL,API Design,React,Data Analysis",7.37,9L - 38L,Hyderabad,Full-time,2026-06-27 20:10:19.983196
+JOB_0116,Frontend Developer,CloudSys,Mid (2-5 yrs),4,"Django,Data Analysis,ML,API Design",6.07,16L - 42L,Delhi,Contract,2026-06-27 20:10:19.983196
+JOB_0117,AI/ML Engineer,AIInnovate,Mid (2-5 yrs),3,"Java,Python,Data Analysis,React",7.67,19L - 40L,Mumbai,Contract,2026-06-27 20:10:19.983196
+JOB_0118,Backend Engineer,CloudSys,Senior (5+ yrs),2,"Python,API Design,React",6.82,20L - 30L,Pune,Contract,2026-06-27 20:10:19.983196
+JOB_0119,ML Engineer,CloudSys,Senior (5+ yrs),1,"Python,JavaScript,SQL,Django,API Design",7.25,5L - 35L,Mumbai,Contract,2026-06-27 20:10:19.983196
+JOB_0120,ML Engineer,DevFactory,Mid (2-5 yrs),5,"React,Python,API Design,SQL,ML,JavaScript",6.31,14L - 42L,Delhi,Full-time,2026-06-27 20:10:19.983196
+JOB_0121,Full Stack Developer,AIInnovate,Junior (0-2 yrs),0,"Data Analysis,SQL,Django",6.11,13L - 26L,Pune,Contract,2026-06-27 20:10:19.983196
+JOB_0122,Full Stack Developer,AIInnovate,Fresher,1,"JavaScript,Django,AWS,Java",6.03,8L - 43L,Pune,Contract,2026-06-27 20:10:19.983196
+JOB_0123,Frontend Developer,DevFactory,Senior (5+ yrs),5,"API Design,JavaScript,Data Analysis,AWS",6.15,9L - 47L,Delhi,Contract,2026-06-27 20:10:19.983196
+JOB_0124,Cloud Architect,DataDynamics,Mid (2-5 yrs),3,"React,JavaScript,Python",6.8,6L - 29L,Bangalore,Full-time,2026-06-27 20:10:19.984196
+JOB_0125,Data Scientist,WebSolutions,Senior (5+ yrs),1,"API Design,Python,Django",6.24,6L - 34L,Hyderabad,Contract,2026-06-27 20:10:19.984196
+JOB_0126,AI/ML Engineer,WebSolutions,Senior (5+ yrs),4,"Java,Python,Data Analysis,AWS,ML",7.84,16L - 26L,Hyderabad,Full-time,2026-06-27 20:10:19.984196
+JOB_0127,Data Engineer,TechCorp,Senior (5+ yrs),2,"Java,AWS,Data Analysis,JavaScript",6.57,10L - 34L,Mumbai,Full-time,2026-06-27 20:10:19.984196
+JOB_0128,ML Engineer,AIInnovate,Fresher,2,"Data Analysis,SQL,Java,API Design,AWS",7.81,14L - 46L,Pune,Full-time,2026-06-27 20:10:19.984196
+JOB_0129,Frontend Developer,AIInnovate,Fresher,2,"ML,JavaScript,SQL,React",7.31,7L - 46L,Mumbai,Full-time,2026-06-27 20:10:19.984196
+JOB_0130,Cloud Architect,AIInnovate,Mid (2-5 yrs),4,"JavaScript,Django,Data Analysis,Java,React",6.9,5L - 42L,Delhi,Contract,2026-06-27 20:10:19.984196
+JOB_0131,Full Stack Developer,DataDynamics,Fresher,2,"Django,Python,AWS,SQL,JavaScript,API Design",7.26,16L - 30L,Delhi,Full-time,2026-06-27 20:10:19.984196
+JOB_0132,Frontend Developer,DataDynamics,Senior (5+ yrs),3,"JavaScript,Java,React,Django,AWS",6.39,15L - 45L,Hyderabad,Full-time,2026-06-27 20:10:19.984196
+JOB_0133,DevOps Engineer,DataDynamics,Junior (0-2 yrs),2,"AWS,JavaScript,Django",6.82,14L - 34L,Bangalore,Full-time,2026-06-27 20:10:19.984196
+JOB_0134,Software Engineer,TechCorp,Mid (2-5 yrs),5,"React,JavaScript,Django,API Design",7.8,14L - 48L,Pune,Full-time,2026-06-27 20:10:19.984196
+JOB_0135,Full Stack Developer,WebSolutions,Mid (2-5 yrs),3,"React,SQL,API Design,Django,Java,Python",7.04,9L - 34L,Hyderabad,Contract,2026-06-27 20:10:19.984196
+JOB_0136,AI/ML Engineer,TechCorp,Junior (0-2 yrs),4,"ML,JavaScript,AWS",6.91,17L - 32L,Bangalore,Contract,2026-06-27 20:10:19.984196
+JOB_0137,Data Engineer,AIInnovate,Fresher,0,"SQL,Java,Python,JavaScript,ML",6.11,24L - 29L,Delhi,Contract,2026-06-27 20:10:19.984196
+JOB_0138,AI/ML Engineer,CloudSys,Mid (2-5 yrs),5,"ML,React,API Design,SQL,Python,Java",7.39,12L - 36L,Pune,Contract,2026-06-27 20:10:19.984196
+JOB_0139,Frontend Developer,AIInnovate,Junior (0-2 yrs),4,"ML,API Design,Django",6.1,14L - 36L,Bangalore,Full-time,2026-06-27 20:10:19.984196
+JOB_0140,AI/ML Engineer,DataDynamics,Senior (5+ yrs),3,"Python,AWS,JavaScript,SQL,React,ML",6.12,8L - 48L,Bangalore,Contract,2026-06-27 20:10:19.985196
+JOB_0141,DevOps Engineer,DataDynamics,Senior (5+ yrs),0,"React,AWS,Python,Django,Java,JavaScript",6.15,8L - 44L,Delhi,Full-time,2026-06-27 20:10:19.985196
+JOB_0142,AI/ML Engineer,DataDynamics,Mid (2-5 yrs),4,"Django,Python,AWS,Java,Data Analysis,SQL",7.08,13L - 46L,Bangalore,Full-time,2026-06-27 20:10:19.985196
+JOB_0143,Cloud Architect,AIInnovate,Junior (0-2 yrs),1,"Java,SQL,JavaScript,AWS,Django",6.08,4L - 41L,Mumbai,Contract,2026-06-27 20:10:19.985196
+JOB_0144,Software Engineer,CloudSys,Junior (0-2 yrs),2,"AWS,Django,React,ML,JavaScript,API Design",7.09,17L - 26L,Mumbai,Full-time,2026-06-27 20:10:19.985196
+JOB_0145,Software Engineer,WebSolutions,Senior (5+ yrs),4,"Python,SQL,React,Data Analysis,ML,Django",6.98,20L - 44L,Pune,Full-time,2026-06-27 20:10:19.985196
+JOB_0146,Software Engineer,TechCorp,Senior (5+ yrs),4,"Java,ML,JavaScript,Django",6.29,12L - 41L,Delhi,Contract,2026-06-27 20:10:19.985196
+JOB_0147,Backend Engineer,TechCorp,Mid (2-5 yrs),1,"Java,API Design,AWS,Python,ML,React",6.7,7L - 31L,Bangalore,Contract,2026-06-27 20:10:19.985196
+JOB_0148,Data Scientist,CloudSys,Mid (2-5 yrs),4,"AWS,React,SQL,ML,API Design,JavaScript",7.59,18L - 31L,Delhi,Full-time,2026-06-27 20:10:19.985196
+JOB_0149,Software Engineer,DevFactory,Senior (5+ yrs),3,"JavaScript,SQL,Django,Python,Java",7.85,9L - 49L,Pune,Contract,2026-06-27 20:10:19.985196
+JOB_0150,Backend Engineer,DataDynamics,Mid (2-5 yrs),3,"API Design,React,JavaScript,Java",6.17,3L - 43L,Hyderabad,Contract,2026-06-27 20:10:19.985196
+JOB_0151,Software Engineer,TechCorp,Fresher,4,"Django,Data Analysis,AWS,ML,React,API Design",7.51,7L - 45L,Bangalore,Contract,2026-06-27 20:10:19.985196
+JOB_0152,AI/ML Engineer,DataDynamics,Mid (2-5 yrs),5,"Data Analysis,JavaScript,Python",6.84,9L - 44L,Bangalore,Contract,2026-06-27 20:10:19.985196
+JOB_0153,Frontend Developer,AIInnovate,Fresher,4,"Data Analysis,Java,API Design,ML",7.48,12L - 42L,Bangalore,Full-time,2026-06-27 20:10:19.985196
+JOB_0154,Software Engineer,DevFactory,Junior (0-2 yrs),4,"AWS,SQL,ML,Java,Python",7.82,14L - 36L,Delhi,Full-time,2026-06-27 20:10:19.985196
+JOB_0155,Software Engineer,TechCorp,Fresher,0,"React,API Design,AWS,JavaScript,ML",7.87,13L - 47L,Pune,Contract,2026-06-27 20:10:19.986197
+JOB_0156,AI/ML Engineer,DevFactory,Fresher,5,"React,SQL,Django",7.45,18L - 30L,Delhi,Contract,2026-06-27 20:10:19.986197
+JOB_0157,Cloud Architect,CloudSys,Junior (0-2 yrs),0,"AWS,Python,Data Analysis,React,Django,Java",7.64,3L - 37L,Hyderabad,Full-time,2026-06-27 20:10:19.986197
+JOB_0158,Data Engineer,TechCorp,Senior (5+ yrs),4,"SQL,Python,Django",6.18,13L - 39L,Delhi,Contract,2026-06-27 20:10:19.986197
+JOB_0159,Data Engineer,WebSolutions,Mid (2-5 yrs),0,"AWS,JavaScript,ML,Python",7.17,13L - 31L,Hyderabad,Full-time,2026-06-27 20:10:19.986197
+JOB_0160,Software Engineer,DataDynamics,Senior (5+ yrs),0,"Python,ML,API Design,JavaScript,React",6.3,3L - 48L,Mumbai,Full-time,2026-06-27 20:10:19.986197
+JOB_0161,Frontend Developer,AIInnovate,Mid (2-5 yrs),4,"Django,SQL,JavaScript,AWS,Python,Data Analysis",6.04,7L - 41L,Hyderabad,Contract,2026-06-27 20:10:19.986197
+JOB_0162,Backend Engineer,DataDynamics,Senior (5+ yrs),4,"Python,AWS,ML,Data Analysis,Django",6.57,12L - 43L,Bangalore,Contract,2026-06-27 20:10:19.986197
+JOB_0163,Data Engineer,DataDynamics,Junior (0-2 yrs),0,"AWS,ML,API Design,Java",7.64,11L - 44L,Delhi,Full-time,2026-06-27 20:10:19.986197
+JOB_0164,Full Stack Developer,AIInnovate,Senior (5+ yrs),4,"AWS,Python,JavaScript,Data Analysis,SQL,Java",6.83,21L - 40L,Delhi,Contract,2026-06-27 20:10:19.986197
+JOB_0165,Software Engineer,CloudSys,Fresher,2,"JavaScript,Data Analysis,SQL,Django",7.61,22L - 42L,Pune,Full-time,2026-06-27 20:10:19.986197
+JOB_0166,Data Engineer,AIInnovate,Fresher,3,"SQL,React,Data Analysis",7.14,9L - 34L,Bangalore,Contract,2026-06-27 20:10:19.986197
+JOB_0167,DevOps Engineer,TechCorp,Senior (5+ yrs),2,"React,API Design,JavaScript",6.36,4L - 33L,Mumbai,Full-time,2026-06-27 20:10:19.986197
+JOB_0168,Software Engineer,TechCorp,Mid (2-5 yrs),3,"SQL,JavaScript,React,Data Analysis",6.53,6L - 40L,Delhi,Contract,2026-06-27 20:10:19.986197
+JOB_0169,Full Stack Developer,WebSolutions,Senior (5+ yrs),5,"Python,SQL,Data Analysis,API Design,Django,AWS",6.11,20L - 25L,Delhi,Full-time,2026-06-27 20:10:19.986197
+JOB_0170,Full Stack Developer,AIInnovate,Fresher,3,"API Design,AWS,JavaScript,React",6.67,22L - 25L,Delhi,Full-time,2026-06-27 20:10:19.987197
+JOB_0171,DevOps Engineer,TechCorp,Senior (5+ yrs),4,"Django,Data Analysis,React,SQL,JavaScript",6.93,19L - 39L,Bangalore,Contract,2026-06-27 20:10:19.987197
+JOB_0172,Frontend Developer,DevFactory,Fresher,2,"API Design,Java,React,SQL",6.26,6L - 28L,Hyderabad,Full-time,2026-06-27 20:10:19.987197
+JOB_0173,ML Engineer,TechCorp,Junior (0-2 yrs),3,"Python,JavaScript,AWS,SQL",7.35,23L - 32L,Hyderabad,Full-time,2026-06-27 20:10:19.987197
+JOB_0174,DevOps Engineer,AIInnovate,Senior (5+ yrs),1,"Django,SQL,Python,API Design",7.94,23L - 42L,Bangalore,Contract,2026-06-27 20:10:19.987197
+JOB_0175,Data Engineer,DataDynamics,Junior (0-2 yrs),5,"Python,ML,API Design",6.77,21L - 43L,Bangalore,Contract,2026-06-27 20:10:19.987197
+JOB_0176,AI/ML Engineer,CloudSys,Senior (5+ yrs),1,"AWS,SQL,React,Python,API Design,Java",6.79,4L - 26L,Bangalore,Contract,2026-06-27 20:10:19.987197
+JOB_0177,ML Engineer,TechCorp,Fresher,4,"API Design,Data Analysis,SQL,AWS,Django,Python",7.41,7L - 33L,Bangalore,Full-time,2026-06-27 20:10:19.987197
+JOB_0178,Data Engineer,AIInnovate,Mid (2-5 yrs),5,"API Design,AWS,SQL,Django",6.95,22L - 39L,Hyderabad,Full-time,2026-06-27 20:10:19.987197
+JOB_0179,Cloud Architect,DataDynamics,Senior (5+ yrs),1,"API Design,Python,ML,React",6.53,24L - 41L,Mumbai,Full-time,2026-06-27 20:10:19.987197
+JOB_0180,ML Engineer,TechCorp,Junior (0-2 yrs),5,"Python,Java,Data Analysis",7.23,17L - 36L,Pune,Full-time,2026-06-27 20:10:19.987197
+JOB_0181,Full Stack Developer,AIInnovate,Senior (5+ yrs),3,"JavaScript,Data Analysis,React,ML,Java",7.02,21L - 48L,Pune,Full-time,2026-06-27 20:10:19.987197
+JOB_0182,Data Engineer,AIInnovate,Fresher,1,"Java,Data Analysis,React,JavaScript",7.76,15L - 39L,Hyderabad,Full-time,2026-06-27 20:10:19.987197
+JOB_0183,Frontend Developer,AIInnovate,Mid (2-5 yrs),4,"API Design,Java,Django,React,JavaScript,ML",6.8,14L - 39L,Hyderabad,Full-time,2026-06-27 20:10:19.987197
+JOB_0184,Backend Engineer,WebSolutions,Junior (0-2 yrs),0,"Django,AWS,JavaScript",7.5,22L - 46L,Bangalore,Full-time,2026-06-27 20:10:19.987197
+JOB_0185,Data Scientist,WebSolutions,Senior (5+ yrs),0,"SQL,JavaScript,React,Data Analysis,ML,AWS",7.71,17L - 25L,Pune,Contract,2026-06-27 20:10:19.987197
+JOB_0186,Cloud Architect,WebSolutions,Senior (5+ yrs),1,"Data Analysis,SQL,AWS,React,ML",6.78,7L - 31L,Pune,Full-time,2026-06-27 20:10:19.988196
+JOB_0187,Frontend Developer,DevFactory,Mid (2-5 yrs),2,"Django,Java,Python,JavaScript,API Design",6.33,4L - 47L,Pune,Full-time,2026-06-27 20:10:19.988196
+JOB_0188,AI/ML Engineer,DevFactory,Senior (5+ yrs),2,"AWS,React,Data Analysis,JavaScript,Java",7.4,15L - 39L,Pune,Contract,2026-06-27 20:10:19.988196
+JOB_0189,Full Stack Developer,TechCorp,Senior (5+ yrs),3,"Data Analysis,Java,JavaScript,React,AWS",7.83,14L - 40L,Delhi,Full-time,2026-06-27 20:10:19.988196
+JOB_0190,Full Stack Developer,TechCorp,Senior (5+ yrs),4,"AWS,API Design,React",6.41,10L - 29L,Delhi,Full-time,2026-06-27 20:10:19.988196
+JOB_0191,ML Engineer,CloudSys,Mid (2-5 yrs),0,"JavaScript,AWS,SQL,React",7.89,17L - 36L,Delhi,Contract,2026-06-27 20:10:19.988196
+JOB_0192,Backend Engineer,CloudSys,Senior (5+ yrs),1,"AWS,React,Django,Java",7.01,3L - 28L,Bangalore,Full-time,2026-06-27 20:10:19.988196
+JOB_0193,Data Engineer,TechCorp,Mid (2-5 yrs),3,"Python,SQL,Data Analysis,API Design,ML",6.17,11L - 44L,Mumbai,Full-time,2026-06-27 20:10:19.988196
+JOB_0194,Software Engineer,AIInnovate,Junior (0-2 yrs),4,"AWS,JavaScript,API Design,React",7.99,24L - 44L,Hyderabad,Full-time,2026-06-27 20:10:19.988196
+JOB_0195,Data Engineer,DataDynamics,Senior (5+ yrs),4,"ML,Django,Python,SQL,API Design",6.62,17L - 33L,Hyderabad,Full-time,2026-06-27 20:10:19.988196
+JOB_0196,Backend Engineer,DevFactory,Fresher,3,"Django,AWS,Data Analysis,SQL",6.96,20L - 35L,Hyderabad,Full-time,2026-06-27 20:10:19.988196
+JOB_0197,Data Scientist,DataDynamics,Senior (5+ yrs),5,"Django,AWS,SQL,Python",7.97,11L - 37L,Hyderabad,Full-time,2026-06-27 20:10:19.988196
+JOB_0198,ML Engineer,TechCorp,Fresher,3,"API Design,Java,SQL,Python",7.54,3L - 45L,Hyderabad,Contract,2026-06-27 20:10:19.988196
+JOB_0199,ML Engineer,CloudSys,Junior (0-2 yrs),5,"React,JavaScript,Python,API Design,Data Analysis,ML",6.88,23L - 48L,Pune,Contract,2026-06-27 20:10:19.988196
+JOB_0200,Data Engineer,DevFactory,Fresher,2,"React,Python,ML,SQL,Data Analysis,Java",7.98,20L - 36L,Mumbai,Contract,2026-06-27 20:10:19.988196
