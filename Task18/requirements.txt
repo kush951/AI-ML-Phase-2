@@ -1,0 +1,25 @@
+# PlaceMux AI/ML Engine - Backend Dependencies
+# Task 18: Admin Console & Review Queue
+
+# FastAPI Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# Data Science & ML
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.2
+scipy==1.11.4
+
+# PDF Report Generation
+reportlab==4.0.7
+
+# Development & Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Optional: For advanced features
+# shap==0.43.0  # Advanced explainability
+# xgboost==2.0.0  # Alternative gradient boosting
+# mlflow==2.10.0  # Experiment tracking
