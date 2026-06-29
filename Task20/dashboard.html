@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaceMux - Recommendation Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 32px;
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background: #f0f0f0;
+            border-radius: 20px;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: #4caf50;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .tab-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .tab-btn:hover {
+            border-color: #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #764ba2;
+        }
+
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .recommendation-result {
+            background: #f9f9f9;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .match-score {
+            font-size: 28px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .recommendation-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .badge-excellent {
+            background: #4caf50;
+            color: white;
+        }
+
+        .badge-good {
+            background: #8bc34a;
+            color: white;
+        }
+
+        .badge-fair {
+            background: #ff9800;
+            color: white;
+        }
+
+        .badge-poor {
+            background: #f44336;
+            color: white;
+        }
+
+        .explanation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .explanation-item {
+            background: white;
+            padding: 12px;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+        }
+
+        .explanation-label {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 5px;
+        }
+
+        .explanation-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #f5f5f5;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #ddd;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .metric-box {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .error {
+            background: #ffebee;
+            border-left: 4px solid #f44336;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .error.show {
+            display: block;
+        }
+
+        .success {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .success.show {
+            display: block;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .tabs {
+                flex-wrap: wrap;
+            }
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>📊 PlaceMux</h1>
+                <p style="color: #999; margin-top: 5px;">AI-Powered Student-Job Matching</p>
+            </div>
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span id="status-text">System Ready</span>
+            </div>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('dashboard')">Dashboard</button>
+            <button class="tab-btn" onclick="switchTab('predict')">Get Recommendation</button>
+            <button class="tab-btn" onclick="switchTab('analytics')">Analytics</button>
+            <button class="tab-btn" onclick="switchTab('model-info')">Model Info</button>
+        </div>
+
+        <!-- Dashboard Tab -->
+        <div id="dashboard" class="tab-content active">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-matches">-</div>
+                    <div class="stat-label">Total Matches</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="total-students">-</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="total-jobs">-</div>
+                    <div class="stat-label">Job Postings</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="match-rate">-</div>
+                    <div class="stat-label">Match Rate</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>System Overview</h2>
+                <div class="metrics-grid">
+                    <div class="metric-box">
+                        <div class="metric-value" id="colleges-count">-</div>
+                        <div class="metric-label">Colleges</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value" id="companies-count">-</div>
+                        <div class="metric-label">Companies</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value" id="avg-match-score">-</div>
+                        <div class="metric-label">Avg Match Score</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prediction Tab -->
+        <div id="predict" class="tab-content">
+            <div class="card">
+                <h2>Get Recommendation</h2>
+                <div id="predict-error" class="error"></div>
+                <div id="predict-success" class="success"></div>
+
+                <div class="two-column">
+                    <div>
+                        <h3>Student Information</h3>
+                        <div class="form-group">
+                            <label>Student ID</label>
+                            <input type="text" id="student-id" placeholder="STU_00001">
+                        </div>
+                        <div class="form-group">
+                            <label>Average Technical Score (0-100)</label>
+                            <input type="number" id="tech-score" min="0" max="100" step="1" placeholder="75">
+                        </div>
+                        <div class="form-group">
+                            <label>Average Soft Skills Score (0-100)</label>
+                            <input type="number" id="soft-score" min="0" max="100" step="1" placeholder="75">
+                        </div>
+                        <div class="form-group">
+                            <label>GPA (0-10)</label>
+                            <input type="number" id="student-gpa" min="0" max="10" step="0.1" placeholder="7.5">
+                        </div>
+                        <div class="form-group">
+                            <label>Years of Experience</label>
+                            <input type="number" id="years-exp" min="0" max="10" step="1" placeholder="1">
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Job Information</h3>
+                        <div class="form-group">
+                            <label>Job ID</label>
+                            <input type="text" id="job-id" placeholder="JOB_00001">
+                        </div>
+                        <div class="form-group">
+                            <label>Technical Skills Overlap (0-1)</label>
+                            <input type="number" id="tech-overlap" min="0" max="1" step="0.01" placeholder="0.65">
+                        </div>
+                        <div class="form-group">
+                            <label>Soft Skills Overlap (0-1)</label>
+                            <input type="number" id="soft-overlap" min="0" max="1" step="0.01" placeholder="0.60">
+                        </div>
+                        <div class="form-group">
+                            <label>Job Minimum GPA (0-10)</label>
+                            <input type="number" id="job-gpa" min="0" max="10" step="0.1" placeholder="6.5">
+                        </div>
+                        <div class="form-group">
+                            <label>Experience Required</label>
+                            <input type="number" id="job-exp" min="0" max="10" step="1" placeholder="2">
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="getRecommendation()" style="width: 100%; margin-top: 20px;">Get Recommendation</button>
+
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                    <p>Analyzing match...</p>
+                </div>
+
+                <div id="recommendation-result"></div>
+            </div>
+        </div>
+
+        <!-- Analytics Tab -->
+        <div id="analytics" class="tab-content">
+            <div class="card">
+                <h2>College Analytics</h2>
+                <div class="form-group">
+                    <label>Select College</label>
+                    <select id="college-select" onchange="getCollegeAnalytics()">
+                        <option value="">Loading colleges...</option>
+                    </select>
+                </div>
+                <div id="college-analytics-result"></div>
+            </div>
+
+            <div class="card">
+                <h2>Company Analytics</h2>
+                <div class="form-group">
+                    <label>Select Company</label>
+                    <select id="company-select" onchange="getCompanyAnalytics()">
+                        <option value="">Loading companies...</option>
+                    </select>
+                </div>
+                <div id="company-analytics-result"></div>
+            </div>
+        </div>
+
+        <!-- Model Info Tab -->
+        <div id="model-info" class="tab-content">
+            <div class="card">
+                <h2>Model Performance Metrics</h2>
+                <div id="model-metrics"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+
+            // Load data if needed
+            if (tabName === 'dashboard') loadDashboard();
+            if (tabName === 'analytics') loadAnalyticsSelects();
+            if (tabName === 'model-info') loadModelMetrics();
+        }
+
+        async function loadDashboard() {
+            try {
+                const response = await fetch(`${API_BASE}/stats`);
+                const data = await response.json();
+
+                document.getElementById('total-matches').textContent = data.total_matches;
+                document.getElementById('total-students').textContent = data.total_students;
+                document.getElementById('total-jobs').textContent = data.total_jobs;
+                document.getElementById('match-rate').textContent = (data.match_rate * 100).toFixed(1) + '%';
+                document.getElementById('colleges-count').textContent = data.total_colleges;
+                document.getElementById('companies-count').textContent = data.total_companies;
+                document.getElementById('avg-match-score').textContent = data.avg_match_score.toFixed(3);
+            } catch (error) {
+                console.error('Error loading dashboard:', error);
+            }
+        }
+
+        async function getRecommendation() {
+            const data = {
+                student_id: document.getElementById('student-id').value,
+                job_id: document.getElementById('job-id').value,
+                tech_overlap: parseFloat(document.getElementById('tech-overlap').value),
+                soft_overlap: parseFloat(document.getElementById('soft-overlap').value),
+                student_avg_tech_score: parseFloat(document.getElementById('tech-score').value),
+                student_avg_soft_score: parseFloat(document.getElementById('soft-score').value),
+                gpa_fit: Math.max(0, 1 - Math.abs(parseFloat(document.getElementById('student-gpa').value) - parseFloat(document.getElementById('job-gpa').value)) / 10),
+                exp_fit: Math.max(0, 1 - Math.abs(parseInt(document.getElementById('years-exp').value) - parseInt(document.getElementById('job-exp').value)) / 5),
+                student_gpa: parseFloat(document.getElementById('student-gpa').value),
+                job_min_gpa: parseFloat(document.getElementById('job-gpa').value),
+                student_years_exp: parseInt(document.getElementById('years-exp').value),
+                job_exp_required: parseInt(document.getElementById('job-exp').value)
+            };
+
+            document.getElementById('loading').classList.add('show');
+            document.getElementById('predict-error').classList.remove('show');
+            document.getElementById('predict-success').classList.remove('show');
+
+            try {
+                const response = await fetch(`${API_BASE}/predict`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+                document.getElementById('loading').classList.remove('show');
+
+                if (response.ok) {
+                    displayRecommendation(result);
+                } else {
+                    showError(result.detail || 'Error getting recommendation');
+                }
+            } catch (error) {
+                document.getElementById('loading').classList.remove('show');
+                showError('Network error: ' + error.message);
+            }
+        }
+
+        function displayRecommendation(result) {
+            const badgeClass = `badge-${result.match_quality}`;
+            const html = `
+                <div class="recommendation-result">
+                    <div class="result-header">
+                        <div>
+                            <div style="font-size: 14px; color: #999; margin-bottom: 10px;">Match Score</div>
+                            <div class="match-score">${(result.match_score * 100).toFixed(1)}%</div>
+                        </div>
+                        <span class="recommendation-badge ${badgeClass}">${result.recommendation}</span>
+                    </div>
+                    <div style="color: #666; margin-bottom: 15px;">
+                        Student <strong>${result.student_id}</strong> → Job <strong>${result.job_id}</strong>
+                    </div>
+                    <div class="explanation">
+                        ${Object.entries(result.explanation).map(([key, value]) => `
+                            <div class="explanation-item">
+                                <div class="explanation-label">${key.replace(/_/g, ' ')}</div>
+                                <div class="explanation-value">${value}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            document.getElementById('recommendation-result').innerHTML = html;
+            showSuccess('Recommendation generated successfully');
+        }
+
+        async function loadAnalyticsSelects() {
+            try {
+                const response = await fetch(`${API_BASE}/students?limit=200`);
+                const students = await response.json();
+                const colleges = [...new Set(students.map(s => s.college))];
+
+                const collegeSelect = document.getElementById('college-select');
+                collegeSelect.innerHTML = '<option value="">Select a college</option>' +
+                    colleges.map(c => `<option value="${c}">${c}</option>`).join('');
+
+                const jobsResponse = await fetch(`${API_BASE}/jobs?limit=200`);
+                const jobs = await jobsResponse.json();
+                const companies = [...new Set(jobs.map(j => j.company))];
+
+                const companySelect = document.getElementById('company-select');
+                companySelect.innerHTML = '<option value="">Select a company</option>' +
+                    companies.map(c => `<option value="${c}">${c}</option>`).join('');
+            } catch (error) {
+                console.error('Error loading analytics selects:', error);
+            }
+        }
+
+        async function getCollegeAnalytics() {
+            const college = document.getElementById('college-select').value;
+            if (!college) return;
+
+            try {
+                const response = await fetch(`${API_BASE}/analytics/college/${college}`);
+                const data = await response.json();
+
+                const html = `
+                    <div class="metrics-grid">
+                        <div class="metric-box">
+                            <div class="metric-value">${data.total_student_job_pairs}</div>
+                            <div class="metric-label">Student-Job Pairs</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">${data.good_matches}</div>
+                            <div class="metric-label">Good Matches</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">${(data.match_rate * 100).toFixed(1)}%</div>
+                            <div class="metric-label">Match Rate</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">${data.avg_match_score.toFixed(3)}</div>
+                            <div class="metric-label">Avg Match Score</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">${(data.avg_tech_overlap * 100).toFixed(1)}%</div>
+                            <div class="metric-label">Tech Skills Overlap</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">${(data.avg_soft_overlap * 100).toFixed(1)}%</div>
+                            <div class="metric-label">Soft Skills Overlap</div>
+                        </div>
+                    </div>
+                `;
+                document.getElementById('college-analytics-result').innerHTML = html;
+            } catch (error) {
+                console.error('Error loading college analytics:', error);
+            }
+        }
+
+        async function getCompanyAnalytics() {
+            const company = document.getElementById('company-select').value;
+            if (!company) return;
+
+            try {
+                const response = await fetch(`${API_BASE}/analytics/company/${company}`);
+                const data = await response.json();
+
+                const html = `
+                    <div class="metrics-grid">
+                        <div class="metric-box">
+                            <div class="metric-value">${data.total_candidate_matches}</div>
+                            <div class="metric-label">Candidate Matches</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">${data.good_matches}</div>
+                            <div class="metric-label">Quality Matches</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">${(data.match_quality_rate * 100).toFixed(1)}%</div>
+                            <div class="metric-label">Quality Rate</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">${data.avg_candidate_quality.toFixed(1)}</div>
+                            <div class="metric-label">Avg Candidate Quality</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">${data.applicant_pool_size}</div>
+                            <div class="metric-label">Applicant Pool</div>
+                        </div>
+                    </div>
+                `;
+                document.getElementById('company-analytics-result').innerHTML = html;
+            } catch (error) {
+                console.error('Error loading company analytics:', error);
+            }
+        }
+
+        async function loadModelMetrics() {
+            try {
+                const response = await fetch(`${API_BASE}/model/metrics`);
+                const data = await response.json();
+
+                const html = `
+                    <div style="margin-bottom: 20px;">
+                        <h3 style="color: #667eea; margin-bottom: 15px;">Gradient Boosting Model</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-box">
+                                <div class="metric-value">${(data.metrics.precision * 100).toFixed(1)}%</div>
+                                <div class="metric-label">Precision</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-value">${(data.metrics.recall * 100).toFixed(1)}%</div>
+                                <div class="metric-label">Recall</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-value">${(data.metrics.f1_score * 100).toFixed(1)}%</div>
+                                <div class="metric-label">F1 Score</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-value">${(data.metrics.roc_auc * 100).toFixed(1)}%</div>
+                                <div class="metric-label">ROC-AUC</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-value">${(data.metrics.accuracy * 100).toFixed(1)}%</div>
+                                <div class="metric-label">Accuracy</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-value">${(data.metrics.false_positive_rate * 100).toFixed(1)}%</div>
+                                <div class="metric-label">FPR</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: #f5f5f5; padding: 15px; border-radius: 5px; margin-top: 20px;">
+                        <p><strong>Model Type:</strong> Gradient Boosting Classifier</p>
+                        <p><strong>Framework:</strong> scikit-learn</p>
+                        <p><strong>Use Case:</strong> Student-Job Matching & Ranking</p>
+                        <p><strong>Features:</strong> 10 engineered features (skills overlap, GPA fit, experience fit, etc.)</p>
+                    </div>
+                `;
+                document.getElementById('model-metrics').innerHTML = html;
+            } catch (error) {
+                console.error('Error loading model metrics:', error);
+            }
+        }
+
+        function showError(message) {
+            const el = document.getElementById('predict-error');
+            el.textContent = message;
+            el.classList.add('show');
+        }
+
+        function showSuccess(message) {
+            const el = document.getElementById('predict-success');
+            el.textContent = message;
+            el.classList.add('show');
+            setTimeout(() => el.classList.remove('show'), 5000);
+        }
+
+        // Load dashboard on page load
+        window.addEventListener('load', () => {
+            loadDashboard();
+        });
+    </script>
+</body>
+</html>
