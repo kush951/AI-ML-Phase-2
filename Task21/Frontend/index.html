@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlaceMux</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="placemux-container">
+
+  <header class="header">
+    <div class="header-content">
+      <h1>🎯 PlaceMux</h1>
+      <p>AI-Powered Student-Job Matching with Fairness Auditing</p>
+    </div>
+  </header>
+
+  <div class="main-content">
+
+    <!-- Metrics -->
+    <div class="metrics-panel">
+      <h3>🎯 Model Performance</h3>
+
+      <div class="metrics-grid">
+        <div class="metric">
+          <span class="metric-label">Accuracy</span>
+          <span class="metric-value">91%</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-label">Precision</span>
+          <span class="metric-value">88%</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-label">Recall</span>
+          <span class="metric-value">85%</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-label">F1 Score</span>
+          <span class="metric-value">89%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Form -->
+    <div class="form-section">
+
+      <div class="form-group">
+        <h2>👨 Student Profile</h2>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label>Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter name">
+          </div>
+
+          <div class="form-field">
+            <label>Experience</label>
+            <input type="number" id="experience" value="2">
+          </div>
+
+          <div class="form-field">
+            <label>GPA</label>
+            <input type="number" id="gpa" value="8.5">
+          </div>
+        </div>
+
+        <div class="form-subsection">
+          <h3>Verified Skills</h3>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label>Python</label>
+              <input type="number" id="python" value="85">
+            </div>
+
+            <div class="form-field">
+              <label>JavaScript</label>
+              <input type="number" id="javascript" value="70">
+            </div>
+
+            <div class="form-field">
+              <label>SQL</label>
+              <input type="number" id="sql" value="80">
+            </div>
+
+            <div class="form-field">
+              <label>AWS</label>
+              <input type="number" id="aws" value="60">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job Section -->
+
+      <div class="form-group">
+        <h2>💼 Job Requirements</h2>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label>Company Size</label>
+            <select id="company">
+              <option>Startup</option>
+              <option>SME</option>
+              <option>Large</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label>Urgency</label>
+            <select id="urgency">
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label>Minimum GPA</label>
+            <input type="number" id="minGpa" value="7">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Button -->
+    <button class="predict-button" onclick="predictMatch()">
+      🔮 Predict Match
+    </button>
+
+    <!-- Result -->
+    <div class="prediction-result" id="resultBox" style="display:none;">
+
+      <div class="result-header">
+        <h2>📊 Prediction Result</h2>
+
+        <div class="match-badge" id="matchBadge">
+          MATCH
+        </div>
+      </div>
+
+      <div class="confidence-display">
+
+        <div class="confidence-label">
+          Confidence Score
+        </div>
+
+        <div class="confidence-bar" id="confidenceBar"></div>
+
+        <div class="confidence-percent" id="confidenceText">
+          0%
+        </div>
+      </div>
+
+      <div class="explanation-section">
+        <h3>💡 Explanation</h3>
+
+        <p class="explanation-text" id="explanation">
+        </p>
+      </div>
+
+      <div class="recommendations-section">
+        <h3>✨ Recommendations</h3>
+
+        <ul class="recommendations-list" id="recommendations">
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <p>PlaceMux © 2026 | AI Recruitment with Fairness Audit</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
