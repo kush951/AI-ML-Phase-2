@@ -1,0 +1,11 @@
+{
+  "best_model": "Logistic Regression",
+  "trained_models": [
+    "Logistic Regression",
+    "Random Forest",
+    "Gradient Boosting",
+    "SVM",
+    "Neural Network"
+  ],
+  "timestamp": "2026-07-01T18:05:45.930717"
+}
